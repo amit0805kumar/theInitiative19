@@ -1,0 +1,122 @@
+.header {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    .topCircle {
+        position: absolute;
+        left: 91%;
+        top: -10rem;
+    }
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(79, 195, 247, 0.49);
+        opacity: 0.7;
+
+    }
+    .cs1 {
+        width: 20rem;
+        height: 20rem;
+        position: relative;
+    }
+
+    .cs2 {
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .cs3 {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    }
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: relative;
+         &__images{
+            
+            position: fixed;
+            left: 0;
+            top: -5rem;
+        }
+    }
+    
+    &__details{
+        position: absolute;
+        left: 10rem;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__logo{
+        width: 12rem;
+        height: 12rem;
+        overflow: hidden;     
+        background-image: url(../images/logo.png);
+        background-size: contain;
+    }
+    &__text{
+    position: relative;
+    font-size: 7rem;
+    margin-top: 2rem;
+        &__shadow{
+            position: absolute;
+            left: -2rem;
+            top: 22rem;
+            opacity: 0.1;
+        }
+        
+        &__team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 3rem;
+           
+            position: absolute;
+            top: 90%;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            .teamLogo{
+                width: 3.5rem;
+            }
+            
+            &__text::after{
+                content: '';
+                position: absolute;
+                left: 100%;
+                top: 138%;
+                height: 1px;
+                background: black;
+                width: 8rem;
+            }
+            &__text::before{
+                content: '';
+                position: absolute;
+                left: 0%;
+                top: 138%;
+                transform: translateX(-101%);
+                height: 1px;
+                background: black;
+                width: 8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.nav {
+    z-index: 100;
+    width: 100%;
+
+    position: fixed;
+
+
+    &__button {
+        z-index: 10;
+        position: fixed;
+        width: 50px;
+        height: 20px;
+        top: 30px;
+        right: 30px;
+        &:hover {
+            cursor: pointer;
+
+        }
+
+
+        span {
+            width: 35px;
+            background: #000;
+            height: 2px;
+            position: absolute;
+            border-radius: 100px;
+            transition: all .2s ease-in-out;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 2px;
+                background: #000;
+                top: 4px;
+                left: 0;
+                transition: all .2s ease-in-out;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 2px;
+                background: #000;
+                top: -4px;
+                left: 0;
+                transition: all .2s ease-in-out;
+            }
+        }
+
+
+        &-hover:hover > span {
+            width: 32px;
+        }
+        &-hover:hover > span::after {
+            width: 29px;
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        height: 0;
+        position: fixed;
+        z-index: 9;
+        background: rgba(0, 0, 0, 0.72);
+        position: relative;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: absolute;
+            left: 70%;
+            top: 20%;
+
+            a {
+                margin: 20px 0;
+            }
+        }
+    }
+
+}
+
+
+.expandNav {
+    height: 100vh;
+}
+
+.nav_button-animation {
+    span {
+        background: #fff;
+
+        &::after {
+            transform: rotate(-50deg);
+            background: #fff;
+            width: 13px;
+            left: 25px;
+        }
+        &::before {
+            transform: rotate(50deg);
+            background: #fff;
+            width: 13px;
+            left: 25px;
+        }
+    }
+}
+
+.navigation {
+
+  
+    &__buttons {
+        position: fixed;
+          z-index: 100;
+        width: 6rem;
+        height: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__up {
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__down {
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}

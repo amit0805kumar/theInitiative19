@@ -1,12 +1,331 @@
+/* line 1, ../sass/base/base.scss */
 * {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0px;
   padding: 0px; }
 
+/* line 7, ../sass/base/base.scss */
 body {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
+/* line 11, ../sass/base/base.scss */
 html {
   font-size: 62.5%; }
+
+/* line 16, ../sass/base/base.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */ }
+
+/* line 25, ../sass/base/base.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+/* line 35, ../sass/base/base.scss */
+a {
+  text-decoration: none;
+  color: #fff; }
+
+/* line 1, ../sass/pages/home.scss */
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+/* line 11, ../sass/pages/home.scss */
+.section__about {
+  z-index: 11;
+  width: 100%;
+  height: 80rem;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+/* line 23, ../sass/pages/home.scss */
+.goUp {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+/* line 1, ../sass/layout/header.scss */
+.header {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -1; }
+  /* line 7, ../sass/layout/header.scss */
+  .header .topCircle {
+    position: absolute;
+    left: 91%;
+    top: -10rem; }
+  /* line 12, ../sass/layout/header.scss */
+  .header .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(79, 195, 247, 0.49);
+    opacity: 0.7; }
+  /* line 19, ../sass/layout/header.scss */
+  .header .cs1 {
+    width: 20rem;
+    height: 20rem;
+    position: relative; }
+  /* line 25, ../sass/layout/header.scss */
+  .header .cs2 {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  /* line 35, ../sass/layout/header.scss */
+  .header .cs3 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  /* line 45, ../sass/layout/header.scss */
+  .header .bg {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    /* line 49, ../sass/layout/header.scss */
+    .header .bg__images {
+      position: fixed;
+      left: 0;
+      top: -5rem; }
+  /* line 57, ../sass/layout/header.scss */
+  .header__details {
+    position: absolute;
+    left: 10rem;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  /* line 67, ../sass/layout/header.scss */
+  .header__logo {
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    background-image: url(../images/logo.png);
+    background-size: contain; }
+  /* line 74, ../sass/layout/header.scss */
+  .header__text {
+    position: relative;
+    font-size: 7rem;
+    margin-top: 2rem; }
+    /* line 78, ../sass/layout/header.scss */
+    .header__text__shadow {
+      position: absolute;
+      left: -2rem;
+      top: 22rem;
+      opacity: 0.1; }
+    /* line 85, ../sass/layout/header.scss */
+    .header__text__team {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 3rem;
+      position: absolute;
+      top: 90%;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      letter-spacing: 3px; }
+      /* line 97, ../sass/layout/header.scss */
+      .header__text__team .teamLogo {
+        width: 3.5rem; }
+      /* line 101, ../sass/layout/header.scss */
+      .header__text__team__text::after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 138%;
+        height: 1px;
+        background: black;
+        width: 8rem; }
+      /* line 110, ../sass/layout/header.scss */
+      .header__text__team__text::before {
+        content: '';
+        position: absolute;
+        left: 0%;
+        top: 138%;
+        -webkit-transform: translateX(-101%);
+                transform: translateX(-101%);
+        height: 1px;
+        background: black;
+        width: 8rem; }
+
+/* line 1, ../sass/layout/navigation.scss */
+.nav {
+  z-index: 100;
+  width: 100%;
+  position: fixed; }
+  /* line 8, ../sass/layout/navigation.scss */
+  .nav__button {
+    z-index: 10;
+    position: fixed;
+    width: 50px;
+    height: 20px;
+    top: 30px;
+    right: 30px; }
+    /* line 15, ../sass/layout/navigation.scss */
+    .nav__button:hover {
+      cursor: pointer; }
+    /* line 21, ../sass/layout/navigation.scss */
+    .nav__button span {
+      width: 35px;
+      background: #000;
+      height: 2px;
+      position: absolute;
+      border-radius: 100px;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      /* line 29, ../sass/layout/navigation.scss */
+      .nav__button span::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background: #000;
+        top: 4px;
+        left: 0;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+      /* line 40, ../sass/layout/navigation.scss */
+      .nav__button span::before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background: #000;
+        top: -4px;
+        left: 0;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+    /* line 53, ../sass/layout/navigation.scss */
+    .nav__button-hover:hover > span {
+      width: 32px; }
+    /* line 56, ../sass/layout/navigation.scss */
+    .nav__button-hover:hover > span::after {
+      width: 29px; }
+  /* line 61, ../sass/layout/navigation.scss */
+  .nav__menu {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.72);
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    /* line 71, ../sass/layout/navigation.scss */
+    .nav__menu__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: sans-serif;
+      position: absolute;
+      left: 70%;
+      top: 20%; }
+      /* line 82, ../sass/layout/navigation.scss */
+      .nav__menu__list a {
+        margin: 20px 0; }
+
+/* line 91, ../sass/layout/navigation.scss */
+.expandNav {
+  height: 100vh; }
+
+/* line 96, ../sass/layout/navigation.scss */
+.nav_button-animation span {
+  background: #fff; }
+  /* line 99, ../sass/layout/navigation.scss */
+  .nav_button-animation span::after {
+    -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+    background: #fff;
+    width: 13px;
+    left: 25px; }
+  /* line 105, ../sass/layout/navigation.scss */
+  .nav_button-animation span::before {
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
+    background: #fff;
+    width: 13px;
+    left: 25px; }
+
+/* line 117, ../sass/layout/navigation.scss */
+.navigation__buttons {
+  position: fixed;
+  z-index: 100;
+  width: 6rem;
+  height: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+/* line 130, ../sass/layout/navigation.scss */
+.navigation__up:hover {
+  cursor: pointer; }
+/* line 135, ../sass/layout/navigation.scss */
+.navigation__down:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
