@@ -1,7 +1,6 @@
 $(function () {
 
-    var pageNO = 0;
-    
+    //Navigation
     $('.nav__button').click(function () {
         navTransformation();
     });
@@ -17,15 +16,46 @@ $(function () {
         $('.nav__button').toggleClass('nav__button-hover');
         $('.nav__button').toggleClass('nav_button-animation');
     }
-    
-    
+
+
+
+    //Page Transition
+
+    var canvas = $('.canvas');
+
     var sectionAbout = $('.section__about');
-    
-    $('.navigation__up').click(function(){
-        sectionAbout.addClass('goUp');
+    var sectionStructure = $('.section__structure');
+    var sectionProbems = $('.section__problems');
+
+    var pageNo = 0;
+    var pages = {
+        "0": sectionAbout,
+        "1": sectionStructure,
+        "2": sectionProbems
+    };
+
+    $('.navigation__up').click(function () {
+
+        if (pageNo < 3 && pageNo > -1) {
+            pages[pageNo].addClass('goUp');
+            pageNo++;
+            console.log(pageNo);
+        }
+
+
+        //        canvas.removeClass('overFlowControl');
     });
-    
-     $('.navigation__down').click(function(){
-        sectionAbout.removeClass('goUp');
+
+    $('.navigation__down').click(function () {
+        if(pageNo < 4 && pageNo > 0) {
+            pages[pageNo - 1].removeClass('goUp');
+            pageNo--;
+            console.log(pageNo);
+        }
+
+
+        //        canvas.addClass('overFlowControl');
+
     });
+
 });

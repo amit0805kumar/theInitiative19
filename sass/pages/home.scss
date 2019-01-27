@@ -1,25 +1,39 @@
-.canvas{
+.canvas {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    
-    
+
+
 }
 
-.section{
-    &__about{
-        z-index: 11;
+.section {
+    &__about,
+    &__structure,
+    &__problems {
         width: 100%;
-        height: 80rem;
+        height: 100vh;
         background: #fff;
         position: absolute;
         top: 100%;
         left: 0;
-        transition: all .3s;
+        transition: all .5s cubic-bezier(.7, .18, .97, .54);
+    }
+    &__about {
+        z-index: 11;
+
+    }
+    &__structure {
+        z-index: 21;
+    }
+    &__problems {
+        z-index: 31;
     }
 }
 
-.goUp{
+.overFlowControl {
+    overflow: hidden;
+}
+
+.goUp {
     transform: translateY(-100%);
 }
