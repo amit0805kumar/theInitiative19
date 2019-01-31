@@ -4,98 +4,228 @@
 <head>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
+    <meta name="keywords" content="slideshow, slider, pieces, fragments, animation, svg, canvas, javascript" />
 
     <link rel="shotcut icon" type="img/png" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat+Alternates:200,300,400,500,600,700,800,900|Muli:300,400,600,700,800,900|Poiret+One|Righteous|Roboto+Mono:300,400,500,700|Major+Mono+Display|Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <title>The Initiative'19</title>
+
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+    </script>
 </head>
 
 <body>
 
- <div class="canvas overFlowControl"> 
+    <div class="canvas overFlowControl">
         <div class="navigation__buttons noselect">
-        <div class="navigation__up"><i class="material-icons">keyboard_arrow_up</i></div>
-        <div class="navigation__down"><i class="material-icons">keyboard_arrow_down</i></div>
-    </div>
-
-    <div class="nav">
-        <div class="nav__button nav__button-hover noselect">
-            <span>&nbsp;</span>
+            <div class="navigation__up"><i class="material-icons">keyboard_arrow_up</i></div>
+            <div class="navigation__down"><i class="material-icons">keyboard_arrow_down</i></div>
         </div>
-        <div class="nav__menu">
 
-            <div class="nav__menu__list">
-                <a href="#" class="nav__link noselect">Home</a>
-                <a href="#" class="nav__link noselect">Topics</a>
-                <a href="#" class="nav__link noselect">Rules</a>
-                <a href="#" class="nav__link noselect">Contacts</a>
+        <div class="nav">
+            <div class="nav__button nav__button-hover noselect">
+                <span>&nbsp;</span>
             </div>
+            <div class="nav__menu">
 
-        </div>
-    </div>
-
-    <div class="header">
-        <div class="topCircle">
-            <div class="circle cs1">
-                <div class="circle cs2">
-                    <div class="circle cs3"></div>
+                <div class="nav__csi noselect">
+                    <div class="nav__csi-c">create</div>
+                    <div class="nav__csi-s">share</div>
+                    <div class="nav__csi-i">innovate</div>
                 </div>
+                <div class="nav__menu__list">
+                    <a href="#" class="nav__link noselect">Home</a>
+                    <a href="#" class="nav__link noselect">About</a>
+                    <a href="#" class="nav__link noselect">Topics</a>
+                    <a href="#" class="nav__link noselect">FAQs</a>
+                    <a href="#" class="nav__link noselect">Contacts</a>
+                </div>
+
+                <div class="nav__icons">
+                    <a href="https://www.facebook.com/theinitiative.akg/" class="nav__social__links" target="_blank">
+                        <svg class="svgIcons" >
+                             <use xlink:href="svg/svgIcons.svg#facebook"></use>
+                        </svg>
+                        </a>
+                    <a href="https://www.instagram.com/csi_akgec/" class="nav__social__links" target="_blank">
+                          <svg class="svgIcons" >
+                             <use xlink:href="svg/svgIcons.svg#instagram"></use>
+                            </svg>
+                        </a>
+
+                    <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="nav__social__links" target="_blank">
+                          <svg class="svgIcons" >
+                             <use xlink:href="svg/svgIcons.svg#youtube"></use>
+                            </svg>
+                        </a>
+
+                </div>
+
             </div>
-
         </div>
 
-        <div class="bg">
-            <img src="svg/dots.svg" alt="" class="bg__images">
-            <img src="svg/clouds.svg" alt="" class="bg__images">
-            <img src="svg/monuments.svg" alt="" class="bg__images">
-            <img src="svg/sides.svg" alt="" class="bg__images">
-
-            <div class="header__details">
-                <div class="header__logo">
-
-
-                </div>
-                <div class="header__text">
-                    <div class="header__text__main">The</div>
-                    <div class="header__text__main">Initiative'19</div>
-                    <div class="header__text-dota">.....</div>
-                </div>
-                <div class="header__text header__text__shadow">
-                    <div class="header__text">The</div>
-                    <div class="header__text">Initiative'19</div>
-                    <div class="header__text">.....</div>
-                </div>
-
-                <div class="header__text__team">
-                    <a href="http://csiakgec.in" target="_blank"><img class="teamLogo" src="images/logocsiCenter.png" alt="csiLogo"></a>
-                    <div class="header__text__team__text">
-                        a team csi initiative
+        <div class="header">
+            <div class="topCircle">
+                <div class="circle cs1">
+                    <div class="circle cs2">
+                        <div class="circle cs3"></div>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="bg">
+                <img src="svg/dots.svg" alt="" class="bg__images noselect">
+                <img src="svg/clouds.svg" alt="" class="bg__images noselect">
+                <img src="svg/monuments.svg" alt="" class="bg__images noselect">
+                <img src="svg/sides.svg" alt="" class="bg__images noselect">
+
+                <div class="header__details">
+                    <div class="header__logo"> </div>
+                    <div class="header__text">
+                        <div class="header__text__main">The</div>
+                        <div class="header__text__main">Initiative'19</div>
+                        <div class="header__text-dota">.....</div>
+                    </div>
+
+
+                    <div class="header__text__team noselect">
+                        <a href="http://csiakgec.in" target="_blank"><img class="teamLogo" src="images/logocsiCenter.png" alt="csiLogo"></a>
+                        <div class="header__text__team__text">
+                            a team csi initiative
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="header__social">
+                    <a href="https://www.facebook.com/theinitiative.akg/" class="header__social__links" target="_blank">
+                        <svg class="svgIcons" >
+                             <use xlink:href="svg/svgIcons.svg#facebook"></use>
+                        </svg>
+                        </a>
+
+                    <a href="https://www.instagram.com/csi_akgec/" class="header__social__links" target="_blank">
+                          <svg class="svgIcons" >
+                             <use xlink:href="svg/svgIcons.svg#instagram"></use>
+                            </svg>
+                        </a>
+
+                    <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="header__social__links" target="_blank">
+                          <svg class="svgIcons" >
+                             <use xlink:href="svg/svgIcons.svg#youtube"></use>
+                            </svg>
+                        </a>
+                </div>
+
             </div>
 
 
 
+
+        </div>
+        <div class="section__about">
+           <div class="about__part"></div>
+            <div class="section__heading" id="headingAbout">
+                <h1 class="glitched-1">About the event</h1>
+            </div>
+            <div class="about__container">
+               
+                <div class="about__text">
+                    
+                    <div class="about__text-heading">
+                        Why <br>Initiative?
+                    </div>
+                    <div class="about__text-para">
+                        India had a national dream before 1947. That dream was to become an independent country, and it came true. But things have become a bit fuzzy since then.Today, if you ask someone on the street about what India’s national dream is, they wouldn’t know. <br><br> If you ask a politician, he may talk about it for an hour, but in the end neither he nor you would know. We don’t need a report. There was already one released in 2002 by the Planning Commission titled “India – Vision 2020”. And we don’t need cute pithy phrases. It’s not enough just to be “Incredible India.” Initiative is a vision that promises to take India to the world, and get students and professionals across geographies to compete, collaborate and co-create a better future for all of us.
+                    </div>
+
+                </div>
+                <div class="about__logo">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section__structure">
+            <div class="section__heading" id="headingStruct">
+                <h1 class="glitched-2">Structure</h1>
+            </div>
         </div>
 
+        <div class="section__problems">
+            <div class="section__heading" id="headingProblems">
+                <h1 class="glitched-3">Problems</h1>
+            </div>
+
+            <main>
 
 
+                <!-- Pieces Slider -->
+                <div class="pieces-slider">
+                    <!-- Each slide with corresponding image and text -->
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/1.jpg" alt="">
+                        <h2 class="pieces-slider__text">Sports Dilapidation</h2>
 
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/2.jpg" alt="">
+                        <h2 class="pieces-slider__text">Aadhar</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/3.jpg" alt="">
+                        <h2 class="pieces-slider__text">Urban Sprawl</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/4.jpg" alt="">
+                        <h2 class="pieces-slider__text">E-Waste</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/5.jpg" alt="">
+                        <h2 class="pieces-slider__text">Cryptocurrency</h2>
+
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/5.jpg" alt="">
+                        <h2 class="pieces-slider__text">Cryptocurrency2</h2>
+
+                    </div>
+                    <!-- Canvas to draw the pieces -->
+                    <canvas class="pieces-slider__canvas"></canvas>
+                    <!--Canvas for know more-->
+                    <canvas class="my-canvas"></canvas>
+                    <!-- Slider buttons: prev and next -->
+                    <button class="pieces-slider__button pieces-slider__button--prev">prev</button>
+                    <button class="pieces-slider__button pieces-slider__button--next">next</button>
+                </div>
+
+            </main>
+        </div>
     </div>
-<div class="section__about">
-    <h1>Section About</h1>  
-</div>
-<div class="section__structure">
-    <h1>Structure</h1>
-</div>
-<div class="section__problems">
-    <h1>Problems</h1>
-</div>
- </div>
 
+
+    <script src='js/anime.min.js'></script>
+    <script src='js/pieces.min.js'></script>
+    <script src='js/demo.js'></script>
 </body>
 
 </html>

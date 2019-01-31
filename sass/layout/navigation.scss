@@ -63,26 +63,81 @@
         height: 0;
         position: fixed;
         z-index: 9;
-        background: rgba(0, 0, 0, 0.72);
+        background: rgba(44, 42, 42, 1);
         position: relative;
         overflow: hidden;
-        transition: all .3s ease-in-out;
+        transition: all .8s cubic-bezier(0.7, 0, 0.3, 1);
 
         &__list {
             display: flex;
             flex-direction: column;
+            align-items: baseline;
             color: #fff;
             text-transform: uppercase;
             font-size: 20px;
             font-family: sans-serif;
             position: absolute;
             left: 70%;
-            top: 20%;
+            top: 10rem;
+            transform: translateY(-8rem);
+            opacity: 0;
+            transition: all .4s ease-in-out;
+            letter-spacing: 3px;
 
             a {
                 margin: 20px 0;
             }
+
+            .nav__link {
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%);
+                background-position: 0 100%;
+                background-repeat: repeat-x;
+                background-size: 1px 1px;
+                text-decoration: none;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 3rem;
+                &:hover {
+
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+                    background-position: 0 100%;
+                    background-size: auto 6px;
+                    background-repeat: repeat-x;
+                    text-decoration: none;
+                }
+            }
         }
+    }
+
+    &__icons {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s;
+        .nav__social__links:hover > svg{
+            fill:#f28c01;
+          
+        }
+    }
+    &__social__links {
+        margin: 0 2rem;
+        .svgIcons {
+            width: 3rem;
+            height: 3rem;
+            transition: all .3s ease-in-out;
+            fill: #fff;
+            &:hover {}
+        }
+    }
+
+    &__csi {
+        font-size: 15rem;
+        color: rgba(60, 59, 59, 0.53);
+        transform: translateY(-8rem);
+        opacity: 0;
+        transition: all .4s ease-in-out;
+        font-family: 'Poiret One', cursive;
+
     }
 
 }
@@ -90,6 +145,12 @@
 
 .expandNav {
     height: 100vh;
+
+}
+
+.showNavEl {
+    transform: translateY(0rem);
+    opacity: 1;
 }
 
 .nav_button-animation {
@@ -113,10 +174,10 @@
 
 .navigation {
 
-  
+
     &__buttons {
         position: fixed;
-          z-index: 100;
+        z-index: 100;
         width: 6rem;
         height: 2rem;
         left: 50%;
@@ -124,17 +185,20 @@
         top: 90%;
         display: flex;
         justify-content: space-between;
-        
+
     }
-    &__up {
-        &:hover{
-            cursor: pointer;
-        }
-    }
+    &__up,
     &__down {
-        &:hover{
+        transition: all .3s;
+        &:hover {
             cursor: pointer;
+            transform: translateY(-2px);
+        }
+        &:active {
+            transform: translateY(-.5px);
         }
     }
 
+
 }
+

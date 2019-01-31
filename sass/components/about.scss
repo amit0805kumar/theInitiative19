@@ -1,6 +1,92 @@
-.block{
-    width: 30rem;
-    height: 10rem;
-    background: black;
-    margin: 2rem 0;
+.glitch-window-1,.glitch-window-2,.glitch-window-3{
+	position: absolute;
+	top: 0;
+	left: -2px;
+	width: 100%;
+	color: #222222;
+	text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
+	overflow: hidden;
+	animation: crt-me 2500ms infinite linear alternate-reverse;
+	// background: red;
+}
+
+ 
+@keyframes crt-me {
+	 0% {
+        clip: rect(31px, 9999px, 94px, 0)
+    }
+    10% {
+        clip: rect(112px, 9999px, 76px, 0)
+    }
+    20% {
+        clip: rect(85px, 9999px, 77px, 0)
+    }
+    30% {
+        clip: rect(17px, 9999px, 97px, 0)
+    }
+    40% {
+        clip: rect(64px, 9999px, 98px, 0)
+    }
+    50% {
+        clip: rect(61px, 9999px, 85px, 0)
+    }
+    60% {
+        clip: rect(99px, 9999px, 114px, 0)
+    }
+    70% {
+        clip: rect(14px, 9999px, 115px, 0)
+    }
+    80% {
+        clip: rect(98px, 9999px, 129px, 0)
+    }
+    90% {
+        clip: rect(43px, 9999px, 96px, 0)
+    }
+    100% {
+        clip: rect(12px, 9999px, 64px, 0)
+    }
+    
+}
+
+.about{
+    &__part{
+         background: #f5f0c6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+    }
+    &__text{
+        width: 100%;
+        
+        position: absolute;
+        left: 0;
+        top: 10%;
+        padding: 2rem;
+        display: inline-block;
+        &-heading{
+            font-size: 5rem;
+            font-family: 'Muli', sans-serif;
+            font-weight: 900;
+            margin-bottom: 3rem;
+    } 
+        
+        &-para{
+            font-size: 1.5rem;
+            font-family: 'Roboto Mono', monospace;
+            width: 50%;
+        }
+    
+}
+    &__logo{
+        z-index: 13;
+        width: 45%;
+        display: inline-block;
+        height: 5rem;
+        background: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
 }

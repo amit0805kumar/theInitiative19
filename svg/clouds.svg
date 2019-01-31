@@ -28,6 +28,42 @@
 	.st22{display:inline;fill:url(#XMLID_132_);}
 	.st23{display:inline;fill:url(#XMLID_133_);}
 	.st24{display:inline;fill:url(#XMLID_135_);}
+    
+     
+    .cl1{
+       animation: cloud1 6s infinite ease-in-out;
+    }
+    .cl2{
+       animation: cloud2 6s infinite ease-in-out;
+        
+    }
+    
+    @keyframes cloud1{
+        0%{
+          transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(100px);
+   
+        }
+        100%{
+          transform: translateX(0px);
+            
+        }
+    }
+       @keyframes cloud2{
+        0%{
+          transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(-100px);
+   
+        }
+        100%{
+          transform: translateX(0px);
+            
+        }
+    }
 </style>
 <g id="monuments" class="st0">
 	<path id="XMLID_47_" class="st1" d="M888.1,634.1C888.1,634.1,888.1,634.1,888.1,634.1C888.1,634.1,888.1,634.1,888.1,634.1
@@ -350,7 +386,7 @@
 		<stop  offset="0.8769" style="stop-color:#FBFDFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
-	<path id="XMLID_372_" class="st13" d="M829.2,378H693c-1.1-4-0.9-8.4,0.8-12.7c3.4-8.8,12.2-13.9,21.2-13.2c0-1.7,0.3-3.4,1-5
+	<path id="XMLID_372_" class="st13 cl1" d="M829.2,378H693c-1.1-4-0.9-8.4,0.8-12.7c3.4-8.8,12.2-13.9,21.2-13.2c0-1.7,0.3-3.4,1-5
 		c2.8-7.2,10.6-11,17.9-8.9c3.6-9,11.5-15.9,21.7-17.9c15.1-2.9,29.6,6.4,33.7,20.9c0,0,0.1,0,0.1,0c9.8,0,17.7,7.9,17.7,17.7
 		c0,2.5-0.5,4.8-1.4,7c0.5,0.1,1,0.2,1.5,0.3c2.2,0.6,4.2,2.3,5.1,4.3c1.8-1.4,4-2.4,6.4-2.4C824.3,368.1,828.9,373,829.2,378z"/>
 	<linearGradient id="XMLID_106_" gradientUnits="userSpaceOnUse" x1="696.0932" y1="381.0493" x2="828.0932" y2="379.0493">
@@ -364,7 +400,7 @@
 		<stop  offset="0.8769" style="stop-color:#FBFDFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
-	<circle id="XMLID_134_" class="st14" cx="837.3" cy="378.9" r="6.2"/>
+
 </g>
 <g id="cloud">
 	<linearGradient id="XMLID_115_" gradientUnits="userSpaceOnUse" x1="977.2407" y1="294.8511" x2="1109.2445" y2="292.851">
@@ -378,7 +414,7 @@
 		<stop  offset="0.8769" style="stop-color:#FBFDFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
-	<path id="XMLID_371_" class="st15" d="M1110.8,320.7c0,1.6-0.4,3.3-1,4.3H976.6c-3-5-3.7-11.6-1.3-17.7
+	<path id="XMLID_371_" class="st15 cl2" d="M1110.8,320.7c0,1.6-0.4,3.3-1,4.3H976.6c-3-5-3.7-11.6-1.3-17.7
 		c3.4-8.8,12.2-13.9,21.2-13.2c0-1.7,0.3-3.4,1-5c2.8-7.2,10.6-11,17.9-8.9c3.6-8.9,11.5-16,21.7-17.9c15.1-2.9,29.6,6.8,33.7,20.8
 		h0.1c9.8,0,17.7,8,17.7,17.8c0,2.5-0.5,4.9-1.4,7c0.5,0.1,1,0.2,1.5,0.3c2.2,0.6,4.2,2.3,5.1,4.3c1.8-1.4,4-2.3,6.4-2.3
 		C1106.1,310.2,1110.8,314.8,1110.8,320.7z"/>

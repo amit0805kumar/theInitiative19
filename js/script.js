@@ -7,14 +7,22 @@ $(function () {
 
     $('.nav__menu').click(function () {
         navTransformation();
+
     });
 
 
 
+
     function navTransformation() {
-        $(".nav__menu").toggleClass('expandNav');
         $('.nav__button').toggleClass('nav__button-hover');
         $('.nav__button').toggleClass('nav_button-animation');
+        $(".nav__menu").toggleClass('expandNav');
+
+        setTimeout(function () {
+            $('.nav__csi').toggleClass('showNavEl');
+            $('.nav__menu__list').toggleClass('showNavEl');
+        }, 800);
+
     }
 
 
@@ -34,28 +42,61 @@ $(function () {
         "2": sectionProbems
     };
 
-    $('.navigation__up').click(function () {
+    $('.navigation__down').click(function () {
 
         if (pageNo < 3 && pageNo > -1) {
             pages[pageNo].addClass('goUp');
             pageNo++;
-            console.log(pageNo);
         }
 
 
-        //        canvas.removeClass('overFlowControl');
+        //                canvas.removeClass('overFlowControl');
     });
 
-    $('.navigation__down').click(function () {
-        if(pageNo < 4 && pageNo > 0) {
+    $('.navigation__up').click(function () {
+        if (pageNo < 4 && pageNo > 0) {
             pages[pageNo - 1].removeClass('goUp');
             pageNo--;
-            console.log(pageNo);
         }
 
 
-        //        canvas.addClass('overFlowControl');
+        //                canvas.addClass('overFlowControl');
 
     });
+
+    $(window).keydown(function (event) {
+        if (event.keyCode == 40) {
+            if (pageNo < 3 && pageNo > -1) {
+                pages[pageNo].addClass('goUp');
+                pageNo++;
+            }
+        } else if (event.keyCode == 38) {
+            if (pageNo < 4 && pageNo > 0) {
+                pages[pageNo - 1].removeClass('goUp');
+                pageNo--;
+            }
+
+        }
+    });
+
+
+    $("#headingAbout").append("<div class='glitch-window-1'></div>");
+   
+    //fill div with clone of real header
+    $("h1.glitched-1").clone().appendTo(".glitch-window-1");
+    
+    
+    
+     $("#headingStruct").append("<div class='glitch-window-2'></div>");
+   
+    //fill div with clone of real header
+    $("h1.glitched-2").clone().appendTo(".glitch-window-2");
+    
+    
+     $("#headingProblems").append("<div class='glitch-window-3'></div>");
+   
+    //fill div with clone of real header
+    $("h1.glitched-3").clone().appendTo(".glitch-window-3");
+
 
 });

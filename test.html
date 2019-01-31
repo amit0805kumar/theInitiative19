@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Pieces.js</title>
+    <style>
+      
+        .my-canvas {
+            width: 200px;
+            height: 70px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas class="my-canvas"></canvas>
+
+
+
+    <script src='js/anime.min.js'></script>
+    <script src='js/pieces.min.js'></script>
+    
+    <button id="btn">click</button>
+
+    <script>
+          
+        $(function() {
+            
+            
+         
+
+
+                        var options = {
+
+                            canvas: '.my-canvas',
+                            text: 'Know More...',
+                            color: 'white',
+                                  fontSize: 25,
+
+                            backgroundColor: '#1A237E',
+                            extraSpacing: {
+                                extraX: 100,
+                                extraY: 70
+                            },
+                            piecesWidth: function() {
+                                return Pieces.random(5, 25);
+                            },
+                            ty: function() {
+                                return Pieces.random(-100, 500);
+                            },
+                            angle: -45,
+                        piecesSpacing: 2,
+                            padding:'22 18 22 20',
+
+                        };
+            $('#btn').click(function(){
+            
+            });
+
+                    var myPieces = new Pieces(options);
+                        myPieces.showPieces();
+                      
+                        
+
+           
+
+        });
+
+    </script>
+</body>
+
+</html>
