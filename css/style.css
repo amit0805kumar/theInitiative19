@@ -885,5 +885,162 @@ font-family: 'Raleway', sans-serif;*/
   .pieces-slider__button {
     width: 60px;
     height: 60px; } }
+/* line 2, ../sass/components/structure.scss */
+.structure__content {
+  position: relative;
+  width: 100%;
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+/* line 9, ../sass/components/structure.scss */
+.structure__grid {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative; }
+  /* line 17, ../sass/components/structure.scss */
+  .structure__grid__item {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem; }
+  /* line 24, ../sass/components/structure.scss */
+  .structure__grid__box {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    /* line 29, ../sass/components/structure.scss */
+    .structure__grid__box__shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -1rem;
+      left: -1rem;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==); }
+    /* line 39, ../sass/components/structure.scss */
+    .structure__grid__box__img {
+      position: absolute;
+      width: 23rem;
+      height: 23rem; }
+    /* line 45, ../sass/components/structure.scss */
+    .structure__grid__box__title {
+      color: black;
+      text-transform: uppercase;
+      font-size: 3rem;
+      position: absolute;
+      -webkit-writing-mode: vertical-rl;
+          -ms-writing-mode: tb-rl;
+              writing-mode: vertical-rl;
+      left: 90%;
+      top: 10%;
+      white-space: nowrap;
+      letter-spacing: 0.15rem;
+      font-family: 'Anton', sans-serif; }
+    /* line 58, ../sass/components/structure.scss */
+    .structure__grid__box__num {
+      color: black;
+      position: absolute;
+      top: -3rem;
+      left: 0;
+      padding: 1.5rem 1rem;
+      border: .5rem solid black;
+      font-size: 3rem;
+      border-radius: 300px;
+      -webkit-transition: all .2s;
+      transition: all .2s; }
+    /* line 69, ../sass/components/structure.scss */
+    .structure__grid__box__content {
+      color: black;
+      position: absolute;
+      font-size: 1.3rem;
+      top: 100%;
+      left: 0; }
+
+/*
+.box__title-inner {
+	display: block;
+	position: relative;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: 0.15rem;
+	line-height: 1.25;
+	font-family: 'Anton', sans-serif;
+}
+*/
+/*.box__title-inner[data-hover] {
+	-webkit-text-stroke: 2px #000;
+	text-stroke: 2px #000;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+}
+
+.box__title-inner::before {
+	content: attr(data-hover);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-text-stroke: 0;
+	text-stroke: 0;
+	-webkit-text-fill-color: #000;
+	text-fill-color: #000;
+	color: #000;
+	transition: all 0.3s;
+}*/
+/*.box__text-inner--reverse {
+	background: var(--color-text);
+	color: var(--color-bg);
+}*/
+/*.box__img {
+	display: block;
+	flex: none;
+	margin: 0 auto;
+	max-width: 100%;
+	filter: grayscale(1);
+	transition: filter 0.3s;
+	pointer-events: none;
+}
+
+.grid__item:hover .box__img:not(.box__img--original) {
+	filter: grayscale(0);
+}*/
+/*.box__shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -1rem;
+	left: -1rem;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==);
+}*/
+/*.box__deco {
+	font-size: 6rem;
+	line-height: 1;
+	font-weight: bold;
+	position: absolute;
+	bottom: -4rem;
+	right: -4rem;
+	display: none;
+}
+
+.box__content {
+	position: absolute;
+	max-width: 195px;
+	font-size: 0.9rem;
+	text-align: right;
+	display: none;
+}
+
+.box__content strong {
+	white-space: nowrap;
+}*/
 
 /*# sourceMappingURL=style.css.map */
