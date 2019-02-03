@@ -25,7 +25,112 @@ $(function () {
 
     }
 
+    //header buttons
+    var offset1 = $("#header__btn1").offset();
 
+    $("#header__btn1").mouseenter(function (e) {
+
+        var cursorX = e.pageX;
+        var cursorY = e.pageY;
+
+        var clickX = cursorX - offset1.left;
+        var clickY = cursorY - offset1.top;
+
+        $("#btn1Clr1").css({
+            left: clickX,
+            top: clickY,
+            opacity: 1
+        });
+        $("#btn1Clr2").css({
+            left: clickX,
+            top: clickY,
+            opacity: .5
+        });
+
+        $("#btn1Clr1").animate({
+            height: '300px',
+            width: '300px'
+        }, 800);
+        $("#btn1Clr2").animate({
+            height: '600px',
+            width: '600px'
+        }, 800);
+    });
+
+    $("#header__btn1").mouseleave(function (e) {
+        var cursorX = e.pageX;
+        var cursorY = e.pageY;
+
+        var leaveX = cursorX - offset1.left;
+        var leaveY = cursorY - offset1.top;
+
+        $("#btn1Clr1").animate({
+            height: '0px',
+            width: '0px',
+            left: leaveX,
+            top: leaveY
+        }, 600);
+        $("#btn1Clr2").animate({
+            height: '0px',
+            width: '0px',
+            left: leaveX,
+            top: leaveY
+        }, 600);
+    });
+
+
+
+    var offset2 = $("#header__btn2").offset();
+
+    $("#header__btn2").mouseenter(function (e) {
+
+        var cursorX = e.pageX;
+        var cursorY = e.pageY;
+
+        var clickX = cursorX - offset2.left;
+        var clickY = cursorY - offset2.top;
+
+        $("#btn2Clr1").css({
+            left: clickX,
+            top: clickY,
+            opacity: 1
+        });
+        $("#btn2Clr2").css({
+            left: clickX,
+            top: clickY,
+            opacity: .5
+        });
+
+        $("#btn2Clr1").animate({
+            height: '300px',
+            width: '300px'
+        }, 800);
+        $("#btn2Clr2").animate({
+            height: '600px',
+            width: '600px'
+        }, 800);
+    });
+
+    $("#header__btn2").mouseleave(function (e) {
+        var cursorX = e.pageX;
+        var cursorY = e.pageY;
+
+        var leaveX = cursorX - offset2.left;
+        var leaveY = cursorY - offset2.top;
+
+        $("#btn2Clr1").animate({
+            height: '0px',
+            width: '0px',
+            left: leaveX,
+            top: leaveY
+        }, 600);
+        $("#btn2Clr2").animate({
+            height: '0px',
+            width: '0px',
+            left: leaveX,
+            top: leaveY
+        }, 600);
+    });
 
     //Page Transition
 
@@ -34,17 +139,21 @@ $(function () {
     var sectionAbout = $('.section__about');
     var sectionStructure = $('.section__structure');
     var sectionProbems = $('.section__problems');
+    var sectionFaq = $('.section__faq');
+    var sectionFooter = $('.section__footer');
 
     var pageNo = 0;
     var pages = {
         "0": sectionAbout,
         "1": sectionStructure,
-        "2": sectionProbems
+        "2": sectionProbems,
+        "3": sectionFaq,
+        "4": sectionFooter
     };
 
     $('.navigation__down').click(function () {
 
-        if (pageNo < 3 && pageNo > -1) {
+        if (pageNo < 5 && pageNo > -1) {
             pages[pageNo].addClass('goUp');
             pageNo++;
         }
@@ -54,7 +163,7 @@ $(function () {
     });
 
     $('.navigation__up').click(function () {
-        if (pageNo < 4 && pageNo > 0) {
+        if (pageNo < 6 && pageNo > 0) {
             pages[pageNo - 1].removeClass('goUp');
             pageNo--;
         }
@@ -66,12 +175,12 @@ $(function () {
 
     $(window).keydown(function (event) {
         if (event.keyCode == 40) {
-            if (pageNo < 3 && pageNo > -1) {
+            if (pageNo < 5 && pageNo > -1) {
                 pages[pageNo].addClass('goUp');
                 pageNo++;
             }
         } else if (event.keyCode == 38) {
-            if (pageNo < 4 && pageNo > 0) {
+            if (pageNo < 6 && pageNo > 0) {
                 pages[pageNo - 1].removeClass('goUp');
                 pageNo--;
             }
@@ -199,8 +308,8 @@ $(function () {
             'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0)'
         });
     });
-    
-    
+
+
     var obC1 = $('#obC1');
     var obC2 = $('#obC2');
     var obC3 = $('#obC3');
@@ -249,8 +358,8 @@ $(function () {
             'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0)'
         });
     });
-    
-    
+
+
     var obD1 = $('#obD1');
     var obD2 = $('#obD2');
     var obD3 = $('#obD3');
@@ -300,4 +409,24 @@ $(function () {
         });
     });
 
+    //footer anime
+
+
+
+    var pathEls = document.querySelectorAll('polyline');
+    for (var i = 0; i < pathEls.length; i++) {
+        var pathEl = pathEls[i];
+        var offset = anime.setDashoffset(pathEl);
+        pathEl.setAttribute('stroke-dashoffset', offset);
+        anime({
+            targets: pathEl,
+            strokeDashoffset: [offset, 0],
+            duration: anime.random(1000, 3000),
+            delay: anime.random(0, 2000),
+            loop: true,
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+            autoplay: true
+        });
+    }
 });

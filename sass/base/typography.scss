@@ -6,3 +6,15 @@ font-family: 'Poiret One', cursive;
 font-family: 'Montserrat Alternates', sans-serif;
 font-family: 'Major Mono Display', monospace;
 font-family: 'Raleway', sans-serif;*/
+
+.highlighter {
+    position: relative;
+    background: linear-gradient(to right, orange, #ff2700) bottom repeat-x;
+    background-size: 3px 3px;
+    transition:.3s;
+    &:hover {
+        color: #fff;
+        background-size: 100% 100%;
+     
+    }
+}
