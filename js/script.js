@@ -206,6 +206,12 @@ $(function () {
 
     //fill div with clone of real header
     $("h1.glitched-3").clone().appendTo(".glitch-window-3");
+    
+
+    $("#headingFaq").append("<div class='glitch-window-4'></div>");
+
+    //fill div with clone of real header
+    $("h1.glitched-4").clone().appendTo(".glitch-window-4");
 
 
     //Sturcture Page Effects

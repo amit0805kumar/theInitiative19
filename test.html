@@ -3,11 +3,8 @@
 <head>
     <title>Pieces.js</title>
     <style>
-      
-        .my-canvas {
-            width: 200px;
-            height: 70px;
-            cursor: pointer;
+        svg{
+            width: 500px;
         }
 
     </style>
@@ -16,60 +13,9 @@
 
 <body>
 
-    <canvas class="my-canvas"></canvas>
-
-
-
-    <script src='js/anime.min.js'></script>
-    <script src='js/pieces.min.js'></script>
-    
-    <button id="btn">click</button>
-
-    <script>
-          
-        $(function() {
-            
-            
-         
-
-
-                        var options = {
-
-                            canvas: '.my-canvas',
-                            text: 'Know More...',
-                            color: 'white',
-                                  fontSize: 25,
-
-                            backgroundColor: '#1A237E',
-                            extraSpacing: {
-                                extraX: 100,
-                                extraY: 70
-                            },
-                            piecesWidth: function() {
-                                return Pieces.random(5, 25);
-                            },
-                            ty: function() {
-                                return Pieces.random(-100, 500);
-                            },
-                            angle: -45,
-                        piecesSpacing: 2,
-                            padding:'22 18 22 20',
-
-                        };
-            $('#btn').click(function(){
-            
-            });
-
-                    var myPieces = new Pieces(options);
-                        myPieces.showPieces();
-                      
-                        
-
-           
-
-        });
-
-    </script>
+    <svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 22,108 22,236 C 22,236 64,216 103,212 142,208 184,212 184,212 L 200,229 216,212 C 216,212 258,207 297,212 336,217 378,236 378,236 L 378,108 C 378,108 318,83.7 200,83.7 82,83.7 22,108 22,108 Z"/>
+								</svg>
 </body>
 
 </html>

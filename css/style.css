@@ -342,6 +342,65 @@ font-family: 'Raleway', sans-serif;*/
           transform: translateY(-100%);
   height: 100vh; }
 
+/* line 78, ../sass/pages/home.scss */
+.glitch-window-1, .glitch-window-2, .glitch-window-3, .glitch-window-4 {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 100%;
+  color: #222222;
+  text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
+  overflow: hidden;
+  -webkit-animation: crt-me 2500ms infinite linear alternate-reverse;
+          animation: crt-me 2500ms infinite linear alternate-reverse; }
+
+@-webkit-keyframes crt-me {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0); }
+  10% {
+    clip: rect(112px, 9999px, 76px, 0); }
+  20% {
+    clip: rect(85px, 9999px, 77px, 0); }
+  30% {
+    clip: rect(17px, 9999px, 97px, 0); }
+  40% {
+    clip: rect(64px, 9999px, 98px, 0); }
+  50% {
+    clip: rect(61px, 9999px, 85px, 0); }
+  60% {
+    clip: rect(99px, 9999px, 114px, 0); }
+  70% {
+    clip: rect(14px, 9999px, 115px, 0); }
+  80% {
+    clip: rect(98px, 9999px, 129px, 0); }
+  90% {
+    clip: rect(43px, 9999px, 96px, 0); }
+  100% {
+    clip: rect(12px, 9999px, 64px, 0); } }
+
+@keyframes crt-me {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0); }
+  10% {
+    clip: rect(112px, 9999px, 76px, 0); }
+  20% {
+    clip: rect(85px, 9999px, 77px, 0); }
+  30% {
+    clip: rect(17px, 9999px, 97px, 0); }
+  40% {
+    clip: rect(64px, 9999px, 98px, 0); }
+  50% {
+    clip: rect(61px, 9999px, 85px, 0); }
+  60% {
+    clip: rect(99px, 9999px, 114px, 0); }
+  70% {
+    clip: rect(14px, 9999px, 115px, 0); }
+  80% {
+    clip: rect(98px, 9999px, 129px, 0); }
+  90% {
+    clip: rect(43px, 9999px, 96px, 0); }
+  100% {
+    clip: rect(12px, 9999px, 64px, 0); } }
 /* line 1, ../sass/layout/header.scss */
 .header {
   overflow: hidden;
@@ -872,66 +931,7 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-transform: translateY(-0.5px);
             transform: translateY(-0.5px); }
 
-/* line 1, ../sass/components/about.scss */
-.glitch-window-1, .glitch-window-2, .glitch-window-3 {
-  position: absolute;
-  top: 0;
-  left: -2px;
-  width: 100%;
-  color: #222222;
-  text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
-  overflow: hidden;
-  -webkit-animation: crt-me 2500ms infinite linear alternate-reverse;
-          animation: crt-me 2500ms infinite linear alternate-reverse; }
-
-@-webkit-keyframes crt-me {
-  0% {
-    clip: rect(31px, 9999px, 94px, 0); }
-  10% {
-    clip: rect(112px, 9999px, 76px, 0); }
-  20% {
-    clip: rect(85px, 9999px, 77px, 0); }
-  30% {
-    clip: rect(17px, 9999px, 97px, 0); }
-  40% {
-    clip: rect(64px, 9999px, 98px, 0); }
-  50% {
-    clip: rect(61px, 9999px, 85px, 0); }
-  60% {
-    clip: rect(99px, 9999px, 114px, 0); }
-  70% {
-    clip: rect(14px, 9999px, 115px, 0); }
-  80% {
-    clip: rect(98px, 9999px, 129px, 0); }
-  90% {
-    clip: rect(43px, 9999px, 96px, 0); }
-  100% {
-    clip: rect(12px, 9999px, 64px, 0); } }
-
-@keyframes crt-me {
-  0% {
-    clip: rect(31px, 9999px, 94px, 0); }
-  10% {
-    clip: rect(112px, 9999px, 76px, 0); }
-  20% {
-    clip: rect(85px, 9999px, 77px, 0); }
-  30% {
-    clip: rect(17px, 9999px, 97px, 0); }
-  40% {
-    clip: rect(64px, 9999px, 98px, 0); }
-  50% {
-    clip: rect(61px, 9999px, 85px, 0); }
-  60% {
-    clip: rect(99px, 9999px, 114px, 0); }
-  70% {
-    clip: rect(14px, 9999px, 115px, 0); }
-  80% {
-    clip: rect(98px, 9999px, 129px, 0); }
-  90% {
-    clip: rect(43px, 9999px, 96px, 0); }
-  100% {
-    clip: rect(12px, 9999px, 64px, 0); } }
-/* line 53, ../sass/components/about.scss */
+/* line 5, ../sass/components/about.scss */
 .about__part {
   background: #f5f0c6;
   position: absolute;
@@ -939,39 +939,39 @@ font-family: 'Raleway', sans-serif;*/
   left: 0;
   width: 100%;
   height: 20vh; }
-/* line 61, ../sass/components/about.scss */
+/* line 13, ../sass/components/about.scss */
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 7rem; }
-/* line 65, ../sass/components/about.scss */
+/* line 17, ../sass/components/about.scss */
 .about__text {
   width: 50%;
   z-index: 13;
   padding: 2rem;
   display: inline-block; }
-  /* line 71, ../sass/components/about.scss */
+  /* line 23, ../sass/components/about.scss */
   .about__text-heading {
     font-size: 5rem;
     font-family: 'Muli', sans-serif;
     font-weight: 900;
     margin-bottom: 3rem; }
-  /* line 78, ../sass/components/about.scss */
+  /* line 30, ../sass/components/about.scss */
   .about__text-para {
     font-size: 1.5rem;
     font-family: 'Roboto Mono', monospace;
     width: 100%;
     padding: 1rem;
     color: black; }
-    /* line 84, ../sass/components/about.scss */
+    /* line 36, ../sass/components/about.scss */
     .about__text-para a {
       color: black; }
-/* line 90, ../sass/components/about.scss */
+/* line 42, ../sass/components/about.scss */
 .about__logo {
   position: relative;
   width: 50%; }
-  /* line 93, ../sass/components/about.scss */
+  /* line 45, ../sass/components/about.scss */
   .about__logo img {
     position: absolute;
     top: 50%;
@@ -1244,5 +1244,282 @@ font-family: 'Raleway', sans-serif;*/
 .box__content strong {
 	white-space: nowrap;
 }*/
+/* line 1, ../sass/components/faq.scss */
+.faq__grid {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 8, ../sass/components/faq.scss */
+  .faq__grid__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+/* line 19, ../sass/components/faq.scss */
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+/* line 24, ../sass/components/faq.scss */
+.tooltip__trigger {
+  cursor: pointer;
+  position: relative;
+  font-size: 2rem; }
+
+/* line 30, ../sass/components/faq.scss */
+.tooltip__trigger-text {
+  display: block;
+  padding: 0.85em;
+  pointer-events: none; }
+
+/* line 36, ../sass/components/faq.scss */
+.tooltip__base {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  margin-left: -150px;
+  width: 40rem;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  pointer-events: none; }
+
+/* line 50, ../sass/components/faq.scss */
+.tooltip__content {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70rem;
+  padding: 0 1em;
+  opacity: 0;
+  font-size: 1.3rem; }
+
+/* line 63, ../sass/components/faq.scss */
+.tooltip__shape,
+.tooltip__deco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 72, ../sass/components/faq.scss */
+.tooltip__shape {
+  fill: rgba(20, 21, 20, 0.22); }
+
+/* Indivudual styles */
+/* Cora */
+/* line 79, ../sass/components/faq.scss */
+.tooltip--cora .tooltip__base {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%; }
+
+/* line 83, ../sass/components/faq.scss */
+.tooltip--cora .tooltip__content {
+  margin-bottom: 1em; }
+
+/* Smaug */
+/* line 88, ../sass/components/faq.scss */
+.tooltip--smaug .tooltip__base {
+  bottom: -0.5em;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%; }
+
+/* line 93, ../sass/components/faq.scss */
+.tooltip--smaug .tooltip__content {
+  padding: 0; }
+
+/* Dori */
+/* line 98, ../sass/components/faq.scss */
+.tooltip--dori .tooltip__base {
+  bottom: -0.5em; }
+
+/* line 102, ../sass/components/faq.scss */
+.tooltip--dori .tooltip__content {
+  margin: 0 0 1em; }
+
+/* Walda */
+/* line 107, ../sass/components/faq.scss */
+.tooltip--walda .tooltip__base {
+  left: 0;
+  bottom: 0.75em;
+  position: absolute;
+  margin-left: 0;
+  width: 250px;
+  height: 100px;
+  padding: 0 0 0 0.25em; }
+
+/* line 117, ../sass/components/faq.scss */
+.tooltip--walda .tooltip__trigger-text {
+  padding: 1em; }
+
+/* line 121, ../sass/components/faq.scss */
+.tooltip--walda .tooltip__content {
+  margin: 0;
+  width: 70rem;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2;
+  opacity: 1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+/* line 133, ../sass/components/faq.scss */
+.tooltip--walda .tooltip__letters span {
+  display: inline-block;
+  white-space: pre;
+  opacity: 0; }
+
+/* line 139, ../sass/components/faq.scss */
+.tooltip--walda .tooltip__deco {
+  width: 4px;
+  height: 100%;
+  background: #141514;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%; }
+
+/* Gram */
+/* line 147, ../sass/components/faq.scss */
+.tooltip--gram .tooltip__base {
+  bottom: -0.5em; }
+
+/* Narvi */
+/* line 152, ../sass/components/faq.scss */
+.path-narvi {
+  -webkit-transform-origin: 200px 150px;
+          transform-origin: 200px 150px; }
+
+/* line 156, ../sass/components/faq.scss */
+.tooltip--narvi .tooltip__content {
+  width: 80%; }
+
+/* Amras */
+/* line 161, ../sass/components/faq.scss */
+.path-amras-1 {
+  -webkit-transform-origin: 115px 111px;
+          transform-origin: 115px 111px; }
+
+/* line 165, ../sass/components/faq.scss */
+.path-amras-2 {
+  -webkit-transform-origin: 204px 107px;
+          transform-origin: 204px 107px; }
+
+/* line 169, ../sass/components/faq.scss */
+.path-amras-3 {
+  -webkit-transform-origin: 279px 66px;
+          transform-origin: 279px 66px; }
+
+/* line 173, ../sass/components/faq.scss */
+.path-amras-4 {
+  -webkit-transform-origin: 320px 99px;
+          transform-origin: 320px 99px; }
+
+/* line 177, ../sass/components/faq.scss */
+.path-amras-5 {
+  -webkit-transform-origin: 137px 199px;
+          transform-origin: 137px 199px; }
+
+/* line 181, ../sass/components/faq.scss */
+.path-amras-6 {
+  -webkit-transform-origin: 222px 217px;
+          transform-origin: 222px 217px; }
+
+/* line 185, ../sass/components/faq.scss */
+.path-amras-7 {
+  -webkit-transform-origin: 80px 168px;
+          transform-origin: 80px 168px; }
+
+/* line 189, ../sass/components/faq.scss */
+.path-amras-8 {
+  -webkit-transform-origin: 296px 211px;
+          transform-origin: 296px 211px; }
+
+/* line 193, ../sass/components/faq.scss */
+.path-amras-9 {
+  -webkit-transform-origin: 310px 167px;
+          transform-origin: 310px 167px; }
+
+/* Hador */
+/* line 198, ../sass/components/faq.scss */
+.tooltip--hador .tooltip__base {
+  bottom: 2.25em;
+  margin-left: -115px; }
+
+/* line 203, ../sass/components/faq.scss */
+.path-hador-1 {
+  -webkit-transform-origin: 148px 284px;
+          transform-origin: 148px 284px; }
+
+/* line 207, ../sass/components/faq.scss */
+.path-hador-2 {
+  -webkit-transform-origin: 160px 268px;
+          transform-origin: 160px 268px; }
+
+/* line 211, ../sass/components/faq.scss */
+.path-hador-3 {
+  -webkit-transform-origin: 171px 246px;
+          transform-origin: 171px 246px; }
+
+/* line 215, ../sass/components/faq.scss */
+.path-hador-4 {
+  -webkit-transform-origin: 200px 120px;
+          transform-origin: 200px 120px; }
+
+/* line 219, ../sass/components/faq.scss */
+.tooltip--hador .tooltip__content {
+  width: 50%;
+  margin: 0 0 2.5em; }
+
+/* Malva */
+/* line 225, ../sass/components/faq.scss */
+.tooltip--malva .tooltip__content {
+  width: 50%; }
+
+/* Sadoc */
+/* line 230, ../sass/components/faq.scss */
+.tooltip--sadoc .tooltip__base {
+  bottom: 2.5em; }
+
+/* line 234, ../sass/components/faq.scss */
+.tooltip--sadoc .tooltip__shape path {
+  fill: #1d1f1e;
+  stroke: #5a5c5b;
+  stroke-width: 3px; }
 
 /*# sourceMappingURL=style.css.map */
