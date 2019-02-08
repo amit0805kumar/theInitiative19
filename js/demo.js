@@ -260,24 +260,31 @@
         });
     }
 
+    var pindex = 0;
+
     // Select the prev item: hide current items, update indexes, and show the new current item
     function prevItem() {
-          var myPieces = new Pieces(options);
-    myPieces.showPieces();
+        var myPieces = new Pieces(options);
+        myPieces.showPieces();
         hideItems();
         currentIndex = currentIndex > 0 ? currentIndex - 1 : slidesLength - 1;
         updateIndexes();
         showItems();
+        pindex--;
+        console.log(pindex);
     }
 
     // Select the next item: hide current items, update indexes, and show the new current item
     function nextItem() {
-          var myPieces = new Pieces(options);
-    myPieces.showPieces();
+        var myPieces = new Pieces(options);
+        myPieces.showPieces();
         hideItems();
         currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
         updateIndexes();
         showItems();
+        pindex++;
+        console.log(pindex);
+
     }
 
     // Handle `resize` event
@@ -330,6 +337,41 @@
         padding: '22 18 22 20',
 
     };
+
     var myPieces = new Pieces(options);
     myPieces.showPieces();
+
+    $(".my-canvas").click(function () {
+
+        var index = Math.abs(pindex % 6);
+        if (index === 0) {
+            $('#p1').addClass('scaleProblems');
+        } else if (index === 1) {
+            $('#p2').addClass('scaleProblems');
+        } else if (index === 2) {
+            $('#p3').addClass('scaleProblems');
+        } else if (index === 3) {
+            $('#p4').addClass('scaleProblems');
+        } else if (index === 4) {
+            $('#p5').addClass('scaleProblems');
+        } else if (index === 5) {
+            $('#p6').addClass('scaleProblems');
+        }
+
+
+    });
+
+    $('.problems__close').click(function () {
+        $('.problems__details').removeClass('scaleProblems');
+    });
+    
+    $('#coord').click(function(){
+        $('.problems__abstract').addClass('moveAbs');
+        $('.problems__coordinators').addClass('moveCoordinators');
+    });
+    $('.problems__coordinators__close').click(function(){
+        $('.problems__abstract').removeClass('moveAbs');
+        $('.problems__coordinators').removeClass('moveCoordinators');
+    });
+
 })();

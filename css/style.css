@@ -1000,32 +1000,32 @@ font-family: 'Raleway', sans-serif;*/
   padding: 0; }
 
 /* Make all slides absolutes and hide them */
-/* line 22, ../sass/components/slider.scss */
+/* line 23, ../sass/components/slider.scss */
 .js .pieces-slider__slide {
   position: absolute;
   right: 100%; }
 
 /* Define image dimensions and also hide them */
-/* line 28, ../sass/components/slider.scss */
+/* line 30, ../sass/components/slider.scss */
 .pieces-slider__image {
   max-width: 600px;
   max-height: 400px; }
 
-/* line 33, ../sass/components/slider.scss */
+/* line 35, ../sass/components/slider.scss */
 .js .pieces-slider__image {
   visibility: hidden; }
 
 /* Hide the titles */
-/* line 38, ../sass/components/slider.scss */
+/* line 41, ../sass/components/slider.scss */
 .js .pieces-slider__text {
   text-indent: -9999px; }
 
-/* line 41, ../sass/components/slider.scss */
+/* line 45, ../sass/components/slider.scss */
 .js .pieces-slider__text-2 {
   text-indent: -9999px; }
 
 /* Canvas with viewport width and height */
-/* line 45, ../sass/components/slider.scss */
+/* line 51, ../sass/components/slider.scss */
 .js .pieces-slider__canvas {
   position: relative;
   width: 100%;
@@ -1034,14 +1034,14 @@ font-family: 'Raleway', sans-serif;*/
   transition: 0.2s opacity; }
 
 /* Class for when we resize */
-/* line 54, ../sass/components/slider.scss */
+/* line 61, ../sass/components/slider.scss */
 .pieces-slider__canvas--hidden {
   opacity: 0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
 
 /* Navigation buttons */
-/* line 60, ../sass/components/slider.scss */
+/* line 68, ../sass/components/slider.scss */
 .pieces-slider__button {
   position: absolute;
   left: 0;
@@ -1058,35 +1058,273 @@ font-family: 'Raleway', sans-serif;*/
   -webkit-transition: 0.1s background-color;
   transition: 0.1s background-color; }
 
-/* line 76, ../sass/components/slider.scss */
+/* line 84, ../sass/components/slider.scss */
 .pieces-slider__button:hover {
   background: #5f3abf; }
 
-/* line 80, ../sass/components/slider.scss */
+/* line 88, ../sass/components/slider.scss */
 .pieces-slider__button--next {
   left: auto;
   right: 0; }
 
 /* Hide the buttons when no JS */
-/* line 86, ../sass/components/slider.scss */
+/* line 95, ../sass/components/slider.scss */
 .no-js .pieces-slider__button {
   display: none; }
 
 /* Media queries with styles for smaller screens */
 @media screen and (max-width: 720px) {
-  /* line 92, ../sass/components/slider.scss */
+  /* line 102, ../sass/components/slider.scss */
   .pieces-slider__image {
     max-width: 300px; } }
 @media screen and (max-width: 55em) {
-  /* line 98, ../sass/components/slider.scss */
+  /* line 108, ../sass/components/slider.scss */
   .pieces-slider__canvas {
     width: 100vw;
     height: 100vw; }
 
-  /* line 102, ../sass/components/slider.scss */
+  /* line 112, ../sass/components/slider.scss */
   .pieces-slider__button {
     width: 60px;
     height: 60px; } }
+/* line 120, ../sass/components/slider.scss */
+.problems__close {
+  position: absolute;
+  top: 1rem;
+  left: 86%;
+  cursor: pointer; }
+  /* line 125, ../sass/components/slider.scss */
+  .problems__close img {
+    width: 4rem;
+    height: 4rem; }
+/* line 132, ../sass/components/slider.scss */
+.problems__details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 35;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 0; }
+/* line 147, ../sass/components/slider.scss */
+.problems__heading {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 4rem;
+  color: #000;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  text-align: center; }
+/* line 156, ../sass/components/slider.scss */
+.problems__tag {
+  font-size: 2rem;
+  font-family: 'Poiret One', cursive;
+  clear: #222121;
+  text-align: center; }
+/* line 163, ../sass/components/slider.scss */
+.problems__main {
+  width: 80%;
+  height: 70vh;
+  background-image: url("../images/aadhaar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem 0;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 175, ../sass/components/slider.scss */
+  .problems__main__left {
+    width: 30%; }
+  /* line 178, ../sass/components/slider.scss */
+  .problems__main__right {
+    width: 70%;
+    background: rgba(0, 0, 0, 0.58);
+    position: relative; }
+/* line 184, ../sass/components/slider.scss */
+.problems__abstract {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  /* line 192, ../sass/components/slider.scss */
+  .problems__abstract__heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    margin: 1rem 0; }
+  /* line 199, ../sass/components/slider.scss */
+  .problems__abstract__paras {
+    padding: 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
+    /* line 205, ../sass/components/slider.scss */
+    .problems__abstract__paras-part {
+      padding: 0 1rem; }
+  /* line 210, ../sass/components/slider.scss */
+  .problems__abstract__buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 4rem; }
+  /* line 217, ../sass/components/slider.scss */
+  .problems__abstract__btn {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    height: 3rem;
+    color: #fff;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-weight: 200;
+    border: 1px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 233, ../sass/components/slider.scss */
+    .problems__abstract__btn:hover {
+      background: #fff;
+      color: #000;
+      font-weight: 400; }
+/* line 244, ../sass/components/slider.scss */
+.problems__coordinators {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 10rem;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden; }
+  /* line 257, ../sass/components/slider.scss */
+  .problems__coordinators__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+    height: 50%; }
+  /* line 264, ../sass/components/slider.scss */
+  .problems__coordinators__box {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+    /* line 272, ../sass/components/slider.scss */
+    .problems__coordinators__box:hover > div {
+      top: 80%; }
+  /* line 276, ../sass/components/slider.scss */
+  .problems__coordinators__close {
+    position: absolute;
+    left: 93%;
+    top: 50%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    /* line 283, ../sass/components/slider.scss */
+    .problems__coordinators__close img {
+      width: 4rem;
+      height: 4rem; }
+  /* line 290, ../sass/components/slider.scss */
+  .problems__coordinators__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 297, ../sass/components/slider.scss */
+  .problems__coordinators__details {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.62);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 20%;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align-last: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 1rem;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+
+/* line 319, ../sass/components/slider.scss */
+.scaleProblems {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
+/* line 324, ../sass/components/slider.scss */
+.moveAbs {
+  left: -10rem;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9); }
+
+/* line 330, ../sass/components/slider.scss */
+.moveCoordinators {
+  left: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
 /* line 2, ../sass/components/structure.scss */
 .structure__content {
   position: relative;
