@@ -188,6 +188,7 @@
           left: 0;
           width: 100%;
           height: 100%;
+          z-index: 36;
           transition: all .3s;
           &__heading {
               text-align: center;
@@ -240,7 +241,60 @@
 
 
       }
+      &__tasks {
+          position: absolute;
+          background: rgb(244, 227, 232);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 10rem;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          transform: scale(0.9);
+          transition: all .2s;
+          overflow: hidden;
+          z-index: 35;
+          
+          &__grid{
+              width: 90%;
+              height: 50%;
+              display: flex;
+          }
+          
+                 &__close {
+              position: absolute;
+              left: 93%;
+              top: 50%;
+              cursor: pointer;
+              transform: translateY(-50%);
 
+              img {
+                  width: 4rem;
+                  height: 4rem;
+
+              }
+
+          }
+      }
+      &__task{
+          width: 50%;
+          height: 100%;
+          padding: 1.5rem;
+          padding-top: 5rem;
+          overflow: hidden;
+          &-code{
+              font-size: 2rem;
+          }
+          &-desc{
+              font-size: 1.4rem;
+          }
+          &-marks{
+              color: #de173a;
+              font-size: 1.3rem;
+          }
+         
+      }
       &__coordinators {
           position: absolute;
           background: rgba(255, 255, 255, 1);
@@ -254,6 +308,7 @@
           transform: scale(0.9);
           transition: all .2s;
           overflow: hidden;
+          z-index: 35;
           &__grid {
               display: flex;
               justify-content: space-around;
@@ -267,7 +322,7 @@
               margin: 1rem;
               overflow: hidden;
               position: relative;
-            cursor: pointer;
+              cursor: pointer;
               transition: all .2s;
               &:hover > div {
                   top: 80%;
@@ -279,22 +334,22 @@
               top: 50%;
               cursor: pointer;
               transform: translateY(-50%);
-            
+
               img {
                   width: 4rem;
                   height: 4rem;
 
               }
-              
+
           }
-          &__img{
+          &__img {
               width: 100%;
               height: 100%;
               position: absolute;
               top: 0;
               left: 0;
           }
-          &__details{
+          &__details {
               overflow: hidden;
               background: rgba(0, 0, 0, 0.62);
               width: 100%;
@@ -309,8 +364,8 @@
               flex-direction: column;
               justify-content: space-around;
               padding-left: 1rem;
-                   transition: all .2s;
-              
+              transition: all .2s;
+
           }
       }
 
@@ -325,10 +380,13 @@
       left: -10rem;
       opacity: 0;
       transform: scale(0.9);
+      z-index: 35;
   }
 
-  .moveCoordinators {
+  .moveCoordinators,.moveTasks {
       left: 0;
       opacity: 1;
       transform: scale(1);
+      z-index: 37;
   }
+

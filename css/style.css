@@ -1155,16 +1155,17 @@ font-family: 'Raleway', sans-serif;*/
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 36;
   -webkit-transition: all .3s;
   transition: all .3s; }
-  /* line 192, ../sass/components/slider.scss */
+  /* line 193, ../sass/components/slider.scss */
   .problems__abstract__heading {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
     margin: 1rem 0; }
-  /* line 199, ../sass/components/slider.scss */
+  /* line 200, ../sass/components/slider.scss */
   .problems__abstract__paras {
     padding: 0 1rem;
     display: -webkit-box;
@@ -1173,10 +1174,10 @@ font-family: 'Raleway', sans-serif;*/
     color: #fff;
     font-size: 1.5rem;
     line-height: 2.5rem; }
-    /* line 205, ../sass/components/slider.scss */
+    /* line 206, ../sass/components/slider.scss */
     .problems__abstract__paras-part {
       padding: 0 1rem; }
-  /* line 210, ../sass/components/slider.scss */
+  /* line 211, ../sass/components/slider.scss */
   .problems__abstract__buttons {
     width: 100%;
     display: -webkit-box;
@@ -1185,7 +1186,7 @@ font-family: 'Raleway', sans-serif;*/
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-top: 4rem; }
-  /* line 217, ../sass/components/slider.scss */
+  /* line 218, ../sass/components/slider.scss */
   .problems__abstract__btn {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -1210,12 +1211,70 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    /* line 233, ../sass/components/slider.scss */
+    /* line 234, ../sass/components/slider.scss */
     .problems__abstract__btn:hover {
       background: #fff;
       color: #000;
       font-weight: 400; }
 /* line 244, ../sass/components/slider.scss */
+.problems__tasks {
+  position: absolute;
+  background: #f4e3e8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 10rem;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  z-index: 35; }
+  /* line 259, ../sass/components/slider.scss */
+  .problems__tasks__grid {
+    width: 90%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  /* line 265, ../sass/components/slider.scss */
+  .problems__tasks__close {
+    position: absolute;
+    left: 93%;
+    top: 50%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    /* line 272, ../sass/components/slider.scss */
+    .problems__tasks__close img {
+      width: 4rem;
+      height: 4rem; }
+/* line 280, ../sass/components/slider.scss */
+.problems__task {
+  width: 50%;
+  height: 100%;
+  padding: 1.5rem;
+  padding-top: 5rem;
+  overflow: hidden; }
+  /* line 286, ../sass/components/slider.scss */
+  .problems__task-code {
+    font-size: 2rem; }
+  /* line 289, ../sass/components/slider.scss */
+  .problems__task-desc {
+    font-size: 1.4rem; }
+  /* line 292, ../sass/components/slider.scss */
+  .problems__task-marks {
+    color: #de173a;
+    font-size: 1.3rem; }
+/* line 298, ../sass/components/slider.scss */
 .problems__coordinators {
   position: absolute;
   background: white;
@@ -1235,8 +1294,9 @@ font-family: 'Raleway', sans-serif;*/
           transform: scale(0.9);
   -webkit-transition: all .2s;
   transition: all .2s;
-  overflow: hidden; }
-  /* line 257, ../sass/components/slider.scss */
+  overflow: hidden;
+  z-index: 35; }
+  /* line 312, ../sass/components/slider.scss */
   .problems__coordinators__grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1248,7 +1308,7 @@ font-family: 'Raleway', sans-serif;*/
             align-items: center;
     width: 95%;
     height: 50%; }
-  /* line 264, ../sass/components/slider.scss */
+  /* line 319, ../sass/components/slider.scss */
   .problems__coordinators__box {
     width: 20rem;
     height: 20rem;
@@ -1258,10 +1318,10 @@ font-family: 'Raleway', sans-serif;*/
     cursor: pointer;
     -webkit-transition: all .2s;
     transition: all .2s; }
-    /* line 272, ../sass/components/slider.scss */
+    /* line 327, ../sass/components/slider.scss */
     .problems__coordinators__box:hover > div {
       top: 80%; }
-  /* line 276, ../sass/components/slider.scss */
+  /* line 331, ../sass/components/slider.scss */
   .problems__coordinators__close {
     position: absolute;
     left: 93%;
@@ -1269,18 +1329,18 @@ font-family: 'Raleway', sans-serif;*/
     cursor: pointer;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-    /* line 283, ../sass/components/slider.scss */
+    /* line 338, ../sass/components/slider.scss */
     .problems__coordinators__close img {
       width: 4rem;
       height: 4rem; }
-  /* line 290, ../sass/components/slider.scss */
+  /* line 345, ../sass/components/slider.scss */
   .problems__coordinators__img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0; }
-  /* line 297, ../sass/components/slider.scss */
+  /* line 352, ../sass/components/slider.scss */
   .problems__coordinators__details {
     overflow: hidden;
     background: rgba(0, 0, 0, 0.62);
@@ -1305,25 +1365,27 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-transition: all .2s;
     transition: all .2s; }
 
-/* line 319, ../sass/components/slider.scss */
+/* line 374, ../sass/components/slider.scss */
 .scaleProblems {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
-/* line 324, ../sass/components/slider.scss */
+/* line 379, ../sass/components/slider.scss */
 .moveAbs {
   left: -10rem;
   opacity: 0;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9); }
+          transform: scale(0.9);
+  z-index: 35; }
 
-/* line 330, ../sass/components/slider.scss */
-.moveCoordinators {
+/* line 386, ../sass/components/slider.scss */
+.moveCoordinators, .moveTasks {
   left: 0;
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  z-index: 37; }
 
 /* line 2, ../sass/components/structure.scss */
 .structure__content {

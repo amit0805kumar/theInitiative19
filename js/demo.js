@@ -373,5 +373,12 @@
         $('.problems__abstract').removeClass('moveAbs');
         $('.problems__coordinators').removeClass('moveCoordinators');
     });
-
+    $('#task').click(function(){
+         $('.problems__abstract').addClass('moveAbs');
+        $('.problems__tasks').addClass('moveTasks');
+    });
+ $('.problems__tasks__close').click(function(){
+        $('.problems__abstract').removeClass('moveAbs');
+        $('.problems__tasks').removeClass('moveTasks');
+    });
 })();
