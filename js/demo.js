@@ -341,6 +341,10 @@
     var myPieces = new Pieces(options);
     myPieces.showPieces();
 
+    
+    //ProblemDetailManagement
+    
+    
     $(".my-canvas").click(function () {
 
         var index = Math.abs(pindex % 6);
@@ -364,21 +368,43 @@
     $('.problems__close').click(function () {
         $('.problems__details').removeClass('scaleProblems');
     });
-    
-    $('#coord').click(function(){
-        $('.problems__abstract').addClass('moveAbs');
-        $('.problems__coordinators').addClass('moveCoordinators');
-    });
-    $('.problems__coordinators__close').click(function(){
-        $('.problems__abstract').removeClass('moveAbs');
-        $('.problems__coordinators').removeClass('moveCoordinators');
-    });
-    $('#task').click(function(){
-         $('.problems__abstract').addClass('moveAbs');
-        $('.problems__tasks').addClass('moveTasks');
-    });
- $('.problems__tasks__close').click(function(){
-        $('.problems__abstract').removeClass('moveAbs');
-        $('.problems__tasks').removeClass('moveTasks');
-    });
+
+
+    var topic1 = $('#topic1');
+    var topic2 = $('#topic2');
+    var topic3 = $('#topic3');
+    var topic4 = $('#topic4');
+    var topic5 = $('#topic5');
+    var topic6 = $('#topic6');
+
+
+    problemsController(topic1);
+    problemsController(topic2);
+    problemsController(topic3);
+    problemsController(topic4);
+    problemsController(topic5);
+    problemsController(topic6);
+
+
+    function problemsController(obj) {
+        obj.find('#coord').click(function () {
+            obj.find('.problems__abstract').addClass('moveAbs');
+            obj.find('.problems__coordinators').addClass('moveCoordinators');
+        });
+        obj.find('#task').click(function () {
+            obj.find('.problems__abstract').addClass('moveAbs');
+            obj.find('.problems__tasks').addClass('moveTasks');
+        });
+        obj.find('.problems__coordinators__close').click(function () {
+            obj.find('.problems__abstract').removeClass('moveAbs');
+            obj.find('.problems__coordinators').removeClass('moveCoordinators');
+        });
+        obj.find('.problems__tasks__close').click(function () {
+            obj.find('.problems__abstract').removeClass('moveAbs');
+            obj.find('.problems__tasks').removeClass('moveTasks');
+        });
+
+    }
+
+
 })();
