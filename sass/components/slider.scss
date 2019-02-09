@@ -141,6 +141,29 @@
           transform: scale(0);
           transition: all .3s ease-in-out;
           opacity: 0;
+        
+           #pbMain1{
+           background-image: url('../images/topics/medicb.jpg');
+      }
+              #pbMain2{
+           background-image: url('../images/topics/mentalb.png');
+      }
+
+              #pbMain3{
+           background-image: url('../images/topics/npab.jpg');
+      }
+
+              #pbMain4{
+           background-image: url('../images/topics/plasticb.jpeg');
+      }
+
+              #pbMain5{
+           background-image: url('../images/topics/statueb.jpg');
+      }
+
+              #pbMain6{
+           background-image: url('../images/topics/farmer.jpg');
+      }
 
 
       }
@@ -160,11 +183,12 @@
           clear: #222121;
           text-align: center;
       }
+     
       &__main {
 
           width: 80%;
           height: 70vh;
-          background-image: url('../images/aadhaar.jpg');
+//          background-image: url('../images/aadhaar.jpg');
           background-repeat: no-repeat;
           background-size: cover;
           margin: 2rem 0;
