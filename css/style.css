@@ -1277,45 +1277,60 @@ font-family: 'Raleway', sans-serif;*/
   position: absolute;
   left: 75%;
   top: 60%; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 1, ../sass/components/slider.scss */
+    .my-canvas {
+      left: 60%;
+      top: 65%; } }
+  @media only screen and (max-width: 37.5em) {
+    /* line 1, ../sass/components/slider.scss */
+    .my-canvas {
+      left: 50%;
+      top: 75%; } }
+  @media only screen and (max-width: 25em) {
+    /* line 1, ../sass/components/slider.scss */
+    .my-canvas {
+      left: 30%;
+      top: 75%; } }
 
-/* line 10, ../sass/components/slider.scss */
+/* line 25, ../sass/components/slider.scss */
 .pieces-slider {
   position: relative;
   text-align: center;
   padding: 8rem 0;
   width: 100%; }
 
-/* line 17, ../sass/components/slider.scss */
+/* line 32, ../sass/components/slider.scss */
 .js .pieces-slider {
   padding: 0; }
 
 /* Make all slides absolutes and hide them */
-/* line 23, ../sass/components/slider.scss */
+/* line 38, ../sass/components/slider.scss */
 .js .pieces-slider__slide {
   position: absolute;
   right: 100%; }
 
 /* Define image dimensions and also hide them */
-/* line 30, ../sass/components/slider.scss */
+/* line 45, ../sass/components/slider.scss */
 .pieces-slider__image {
   max-width: 600px;
   max-height: 400px; }
 
-/* line 35, ../sass/components/slider.scss */
+/* line 50, ../sass/components/slider.scss */
 .js .pieces-slider__image {
   visibility: hidden; }
 
 /* Hide the titles */
-/* line 41, ../sass/components/slider.scss */
+/* line 56, ../sass/components/slider.scss */
 .js .pieces-slider__text {
   text-indent: -9999px; }
 
-/* line 45, ../sass/components/slider.scss */
+/* line 60, ../sass/components/slider.scss */
 .js .pieces-slider__text-2 {
   text-indent: -9999px; }
 
 /* Canvas with viewport width and height */
-/* line 51, ../sass/components/slider.scss */
+/* line 66, ../sass/components/slider.scss */
 .js .pieces-slider__canvas {
   position: relative;
   width: 100%;
@@ -1324,14 +1339,14 @@ font-family: 'Raleway', sans-serif;*/
   transition: 0.2s opacity; }
 
 /* Class for when we resize */
-/* line 61, ../sass/components/slider.scss */
+/* line 76, ../sass/components/slider.scss */
 .pieces-slider__canvas--hidden {
   opacity: 0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
 
 /* Navigation buttons */
-/* line 68, ../sass/components/slider.scss */
+/* line 83, ../sass/components/slider.scss */
 .pieces-slider__button {
   position: absolute;
   left: 0;
@@ -1348,46 +1363,69 @@ font-family: 'Raleway', sans-serif;*/
   -webkit-transition: 0.1s background-color;
   transition: 0.1s background-color; }
 
-/* line 84, ../sass/components/slider.scss */
+/* line 99, ../sass/components/slider.scss */
 .pieces-slider__button:hover {
   background: #5f3abf; }
 
-/* line 88, ../sass/components/slider.scss */
+/* line 103, ../sass/components/slider.scss */
 .pieces-slider__button--next {
   left: auto;
   right: 0; }
 
 /* Hide the buttons when no JS */
-/* line 95, ../sass/components/slider.scss */
+/* line 110, ../sass/components/slider.scss */
 .no-js .pieces-slider__button {
   display: none; }
 
 /* Media queries with styles for smaller screens */
 @media screen and (max-width: 720px) {
-  /* line 102, ../sass/components/slider.scss */
+  /* line 117, ../sass/components/slider.scss */
   .pieces-slider__image {
     max-width: 300px; } }
 @media screen and (max-width: 55em) {
-  /* line 108, ../sass/components/slider.scss */
+  /* line 123, ../sass/components/slider.scss */
   .pieces-slider__canvas {
     width: 100vw;
     height: 100vw; }
 
-  /* line 112, ../sass/components/slider.scss */
+  /* line 128, ../sass/components/slider.scss */
   .pieces-slider__button {
     width: 60px;
     height: 60px; } }
-/* line 120, ../sass/components/slider.scss */
+/* line 136, ../sass/components/slider.scss */
 .problems__close {
   position: absolute;
   top: 1rem;
   left: 86%;
-  cursor: pointer; }
-  /* line 125, ../sass/components/slider.scss */
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 40; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 136, ../sass/components/slider.scss */
+    .problems__close {
+      top: 7.5rem;
+      left: 95%; } }
+  @media only screen and (max-width: 37.5em) {
+    /* line 136, ../sass/components/slider.scss */
+    .problems__close {
+      top: 6rem;
+      left: 93%; } }
+  @media only screen and (max-width: 25em) {
+    /* line 136, ../sass/components/slider.scss */
+    .problems__close {
+      top: 6rem;
+      left: 90%; } }
+  /* line 160, ../sass/components/slider.scss */
   .problems__close img {
     width: 4rem;
     height: 4rem; }
-/* line 132, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 160, ../sass/components/slider.scss */
+      .problems__close img {
+        width: 3rem;
+        height: 3rem; } }
+/* line 173, ../sass/components/slider.scss */
 .problems__details {
   position: absolute;
   left: 0;
@@ -1395,31 +1433,31 @@ font-family: 'Raleway', sans-serif;*/
   width: 100%;
   height: 100vh;
   background: #fff;
-  z-index: 35;
+  z-index: 40;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 0; }
-  /* line 145, ../sass/components/slider.scss */
+  /* line 186, ../sass/components/slider.scss */
   .problems__details #pbMain1 {
     background-image: url("../images/topics/medicb.jpg"); }
-  /* line 148, ../sass/components/slider.scss */
+  /* line 190, ../sass/components/slider.scss */
   .problems__details #pbMain2 {
     background-image: url("../images/topics/mentalb.png"); }
-  /* line 152, ../sass/components/slider.scss */
+  /* line 194, ../sass/components/slider.scss */
   .problems__details #pbMain3 {
     background-image: url("../images/topics/npab.jpg"); }
-  /* line 156, ../sass/components/slider.scss */
+  /* line 198, ../sass/components/slider.scss */
   .problems__details #pbMain4 {
     background-image: url("../images/topics/plasticb.jpeg"); }
-  /* line 160, ../sass/components/slider.scss */
+  /* line 202, ../sass/components/slider.scss */
   .problems__details #pbMain5 {
     background-image: url("../images/topics/statueb.jpg"); }
-  /* line 164, ../sass/components/slider.scss */
+  /* line 206, ../sass/components/slider.scss */
   .problems__details #pbMain6 {
     background-image: url("../images/topics/farmer.jpg"); }
-/* line 170, ../sass/components/slider.scss */
+/* line 213, ../sass/components/slider.scss */
 .problems__heading {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 4rem;
@@ -1427,13 +1465,23 @@ font-family: 'Raleway', sans-serif;*/
   text-transform: uppercase;
   margin: 1rem auto;
   text-align: center; }
-/* line 179, ../sass/components/slider.scss */
+  @media only screen and (max-width: 56.25em) {
+    /* line 213, ../sass/components/slider.scss */
+    .problems__heading {
+      font-size: 3rem;
+      margin: .5rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    /* line 213, ../sass/components/slider.scss */
+    .problems__heading {
+      font-size: 2rem;
+      margin: .3rem auto; } }
+/* line 232, ../sass/components/slider.scss */
 .problems__tag {
   font-size: 2rem;
   font-family: 'Poiret One', cursive;
   clear: #222121;
   text-align: center; }
-/* line 187, ../sass/components/slider.scss */
+/* line 240, ../sass/components/slider.scss */
 .problems__main {
   width: 80%;
   height: 70vh;
@@ -1446,15 +1494,31 @@ font-family: 'Raleway', sans-serif;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  /* line 199, ../sass/components/slider.scss */
+  @media only screen and (max-width: 56.25em) {
+    /* line 240, ../sass/components/slider.scss */
+    .problems__main {
+      height: 80vh; } }
+  @media only screen and (max-width: 56.25em) {
+    /* line 240, ../sass/components/slider.scss */
+    .problems__main {
+      width: 95%; } }
+  /* line 260, ../sass/components/slider.scss */
   .problems__main__left {
     width: 30%; }
-  /* line 202, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 260, ../sass/components/slider.scss */
+      .problems__main__left {
+        width: 0%; } }
+  /* line 268, ../sass/components/slider.scss */
   .problems__main__right {
     width: 70%;
     background: rgba(0, 0, 0, 0.58);
     position: relative; }
-/* line 208, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 268, ../sass/components/slider.scss */
+      .problems__main__right {
+        width: 100%; } }
+/* line 279, ../sass/components/slider.scss */
 .problems__abstract {
   overflow: hidden;
   position: absolute;
@@ -1465,14 +1529,19 @@ font-family: 'Raleway', sans-serif;*/
   z-index: 36;
   -webkit-transition: all .3s;
   transition: all .3s; }
-  /* line 217, ../sass/components/slider.scss */
+  /* line 289, ../sass/components/slider.scss */
   .problems__abstract__heading {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
     margin: 1rem 0; }
-  /* line 224, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 289, ../sass/components/slider.scss */
+      .problems__abstract__heading {
+        font-size: 2rem;
+        margin: .5rem 0; } }
+  /* line 302, ../sass/components/slider.scss */
   .problems__abstract__paras {
     padding: 0 1rem;
     display: -webkit-box;
@@ -1481,10 +1550,27 @@ font-family: 'Raleway', sans-serif;*/
     color: #fff;
     font-size: 1.5rem;
     line-height: 2.5rem; }
-    /* line 230, ../sass/components/slider.scss */
+    /* line 309, ../sass/components/slider.scss */
     .problems__abstract__paras-part {
       padding: 0 1rem; }
-  /* line 235, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 302, ../sass/components/slider.scss */
+      .problems__abstract__paras {
+        font-size: 1.4rem;
+        line-height: 2.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      /* line 302, ../sass/components/slider.scss */
+      .problems__abstract__paras {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 0 .8rem; } }
+    @media only screen and (max-width: 25em) {
+      /* line 302, ../sass/components/slider.scss */
+      .problems__abstract__paras {
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 0 .5rem; } }
+  /* line 331, ../sass/components/slider.scss */
   .problems__abstract__buttons {
     width: 100%;
     display: -webkit-box;
@@ -1493,7 +1579,15 @@ font-family: 'Raleway', sans-serif;*/
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-top: 4rem; }
-  /* line 242, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 331, ../sass/components/slider.scss */
+      .problems__abstract__buttons {
+        margin-top: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      /* line 331, ../sass/components/slider.scss */
+      .problems__abstract__buttons {
+        margin-top: 1.2rem; } }
+  /* line 347, ../sass/components/slider.scss */
   .problems__abstract__btn {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -1518,12 +1612,29 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    /* line 258, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 347, ../sass/components/slider.scss */
+      .problems__abstract__btn {
+        padding: .6rem 1rem;
+        font-size: 1.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      /* line 347, ../sass/components/slider.scss */
+      .problems__abstract__btn {
+        padding: .2rem .5rem;
+        font-size: 1rem;
+        letter-spacing: 2px; } }
+    @media only screen and (max-width: 25em) {
+      /* line 347, ../sass/components/slider.scss */
+      .problems__abstract__btn {
+        padding: .1rem .3rem;
+        font-size: .7rem;
+        letter-spacing: 1px; } }
+    /* line 381, ../sass/components/slider.scss */
     .problems__abstract__btn:hover {
       background: #fff;
       color: #000;
       font-weight: 400; }
-/* line 268, ../sass/components/slider.scss */
+/* line 392, ../sass/components/slider.scss */
 .problems__tasks {
   position: absolute;
   background: #fff;
@@ -1545,14 +1656,14 @@ font-family: 'Raleway', sans-serif;*/
   transition: all .2s;
   overflow: hidden;
   z-index: 35; }
-  /* line 283, ../sass/components/slider.scss */
+  /* line 407, ../sass/components/slider.scss */
   .problems__tasks__grid {
     width: 90%;
     height: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  /* line 289, ../sass/components/slider.scss */
+  /* line 413, ../sass/components/slider.scss */
   .problems__tasks__close {
     position: absolute;
     left: 93%;
@@ -1560,28 +1671,49 @@ font-family: 'Raleway', sans-serif;*/
     cursor: pointer;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-    /* line 296, ../sass/components/slider.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 413, ../sass/components/slider.scss */
+      .problems__tasks__close {
+        left: 87%; } }
+    /* line 424, ../sass/components/slider.scss */
     .problems__tasks__close img {
       width: 4rem;
       height: 4rem; }
-/* line 304, ../sass/components/slider.scss */
+      @media only screen and (max-width: 37.5em) {
+        /* line 424, ../sass/components/slider.scss */
+        .problems__tasks__close img {
+          width: 3rem;
+          height: 3rem; } }
+/* line 437, ../sass/components/slider.scss */
 .problems__task {
   width: 50%;
   height: 100%;
   padding: 1.5rem;
   padding-top: 5rem;
   overflow: hidden; }
-  /* line 310, ../sass/components/slider.scss */
+  @media only screen and (max-width: 25em) {
+    /* line 437, ../sass/components/slider.scss */
+    .problems__task {
+      height: 80%; } }
+  /* line 448, ../sass/components/slider.scss */
   .problems__task-code {
     font-size: 2rem; }
-  /* line 313, ../sass/components/slider.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 448, ../sass/components/slider.scss */
+      .problems__task-code {
+        font-size: 1.5rem; } }
+  /* line 456, ../sass/components/slider.scss */
   .problems__task-desc {
     font-size: 1.4rem; }
-  /* line 316, ../sass/components/slider.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 456, ../sass/components/slider.scss */
+      .problems__task-desc {
+        font-size: 1.1rem; } }
+  /* line 464, ../sass/components/slider.scss */
   .problems__task-marks {
     color: #de173a;
     font-size: 1.3rem; }
-/* line 322, ../sass/components/slider.scss */
+/* line 471, ../sass/components/slider.scss */
 .problems__coordinators {
   position: absolute;
   background: white;
@@ -1603,7 +1735,7 @@ font-family: 'Raleway', sans-serif;*/
   transition: all .2s;
   overflow: hidden;
   z-index: 35; }
-  /* line 336, ../sass/components/slider.scss */
+  /* line 486, ../sass/components/slider.scss */
   .problems__coordinators__grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1615,7 +1747,7 @@ font-family: 'Raleway', sans-serif;*/
             align-items: center;
     width: 95%;
     height: 50%; }
-  /* line 343, ../sass/components/slider.scss */
+  /* line 494, ../sass/components/slider.scss */
   .problems__coordinators__box {
     width: 20rem;
     height: 20rem;
@@ -1625,10 +1757,31 @@ font-family: 'Raleway', sans-serif;*/
     cursor: pointer;
     -webkit-transition: all .2s;
     transition: all .2s; }
-    /* line 351, ../sass/components/slider.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 494, ../sass/components/slider.scss */
+      .problems__coordinators__box {
+        width: 18rem;
+        height: 18rem; } }
+    @media only screen and (max-width: 37.5em) {
+      /* line 494, ../sass/components/slider.scss */
+      .problems__coordinators__box {
+        width: 15rem;
+        height: 15rem;
+        margin: .5rem; } }
+    @media only screen and (max-width: 25em) {
+      /* line 494, ../sass/components/slider.scss */
+      .problems__coordinators__box {
+        width: 11rem;
+        height: 11rem;
+        margin: .2rem; } }
+    /* line 519, ../sass/components/slider.scss */
     .problems__coordinators__box:hover > div {
       top: 80%; }
-  /* line 355, ../sass/components/slider.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 522, ../sass/components/slider.scss */
+      .problems__coordinators__box div {
+        font-size: 1rem; } }
+  /* line 529, ../sass/components/slider.scss */
   .problems__coordinators__close {
     position: absolute;
     left: 93%;
@@ -1636,18 +1789,18 @@ font-family: 'Raleway', sans-serif;*/
     cursor: pointer;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-    /* line 362, ../sass/components/slider.scss */
+    /* line 536, ../sass/components/slider.scss */
     .problems__coordinators__close img {
       width: 4rem;
       height: 4rem; }
-  /* line 369, ../sass/components/slider.scss */
+  /* line 544, ../sass/components/slider.scss */
   .problems__coordinators__img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0; }
-  /* line 376, ../sass/components/slider.scss */
+  /* line 552, ../sass/components/slider.scss */
   .problems__coordinators__details {
     overflow: hidden;
     background: rgba(0, 0, 0, 0.62);
@@ -1672,13 +1825,13 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-transition: all .2s;
     transition: all .2s; }
 
-/* line 398, ../sass/components/slider.scss */
+/* line 574, ../sass/components/slider.scss */
 .scaleProblems {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
-/* line 403, ../sass/components/slider.scss */
+/* line 579, ../sass/components/slider.scss */
 .moveAbs {
   left: -10rem;
   opacity: 0;
@@ -1686,8 +1839,9 @@ font-family: 'Raleway', sans-serif;*/
           transform: scale(0.9);
   z-index: 35; }
 
-/* line 410, ../sass/components/slider.scss */
-.moveCoordinators, .moveTasks {
+/* line 586, ../sass/components/slider.scss */
+.moveCoordinators,
+.moveTasks {
   left: 0;
   opacity: 1;
   -webkit-transform: scale(1);
