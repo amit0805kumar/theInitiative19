@@ -269,7 +269,11 @@ font-family: 'Raleway', sans-serif;*/
   background-size: 3px 3px;
   -webkit-transition: .3s;
   transition: .3s; }
-  /* line 15, ../sass/base/typography.scss */
+  @media only screen and (max-width: 37.5em) {
+    /* line 10, ../sass/base/typography.scss */
+    .highlighter {
+      background-size: 1.5px 1.5px; } }
+  /* line 18, ../sass/base/typography.scss */
   .highlighter:hover {
     color: #fff;
     background-size: 100% 100%; }
@@ -949,12 +953,27 @@ font-family: 'Raleway', sans-serif;*/
     position: fixed;
     width: 50px;
     height: 20px;
-    top: 30px;
-    right: 30px; }
-    /* line 15, ../sass/layout/navigation.scss */
+    top: 50px;
+    right: 50px; }
+    @media only screen and (max-width: 56.25em) {
+      /* line 8, ../sass/layout/navigation.scss */
+      .nav__button {
+        top: 45px;
+        right: 45px; } }
+    @media only screen and (max-width: 37.5em) {
+      /* line 8, ../sass/layout/navigation.scss */
+      .nav__button {
+        top: 33px;
+        right: 33px; } }
+    @media only screen and (max-width: 25em) {
+      /* line 8, ../sass/layout/navigation.scss */
+      .nav__button {
+        top: 30px;
+        right: 2px; } }
+    /* line 31, ../sass/layout/navigation.scss */
     .nav__button:hover {
       cursor: pointer; }
-    /* line 21, ../sass/layout/navigation.scss */
+    /* line 37, ../sass/layout/navigation.scss */
     .nav__button span {
       width: 35px;
       background: #000;
@@ -963,7 +982,7 @@ font-family: 'Raleway', sans-serif;*/
       border-radius: 100px;
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-      /* line 29, ../sass/layout/navigation.scss */
+      /* line 45, ../sass/layout/navigation.scss */
       .nav__button span::after {
         content: '';
         position: absolute;
@@ -974,7 +993,7 @@ font-family: 'Raleway', sans-serif;*/
         left: 0;
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
-      /* line 40, ../sass/layout/navigation.scss */
+      /* line 56, ../sass/layout/navigation.scss */
       .nav__button span::before {
         content: '';
         position: absolute;
@@ -985,13 +1004,13 @@ font-family: 'Raleway', sans-serif;*/
         left: 0;
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
-    /* line 53, ../sass/layout/navigation.scss */
+    /* line 69, ../sass/layout/navigation.scss */
     .nav__button-hover:hover > span {
       width: 32px; }
-    /* line 56, ../sass/layout/navigation.scss */
+    /* line 73, ../sass/layout/navigation.scss */
     .nav__button-hover:hover > span::after {
       width: 29px; }
-  /* line 61, ../sass/layout/navigation.scss */
+  /* line 78, ../sass/layout/navigation.scss */
   .nav__menu {
     width: 100%;
     height: 0;
@@ -1002,7 +1021,21 @@ font-family: 'Raleway', sans-serif;*/
     overflow: hidden;
     -webkit-transition: all 0.8s cubic-bezier(0.7, 0, 0.3, 1);
     transition: all 0.8s cubic-bezier(0.7, 0, 0.3, 1); }
-    /* line 71, ../sass/layout/navigation.scss */
+    /* line 89, ../sass/layout/navigation.scss */
+    .nav__menu img {
+      position: absolute; }
+    /* line 93, ../sass/layout/navigation.scss */
+    .nav__menu #navbg1 {
+      left: 0;
+      width: 30rem; }
+    /* line 98, ../sass/layout/navigation.scss */
+    .nav__menu #navbg2 {
+      bottom: -3rem;
+      width: 100%; }
+    /* line 103, ../sass/layout/navigation.scss */
+    .nav__menu #navbg3 {
+      width: 100%; }
+    /* line 107, ../sass/layout/navigation.scss */
     .nav__menu__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1016,7 +1049,6 @@ font-family: 'Raleway', sans-serif;*/
               align-items: baseline;
       color: #fff;
       text-transform: uppercase;
-      font-size: 20px;
       font-family: sans-serif;
       position: absolute;
       left: 70%;
@@ -1027,11 +1059,11 @@ font-family: 'Raleway', sans-serif;*/
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
       letter-spacing: 3px; }
-      /* line 87, ../sass/layout/navigation.scss */
+      /* line 123, ../sass/layout/navigation.scss */
       .nav__menu__list a {
         margin: 20px 0;
         color: #fff; }
-      /* line 92, ../sass/layout/navigation.scss */
+      /* line 128, ../sass/layout/navigation.scss */
       .nav__menu__list .nav__link {
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0)));
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%);
@@ -1041,14 +1073,18 @@ font-family: 'Raleway', sans-serif;*/
         text-decoration: none;
         font-family: 'Roboto Mono', monospace;
         font-size: 3rem; }
-        /* line 100, ../sass/layout/navigation.scss */
+        @media only screen and (max-width: 37.5em) {
+          /* line 128, ../sass/layout/navigation.scss */
+          .nav__menu__list .nav__link {
+            font-size: 2rem; } }
+        /* line 141, ../sass/layout/navigation.scss */
         .nav__menu__list .nav__link:hover {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
           background-position: 0 100%;
           background-size: auto 6px;
           background-repeat: repeat-x;
           text-decoration: none; }
-  /* line 112, ../sass/layout/navigation.scss */
+  /* line 153, ../sass/layout/navigation.scss */
   .nav__icons {
     position: absolute;
     bottom: 1rem;
@@ -1057,51 +1093,69 @@ font-family: 'Raleway', sans-serif;*/
             transform: translateX(-50%);
     -webkit-transition: all .3s;
     transition: all .3s; }
-    /* line 118, ../sass/layout/navigation.scss */
+    /* line 160, ../sass/layout/navigation.scss */
     .nav__icons .nav__social__links:hover > svg {
       fill: #f28c01; }
-  /* line 123, ../sass/layout/navigation.scss */
+  /* line 166, ../sass/layout/navigation.scss */
   .nav__social__links {
     margin: 0 2rem; }
-    /* line 125, ../sass/layout/navigation.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 166, ../sass/layout/navigation.scss */
+      .nav__social__links {
+        margin: 0 1.2rem; } }
+    @media only screen and (max-width: 25em) {
+      /* line 166, ../sass/layout/navigation.scss */
+      .nav__social__links {
+        margin: 0 1rem; } }
+    /* line 177, ../sass/layout/navigation.scss */
     .nav__social__links .svgIcons {
       width: 3rem;
       height: 3rem;
       -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
       fill: #fff; }
-  /* line 134, ../sass/layout/navigation.scss */
+      @media only screen and (max-width: 37.5em) {
+        /* line 177, ../sass/layout/navigation.scss */
+        .nav__social__links .svgIcons {
+          width: 2rem;
+          height: 2rem; } }
+  /* line 190, ../sass/layout/navigation.scss */
   .nav__csi {
-    font-size: 15rem;
+    font-size: 10rem;
     color: rgba(60, 59, 59, 0.53);
     -webkit-transform: translateY(-8rem);
             transform: translateY(-8rem);
     opacity: 0;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    font-family: 'Poiret One', cursive; }
+    font-family: 'Poiret One', cursive;
+    margin-top: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      /* line 190, ../sass/layout/navigation.scss */
+      .nav__csi {
+        font-size: 5rem; } }
 
-/* line 147, ../sass/layout/navigation.scss */
+/* line 207, ../sass/layout/navigation.scss */
 .expandNav {
   height: 100vh; }
 
-/* line 152, ../sass/layout/navigation.scss */
+/* line 212, ../sass/layout/navigation.scss */
 .showNavEl {
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
   opacity: 1; }
 
-/* line 158, ../sass/layout/navigation.scss */
+/* line 218, ../sass/layout/navigation.scss */
 .nav_button-animation span {
   background: #fff; }
-  /* line 161, ../sass/layout/navigation.scss */
+  /* line 221, ../sass/layout/navigation.scss */
   .nav_button-animation span::after {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg);
     background: #fff;
     width: 13px;
     left: 25px; }
-  /* line 167, ../sass/layout/navigation.scss */
+  /* line 228, ../sass/layout/navigation.scss */
   .nav_button-animation span::before {
     -webkit-transform: rotate(50deg);
             transform: rotate(50deg);
@@ -1109,7 +1163,7 @@ font-family: 'Raleway', sans-serif;*/
     width: 13px;
     left: 25px; }
 
-/* line 179, ../sass/layout/navigation.scss */
+/* line 240, ../sass/layout/navigation.scss */
 .navigation__buttons {
   position: fixed;
   z-index: 100;
@@ -1125,16 +1179,16 @@ font-family: 'Raleway', sans-serif;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-/* line 191, ../sass/layout/navigation.scss */
+/* line 253, ../sass/layout/navigation.scss */
 .navigation__up, .navigation__down {
   -webkit-transition: all .3s;
   transition: all .3s; }
-  /* line 194, ../sass/layout/navigation.scss */
+  /* line 257, ../sass/layout/navigation.scss */
   .navigation__up:hover, .navigation__down:hover {
     cursor: pointer;
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px); }
-  /* line 198, ../sass/layout/navigation.scss */
+  /* line 262, ../sass/layout/navigation.scss */
   .navigation__up:active, .navigation__down:active {
     -webkit-transform: translateY(-0.5px);
             transform: translateY(-0.5px); }
@@ -1771,9 +1825,9 @@ font-family: 'Raleway', sans-serif;*/
     @media only screen and (max-width: 25em) {
       /* line 494, ../sass/components/slider.scss */
       .problems__coordinators__box {
-        width: 11rem;
-        height: 11rem;
-        margin: .2rem; } }
+        width: 10rem;
+        height: 10rem;
+        margin: .1rem; } }
     /* line 519, ../sass/components/slider.scss */
     .problems__coordinators__box:hover > div {
       top: 80%; }

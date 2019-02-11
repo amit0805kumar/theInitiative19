@@ -12,9 +12,12 @@ font-family: 'Raleway', sans-serif;*/
     background: linear-gradient(to right, orange, #ff2700) bottom repeat-x;
     background-size: 3px 3px;
     transition:.3s;
+    @include respond(phone){
+        background-size: 1.5px 1.5px;
+    }
     &:hover {
         color: #fff;
         background-size: 100% 100%;
      
-    }
+    } 
 }
