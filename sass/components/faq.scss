@@ -1,59 +1,144 @@
-.faq__grid{
+.faq__grid {
     position: absolute;
     width: 100%;
     height: 80vh;
     top: 10%;
     display: flex;
- justify-content: space-around;
-    &__section{
+    justify-content: space-around;
+
+    @include respond(phone) {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__section {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 40%;
         height: 100%;
         justify-content: space-around;
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 }
-.faq{
-    &__container{
+
+.faq {
+    &__container {
         width: 100%;
         position: relative;
         margin-left: 10rem;
         margin-right: 2rem;
+
+        @include respond(tab-port) {
+
+            margin-right: 4rem;
+        }
+
+        @include respond(phone) {
+
+            margin-left: 7rem;
+        }
+        @include respond(400) {
+
+            margin-left: 9rem;
+        }
     }
-    &__heading{
+
+    &__heading {
         font-size: 2rem;
-        font-family: 'Poppins',sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 600;
-        
+
+        @include respond(tab-land) {
+
+            font-size: 1.8rem;
+        }
+
+        @include respond(phone) {
+
+            font-size: 1.2rem;
+        }
+         @include respond(400) {
+
+            font-size: 1rem;
+        }
+
     }
-    &__content{
+
+    &__content {
         font-size: 1.5rem;
-        font-family: 'Poppins',sans-serif;
+        font-family: 'Poppins', sans-serif;
+
+        @include respond(tab-land) {
+
+            font-size: 1.2rem;
+        }
+
+        @include respond(phone) {
+
+            font-size: 1rem;
+        }
+         @include respond(400) {
+
+            font-size: .7rem;
+        }
     }
-    &__border{
+
+    &__border {
         position: relative;
-        &__line{
+
+        &__line {
             background-color: #000;
             width: 103%;
             height: .3rem;
             position: absolute;
             left: -2rem;
+
+            @include respond(tab-land) {
+
+                height: .1rem;
+            }
         }
-        img{
+
+        img {
             width: 5rem;
             height: 5rem;
             position: absolute;
             left: -5.5rem;
             top: -2.5rem;
+
+            @include respond(tab-port) {
+                width: 4rem;
+                height: 4rem;
+                top: -2.2rem;
+            }
+
+            @include respond(phone) {
+                left: -4.5rem;
+            }
         }
-        &__num{
+
+        &__num {
             position: absolute;
             color: #fff;
             font-size: 3rem;
             left: -3.9rem;
-            top:-1.8rem;
+            top: -1.8rem;
+
+            @include respond(tab-port) {
+
+                font-size: 2rem;
+                left: -4rem;
+                top: -1.2rem;
+            }
+
+            @include respond(phone) {
+                left: -2.9rem;
+            }
         }
     }
 }
-

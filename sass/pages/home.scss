@@ -15,6 +15,15 @@
         width: 100%;
         transform: translateY(-50%);
         font-family: 'Major Mono Display', monospace;
+             @include respond(tab-port) {
+               
+                 top: 5rem;
+            }
+            
+             @include respond(400) {
+              
+              top: 4rem;
+            }
         h1 {
             font-size: 5rem;
             color: #222222;
@@ -22,6 +31,19 @@
             margin-top: 0;
             text-transform: uppercase;
             font-weight: 900;
+            
+             @include respond(tab-port) {
+                font-size: 4rem;
+                 top: 5rem;
+            }
+             @include respond(phone) {
+                font-size: 3rem;
+                 top: 3rem
+            }
+             @include respond(400) {
+                font-size: 2rem;
+                 top: 1rem;
+            }
         }
     }
 

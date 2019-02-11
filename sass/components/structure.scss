@@ -4,6 +4,19 @@
         width: 100%;
         margin-top: 15%;
         display: flex;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+            justify-content: space-around;
+
+        }
+
+        @include respond(phone) {
+            margin-top: 15%;
+        }
+
     }
 
     &__grid {
@@ -14,13 +27,31 @@
         justify-content: space-around;
         position: relative;
 
+        @include respond(tab-land) {
+            width: 100%;
+            justify-content: space-around;
+
+        }
+
         &__item {
             position: relative;
             width: 25rem;
             height: 25rem;
             margin: 2rem;
-   
+
+            @include respond(tab-land) {
+                width: 20rem;
+                height: 20rem;
+                
+                @include respond(400) {
+                    width: 18rem;
+                    height: 18rem;
+                }
+
+            }
+
         }
+
         &__box {
             position: relative;
             width: 100%;
@@ -33,15 +64,27 @@
                 top: -1rem;
                 left: -1rem;
                 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==);
-                
+
             }
 
             &__img {
                 position: absolute;
                 width: 23rem;
                 height: 23rem;
-               
+
+                @include respond(tab-land) {
+                    width: 18rem;
+                    height: 18rem;
+
+                }
+
+                @include respond(400) {
+                    width: 14rem;
+                    height: 14rem;
+                }
+
             }
+
             &__title {
                 color: black;
                 text-transform: uppercase;
@@ -53,9 +96,19 @@
                 white-space: nowrap;
                 letter-spacing: 0.15rem;
                 font-family: 'Anton', sans-serif;
-               
+
+                @include respond(tab-land) {
+                    font-size: 2rem;
+
+                }
+                
+                @include respond(400) {
+                   font-size: 1.8rem
+                }
+
             }
-            &__num{
+
+            &__num {
                 color: black;
                 position: absolute;
                 top: -3rem;
@@ -65,14 +118,25 @@
                 font-size: 3rem;
                 border-radius: 300px;
                 transition: all .2s;
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                    border: .2rem solid black;
+                    padding: 1rem .6rem;
+                    left: 40%;
+                }
             }
-            &__content{
+
+            &__content {
                 color: black;
                 position: absolute;
                 font-size: 1.3rem;
                 top: 100%;
                 left: 0;
-              
+                  @include respond(400) {
+                   font-size: 1rem
+                }
+
             }
         }
 
