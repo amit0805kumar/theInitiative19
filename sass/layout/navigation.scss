@@ -98,11 +98,12 @@
         #navbg2 {
             bottom: -3rem;
             width: 100%;
-            @include respond(phone){
+
+            @include respond(phone) {
                 bottom: -1rem;
             }
         }
-        
+
 
         #navbg3 {
             width: 100%;
@@ -124,10 +125,10 @@
             transition: all .4s ease-in-out;
             letter-spacing: 3px;
 
-            @include respond(phone){
+            @include respond(phone) {
                 left: 65%;
             }
-            
+
             a {
                 margin: 20px 0;
                 color: #fff;
@@ -249,11 +250,11 @@
     &__buttons {
         position: fixed;
         z-index: 100;
-        width: 6rem;
+        width: 7rem;
         height: 2rem;
         left: 50%;
         transform: translateX(-50%);
-        top: 90%;
+        top: 80%;
         display: flex;
         justify-content: space-between;
 
@@ -262,6 +263,14 @@
     &__up,
     &__down {
         transition: all .3s;
+        width: 3rem;
+
+        svg {
+            width: 100%;
+            fill: orange;
+            color: orange;
+        }
+
         &:hover {
             cursor: pointer;
             transform: translateY(-2px);
@@ -270,15 +279,47 @@
         &:active {
             transform: translateY(-.5px);
         }
-        
-       
+
+
     }
-    &__up{
-        border-bottom: 1px solid #fff; 
+
+    &__up {
+        svg {
+            fill: orange;
+            transform: rotate(180deg);
+        }
     }
-    &__down{
-        border-top: 1px solid #fff; 
+
+    &__down {
+        svg {
+            fill: orange;
+        }
     }
+
+  
 
 
 }
+
+
+  .updownanime {
+        animation: updown 2s ease-in-out inifnite !important;
+    }
+
+    @keyframes updown {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(.5rem);
+        }
+
+        50% {
+            transform: translateY(-.5rem);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
