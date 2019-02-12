@@ -672,7 +672,11 @@ font-family: 'Raleway', sans-serif;*/
           /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             left: 58.5%; } }
-      /* line 230, ../sass/layout/header.scss */
+        @media only screen and (max-width: 21.875em) {
+          /* line 208, ../sass/layout/header.scss */
+          .header__text__team__text::after {
+            left: 59.5%; } }
+      /* line 233, ../sass/layout/header.scss */
       .header__text__team__text::before {
         content: '';
         position: absolute;
@@ -683,10 +687,10 @@ font-family: 'Raleway', sans-serif;*/
         background: black;
         width: 8rem; }
         @media only screen and (max-width: 37.5em) {
-          /* line 230, ../sass/layout/header.scss */
+          /* line 233, ../sass/layout/header.scss */
           .header__text__team__text::before {
             width: 4rem; } }
-  /* line 246, ../sass/layout/header.scss */
+  /* line 249, ../sass/layout/header.scss */
   .header__social {
     position: absolute;
     width: 4rem;
@@ -706,38 +710,38 @@ font-family: 'Raleway', sans-serif;*/
         -ms-flex-pack: justify;
             justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
-      /* line 246, ../sass/layout/header.scss */
+      /* line 249, ../sass/layout/header.scss */
       .header__social {
         left: 92%;
         top: 45%; } }
     @media only screen and (max-width: 25em) {
-      /* line 246, ../sass/layout/header.scss */
+      /* line 249, ../sass/layout/header.scss */
       .header__social {
         left: 88%;
         top: 30%;
         height: 10rem; } }
-    /* line 267, ../sass/layout/header.scss */
+    /* line 270, ../sass/layout/header.scss */
     .header__social .svgIcons {
       width: 3rem;
       height: 3rem;
       -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
       @media only screen and (max-width: 37.5em) {
-        /* line 267, ../sass/layout/header.scss */
+        /* line 270, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2.2rem;
           height: 2.2rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 267, ../sass/layout/header.scss */
+        /* line 270, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2rem;
           height: 2rem; } }
-      /* line 279, ../sass/layout/header.scss */
+      /* line 282, ../sass/layout/header.scss */
       .header__social .svgIcons:hover {
         -webkit-transform: scale(1.2) rotate(10deg);
                 transform: scale(1.2) rotate(10deg);
         fill: #ff5252; }
-  /* line 286, ../sass/layout/header.scss */
+  /* line 289, ../sass/layout/header.scss */
   .header__buttons-grid {
     margin-top: 2rem;
     display: -webkit-box;
@@ -748,13 +752,13 @@ font-family: 'Raleway', sans-serif;*/
             justify-content: flex-start;
     margin-left: -4rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 286, ../sass/layout/header.scss */
+      /* line 289, ../sass/layout/header.scss */
       .header__buttons-grid {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
         margin-left: 0; } }
-  /* line 297, ../sass/layout/header.scss */
+  /* line 300, ../sass/layout/header.scss */
   .header__btn {
     color: black;
     height: 40px;
@@ -769,13 +773,13 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     -webkit-transition: all .8s;
     transition: all .8s; }
-    /* line 311, ../sass/layout/header.scss */
+    /* line 314, ../sass/layout/header.scss */
     .header__btn:hover {
       -webkit-transform: translateY(-2px);
               transform: translateY(-2px);
       -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
               box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    /* line 316, ../sass/layout/header.scss */
+    /* line 319, ../sass/layout/header.scss */
     .header__btn__colo1, .header__btn__colo2 {
       background-color: #FF5722;
       height: 0px;
@@ -789,7 +793,7 @@ font-family: 'Raleway', sans-serif;*/
       z-index: -1;
       border-radius: 50%; }
 
-/* line 336, ../sass/layout/header.scss */
+/* line 339, ../sass/layout/header.scss */
 #particles-js {
   width: 30%;
   height: 100%;

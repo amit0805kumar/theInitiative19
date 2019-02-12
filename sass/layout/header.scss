@@ -224,6 +224,9 @@
                 }@include respond(400){
                        left: 58.5%;
                 }
+                @include respond(350){
+                       left: 59.5%;
+                }
 
             }
 
