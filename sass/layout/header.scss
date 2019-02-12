@@ -82,72 +82,76 @@
     }
 
     &__details {
-        position: absolute;
-        left: 10rem;
+        position: relative;
         top: 0;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
+        
+        &__main{
+            margin-top: 2rem;
+            width: 80%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            @include respond(phone){
+                align-items: center;
+            }
+        }
     }
 
     &__logo {
         width: 12rem;
         height: 12rem;
-        overflow: hidden;
         background-image: url(../images/logo.png);
         background-size: contain;
-        margin-left: 20rem;
         background-repeat: no-repeat;
-
+        
         @include respond(tab-land) {
             width: 12rem;
-            margin-left: 4rem;
         }
 
         @include respond(phone) {
             width: 10rem;
-            margin-left: 10rem;
         }
 
         @include respond(400) {
-            margin-left: 2.5rem;
         }
 
         @include respond(phonesm) {
-            margin-left: 0rem;
         }
     }
 
     &__text {
         position: relative;
         font-size: 7rem;
-        margin-top: 2rem;
         font-family: 'Muli', sans-serif;
         font-weight: 600;
         display: flex;
-        width: 40%;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         z-index: 10;
-
+        
+      
         @include respond(tab-land) {
             font-size: 5rem;
-            margin-left: 5rem;
         }
 
         @include respond(phone) {
             font-size: 4rem;
+            align-items: center;
         }
 
         @include respond(400) {
-            margin-left: .3rem;
         }
 
         @include respond(phonesm) {
             font-size: 3rem;
-            margin-left: -1rem;
         }
 
         &__main {
@@ -161,16 +165,7 @@
             background-size: cover;
             white-space: nowrap;
 
-            &::after {
-                position: absolute;
-                //                content:'';
-                width: 100%;
-                height: 1.5rem;
-                background: #ffffff;
-                left: 0;
-                top: 60%;
-                z-index: -1;
-            }
+     
         }
 
         &__tag {
@@ -186,7 +181,6 @@
 
             @include respond(phonesm) {
                 font-size: 1rem;
-                margin-left: .5rem;
             }
         }
 
@@ -202,10 +196,9 @@
             text-transform: uppercase;
             font-family: sans-serif;
             letter-spacing: 3px;
-
+            width: 100%;
             @include respond(phone) {
               font-size: .8rem;
-                left: -8rem;
             }
 
             .teamLogo {
@@ -215,21 +208,29 @@
             &__text::after {
                 content: '';
                 position: absolute;
-                left: 100%;
+                left: 50.2%;
+                transform: translateX(100%);
                 top: 138%;
                 height: 1px;
                 background: black;
                 width: 8rem;
-                  @include respond(phone) {
-             width: 4rem;
-            }
+              
+                @include respond(tab-port){
+                       left: 50.5%;
+                }
+                    @include respond(phone) {
+                     width: 4rem;
+                      left: 55.5%;
+                }@include respond(400){
+                       left: 58.5%;
+                }
 
             }
 
             &__text::before {
                 content: '';
                 position: absolute;
-                left: 0%;
+                
                 top: 138%;
                 transform: translateX(-101%);
                 height: 1px;
@@ -285,6 +286,12 @@
     &__buttons-grid {
         margin-top: 2rem;
         display: flex;
+        justify-content: flex-start;
+        margin-left: -4rem;
+        @include respond(phone){
+             justify-content: center;
+            margin-left: 0;
+        }
     }
 
     &__btn {
@@ -300,7 +307,7 @@
         font-size: 2rem;
         position: relative;
         transition: all .8s;
-
+        
         &:hover {
             transform: translateY(-2px);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

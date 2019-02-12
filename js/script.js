@@ -308,7 +308,6 @@ $(function () {
     });
 
     $(window).scroll(function (e) {
-        alert();
     });
 
 

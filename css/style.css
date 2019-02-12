@@ -507,8 +507,7 @@ font-family: 'Raleway', sans-serif;*/
           right: -40rem; } }
   /* line 84, ../sass/layout/header.scss */
   .header__details {
-    position: absolute;
-    left: 10rem;
+    position: relative;
     top: 0;
     width: 100%;
     height: 100%;
@@ -521,72 +520,81 @@ font-family: 'Raleway', sans-serif;*/
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-  /* line 95, ../sass/layout/header.scss */
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    /* line 94, ../sass/layout/header.scss */
+    .header__details__main {
+      margin-top: 2rem;
+      width: 80%;
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; }
+      @media only screen and (max-width: 37.5em) {
+        /* line 94, ../sass/layout/header.scss */
+        .header__details__main {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+  /* line 108, ../sass/layout/header.scss */
   .header__logo {
     width: 12rem;
     height: 12rem;
-    overflow: hidden;
     background-image: url(../images/logo.png);
     background-size: contain;
-    margin-left: 20rem;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 75em) {
-      /* line 95, ../sass/layout/header.scss */
+      /* line 108, ../sass/layout/header.scss */
       .header__logo {
-        width: 12rem;
-        margin-left: 4rem; } }
+        width: 12rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 95, ../sass/layout/header.scss */
+      /* line 108, ../sass/layout/header.scss */
       .header__logo {
-        width: 10rem;
-        margin-left: 10rem; } }
-    @media only screen and (max-width: 25em) {
-      /* line 95, ../sass/layout/header.scss */
-      .header__logo {
-        margin-left: 2.5rem; } }
-    @media only screen and (max-width: 18.75em) {
-      /* line 95, ../sass/layout/header.scss */
-      .header__logo {
-        margin-left: 0rem; } }
-  /* line 123, ../sass/layout/header.scss */
+        width: 10rem; } }
+  /* line 130, ../sass/layout/header.scss */
   .header__text {
     position: relative;
     font-size: 7rem;
-    margin-top: 2rem;
     font-family: 'Muli', sans-serif;
     font-weight: 600;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     z-index: 10; }
     @media only screen and (max-width: 75em) {
-      /* line 123, ../sass/layout/header.scss */
+      /* line 130, ../sass/layout/header.scss */
       .header__text {
-        font-size: 5rem;
-        margin-left: 5rem; } }
+        font-size: 5rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 123, ../sass/layout/header.scss */
+      /* line 130, ../sass/layout/header.scss */
       .header__text {
-        font-size: 4rem; } }
-    @media only screen and (max-width: 25em) {
-      /* line 123, ../sass/layout/header.scss */
-      .header__text {
-        margin-left: .3rem; } }
+        font-size: 4rem;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     @media only screen and (max-width: 18.75em) {
-      /* line 123, ../sass/layout/header.scss */
+      /* line 130, ../sass/layout/header.scss */
       .header__text {
-        font-size: 3rem;
-        margin-left: -1rem; } }
-    /* line 153, ../sass/layout/header.scss */
+        font-size: 3rem; } }
+    /* line 157, ../sass/layout/header.scss */
     .header__text__main {
       position: relative;
       display: inline-block;
@@ -597,32 +605,22 @@ font-family: 'Raleway', sans-serif;*/
       background-repeat: no-repeat;
       background-size: cover;
       white-space: nowrap; }
-      /* line 164, ../sass/layout/header.scss */
-      .header__text__main::after {
-        position: absolute;
-        width: 100%;
-        height: 1.5rem;
-        background: #ffffff;
-        left: 0;
-        top: 60%;
-        z-index: -1; }
-    /* line 176, ../sass/layout/header.scss */
+    /* line 171, ../sass/layout/header.scss */
     .header__text__tag {
       font-size: 2rem;
       display: inline-block;
       letter-spacing: 4px;
       white-space: nowrap; }
       @media only screen and (max-width: 37.5em) {
-        /* line 176, ../sass/layout/header.scss */
+        /* line 171, ../sass/layout/header.scss */
         .header__text__tag {
           letter-spacing: 3px;
           font-size: 1.5rem; } }
       @media only screen and (max-width: 18.75em) {
-        /* line 176, ../sass/layout/header.scss */
+        /* line 171, ../sass/layout/header.scss */
         .header__text__tag {
-          font-size: 1rem;
-          margin-left: .5rem; } }
-    /* line 193, ../sass/layout/header.scss */
+          font-size: 1rem; } }
+    /* line 187, ../sass/layout/header.scss */
     .header__text__team {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -641,33 +639,43 @@ font-family: 'Raleway', sans-serif;*/
       font-size: 1rem;
       text-transform: uppercase;
       font-family: sans-serif;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      width: 100%; }
       @media only screen and (max-width: 37.5em) {
-        /* line 193, ../sass/layout/header.scss */
+        /* line 187, ../sass/layout/header.scss */
         .header__text__team {
-          font-size: .8rem;
-          left: -8rem; } }
-      /* line 211, ../sass/layout/header.scss */
+          font-size: .8rem; } }
+      /* line 204, ../sass/layout/header.scss */
       .header__text__team .teamLogo {
         width: 3.5rem; }
-      /* line 215, ../sass/layout/header.scss */
+      /* line 208, ../sass/layout/header.scss */
       .header__text__team__text::after {
         content: '';
         position: absolute;
-        left: 100%;
+        left: 50.2%;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
         top: 138%;
         height: 1px;
         background: black;
         width: 8rem; }
-        @media only screen and (max-width: 37.5em) {
-          /* line 215, ../sass/layout/header.scss */
+        @media only screen and (max-width: 56.25em) {
+          /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
-            width: 4rem; } }
-      /* line 229, ../sass/layout/header.scss */
+            left: 50.5%; } }
+        @media only screen and (max-width: 37.5em) {
+          /* line 208, ../sass/layout/header.scss */
+          .header__text__team__text::after {
+            width: 4rem;
+            left: 55.5%; } }
+        @media only screen and (max-width: 25em) {
+          /* line 208, ../sass/layout/header.scss */
+          .header__text__team__text::after {
+            left: 58.5%; } }
+      /* line 230, ../sass/layout/header.scss */
       .header__text__team__text::before {
         content: '';
         position: absolute;
-        left: 0%;
         top: 138%;
         -webkit-transform: translateX(-101%);
                 transform: translateX(-101%);
@@ -675,10 +683,10 @@ font-family: 'Raleway', sans-serif;*/
         background: black;
         width: 8rem; }
         @media only screen and (max-width: 37.5em) {
-          /* line 229, ../sass/layout/header.scss */
+          /* line 230, ../sass/layout/header.scss */
           .header__text__team__text::before {
             width: 4rem; } }
-  /* line 245, ../sass/layout/header.scss */
+  /* line 246, ../sass/layout/header.scss */
   .header__social {
     position: absolute;
     width: 4rem;
@@ -698,44 +706,55 @@ font-family: 'Raleway', sans-serif;*/
         -ms-flex-pack: justify;
             justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
-      /* line 245, ../sass/layout/header.scss */
+      /* line 246, ../sass/layout/header.scss */
       .header__social {
         left: 92%;
         top: 45%; } }
     @media only screen and (max-width: 25em) {
-      /* line 245, ../sass/layout/header.scss */
+      /* line 246, ../sass/layout/header.scss */
       .header__social {
         left: 88%;
         top: 30%;
         height: 10rem; } }
-    /* line 266, ../sass/layout/header.scss */
+    /* line 267, ../sass/layout/header.scss */
     .header__social .svgIcons {
       width: 3rem;
       height: 3rem;
       -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
       @media only screen and (max-width: 37.5em) {
-        /* line 266, ../sass/layout/header.scss */
+        /* line 267, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2.2rem;
           height: 2.2rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 266, ../sass/layout/header.scss */
+        /* line 267, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2rem;
           height: 2rem; } }
-      /* line 278, ../sass/layout/header.scss */
+      /* line 279, ../sass/layout/header.scss */
       .header__social .svgIcons:hover {
         -webkit-transform: scale(1.2) rotate(10deg);
                 transform: scale(1.2) rotate(10deg);
         fill: #ff5252; }
-  /* line 285, ../sass/layout/header.scss */
+  /* line 286, ../sass/layout/header.scss */
   .header__buttons-grid {
     margin-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  /* line 290, ../sass/layout/header.scss */
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: -4rem; }
+    @media only screen and (max-width: 37.5em) {
+      /* line 286, ../sass/layout/header.scss */
+      .header__buttons-grid {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: 0; } }
+  /* line 297, ../sass/layout/header.scss */
   .header__btn {
     color: black;
     height: 40px;
@@ -750,13 +769,13 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     -webkit-transition: all .8s;
     transition: all .8s; }
-    /* line 304, ../sass/layout/header.scss */
+    /* line 311, ../sass/layout/header.scss */
     .header__btn:hover {
       -webkit-transform: translateY(-2px);
               transform: translateY(-2px);
       -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
               box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    /* line 309, ../sass/layout/header.scss */
+    /* line 316, ../sass/layout/header.scss */
     .header__btn__colo1, .header__btn__colo2 {
       background-color: #FF5722;
       height: 0px;
@@ -770,7 +789,7 @@ font-family: 'Raleway', sans-serif;*/
       z-index: -1;
       border-radius: 50%; }
 
-/* line 329, ../sass/layout/header.scss */
+/* line 336, ../sass/layout/header.scss */
 #particles-js {
   width: 30%;
   height: 100%;
@@ -877,7 +896,11 @@ font-family: 'Raleway', sans-serif;*/
   top: 40%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
-/* line 105, ../sass/layout/footer.scss */
+  @media only screen and (max-width: 56.25em) {
+    /* line 97, ../sass/layout/footer.scss */
+    .footer__links {
+      top: 42%; } }
+/* line 108, ../sass/layout/footer.scss */
 .footer__bottomer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,7 +914,7 @@ font-family: 'Raleway', sans-serif;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-/* line 114, ../sass/layout/footer.scss */
+/* line 117, ../sass/layout/footer.scss */
 .footer__contacts, .footer__details {
   width: 50%;
   color: #fff;
@@ -911,36 +934,36 @@ font-family: 'Raleway', sans-serif;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 129, ../sass/layout/footer.scss */
+  /* line 132, ../sass/layout/footer.scss */
   .footer__contacts a, .footer__details a {
     color: #fff;
     white-space: nowrap; }
   @media only screen and (max-width: 56.25em) {
-    /* line 114, ../sass/layout/footer.scss */
+    /* line 117, ../sass/layout/footer.scss */
     .footer__contacts, .footer__details {
       font-size: 1.3rem; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 114, ../sass/layout/footer.scss */
+    /* line 117, ../sass/layout/footer.scss */
     .footer__contacts, .footer__details {
       font-size: 1rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 114, ../sass/layout/footer.scss */
+    /* line 117, ../sass/layout/footer.scss */
     .footer__contacts, .footer__details {
       font-size: .7rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 143, ../sass/layout/footer.scss */
+    /* line 146, ../sass/layout/footer.scss */
     .footer__contacts-name, .footer__details-name {
       margin: .2rem 0; } }
-/* line 153, ../sass/layout/footer.scss */
+/* line 156, ../sass/layout/footer.scss */
 .footer__contacts a {
   color: #fff; }
-/* line 157, ../sass/layout/footer.scss */
+/* line 160, ../sass/layout/footer.scss */
 .footer__contacts-heading {
   margin-bottom: 1rem; }
-/* line 162, ../sass/layout/footer.scss */
+/* line 165, ../sass/layout/footer.scss */
 .footer__contacts-name {
   display: inline-block; }
-/* line 168, ../sass/layout/footer.scss */
+/* line 171, ../sass/layout/footer.scss */
 .footer__part {
   height: 5rem;
   background: #fff;
@@ -1141,7 +1164,7 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     font-family: 'Poiret One', cursive;
-    margin-top: 5rem; }
+    margin-top: 6rem; }
     @media only screen and (max-width: 37.5em) {
       /* line 199, ../sass/layout/navigation.scss */
       .nav__csi {

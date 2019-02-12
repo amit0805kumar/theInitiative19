@@ -99,6 +99,9 @@
         left: 50%;
         top: 40%;
         transform: translateX(-50%);
+        @include respond(tab-port){
+            top: 42%;
+        }
 
     }
 
