@@ -74,7 +74,8 @@
             right: 0;
             height: 100%;
             z-index: -1;
-         @include respond(phone) {
+
+            @include respond(phone) {
                 right: -40rem;
             }
 
@@ -90,8 +91,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        
-        &__main{
+
+        &__main {
             margin-top: 2rem;
             width: 80%;
             margin-left: 50%;
@@ -99,7 +100,8 @@
             display: flex;
             flex-direction: column;
             align-items: baseline;
-            @include respond(phone){
+
+            @include respond(phone) {
                 align-items: center;
             }
         }
@@ -111,7 +113,7 @@
         background-image: url(../images/logo.png);
         background-size: contain;
         background-repeat: no-repeat;
-        
+
         @include respond(tab-land) {
             width: 12rem;
         }
@@ -120,11 +122,9 @@
             width: 10rem;
         }
 
-        @include respond(400) {
-        }
+        @include respond(400) {}
 
-        @include respond(phonesm) {
-        }
+        @include respond(phonesm) {}
     }
 
     &__text {
@@ -136,8 +136,8 @@
         flex-direction: column;
         align-items: baseline;
         z-index: 10;
-        
-      
+
+
         @include respond(tab-land) {
             font-size: 5rem;
         }
@@ -147,8 +147,7 @@
             align-items: center;
         }
 
-        @include respond(400) {
-        }
+        @include respond(400) {}
 
         @include respond(phonesm) {
             font-size: 3rem;
@@ -165,7 +164,7 @@
             background-size: cover;
             white-space: nowrap;
 
-     
+
         }
 
         &__tag {
@@ -197,8 +196,9 @@
             font-family: sans-serif;
             letter-spacing: 3px;
             width: 100%;
+
             @include respond(phone) {
-              font-size: .8rem;
+                font-size: .8rem;
             }
 
             .teamLogo {
@@ -214,18 +214,22 @@
                 height: 1px;
                 background: black;
                 width: 8rem;
-              
-                @include respond(tab-port){
-                       left: 50.5%;
+
+                @include respond(tab-port) {
+                    left: 50.5%;
                 }
-                    @include respond(phone) {
-                     width: 4rem;
-                      left: 55.5%;
-                }@include respond(400){
-                       left: 58.5%;
+
+                @include respond(phone) {
+                    width: 4rem;
+                    left: 57.5%;
                 }
-                @include respond(350){
-                       left: 59.5%;
+
+                @include respond(400) {
+                    left: 58.5%;
+                }
+
+                @include respond(350) {
+                    left: 59.5%;
                 }
 
             }
@@ -233,15 +237,16 @@
             &__text::before {
                 content: '';
                 position: absolute;
-                
+
                 top: 138%;
                 transform: translateX(-101%);
                 height: 1px;
                 background: black;
                 width: 8rem;
-                       @include respond(phone) {
-             width: 4rem;
-            }
+
+                @include respond(phone) {
+                    width: 4rem;
+                }
             }
         }
     }
@@ -256,29 +261,35 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-           @include respond(tab-port) {
-             left: 92%;
-               top: 45%;
-            }
+
+        @include respond(tab-port) {
+            left: 92%;
+            top: 45%;
+        }
+
         @include respond(400) {
-             left: 88%;
-               top: 30%;
+            left: 88%;
+            top: 30%;
             height: 10rem;
-            }
+        }
+
         &__links {}
 
         .svgIcons {
             width: 3rem;
             height: 3rem;
             transition: all .3s ease-in-out;
+
             @include respond(phone) {
-              width: 2.2rem;
-            height: 2.2rem;
+                width: 2.2rem;
+                height: 2.2rem;
             }
-  @include respond(400) {
-              width: 2rem;
-            height: 2rem;
+
+            @include respond(400) {
+                width: 2rem;
+                height: 2rem;
             }
+
             &:hover {
                 transform: scale(1.2) rotate(10deg);
                 fill: #ff5252;
@@ -291,8 +302,9 @@
         display: flex;
         justify-content: flex-start;
         margin-left: -4rem;
-        @include respond(phone){
-             justify-content: center;
+
+        @include respond(phone) {
+            justify-content: center;
             margin-left: 0;
         }
     }
@@ -310,7 +322,7 @@
         font-size: 2rem;
         position: relative;
         transition: all .8s;
-        
+
         &:hover {
             transform: translateY(-2px);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

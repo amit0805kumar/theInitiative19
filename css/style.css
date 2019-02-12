@@ -505,7 +505,7 @@ font-family: 'Raleway', sans-serif;*/
         /* line 73, ../sass/layout/header.scss */
         .header .bg #bg4 {
           right: -40rem; } }
-  /* line 84, ../sass/layout/header.scss */
+  /* line 85, ../sass/layout/header.scss */
   .header__details {
     position: relative;
     top: 0;
@@ -524,7 +524,7 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-    /* line 94, ../sass/layout/header.scss */
+    /* line 95, ../sass/layout/header.scss */
     .header__details__main {
       margin-top: 2rem;
       width: 80%;
@@ -542,12 +542,12 @@ font-family: 'Raleway', sans-serif;*/
           -ms-flex-align: baseline;
               align-items: baseline; }
       @media only screen and (max-width: 37.5em) {
-        /* line 94, ../sass/layout/header.scss */
+        /* line 95, ../sass/layout/header.scss */
         .header__details__main {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; } }
-  /* line 108, ../sass/layout/header.scss */
+  /* line 110, ../sass/layout/header.scss */
   .header__logo {
     width: 12rem;
     height: 12rem;
@@ -555,11 +555,11 @@ font-family: 'Raleway', sans-serif;*/
     background-size: contain;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 75em) {
-      /* line 108, ../sass/layout/header.scss */
+      /* line 110, ../sass/layout/header.scss */
       .header__logo {
         width: 12rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 108, ../sass/layout/header.scss */
+      /* line 110, ../sass/layout/header.scss */
       .header__logo {
         width: 10rem; } }
   /* line 130, ../sass/layout/header.scss */
@@ -594,7 +594,7 @@ font-family: 'Raleway', sans-serif;*/
       /* line 130, ../sass/layout/header.scss */
       .header__text {
         font-size: 3rem; } }
-    /* line 157, ../sass/layout/header.scss */
+    /* line 156, ../sass/layout/header.scss */
     .header__text__main {
       position: relative;
       display: inline-block;
@@ -605,22 +605,22 @@ font-family: 'Raleway', sans-serif;*/
       background-repeat: no-repeat;
       background-size: cover;
       white-space: nowrap; }
-    /* line 171, ../sass/layout/header.scss */
+    /* line 170, ../sass/layout/header.scss */
     .header__text__tag {
       font-size: 2rem;
       display: inline-block;
       letter-spacing: 4px;
       white-space: nowrap; }
       @media only screen and (max-width: 37.5em) {
-        /* line 171, ../sass/layout/header.scss */
+        /* line 170, ../sass/layout/header.scss */
         .header__text__tag {
           letter-spacing: 3px;
           font-size: 1.5rem; } }
       @media only screen and (max-width: 18.75em) {
-        /* line 171, ../sass/layout/header.scss */
+        /* line 170, ../sass/layout/header.scss */
         .header__text__tag {
           font-size: 1rem; } }
-    /* line 187, ../sass/layout/header.scss */
+    /* line 186, ../sass/layout/header.scss */
     .header__text__team {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -642,7 +642,7 @@ font-family: 'Raleway', sans-serif;*/
       letter-spacing: 3px;
       width: 100%; }
       @media only screen and (max-width: 37.5em) {
-        /* line 187, ../sass/layout/header.scss */
+        /* line 186, ../sass/layout/header.scss */
         .header__text__team {
           font-size: .8rem; } }
       /* line 204, ../sass/layout/header.scss */
@@ -667,7 +667,7 @@ font-family: 'Raleway', sans-serif;*/
           /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             width: 4rem;
-            left: 55.5%; } }
+            left: 57.5%; } }
         @media only screen and (max-width: 25em) {
           /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
@@ -676,7 +676,7 @@ font-family: 'Raleway', sans-serif;*/
           /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             left: 59.5%; } }
-      /* line 233, ../sass/layout/header.scss */
+      /* line 237, ../sass/layout/header.scss */
       .header__text__team__text::before {
         content: '';
         position: absolute;
@@ -687,10 +687,10 @@ font-family: 'Raleway', sans-serif;*/
         background: black;
         width: 8rem; }
         @media only screen and (max-width: 37.5em) {
-          /* line 233, ../sass/layout/header.scss */
+          /* line 237, ../sass/layout/header.scss */
           .header__text__team__text::before {
             width: 4rem; } }
-  /* line 249, ../sass/layout/header.scss */
+  /* line 254, ../sass/layout/header.scss */
   .header__social {
     position: absolute;
     width: 4rem;
@@ -710,38 +710,38 @@ font-family: 'Raleway', sans-serif;*/
         -ms-flex-pack: justify;
             justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
-      /* line 249, ../sass/layout/header.scss */
+      /* line 254, ../sass/layout/header.scss */
       .header__social {
         left: 92%;
         top: 45%; } }
     @media only screen and (max-width: 25em) {
-      /* line 249, ../sass/layout/header.scss */
+      /* line 254, ../sass/layout/header.scss */
       .header__social {
         left: 88%;
         top: 30%;
         height: 10rem; } }
-    /* line 270, ../sass/layout/header.scss */
+    /* line 278, ../sass/layout/header.scss */
     .header__social .svgIcons {
       width: 3rem;
       height: 3rem;
       -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
       @media only screen and (max-width: 37.5em) {
-        /* line 270, ../sass/layout/header.scss */
+        /* line 278, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2.2rem;
           height: 2.2rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 270, ../sass/layout/header.scss */
+        /* line 278, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2rem;
           height: 2rem; } }
-      /* line 282, ../sass/layout/header.scss */
+      /* line 293, ../sass/layout/header.scss */
       .header__social .svgIcons:hover {
         -webkit-transform: scale(1.2) rotate(10deg);
                 transform: scale(1.2) rotate(10deg);
         fill: #ff5252; }
-  /* line 289, ../sass/layout/header.scss */
+  /* line 300, ../sass/layout/header.scss */
   .header__buttons-grid {
     margin-top: 2rem;
     display: -webkit-box;
@@ -752,13 +752,13 @@ font-family: 'Raleway', sans-serif;*/
             justify-content: flex-start;
     margin-left: -4rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 289, ../sass/layout/header.scss */
+      /* line 300, ../sass/layout/header.scss */
       .header__buttons-grid {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
         margin-left: 0; } }
-  /* line 300, ../sass/layout/header.scss */
+  /* line 312, ../sass/layout/header.scss */
   .header__btn {
     color: black;
     height: 40px;
@@ -773,13 +773,13 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     -webkit-transition: all .8s;
     transition: all .8s; }
-    /* line 314, ../sass/layout/header.scss */
+    /* line 326, ../sass/layout/header.scss */
     .header__btn:hover {
       -webkit-transform: translateY(-2px);
               transform: translateY(-2px);
       -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
               box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    /* line 319, ../sass/layout/header.scss */
+    /* line 331, ../sass/layout/header.scss */
     .header__btn__colo1, .header__btn__colo2 {
       background-color: #FF5722;
       height: 0px;
@@ -793,7 +793,7 @@ font-family: 'Raleway', sans-serif;*/
       z-index: -1;
       border-radius: 50%; }
 
-/* line 339, ../sass/layout/header.scss */
+/* line 351, ../sass/layout/header.scss */
 #particles-js {
   width: 30%;
   height: 100%;
