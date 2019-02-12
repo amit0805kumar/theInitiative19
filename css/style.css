@@ -1180,47 +1180,58 @@ font-family: 'Raleway', sans-serif;*/
 .navigation__buttons {
   position: fixed;
   z-index: 100;
-  width: 7rem;
-  height: 2rem;
+  height: 5.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 80%;
+  top: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-/* line 263, ../sass/layout/navigation.scss */
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media only screen and (max-width: 25em) {
+    /* line 250, ../sass/layout/navigation.scss */
+    .navigation__buttons {
+      top: 90%; } }
+/* line 266, ../sass/layout/navigation.scss */
 .navigation__up, .navigation__down {
   -webkit-transition: all .3s;
   transition: all .3s;
   width: 3rem; }
-  /* line 268, ../sass/layout/navigation.scss */
+  /* line 271, ../sass/layout/navigation.scss */
   .navigation__up svg, .navigation__down svg {
     width: 100%;
     fill: orange;
-    color: orange; }
-  /* line 274, ../sass/layout/navigation.scss */
+    height: 5rem; }
+    @media only screen and (max-width: 25em) {
+      /* line 271, ../sass/layout/navigation.scss */
+      .navigation__up svg, .navigation__down svg {
+        height: 2rem; } }
+  /* line 280, ../sass/layout/navigation.scss */
   .navigation__up:hover, .navigation__down:hover {
     cursor: pointer;
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px); }
-  /* line 279, ../sass/layout/navigation.scss */
+  /* line 285, ../sass/layout/navigation.scss */
   .navigation__up:active, .navigation__down:active {
     -webkit-transform: translateY(-0.5px);
             transform: translateY(-0.5px); }
-/* line 287, ../sass/layout/navigation.scss */
+/* line 293, ../sass/layout/navigation.scss */
 .navigation__up svg {
   fill: orange;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
-/* line 294, ../sass/layout/navigation.scss */
+/* line 300, ../sass/layout/navigation.scss */
 .navigation__down svg {
   fill: orange; }
 
-/* line 305, ../sass/layout/navigation.scss */
+/* line 311, ../sass/layout/navigation.scss */
 .updownanime {
   -webkit-animation: updown 2s ease-in-out inifnite !important;
           animation: updown 2s ease-in-out inifnite !important; }

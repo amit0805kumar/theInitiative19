@@ -250,13 +250,16 @@
     &__buttons {
         position: fixed;
         z-index: 100;
-        width: 7rem;
-        height: 2rem;
+        height: 5.5rem;
         left: 50%;
         transform: translateX(-50%);
-        top: 80%;
+        top: 85%;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+        @include respond(400){
+                top: 90%;
+            }
 
     }
 
@@ -268,7 +271,10 @@
         svg {
             width: 100%;
             fill: orange;
-            color: orange;
+            height: 5rem;
+            @include respond(400){
+                height: 2rem;
+            }
         }
 
         &:hover {
