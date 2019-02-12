@@ -187,6 +187,10 @@ $(function () {
 
         }
     });
+    
+    $(window).scroll(function(e){
+       alert();
+    });
 
 
     $("#headingAbout").append("<div class='glitch-window-1'></div>");

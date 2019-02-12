@@ -98,7 +98,11 @@
         #navbg2 {
             bottom: -3rem;
             width: 100%;
+            @include respond(phone){
+                bottom: -1rem;
+            }
         }
+        
 
         #navbg3 {
             width: 100%;
@@ -120,6 +124,10 @@
             transition: all .4s ease-in-out;
             letter-spacing: 3px;
 
+            @include respond(phone){
+                left: 65%;
+            }
+            
             a {
                 margin: 20px 0;
                 color: #fff;
@@ -198,6 +206,7 @@
 
         @include respond(phone) {
             font-size: 5rem;
+            margin-top: 17rem;
         }
     }
 
@@ -253,7 +262,6 @@
     &__up,
     &__down {
         transition: all .3s;
-
         &:hover {
             cursor: pointer;
             transform: translateY(-2px);
@@ -262,6 +270,14 @@
         &:active {
             transform: translateY(-.5px);
         }
+        
+       
+    }
+    &__up{
+        border-bottom: 1px solid #fff; 
+    }
+    &__down{
+        border-top: 1px solid #fff; 
     }
 
 

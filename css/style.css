@@ -540,7 +540,7 @@ font-family: 'Raleway', sans-serif;*/
     @media only screen and (max-width: 25em) {
       /* line 95, ../sass/layout/header.scss */
       .header__logo {
-        margin-left: 4rem; } }
+        margin-left: 3rem; } }
     @media only screen and (max-width: 18.75em) {
       /* line 95, ../sass/layout/header.scss */
       .header__logo {
@@ -576,7 +576,7 @@ font-family: 'Raleway', sans-serif;*/
     @media only screen and (max-width: 25em) {
       /* line 123, ../sass/layout/header.scss */
       .header__text {
-        margin-left: 1rem; } }
+        margin-left: .5rem; } }
     @media only screen and (max-width: 18.75em) {
       /* line 123, ../sass/layout/header.scss */
       .header__text {
@@ -1032,10 +1032,14 @@ font-family: 'Raleway', sans-serif;*/
     .nav__menu #navbg2 {
       bottom: -3rem;
       width: 100%; }
-    /* line 103, ../sass/layout/navigation.scss */
+      @media only screen and (max-width: 37.5em) {
+        /* line 98, ../sass/layout/navigation.scss */
+        .nav__menu #navbg2 {
+          bottom: -1rem; } }
+    /* line 107, ../sass/layout/navigation.scss */
     .nav__menu #navbg3 {
       width: 100%; }
-    /* line 107, ../sass/layout/navigation.scss */
+    /* line 111, ../sass/layout/navigation.scss */
     .nav__menu__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1059,11 +1063,15 @@ font-family: 'Raleway', sans-serif;*/
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
       letter-spacing: 3px; }
-      /* line 123, ../sass/layout/navigation.scss */
+      @media only screen and (max-width: 37.5em) {
+        /* line 111, ../sass/layout/navigation.scss */
+        .nav__menu__list {
+          left: 65%; } }
+      /* line 131, ../sass/layout/navigation.scss */
       .nav__menu__list a {
         margin: 20px 0;
         color: #fff; }
-      /* line 128, ../sass/layout/navigation.scss */
+      /* line 136, ../sass/layout/navigation.scss */
       .nav__menu__list .nav__link {
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0)));
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%);
@@ -1074,17 +1082,17 @@ font-family: 'Raleway', sans-serif;*/
         font-family: 'Roboto Mono', monospace;
         font-size: 3rem; }
         @media only screen and (max-width: 37.5em) {
-          /* line 128, ../sass/layout/navigation.scss */
+          /* line 136, ../sass/layout/navigation.scss */
           .nav__menu__list .nav__link {
             font-size: 2rem; } }
-        /* line 141, ../sass/layout/navigation.scss */
+        /* line 149, ../sass/layout/navigation.scss */
         .nav__menu__list .nav__link:hover {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
           background-position: 0 100%;
           background-size: auto 6px;
           background-repeat: repeat-x;
           text-decoration: none; }
-  /* line 153, ../sass/layout/navigation.scss */
+  /* line 161, ../sass/layout/navigation.scss */
   .nav__icons {
     position: absolute;
     bottom: 1rem;
@@ -1093,21 +1101,21 @@ font-family: 'Raleway', sans-serif;*/
             transform: translateX(-50%);
     -webkit-transition: all .3s;
     transition: all .3s; }
-    /* line 160, ../sass/layout/navigation.scss */
+    /* line 168, ../sass/layout/navigation.scss */
     .nav__icons .nav__social__links:hover > svg {
       fill: #f28c01; }
-  /* line 166, ../sass/layout/navigation.scss */
+  /* line 174, ../sass/layout/navigation.scss */
   .nav__social__links {
     margin: 0 2rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 166, ../sass/layout/navigation.scss */
+      /* line 174, ../sass/layout/navigation.scss */
       .nav__social__links {
         margin: 0 1.2rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 166, ../sass/layout/navigation.scss */
+      /* line 174, ../sass/layout/navigation.scss */
       .nav__social__links {
         margin: 0 1rem; } }
-    /* line 177, ../sass/layout/navigation.scss */
+    /* line 185, ../sass/layout/navigation.scss */
     .nav__social__links .svgIcons {
       width: 3rem;
       height: 3rem;
@@ -1115,11 +1123,11 @@ font-family: 'Raleway', sans-serif;*/
       transition: all .3s ease-in-out;
       fill: #fff; }
       @media only screen and (max-width: 37.5em) {
-        /* line 177, ../sass/layout/navigation.scss */
+        /* line 185, ../sass/layout/navigation.scss */
         .nav__social__links .svgIcons {
           width: 2rem;
           height: 2rem; } }
-  /* line 190, ../sass/layout/navigation.scss */
+  /* line 198, ../sass/layout/navigation.scss */
   .nav__csi {
     font-size: 10rem;
     color: rgba(60, 59, 59, 0.53);
@@ -1131,31 +1139,32 @@ font-family: 'Raleway', sans-serif;*/
     font-family: 'Poiret One', cursive;
     margin-top: 5rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 190, ../sass/layout/navigation.scss */
+      /* line 198, ../sass/layout/navigation.scss */
       .nav__csi {
-        font-size: 5rem; } }
+        font-size: 5rem;
+        margin-top: 17rem; } }
 
-/* line 207, ../sass/layout/navigation.scss */
+/* line 216, ../sass/layout/navigation.scss */
 .expandNav {
   height: 100vh; }
 
-/* line 212, ../sass/layout/navigation.scss */
+/* line 221, ../sass/layout/navigation.scss */
 .showNavEl {
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
   opacity: 1; }
 
-/* line 218, ../sass/layout/navigation.scss */
+/* line 227, ../sass/layout/navigation.scss */
 .nav_button-animation span {
   background: #fff; }
-  /* line 221, ../sass/layout/navigation.scss */
+  /* line 230, ../sass/layout/navigation.scss */
   .nav_button-animation span::after {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg);
     background: #fff;
     width: 13px;
     left: 25px; }
-  /* line 228, ../sass/layout/navigation.scss */
+  /* line 237, ../sass/layout/navigation.scss */
   .nav_button-animation span::before {
     -webkit-transform: rotate(50deg);
             transform: rotate(50deg);
@@ -1163,7 +1172,7 @@ font-family: 'Raleway', sans-serif;*/
     width: 13px;
     left: 25px; }
 
-/* line 240, ../sass/layout/navigation.scss */
+/* line 249, ../sass/layout/navigation.scss */
 .navigation__buttons {
   position: fixed;
   z-index: 100;
@@ -1179,19 +1188,25 @@ font-family: 'Raleway', sans-serif;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-/* line 253, ../sass/layout/navigation.scss */
+/* line 262, ../sass/layout/navigation.scss */
 .navigation__up, .navigation__down {
   -webkit-transition: all .3s;
   transition: all .3s; }
-  /* line 257, ../sass/layout/navigation.scss */
+  /* line 265, ../sass/layout/navigation.scss */
   .navigation__up:hover, .navigation__down:hover {
     cursor: pointer;
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px); }
-  /* line 262, ../sass/layout/navigation.scss */
+  /* line 270, ../sass/layout/navigation.scss */
   .navigation__up:active, .navigation__down:active {
     -webkit-transform: translateY(-0.5px);
             transform: translateY(-0.5px); }
+/* line 276, ../sass/layout/navigation.scss */
+.navigation__up {
+  border-bottom: 1px solid #fff; }
+/* line 279, ../sass/layout/navigation.scss */
+.navigation__down {
+  border-top: 1px solid #fff; }
 
 /* line 5, ../sass/components/about.scss */
 .about__part {
@@ -1819,23 +1834,23 @@ font-family: 'Raleway', sans-serif;*/
     @media only screen and (max-width: 37.5em) {
       /* line 494, ../sass/components/slider.scss */
       .problems__coordinators__box {
-        width: 15rem;
-        height: 15rem;
-        margin: .5rem; } }
+        width: 12rem;
+        height: 12rem;
+        margin: .2rem; } }
     @media only screen and (max-width: 25em) {
       /* line 494, ../sass/components/slider.scss */
       .problems__coordinators__box {
         width: 10rem;
         height: 10rem;
         margin: .1rem; } }
-    /* line 519, ../sass/components/slider.scss */
+    /* line 520, ../sass/components/slider.scss */
     .problems__coordinators__box:hover > div {
       top: 80%; }
     @media only screen and (max-width: 37.5em) {
-      /* line 522, ../sass/components/slider.scss */
+      /* line 524, ../sass/components/slider.scss */
       .problems__coordinators__box div {
         font-size: 1rem; } }
-  /* line 529, ../sass/components/slider.scss */
+  /* line 531, ../sass/components/slider.scss */
   .problems__coordinators__close {
     position: absolute;
     left: 93%;
@@ -1843,18 +1858,22 @@ font-family: 'Raleway', sans-serif;*/
     cursor: pointer;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-    /* line 536, ../sass/components/slider.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 531, ../sass/components/slider.scss */
+      .problems__coordinators__close {
+        left: 87%; } }
+    /* line 542, ../sass/components/slider.scss */
     .problems__coordinators__close img {
       width: 4rem;
       height: 4rem; }
-  /* line 544, ../sass/components/slider.scss */
+  /* line 550, ../sass/components/slider.scss */
   .problems__coordinators__img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0; }
-  /* line 552, ../sass/components/slider.scss */
+  /* line 558, ../sass/components/slider.scss */
   .problems__coordinators__details {
     overflow: hidden;
     background: rgba(0, 0, 0, 0.62);
@@ -1879,13 +1898,13 @@ font-family: 'Raleway', sans-serif;*/
     -webkit-transition: all .2s;
     transition: all .2s; }
 
-/* line 574, ../sass/components/slider.scss */
+/* line 580, ../sass/components/slider.scss */
 .scaleProblems {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
-/* line 579, ../sass/components/slider.scss */
+/* line 585, ../sass/components/slider.scss */
 .moveAbs {
   left: -10rem;
   opacity: 0;
@@ -1893,7 +1912,7 @@ font-family: 'Raleway', sans-serif;*/
           transform: scale(0.9);
   z-index: 35; }
 
-/* line 586, ../sass/components/slider.scss */
+/* line 592, ../sass/components/slider.scss */
 .moveCoordinators,
 .moveTasks {
   left: 0;

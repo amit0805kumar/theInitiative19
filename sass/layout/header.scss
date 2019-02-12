@@ -112,7 +112,7 @@
         }
 
         @include respond(400) {
-            margin-left: 4rem;
+            margin-left: 3rem;
         }
 
         @include respond(phonesm) {
@@ -142,7 +142,7 @@
         }
 
         @include respond(400) {
-            margin-left: 1rem;
+            margin-left: .5rem;
         }
 
         @include respond(phonesm) {

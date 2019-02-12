@@ -506,23 +506,25 @@
               }
 
               @include respond(phone) {
-                  width: 15rem;
-                  height: 15rem;
-                  margin: .5rem;
+                  width: 12rem;
+                  height: 12rem;
+                  margin: .2rem;
               }
+
               @include respond(400) {
                   width: 10rem;
                   height: 10rem;
-                  margin: .1rem; 
+                  margin: .1rem;
               }
 
               &:hover > div {
                   top: 80%;
               }
-              div{
-                    @include respond(phone) {
-                font-size: 1rem;
-              } 
+
+              div {
+                  @include respond(phone) {
+                      font-size: 1rem;
+                  }
               }
           }
 
@@ -532,6 +534,10 @@
               top: 50%;
               cursor: pointer;
               transform: translateY(-50%);
+
+              @include respond(phone) {
+                  left: 87%;
+              }
 
               img {
                   width: 4rem;
