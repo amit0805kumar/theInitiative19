@@ -142,6 +142,13 @@ $(function () {
     var sectionFaq = $('.section__faq');
     var sectionFooter = $('.section__footer');
 
+    var home = $('#home');
+    var about = $('#about');
+    var structure = $('#structure');
+    var problem = $('#problem');
+    var faq = $('#faq');
+    var contact = $('#contact');
+
     var pageNo = 0;
     var pages = {
         "0": sectionAbout,
@@ -152,6 +159,94 @@ $(function () {
     };
 
 
+    home.click(function () {
+        pageNo = 0;
+        //    sectionAbout.addClass('goUp');
+        sectionStructure.removeClass('goUp');
+        sectionProbems.removeClass('goUp');
+        sectionAbout.removeClass('goUp');
+        sectionFaq.removeClass('goUp');
+        sectionFooter.removeClass('goUp');
+        $('.navigation__down').removeClass('disn');
+        $('.navigation__up').addClass('disn');
+    });
+    about.click(function () {
+        pageNo = 1;
+        sectionAbout.addClass('goUp');
+        sectionStructure.removeClass('goUp');
+        sectionProbems.removeClass('goUp');
+        sectionFaq.removeClass('goUp');
+        sectionFooter.removeClass('goUp');
+        $('.navigation__down').removeClass('disn');
+        $('.navigation__up').removeClass('disn');
+
+    });
+    structure.click(function () {
+        pageNo = 2;
+        sectionAbout.addClass('goUp');
+        sectionStructure.addClass('goUp');
+        sectionProbems.removeClass('goUp');
+        sectionFaq.removeClass('goUp');
+        sectionFooter.removeClass('goUp');
+        $('.navigation__down').removeClass('disn');
+        $('.navigation__up').removeClass('disn');
+
+    });
+    problem.click(function () {
+        pageNo = 3;
+        sectionAbout.addClass('goUp');
+        sectionStructure.addClass('goUp');
+        sectionProbems.addClass('goUp');
+        sectionFaq.removeClass('goUp');
+        sectionFooter.removeClass('goUp');
+
+        $('.navigation__down').removeClass('disn');
+        $('.navigation__up').removeClass('disn');
+    });
+    faq.click(function () {
+        pageNo = 4;
+        sectionAbout.addClass('goUp');
+        sectionStructure.addClass('goUp');
+        sectionProbems.addClass('goUp');
+        sectionFaq.addClass('goUp');
+        sectionFooter.removeClass('goUp');
+        $('.navigation__down').removeClass('disn');
+        $('.navigation__up').removeClass('disn');
+
+    });
+    contact.click(function () {
+        pageNo = 5;
+        sectionAbout.addClass('goUp');
+        sectionStructure.addClass('goUp');
+        sectionProbems.addClass('goUp');
+        sectionFaq.addClass('goUp');
+        sectionFooter.addClass('goUp');
+        $('.navigation__down').addClass('disn');
+        $('.navigation__up').removeClass('disn');
+
+    });
+
+
+
+    function downNav(pageNo) {
+        if (pageNo == 5) {
+            $('.navigation__down').addClass('disn');
+            $('.navigation__up').removeClass('disn');
+        } else {
+            $('.navigation__down').removeClass('disn');
+            $('.navigation__up').removeClass('disn');
+        }
+    }
+
+    function upNav(pageNo) {
+        if (pageNo == 0) {
+            $('.navigation__up').addClass('disn');
+            $('.navigation__down').removeClass('disn');
+        } else {
+            $('.navigation__down').removeClass('disn');
+            $('.navigation__up').removeClass('disn');
+        }
+    }
 
     $('.navigation__up').addClass("disn");
 
@@ -162,13 +257,7 @@ $(function () {
             pages[pageNo].addClass('goUp');
             pageNo++;
         }
-        if (pageNo == 5) {
-            $('.navigation__down').addClass('disn');
-            $('.navigation__up').removeClass('disn');
-        } else {
-            $('.navigation__down').removeClass('disn');
-            $('.navigation__up').removeClass('disn');
-        }
+        downNav(pageNo);
 
 
         //                canvas.removeClass('overFlowControl');
@@ -212,14 +301,8 @@ $(function () {
                 pageNo--;
             }
 
+            upNav(pageNo);
 
-            if (pageNo == 0) {
-                $('.navigation__up').addClass('disn');
-                $('.navigation__down').removeClass('disn');
-            } else {
-                $('.navigation__down').removeClass('disn');
-                $('.navigation__up').removeClass('disn');
-            }
 
         }
     });

@@ -272,7 +272,7 @@
             width: 100%;
             fill: orange;
             height: 5rem;
-            @include respond(400){
+            @include respond(phone){
                 height: 1.3rem;
             }
         }
