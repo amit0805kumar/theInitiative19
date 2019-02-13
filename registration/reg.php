@@ -28,6 +28,11 @@ $master=true;
             $reg_std_l="/^[0-9]{7}[D]{1}$/";
 			$reg_mob="/^[0-9]{10}$/";
 
+      if (($team_name=="")&&($team_topic=="")&&($mem1_name=="")&&($mem1_email=="")&&($mem1_mobile=="")&&($mem1_branch=="")&&($mem1_year=="")&&($mem1_stdno=="")&&($mem2_name=="")&&($mem2_email=="")&&($mem2_mobile=="")&&($mem2_branch=="")&&($mem2_year=="")&&($mem2_stdno=="")&&($mem3_name=="")&&($mem3_email=="")&&($mem3_mobile=="")&&($mem3_branch=="")&&($mem3_year=="")&&($mem3_stdno=="")) {
+        # code...
+        $flagsubmit=false;
+      }
+
       if($mem3_name!=""){
     $mem_count=3;
     if (!filter_var($mem3_email, FILTER_VALIDATE_EMAIL) === true) {   //for member 1
@@ -90,22 +95,29 @@ $master=true;
    //          $c=$c+1;
    //          $team_id='INIT-'.$c;
 
-      
+if($flagsubmit){
+
 $sent=array("team_name"=>$team_name,"topic"=>$team_topic,"email"=>$mem1_email,"mobile_no"=>$mem1_mobile);
 $recieve=apicall("/api/customer/teamregister",$sent);
 $teamid=$recieve["team_id"];
-//echo $teamid;//mem1_details
+//mem1_details
 $sent=array("team_id"=>$teamid,"name"=>$mem1_name,"mobile"=>$mem1_mobile,"branch"=>$mem1_branch,"year"=>$mem1_year,"student_no"=>$mem1_stdno);
 apicall("/api/customer/addmember",$sent);
 //mem2_details
 $sent=array("team_id"=>$teamid,"name"=>$mem2_name,"mobile"=>$mem2_mobile,"branch"=>$mem2_branch,"year"=>$mem2_year,"student_no"=>$mem2_stdno);
 apicall("/api/customer/addmember",$sent);
+//mem3_details
 if ($mem_count==3) {
-  # code...
 
   $sent=array("team_id"=>$teamid,"name"=>$mem3_name,"mobile"=>$mem3_mobile,"branch"=>$mem3_branch,"year"=>$mem3_year,"student_no"=>$mem3_stdno);
  apicall("/api/customer/addmember",$sent);
 }
+
+}
+else{
+  header("Location:error_bak.html");
+}
+
 //mem3_details
 
 
