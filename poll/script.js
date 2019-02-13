@@ -79,52 +79,52 @@ $(function () {
     var bt8 = $('#bt8');
     var bt9 = $('#bt9');
     var bt10 = $('#bt10');
-    var topic = "NOT SELECTED"
+    var topic = "NO TOPIC SELECTED"
 
     bt1.click(function () {
         selected(bt1);
-        topic = "TOPIC1";
+        topic = "STATUE OF POLITICS";
     });
     bt2.click(function () {
         selected(bt2);
-        topic = "TOPIC2";
+        topic = "FUTILE STRATEGIES";
     });
 
     bt3.click(function () {
         selected(bt3);
-        topic = "TOPIC3";
+        topic = "THE PERSECUTED MIGRANTS";
     });
 
     bt4.click(function () {
         selected(bt4);
-        topic = "TOPIC1";
+        topic = "EXORBITANT MEDICATION";
     });
 
     bt5.click(function () {
         selected(bt5);
-        topic = "TOPIC1";
+        topic = "RAFALE DEAL";
     });
 
     bt6.click(function () {
         selected(bt6);
-        topic = "TOPIC1";
+        topic = "THE BLEMISH DEJECTION";
     });
 
     bt7.click(function () {
         selected(bt7);
-        topic = "TOPIC1";
+        topic = "MARINE MICROPLASTICS";
     });
     bt8.click(function () {
         selected(bt8);
-        topic = "TOPIC1";
+        topic = "THE BAD LOANS";
     });
     bt9.click(function () {
         selected(bt9);
-        topic = "TOPIC1";
+        topic = "SKILLED LABOUR";
     });
     bt10.click(function () {
         selected(bt10);
-        topic = "TOPIC10";
+        topic = "INDEPENDENT MEDIA";
     });
 
 

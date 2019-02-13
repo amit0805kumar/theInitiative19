@@ -5,8 +5,8 @@
 
 body {
     box-sizing: border-box;
-    width: 100vw;
     position: relative;
+    padding: .2px;
 }
 
 .b1,
@@ -46,15 +46,13 @@ body {
     font-family: sans-serif;
 }
 
-.form {
-    width: 80%;
-    margin: 50px 0;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 55em) {
+    .header__text {
+        font-size: 25px;
+
+    }
 }
+
 
 .form__options {
     display: flex;
@@ -83,24 +81,26 @@ body {
 }
 
 .form__submit {
-    color: black;
+    color: #fff;
     height: 40px;
     width: 120px;
-    font-family: 'Raleway'sans-serif;
     text-align: center;
     line-height: 40px;
     cursor: pointer;
     overflow: hidden;
-    margin: 50px 20px;
-    font-size: 2rem;
-    position: relative;
+    font-size: 15px;
     transition: all .8s;
     font-family: sans-serif;
-    position: relative;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 100;
+    background: #242222;
 }
 
 .form__submit:hover {
-    transform: translateY(-2px);
+    transform: translateX(-50%) translateY(-2px);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -133,6 +133,7 @@ body {
     align-items: center;
     margin-left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 200px;
 }
 
 .problem__details {
@@ -141,14 +142,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 0;
+  margin: 30px 0;
     padding: 10px
 }
 
 .problem__num {
     font-size: 18px;
     margin: 10px 0;
-    
+
     padding: 10px;
     background: orangered;
     text-align: center;
@@ -160,21 +161,46 @@ body {
 }
 
 .problem__heading {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 25px;
+    font-weight: 600;
     margin: 10px 0;
 }
-.problem__abstract{
-    font-size: 15px;
-    font-family: sans-serif;
-    margin: 20px 0;
+
+@media only screen and (max-width: 900px) {
+    .problem__heading {
+
+        font-size: 20px;
+        font-weight: 500;
+
+    }
 }
 
-.popup{
+.problem__abstract {
+    font-size: 15px;
+    font-family: 'Aleo';
+    margin: 20px 0;
+    color: #2e0d01;
+    line-height: 25px;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .problem__abstract {
+        font-size: 12px;
+
+        margin: 20px 0;
+
+        line-height: 20px;
+
+    }
+}
+
+.popup {
     width: 700px;
     height: 200px;
     background: #f7e8b7;
-    position:fixed;
+    position: fixed;
     top: 200px;
     left: 50%;
     transform: translateX(-50%);
@@ -189,29 +215,64 @@ body {
     font-family: sans-serif;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.popup__cut{
+
+.popup__cut {
     position: absolute;
     left: 98%;
-    cursor:pointer;
+    cursor: pointer;
     top: -10px;
-   
-}
-.popup__topic{
-     font-size: 30px;
-}
-.closePopup{
-    transform:translateX(-50%) scale(0);
-    opacity: 0;
+
 }
 
-.openPopup{
-    transform:translateX(-50%) scale(1);
-    opacity: 1;
+@media only screen and (max-width: 600px) {
+    .popup__cut {
+
+        left: 97%;
+
+
+    }
+
+}@media only screen and (max-width: 400px) {
+    .popup__cut {
+
+        left: 96%;
+
+
+    }
+
 }
-.popup__heading{
-    
-    
+
+.popup__topic {
+    font-size: 30px;
 }
-.selected{
-    background: green;
+
+@media only screen and (max-width: 900px) {
+    .popup__topic {
+        font-size: 18px;
+    }
 }
+    .popup {
+        width: 70%;
+        height: 100px;
+
+        top: 200px;
+        left: 50%;
+
+
+    }
+
+    .closePopup {
+        transform: translateX(-50%) scale(0);
+        opacity: 0;
+    }
+
+    .openPopup {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+
+    .popup__heading {}
+
+    .selected {
+        background: green;
+    }
