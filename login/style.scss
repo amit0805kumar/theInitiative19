@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@mixin respond($breakpoint) {
+
+    @if $breakpoint==phonesm {
+        @media only screen and (max-width: 18.75em) {
+            //300px
+            @content
+        }
+    }
+
+    @if $breakpoint==400 {
+        @media only screen and (max-width: 25em) {
+            //400px
+            @content
+        }
+    }
+
+    @if $breakpoint==350 {
+        @media only screen and (max-width: 21.875em) {
+            //350px
+            @content
+        }
+    }
+
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            //600px
+            @content
+        }
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            //900
+            @content
+        }
+    }
+
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            //1200
+            @content
+        }
+    }
+
+    @if $breakpoint==big-desk {
+        @media only screen and (min-width: 112.5em) {
+            //1800px
+            @content
+        }
+    }
+
+}
+
+body {
+    background-image: url(formbg.svg);
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    &__logo {
+
+        width: 8rem;
+
+    }
+
+    &__heading {
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1rem;
+            background-image: linear-gradient(to right, #09aa09, orangered);
+            border-radius: 30px;
+        }
+    }
+}
+
+
+.formContainer {
+
+    margin-left: 50%;
+    margin-top: 5rem;
+    transform: translateX(-50%);
+    width: 50rem;
+    height: 53rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    background: #fff;
+
+    @include respond(phone) {
+        width: 40rem;
+        height: 48rem;
+    }
+
+    @include respond(400) {
+        width: 90%;
+        height: 42rem;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .3s;
+    height: 100%;
+
+    &__heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-top: 1.2rem;
+        }
+    }
+
+
+
+    .input {
+        display: block;
+        border: none;
+        border-bottom: 1.5px solid orangered;
+        width: 90%;
+        padding: 1rem 1.5rem;
+        margin: .5rem 0;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        transition: all .5s ease-in-out;
+    }
+
+    .input:focus {
+        outline: none;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    input[type=submit] {
+        background: #220322;
+        border: none;
+        color: #fff;
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        width: 90%;
+        letter-spacing: 3px;
+        margin-top: 1rem;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+    }
+}
+
+.controller {
+    position: absolute;
+    background: #220322;
+    border-radius: 30px;
+    overflow: hidden;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+
+    &__btn {
+        width: 50%;
+        padding: .5rem 1rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+        letter-spacing: 2.5px;
+        transition: all .3s;
+
+        @include respond(phone) {
+            font-size: .8rem;
+            padding: .3rem .8rem;
+        }
+    }
+
+
+}
+
+.loginForm {
+    z-index: 5;
+}
+
+.registerFrom {
+    z-index: 4;
+}
+
+.btnActive {
+    background: #33cc33;
+}
+
+.hide {
+    top: 10rem;
+    opacity: 0;
+    z-index: -1;
+}
+
+.svgIcons {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+   @include respond(phone) {
+       width: 1rem;
+    height: 1rem;
+    margin: 0 .5rem;
+    }
+
+}
+
+.contacts {
+    position: fixed;
+    bottom: 2rem;
+    right: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone) {
+        bottom: 1rem;
+        right: 5rem;
+        width: 3rem;
+    }
+
+    @include respond(phone) {
+        border: .8rem;
+        right: 2rem;
+        width: 2rem;
+    }
+}

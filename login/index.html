@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="utf-8">
+
+    <!--    <link rel="shotcut icon" type="img/png" href="Images/icon.png">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Poppins:300,400,500,600,700,900|Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Login | SignUp</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="../index.html"><img src="../images/logo.png" alt="" class="header__logo"></a>
+        <div class="header__heading">The Initiative</div>
+    </div>
+    <div class="formContainer">
+
+        <div class="controller">
+            <div class="controller__btn btnActive" id="loginBtn">Login</div>
+            <div class="controller__btn" id="signUpBtn">Signup</div>
+        </div>
+
+        <form action="" class="form loginForm">
+
+            <div class="form__heading">Login</div>
+            <input type="number" placeholder="Mobile" class="input">
+            <input type="password" placeholder="Password" class="input">
+            <input type="submit" value="Login">
+        </form>
+        <form action="" class="form registerFrom hide">
+            <div class="form__heading">Register</div>
+            <input type="text" placeholder="Team Name" class="input">
+            <input type="password" placeholder="Password" class="input">
+            <input type="password" placeholder="Confirm Password" class="input">
+            <input type="submit" value="Register">
+
+        </form>
+
+    </div>
+
+    <div class="contacts">
+
+        <a href="https://www.facebook.com/theinitiative.akg/" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#facebook"></use>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/csi_akgec/" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#instagram"></use>
+            </svg>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#youtube"></use>
+            </svg>
+        </a>
+    </div>
+
+</body>
+
+</html>
