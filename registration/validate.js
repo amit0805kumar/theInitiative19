@@ -50,10 +50,7 @@ $(function(){
         
 	});    
     
-       	$("#mem1_mobile").focusout(function(){
-		check_mem1_mobile();
-        confirm_mem1();
-	});
+      
     
 	$("#mem1_rollno").focusout(function(){
 		check_mem1_rollno();
@@ -215,25 +212,7 @@ $(function(){
 		}
 	};
 
-	function check_mem1_mobile(){
-		var regex_mem1_mobile = /^[0-9]{10}$/;		
-		var num_mem1_length = ($("#mem1_mobile").val()).length;
-		if (num_mem1_length!=10) 
-		{
-			$("#mem1_mobile").css("border","2px solid #d9534f");
-			mem1_mobile = false;
-		}
-		else if (!regex_mem1_mobile.test($("#mem1_mobile").val())) 
-		{
-			$("#mem1_mobile").css("border","2px solid #d9534f");
-			mem1_mobile = false;
-		}
-		else
-		{
-			$("#mem1_mobile").css("border", "2px solid #5cb85c");
-            mem1_mobile = true;
-		}
-	};
+	
     
     function check_mem1_rollno(){
 		var regex_mem1_rollno = /^[0-9]{10}$/;		
@@ -305,7 +284,7 @@ $(function(){
   function confirm_mem1() {
           console.log("name");
           console.log(mem1_name);
-          if(team_name===true  && team_topic ===true && mem1_name === true && mem1_email===true && mem1_mobile === true  && mem1_branch===true && mem1_rollno===true && mem1_year===true && college=== true){
+          if(team_name===true  && team_topic ===true && mem1_name === true && mem1_email===true  && mem1_branch===true && mem1_rollno===true && mem1_year===true && college=== true){
             $("#next").removeAttr("disabled");         
           }
 
