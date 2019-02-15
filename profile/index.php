@@ -85,7 +85,7 @@
                             </div>
                         </div>
 
-                        <div class="topic__synopsis noselect">Download Sample Synopsis</div>
+                        <a href="#" target="_blank" class="topic__synopsis noselect">Download Sample Synopsis</a>
 
                     </div>
 
@@ -98,7 +98,7 @@
                                 <div class="members__name">Name: <span>Amit Kumar</span></div>
                                 <div class="members__mobile">Mobile: <span>8802980454</span></div>
                                 <div class="members__name">Roll No: <span>1602710016</span></div>
-                                <div class="members__year">Year: <span>1</span></div>
+                                <div class="members__name">Year: <span>1</span></div>
                             </div>
                             <div class="members__details">
                               <div class="members__head">Member 2</div>
@@ -124,14 +124,16 @@
 
                     <div class="task__heading">Upload Synopsis</div>
 
-                    <div class="synopsis">
+                    <form action="#" method="post" class="synopsis">
                         <input type="text" class="synposis__input">
                         <div class="synopsis__btn">
+                           <input type="submit" value="">
                             <svg class="uploadIcon">
                                 <use xlink:href="images/sprite.svg#upload"></use>
                             </svg>
                         </div>
-                    </div>
+                    </form>
+                      <div class="uploadInst">* You must upload the google docs link.</div>
 
 
                 </div>
