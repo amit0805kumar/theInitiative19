@@ -31,15 +31,16 @@
         <form action="" class="form loginForm">
 
             <div class="form__heading">Login</div>
-            <input type="number" placeholder="Mobile" class="input">
-            <input type="password" placeholder="Password" class="input">
+            <input type="number" name="mobile_no_login" id="mobile_no_login" placeholder="Mobile" class="input">
+            <input type="password" name="password_login" id="password_login" placeholder="Password" class="input">
             <input type="submit" value="Login">
         </form>
-        <form action="" class="form registerFrom hide">
+        <form action="signup.php" method="post" class="form registerFrom hide">
             <div class="form__heading">Register</div>
-            <input type="text" placeholder="Team Name" class="input">
-            <input type="password" placeholder="Password" class="input">
-            <input type="password" placeholder="Confirm Password" class="input">
+            <input type="number" name="mobile_no" id="mobile_no" placeholder="Mobile Number" class="input">
+            <input type="text" name="email" id="email" placeholder="Email" class="input">
+            <input type="password" name="password" id="password" placeholder="Password" class="input">
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input">
             <input type="submit" value="Register">
 
         </form>
