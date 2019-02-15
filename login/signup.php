@@ -17,13 +17,19 @@ if (($mobile_no=="")&&($email=="")&&($password=="")&&($confirm_password=="")) {
             $flagsubmit=false;      
             }
 }
-echo "dfsdh";
 $sent=array("mobile_no"=>$mobile_no,"password"=>$password,"email"=>$email);
 $recieve=apicall("/api/customer/userregister",$sent);
-print_r($recieve);
+if ($recieve["message"]=="success") {
+	echo "Successfully Registered";
+}
+elseif ($recieve["message"]=="already_exist") {
+	echo "Sorry! Mobile Number Already Exist";
+}
+else{
+	echo "Some Unexpected Error Occured";
+}
 //echo $recieve["user_id"];
-$_SESSION["user_details"]["user_id"] = $recieve["user_id"];
-echo $_SESSION["user_details"]["user_id"] ;
+//$_SESSION["user_details"]["user_id"] = $recieve["user_id"];
 //echo json_encode($_SESSION["user_details"]);
 
 ?>

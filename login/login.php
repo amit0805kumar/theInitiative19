@@ -18,9 +18,20 @@ print_r($recieve);
 if ($recieve["message"]=="success") {
 	header("Location:../profile/index.php");
 }
+if ($recieve["message"]=="invalid_mobile_password") {
+	# code...
+	header("Location:../registration/error_bak.html");
+}
+else{
+	header("Location:../registration/error_bak.html");	
+}
 //echo $recieve["user_id"];
 $_SESSION["user_details"]["user_id"] = $recieve["user_id"];
-echo $_SESSION["user_details"]["user_id"] ;
+$_SESSION["user_details"]["mobile_no"] = $mobile_no_login;
+
+echo $_SESSION["user_details"]["user_id"];
+echo $_SESSION["user_details"]["mobile_no"];
+
 //echo json_encode($_SESSION["user_details"]);
 
 ?>
