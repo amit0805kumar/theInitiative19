@@ -17,7 +17,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS,$data_string);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response  = curl_exec($ch);
 curl_close($ch);
-//echo $response;
+echo $response;
 $json_decoded=json_decode($response,true);
     return $json_decoded;
 }

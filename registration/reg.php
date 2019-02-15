@@ -7,28 +7,29 @@ $mem1_email=$_POST["mem1_email"];
 $mem1_mobile=$_POST["mem1_mobile"];
 $mem1_branch=$_POST["mem1_branch"];
 $mem1_year=$_POST["mem1_year"];
-$mem1_stdno=$_POST["mem1_stdno"];
+$mem1_rollno=$_POST["mem1_rollno"];
 $mem2_name=$_POST["mem2_name"];
 $mem2_email=$_POST["mem2_email"];
 $mem2_mobile=$_POST["mem2_mobile"];
 $mem2_branch=$_POST["mem2_branch"];
 $mem2_year=$_POST["mem2_year"];
-$mem2_stdno=$_POST["mem2_stdno"];
+$mem2_rollno=$_POST["mem2_rollno"];
 $mem3_name=$_POST["mem3_name"];
+$college = $_POST["college"];
 $mem3_email=$_POST["mem3_email"];
 $mem3_mobile=$_POST["mem3_mobile"];
 $mem3_branch=$_POST["mem3_branch"];
 $mem3_year=$_POST["mem3_year"];
-$mem3_stdno=$_POST["mem3_stdno"];
+$mem3_rollno=$_POST["mem3_rollno"];
 $flagsubmit=true;
 $mem_count=2;
 $master=true;
 //reg exps
-            $reg_std_n="/^[0-9]{7}$/";
+            $reg_std_n="/^[0-9]{10}$/";
             $reg_std_l="/^[0-9]{7}[D]{1}$/";
 			$reg_mob="/^[0-9]{10}$/";
 
-      if (($team_name=="")&&($team_topic=="")&&($mem1_name=="")&&($mem1_email=="")&&($mem1_mobile=="")&&($mem1_branch=="")&&($mem1_year=="")&&($mem1_stdno=="")&&($mem2_name=="")&&($mem2_email=="")&&($mem2_mobile=="")&&($mem2_branch=="")&&($mem2_year=="")&&($mem2_stdno=="")) {
+      if (($team_name=="")&&($team_topic=="")&&($mem1_name=="")&&($mem1_email=="")&&($mem1_mobile=="")&&($mem1_branch=="")&&($mem1_year=="")&&($mem1_rollno=="")&&($mem2_name=="")&&($mem2_email=="")&&($mem2_mobile=="")&&($mem2_branch=="")&&($mem2_year=="")&&($mem2_rollno=="")) {
         # code...
         $flagsubmit=false;
       }
@@ -40,9 +41,9 @@ $master=true;
             $flagsubmit=false;      
             } 
 
-    if(!preg_match($reg_std_n,$mem3_stdno))
+    if(!preg_match($reg_std_n,$mem3_rollno))
                 { 
-          echo "invalid student id";
+          echo "invalid roll number";
           $flagsubmit=false;
           }
 
@@ -63,15 +64,15 @@ $master=true;
             $flagsubmit=false;			
             } 
 //validate stdno
-            if(!preg_match($reg_std_n,$mem1_stdno))
+            if(!preg_match($reg_std_n,$mem1_rollno))
                 { 
-				  echo "invalid student id";
+				  echo "invalid roll number";
 				  $flagsubmit=false;
 			    }
 
-    if(!preg_match($reg_std_n,$mem2_stdno) )
+    if(!preg_match($reg_std_n,$mem2_rollno) )
                 { 
-				  echo "invalid student id";
+				  echo "invalid roll number";
 				  $flagsubmit=false;
 			    }
 
@@ -97,19 +98,19 @@ $master=true;
 
 if($flagsubmit){
 
-$sent=array("team_name"=>$team_name,"topic"=>$team_topic,"email"=>$mem1_email,"mobile_no"=>$mem1_mobile);
+$sent=array("team_name"=>$team_name,"topic"=>$team_topic,"email"=>$mem1_email,"college"=>$college,"mobile_no"=>$mem1_mobile);
 $recieve=apicall("/api/customer/teamregister",$sent);
 $teamid=$recieve["team_id"];
 //mem1_details
-$sent=array("team_id"=>$teamid,"name"=>$mem1_name,"mobile"=>$mem1_mobile,"branch"=>$mem1_branch,"year"=>$mem1_year,"student_no"=>$mem1_stdno);
+$sent=array("team_id"=>$teamid,"name"=>$mem1_name,"mobile"=>$mem1_mobile,"branch"=>$mem1_branch,"year"=>$mem1_year,"roll_no"=>$mem1_rollno);
 apicall("/api/customer/addmember",$sent);
 //mem2_details
-$sent=array("team_id"=>$teamid,"name"=>$mem2_name,"mobile"=>$mem2_mobile,"branch"=>$mem2_branch,"year"=>$mem2_year,"student_no"=>$mem2_stdno);
+$sent=array("team_id"=>$teamid,"name"=>$mem2_name,"mobile"=>$mem2_mobile,"branch"=>$mem2_branch,"year"=>$mem2_year,"roll_no"=>$mem2_rollno);
 $msg_success=apicall("/api/customer/addmember",$sent);
 //mem3_details
 if ($mem_count==3) {
 
-  $sent=array("team_id"=>$teamid,"name"=>$mem3_name,"mobile"=>$mem3_mobile,"branch"=>$mem3_branch,"year"=>$mem3_year,"student_no"=>$mem3_stdno);
+  $sent=array("team_id"=>$teamid,"name"=>$mem3_name,"mobile"=>$mem3_mobile,"branch"=>$mem3_branch,"year"=>$mem3_year,"roll_no"=>$mem3_rollno);
 $msg_success=apicall("/api/customer/addmember",$sent);
 }
 if ($msg_success["message"]=="success") {
