@@ -117,13 +117,22 @@ a {
         margin-top: 3rem; }
         .container .main .content__box .topic {
           width: 100%;
-          margin-top: 10rem;
+          margin-top: 15rem;
           padding: 2rem;
           display: flex;
           flex-direction: column;
-          align-items: center; }
+          align-items: center;
+          margin-bottom: 6rem; }
+          .container .main .content__box .topic__synopsis {
+            background: black;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 2px;
+            cursor: pointer; }
           .container .main .content__box .topic__head {
-            font-family: 'Poppins',sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             letter-spacing: 3px; }
             .container .main .content__box .topic__head span {
@@ -135,10 +144,54 @@ a {
             margin: 2rem 0; }
           .container .main .content__box .topic__abstract {
             text-transform: uppercase;
-            font-size: 2rem; }
+            font-size: 2rem;
+            font-family: 'Muli', sans-serif; }
             .container .main .content__box .topic__abstract__text {
               font-size: 2rem;
               margin: 2rem 1rem; }
+        .container .main .content__box .members {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .container .main .content__box .members__heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4rem; }
+          .container .main .content__box .members__grid {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 3rem 0;
+            padding: 0 3rem; }
+          .container .main .content__box .members__details {
+            text-align: left;
+            width: 30rem;
+            padding: 1rem;
+            background: #f5c0c0;
+            border-radius: 3px;
+            margin: 0 1rem; }
+          .container .main .content__box .members__head {
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+            font-family: 'Muli',sans-serif;
+            font-weight: 900; }
+          .container .main .content__box .members__name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem; }
+            .container .main .content__box .members__name span {
+              font-weight: 600; }
+          .container .main .content__box .members__mobile {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem; }
+            .container .main .content__box .members__mobile span {
+              font-weight: 600; }
+          .container .main .content__box .members__roll {
+            font-size: 2rem; }
+          .container .main .content__box .members__year {
+            font-size: 2rem; }
         .container .main .content__box .uploadInst {
           color: red;
           text-align: center;

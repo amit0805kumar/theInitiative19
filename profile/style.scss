@@ -149,39 +149,125 @@ a {
                 background: #fff;
                 transition: all .3s;
                 margin-top: 3rem;
-                
-                
-                .topic{
+
+
+                .topic {
                     width: 100%;
-                    margin-top: 10rem;
+                    margin-top: 15rem;
                     padding: 2rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    &__head{
-                        font-family: 'Poppins',sans-serif;
+                    margin-bottom: 6rem;
+
+                    &__synopsis {
+
+                        background: black;
+                        color: #fff;
+                        padding: 1rem 2rem;
+                        text-transform: uppercase;
+                        font-family: 'Poppins', sans-serif;
+                        letter-spacing: 2px;
+                        cursor: pointer;
+                    }
+
+                    &__head {
+                        font-family: 'Poppins', sans-serif;
                         font-size: 2rem;
                         letter-spacing: 3px;
-                        span{
+
+                        span {
                             font-weight: 600;
                         }
                     }
-                    
-                    &__details{
+
+                    &__details {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         margin: 2rem 0;
                     }
-                    &__abstract{
+
+                    &__abstract {
                         text-transform: uppercase;
                         font-size: 2rem;
-                        &__text{
+                        font-family: 'Muli', sans-serif;
+
+                        &__text {
                             font-size: 2rem;
                             margin: 2rem 1rem;
                         }
                     }
-                    
+
+                }
+
+
+                .members {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &__heading {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 2rem;
+                        letter-spacing: 3px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-bottom: 4rem;
+
+                    }
+
+                    &__grid {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin: 3rem 0;
+                        padding: 0 3rem;
+                    }
+
+                    &__details {
+                        text-align: left;
+                        width: 30rem;
+                        padding: 1rem;
+                        background: #f5c0c0;
+                        border-radius: 3px;
+                        margin: 0 1rem;
+                    }
+
+                    &__head {
+                        font-size: 2.4rem;
+                        margin-bottom: 2rem;
+                        font-family:'Muli',sans-serif;
+                        font-weight: 900;
+                    }
+
+                    &__name {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 2rem;
+
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+                    &__mobile {
+                        font-family: 'Poppins', sans-serif;
+
+                        font-size: 2rem;
+
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+                    &__roll {
+                        font-size: 2rem;
+                    }
+
+                    &__year {
+                        font-size: 2rem;
+                    }
+
                 }
 
                 .uploadInst {
@@ -317,7 +403,7 @@ a {
                             font-weight: 900;
                             text-align: center;
                             color: #ed211d;
-                            
+
                         }
 
                         &__text {
