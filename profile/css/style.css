@@ -221,7 +221,16 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer; }
+            cursor: pointer;
+            position: relative; }
+            .container .main .content__box .uploader__btn input {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: transparent;
+              border: none; }
+              .container .main .content__box .uploader__btn input:active {
+                outline: none; }
             .container .main .content__box .uploader__btn:hover {
               background: transparent; }
               .container .main .content__box .uploader__btn:hover .uploadIcon {
