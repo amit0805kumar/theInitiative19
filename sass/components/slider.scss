@@ -340,14 +340,15 @@
               width: 100%;
               display: flex;
               justify-content: space-around;
-              margin-top: 2.5rem;
-
+              position: absolute;
+                bottom: 1.5rem;
+              
               @include respond(tab-port) {
-                  margin-top: 2rem;
+                  bottom: 1rem;
               }
 
               @include respond(phone) {
-                  margin-top: 1.2rem;
+                  bottom: 1rem;
               }
           }
 

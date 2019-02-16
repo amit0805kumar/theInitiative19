@@ -1270,13 +1270,14 @@ font-family: 'Raleway', sans-serif;*/
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 2.5rem; }
+    position: absolute;
+    bottom: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .problems__abstract__buttons {
-        margin-top: 2rem; } }
+        bottom: 1rem; } }
     @media only screen and (max-width: 37.5em) {
       .problems__abstract__buttons {
-        margin-top: 1.2rem; } }
+        bottom: 1rem; } }
   .problems__abstract__btn {
     font-size: 1.6rem;
     text-transform: uppercase;
