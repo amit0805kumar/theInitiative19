@@ -28,9 +28,9 @@
             <div class="controller__btn" id="signUpBtn">Signup</div>
         </div>
 
-        <form action="login.php" method="post" class="form loginForm">
-
+        <form  id="login_form"  class="form loginForm">
             <div class="form__heading">Login</div>
+            <p style="font-size: 18px;color: red;" id="error_msg_login"></p>
             <input type="number" name="mobile_no_login" id="mobile_no_login" placeholder="Mobile" class="input">
             <input type="password" name="password_login" id="password_login" placeholder="Password" class="input">
             <input type="submit" value="Login">
@@ -42,7 +42,7 @@
             <input type="text" name="email" id="email" placeholder="Email" class="input">
             <input type="password" name="password" id="password" placeholder="Password" class="input">
             <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input">
-            <input type="submit" value="Register">
+            <input type="submit" id="signup_submit" value="Register">
 
         </form>
 

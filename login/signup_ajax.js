@@ -30,4 +30,33 @@ $(document).ready(function(){
 		
 	});
 
+
+	$(document).on('submit','#login_form',function(event){
+		event.preventDefault();
+		//$("#signup_submit").attr('disabled','disabled');
+		$.ajax({
+			url:"login.php",
+			method:'POST',
+			data:new FormData(this),
+			contentType:false,
+			processData:false,
+			success:function(data)
+			{	 
+				//$("#signup_submit").removeAttr('disabled'); 
+				if (data=="success") {
+					window.location.href ="../profile/index.php";
+				}
+				else{
+				   $("#error_msg_login").html(data);	
+				}
+				
+				
+			}
+		});
+		setInterval(function(){
+			$('#error_msg_login').html('');
+		},10000);
+
+	});	
+
 });

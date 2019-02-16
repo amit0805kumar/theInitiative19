@@ -17,20 +17,21 @@ if ($flagsubmit) {
 $sent=array("mobile_no"=>$mobile_no_login,"password"=>$password_login);
 $recieve=apicall("/api/customer/login",$sent);
 if ($recieve["message"]=="success") {
-	//header("Location:../profile/index.php");
+	$_SESSION["user_details"]["user_id"] = $recieve["user_id"];
+	$_SESSION["user_details"]["mobile_no"] = $mobile_no_login;
+	echo "success";
 }
 elseif ($recieve["message"]=="invalid_mobile_password") {
 	//header("Location:../registration/error_bak.html");
+	echo "Invalid Mobile Number OR Password";
 }
 else{
-	//header("Location:../registration/error_bak.html");	
+	//header("Location:../registration/error_bak.html");
+	echo "Unknown Error Occured.Please Try Again!";	
 }
-//echo $recieve["user_id"];
-$_SESSION["user_details"]["user_id"] = $recieve["user_id"];
-$_SESSION["user_details"]["mobile_no"] = $mobile_no_login;
 
-echo $_SESSION["user_details"]["user_id"];
-echo $_SESSION["user_details"]["mobile_no"];
+// echo $_SESSION["user_details"]["user_id"];
+// echo $_SESSION["user_details"]["mobile_no"];
 
 //echo json_encode($_SESSION["user_details"]);
 
