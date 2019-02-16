@@ -143,7 +143,7 @@
 
 
                 <div class="content__box hide" id="b3">
-                    <div class="task__heading">Tasik Details</div>
+                    <div class="task__heading">Task Details</div>
                     <div class="task__box">
                         <div class="task">
                             <div class="task__code">Task Code (IN011)</div>
