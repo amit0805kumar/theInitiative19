@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+session_start();
+?>
 <head>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
@@ -51,8 +53,9 @@
                 <input type="text" name="mem1_name" id=mem1_name placeholder="Leader Name">
                 
                 <input type="email" name="mem1_email" id="mem1_email" placeholder="Email" />
-               
-                                  
+                
+                <input type="number" name="mem1_mobile" id="mem1_mobile" placeholder="Mobile Number" value="<?php echo($_SESSION['user_details']['mobile_no']); ?>" disabled>
+
                 <input type="text" name="mem1_rollno" id="mem1_rollno" placeholder="Roll Number">
                 
                 <input type="text" name="college" id="college" placeholder="College">

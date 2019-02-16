@@ -13,9 +13,6 @@
     <title>Team Profile</title>
 
 <body>
-    <?php
-    
-    ?>
 
     <div class="container">
         <div class="header">
