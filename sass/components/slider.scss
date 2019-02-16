@@ -184,11 +184,11 @@
           opacity: 0;
 
           #pbMain1 {
-              background-image: url('../images/topics/medicb.jpg');
+              background-image: url('../images/topics/statueb.jpg');
           }
 
           #pbMain2 {
-              background-image: url('../images/topics/mentalb.png');
+              background-image: url('../images/topics/mentalbg.jpg');
           }
 
           #pbMain3 {
@@ -196,22 +196,22 @@
           }
 
           #pbMain4 {
-              background-image: url('../images/topics/plasticb.jpeg');
+              background-image: url('../images/topics/medicb.jpg');
           }
 
           #pbMain5 {
-              background-image: url('../images/topics/statueb.jpg');
+              background-image: url('../images/topics/farmersb.jpg');
           }
 
           #pbMain6 {
-              background-image: url('../images/topics/farmer.jpg');
+              background-image: url('../images/topics/plasticb.jpg');
           }
 
 
       }
 
       &__heading {
-          font-family: 'Montserrat Alternates', sans-serif;
+          font-family: 'Raleway', sans-serif;
           font-size: 4rem;
           color: #000;
           text-transform: uppercase;
@@ -240,7 +240,7 @@
       &__main {
 
           width: 80%;
-          height: 70vh;
+          height: 75vh;
           //          background-image: url('../images/aadhaar.jpg');
           background-repeat: no-repeat;
           background-size: cover;
@@ -256,9 +256,12 @@
           @include respond(tab-port) {
               width: 95%;
           }
+          @include respond(phone) {
+             height: 85vh;
+          }
 
           &__left {
-              width: 30%;
+              width: 20%;
 
               @include respond(tab-port) {
                   width: 0%;
@@ -266,7 +269,7 @@
           }
 
           &__right {
-              width: 70%;
+              width: 80%;
               background: rgba(0, 0, 0, 0.58);
               position: relative;
 
@@ -304,10 +307,14 @@
               display: flex;
               color: #fff;
               font-size: 1.5rem;
-              line-height: 2.5rem;
+              line-height: 2.2rem;
+              width: 100%;
+              
 
               &-part {
                   padding: 0 1rem;
+                  width: 100%;
+                  
               }
 
               @include respond(tab-port) {
@@ -317,13 +324,13 @@
 
               @include respond(phone) {
                   font-size: 1.2rem;
-                  line-height: 2rem;
+                  line-height: 1.7rem;
                   padding: 0 .8rem;
               }
 
               @include respond(400) {
                   font-size: 1rem;
-                  line-height: 2rem;
+                  line-height: 1.5rem;
                   padding: 0 .5rem;
               }
           }
@@ -333,7 +340,7 @@
               width: 100%;
               display: flex;
               justify-content: space-around;
-              margin-top: 4rem;
+              margin-top: 2.5rem;
 
               @include respond(tab-port) {
                   margin-top: 2rem;

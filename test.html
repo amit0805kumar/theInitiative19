@@ -1,160 +1,1379 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Pieces.js</title>
-  
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="slideshow, slider, pieces, fragments, animation, svg, canvas, javascript" />
+
+    <link rel="shotcut icon" type="img/png" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    #particles-js{
-  width: 50%;
-  height: 100%;
-  background-color: #e06d6d;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-    </style>
-  
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat+Alternates:200,300,400,500,600,700,800,900|Muli:300,400,600,700,800,900|Poiret+One|Righteous|Roboto+Mono:300,400,500,700|Major+Mono+Display|Raleway:200,300,400,500,600,700,800,900|Anton|Buenard:400,700|Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>The Initiative'19</title>
+
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
 </head>
 
 <body>
 
-   <!-- particles.js container -->
-                <div id="particles-js"></div>
-                
-                
-                
- <script src='js/particles.js'></script>
- 
-   <script>
-    
-//particle.js config
-    particlesJS('particles-js',
-  
-  {
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 5,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true,
-    "config_demo": {
-      "hide_card": false,
-      "background_color": "#b61924",
-      "background_image": "",
-      "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
-    }
-  }
+    <div class="canvas overFlowControl">
+        <div class="navigation__buttons noselect updownanime">
+            <div class="navigation__up">
+                <svg class="svgIcons">
+                    <use xlink:href="svg/svgIcons2.svg#arrow"></use>
+                </svg>
+            </div>
+            <div class="navigation__down">
+                <svg class="svgIcons">
+                    <use xlink:href="svg/svgIcons2.svg#arrow"></use>
+                </svg>
+            </div>
+        </div>
 
-);
-    </script>
-    
+        <div class="nav">
+            <div class="nav__button nav__button-hover noselect">
+                <span>&nbsp;</span>
+            </div>
+            <div class="nav__menu">
+
+                <img src="svg/navsvg/1.svg" alt="" class="navbg" id="navbg1">
+                <img src="svg/navsvg/2.svg" alt="" class="navbg" id="navbg2">
+                <img src="svg/navsvg/3.svg" alt="" class="navbg" id="navbg3">
+
+                <div class="nav__csi noselect">
+                    <div class="nav__csi-c">create</div>
+                    <div class="nav__csi-s">share</div>
+                    <div class="nav__csi-i">innovate</div>
+                </div>
+                <div class="nav__menu__list">
+                    <a href="#" class="nav__link noselect" id="home">Home</a>
+                    <a href="#" class="nav__link noselect" id="about">About</a>
+                    <a href="#" class="nav__link noselect" id="structure">Structure</a>
+                    <a href="#" class="nav__link noselect" id="problem">Problems</a>
+                    <a href="#" class="nav__link noselect" id="faq">FAQs</a>
+                    <a href="#" class="nav__link noselect" id="contact">Contacts</a>
+                </div>
+
+                <div class="nav__icons">
+                    <a href="https://www.facebook.com/theinitiative.akg/" class="nav__social__links" target="_blank">
+                        <svg class="svgIcons">
+                            <use xlink:href="svg/svgIcons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/csi_akgec/" class="nav__social__links" target="_blank">
+                        <svg class="svgIcons">
+                            <use xlink:href="svg/svgIcons.svg#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="nav__social__links" target="_blank">
+                        <svg class="svgIcons">
+                            <use xlink:href="svg/svgIcons.svg#youtube"></use>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header">
+
+
+            <div class="bg">
+
+
+                <!-- particles.js container -->
+                <div id="particles-js"></div>
+
+
+                <img src="svg/headerbg/1.svg" alt="" class="bg__images noselect" id="bg1">
+                <img src="svg/headerbg/2.svg" alt="" class="bg__images noselect" id="bg2">
+                <img src="svg/headerbg/3.svg" alt="" class="bg__images noselect" id="bg3">
+                <img src="svg/headerbg/4.svg" alt="" class="bg__images noselect" id="bg4">
+
+                <div class="header__details">
+
+                    <div class="header__details__main">
+                        <div class="header__logo"> </div>
+                        <div class="header__text">
+
+                            <div class="header__text__main">The Initiative'19</div>
+
+
+                            <div class="header__text__tag highlighter noselect">Unfurling India's Competence</div>
+                            <div class="header__buttons-grid">
+                                <a href="login/index.html" class="header__btn noselect" id="header__btn1">
+                                    Login
+                                    <div class="header__btn__colo1" id="btn1Clr1"></div>
+                                    <div class="header__btn__colo2" id="btn1Clr2"></div>
+                                </a>
+                                <a href="#" class="header__btn noselect" id="header__btn2">
+                                    Register
+                                    <div class="header__btn__colo1" id="btn2Clr1"></div>
+                                    <div class="header__btn__colo2" id="btn2Clr2"></div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="header__text__team noselect">
+                        <a href="http://csiakgec.in" target="_blank"><img class="teamLogo" src="images/logocsiCenter.png" alt="csiLogo"></a>
+                        <div class="header__text__team__text">
+                            a team csi initiative
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="header__social">
+                    <a href="https://www.facebook.com/theinitiative.akg/" class="header__social__links" target="_blank">
+                        <svg class="svgIcons">
+                            <use xlink:href="svg/svgIcons.svg#facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/csi_akgec/" class="header__social__links" target="_blank">
+                        <svg class="svgIcons">
+                            <use xlink:href="svg/svgIcons.svg#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="header__social__links" target="_blank">
+                        <svg class="svgIcons">
+                            <use xlink:href="svg/svgIcons.svg#youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="section__about">
+            <div class="about__part"></div>
+            <div class="section__heading" id="headingAbout">
+                <h1 class="glitched-1">About the event</h1>
+            </div>
+            <div class="about__container">
+
+                <div class="about__text">
+
+                    <div class="about__text-heading">
+                        Why Initiative?
+                    </div>
+                    <div class="about__text-para">
+                        India had a national dream before 1947. That dream was <a href="#" class="highlighter">to become an independent country</a>, and it came true. But things have become a bit fuzzy since then.Today, if you ask someone on the street about what India’s national dream is, they wouldn’t know. <br><br> If you ask a politician, he may talk about it for an hour, but in the end neither he nor you would know. <a href="#" class="highlighter">We don’t need a report.</a> There was already one released in 2002 by the Planning Commission titled “India – Vision 2020”. And we don’t need cute pithy phrases. It’s not enough just to be “Incredible India.” Initiative is a vision that promises to take India to the world, and get students and professionals across geographies to compete, collaborate and co-create a better future for all of us.
+                    </div>
+
+                </div>
+                <div class="about__logo">
+                    <img src="images/logo.png" s alt="" class="about__logo-img">
+                    <!--<video autoplay> 
+                        <source src="video/logo%20sound.mp4" type="video/mp4">
+                    </video>-->
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section__structure">
+            <div class="section__heading" id="headingStruct">
+                <h1 class="glitched-2">Structure</h1>
+            </div>
+
+            <div class="structure__content">
+                <div class="structure__grid">
+                    <a class="structure__grid__item" href="#preview-1" id="layer1">
+                        <div class="structure__grid__box">
+                            <div class="structure__grid__box__shadow" id="obA1"></div>
+                            <img class="structure__grid__box__img" id="obA2" src="images/1.jpg" alt="Some image" />
+                            <h3 class="structure__grid__box__title" id="obA3">Form a team</h3>
+                            <h4 class="structure__grid__box__num" id="obA4">1</h4>
+
+                            <p class="structure__grid__box__content" id="obA5">"Having 2 or 3 members"</p>
+                        </div>
+                    </a>
+                    <a class="structure__grid__item" href="#preview-1" id="layer2">
+                        <div class="structure__grid__box">
+                            <div class="structure__grid__box__shadow" id="obB1"></div>
+                            <img class="structure__grid__box__img" id="obB2" src="images/2.jpg" alt="Some image" />
+                            <h3 class="structure__grid__box__title" id="obB3">Registration</h3>
+                            <h4 class="structure__grid__box__num" id="obB4">2</h4>
+
+                            <p class="structure__grid__box__content" id="obB5">"Register yourself along with team members"</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="structure__grid">
+                    <a class="structure__grid__item" href="#preview-1" id="layer3">
+                        <div class="structure__grid__box">
+                            <div class="structure__grid__box__shadow" id="obC1"></div>
+                            <img class="structure__grid__box__img" id="obC2" src="images/3.jpg" alt="Some image" />
+                            <h3 class="structure__grid__box__title" id="obC3">Submit Synopsis</h3>
+                            <h4 class="structure__grid__box__num" id="obC4">3</h4>
+
+                            <p class="structure__grid__box__content" id="obC5">"Submit your synopsis with optional tasks"</p>
+                        </div>
+                    </a>
+                    <a class="structure__grid__item" href="#preview-1" id="layer4">
+                        <div class="structure__grid__box">
+                            <div class="structure__grid__box__shadow" id="obD1"></div>
+                            <img class="structure__grid__box__img" id="obD2" src="images/4.jpg" alt="Some image" />
+                            <h3 class="structure__grid__box__title" id="obD3">Presentation</h3>
+                            <h4 class="structure__grid__box__num" id="obD4">4</h4>
+
+                            <p class="structure__grid__box__content" id="obD5">"Present your proposed solution"</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section__problems">
+            <div class="section__heading" id="headingProblems">
+                <h1 class="glitched-3">Problems</h1>
+            </div>
+
+            <!--details start-->
+            <div class="problems__details" id="p1">
+                <div class="problems__close">
+                    <img src="svg/icons/error.svg" alt="">
+                </div>
+                <div class="problems__heading">
+                    Statue Of Politics
+                </div>
+                <div class="problems__tag">An ivory of wealth</div>
+
+                <div class="problems__main" id="pbMain1">
+                    <div class="problems__main__left"></div>
+                    <div class="problems__main__right" id="topic1">
+
+                        <div class="problems__abstract">
+                            <div class="problems__abstract__heading">Abstract</div>
+                            <div class="problems__abstract__paras">
+                                <div class="problems__abstract__paras-part">
+                                    With more than 3600 monuments and having the world's tallest statue ,an unofficial race of building tallest statues or more number of statues is now reaching to its extremity. Right after the inauguration of World's Tallest Statue: ‘The Statue of Unity’ the Maharashtra Govt. got the environment clearance for building the another tallest statue of the world: Shiva Ji statue . But the game isn't over yet now UP Govt. has released the proposal of building another and taller than Shiva ji statue, ‘Ram Ji Statue’.
+                                    Previously, there were other Governments too who used the focus of statues for symbolising their work and diverting the political issues.
+                                    PM Modi inaugurated ‘Sir Chhotu Ram Statue’ in Rohtak Haryana, after the farmers stood against the work and policies of the govternment.
+                                    
+
+                                </div>
+                                <div class="problems__abstract__paras-part">
+                                     With this statue the respective authorities very easily managed to escape from the continuous obligations and questions by the farmers.
+                                    ‘Mayawati's Elephant Statues in Ambedkar Memorial Park’ which was made by BSP Govt. In Lucknow and the total cost of whole project was ₹7 Billions approximately. <br>
+                                    ‘Buddha statue on Hussain Sagar Lake’ in Hyderabad was also built by Ibrahim Qutub for depicting his pride.
+                                    ‘Raja Bhoj Statue on Bhopal Lake’ built by Raja Bhoj.
+                                    All these examples has one thing in common, all of these statues were made by the politicians as they must have associated the statues with their pride. So, here is the question arises, do we really need these symbols of dignity. Would there be any other way to relate the development of the people and the country.
+                                    Why statues have become a magnet in politics.
+
+                                </div>
+                            </div>
+
+                            <div class="problems__abstract__buttons">
+                                <div class="problems__abstract__btn" id="coord">Coordinators</div>
+                                <div class="problems__abstract__btn">Sample Synopsis</div>
+                                <div class="problems__abstract__btn" id="task">Optional Task</div>
+                            </div>
+                        </div>
+                        <div class="problems__coordinators">
+
+                            <div class="problems__coordinators__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aadi.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aditya Baranwal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aanchal.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aanchal Gupta</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box"> <img src="images/mem/amit.jpg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Amit Kumar</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box"> <img src="images/mem/alok.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Alok Yadav</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/vats.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shashwat Vats</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/shubh.jpeg" alt="coordinators" class="problems__coordinators__img">'
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shubh Singhal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problems__tasks">
+
+                            <div class="problems__tasks__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN011)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN012)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN013)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN014)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--details start-->
+
+            <div class="problems__details" id="p2">
+                <div class="problems__close">
+                    <img src="svg/icons/error.svg" alt="">
+                </div>
+                <div class="problems__heading">
+                    The Blemish Dejection
+                </div>
+                <div class="problems__tag">Not all wounds are visible</div>
+
+                <div class="problems__main" id="pbMain2">
+                    <div class="problems__main__left"></div>
+                    <div class="problems__main__right" id="topic2">
+
+                        <div class="problems__abstract">
+                            <div class="problems__abstract__heading">Abstract</div>
+                            <div class="problems__abstract__paras">
+                                <div class="problems__abstract__paras-part">
+                                    Mental health does not only means that a person is idiot or is mad. If a person is suffering from any type of pressure or in depression and is not able to cope with their fellow mates, it also comes under the category of mental illness.
+                                    Depression is a major problem in today’s generation. Every person is going through a lot of emotions in their life and is unable to share them with someone. All the tension is piled up in their head and leads to mental illness.People suffering from this disease often gains a feeling of suicide and even try to attempt it. Crying while alone is a basic problem.
+
+                                </div>
+                                <div class="problems__abstract__paras-part">
+                                    India has been declared the most depressed country by WHO (World Health Organization) . Around 6.5 percent Indians are suffering from depression. It has been a very common problem since everyone is not able to fulfil their dreams and has to compete in this fast world. <br>
+                                    Try not to stress so much and be happy.
+
+                                </div>
+                            </div>
+
+                            <div class="problems__abstract__buttons">
+                                <div class="problems__abstract__btn" id="coord">Coordinators</div>
+                                <div class="problems__abstract__btn">Sample Synopsis</div>
+                                <div class="problems__abstract__btn" id="task">Optional Task</div>
+                            </div>
+                        </div>
+                        <div class="problems__coordinators">
+
+                            <div class="problems__coordinators__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aadi.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aditya Baranwal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aanchal.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aanchal Gupta</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box"> <img src="images/mem/amit.jpg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Amit Kumar</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box"> <img src="images/mem/alok.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Alok Yadav</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/vats.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shashwat Vats</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/shubh.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shubh Singhal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problems__tasks">
+
+                            <div class="problems__tasks__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN011)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN012)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN013)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN014)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="problems__details" id="p3">
+                <div class="problems__close">
+                    <img src="svg/icons/error.svg" alt="">
+                </div>
+                <div class="problems__heading">
+                    NPA
+                </div>
+                <div class="problems__tag">The sterile fortune</div>
+
+                <div class="problems__main" id="pbMain3">
+                    <div class="problems__main__left"></div>
+                    <div class="problems__main__right" id="topic3">
+
+                        <div class="problems__abstract">
+                            <div class="problems__abstract__heading">Abstract</div>
+                            <div class="problems__abstract__paras">
+                                <div class="problems__abstract__paras-part">
+                                    The lack in education system is making it impossible to grab good and practical knowledge. Today’s generation is not able to give its best because the type of studies conducted is of memorizing. They are neither implementing the practical nor they are trying to understand. Day by day competition is increasing which makes the race to be the best more difficult.The issue with danger that competition can harm the learning process by turning a project into a race to the finish line, where understanding and internalizing concepts and knowledge becomes unimportant compared to winning.
+                                </div>
+                                <div class="problems__abstract__paras-part">
+                                    The purpose of the activity moves from the learning goals (i.e., engagement in making sense of the elements of the process and the attempt to interpret and make a quality effort) to efficiency, speed, and the outcome relative to others…we can see this change in focus occurring no matter what the teacher may say either to encourage or discourage it. Our education system would be better when everyone would be content by grabbing that power of gaining knowledge rather than matter what marks and rank they get.
+                                </div>
+                            </div>
+
+                            <div class="problems__abstract__buttons">
+                                <div class="problems__abstract__btn" id="coord">Coordinators</div>
+                                <div class="problems__abstract__btn">Sample Synopsis</div>
+                                <div class="problems__abstract__btn" id="task">Optional Task</div>
+                            </div>
+                        </div>
+                        <div class="problems__coordinators">
+
+                            <div class="problems__coordinators__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aadi.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aditya Baranwal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aanchal.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aanchal Gupta</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box"> <img src="images/mem/amit.jpg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Amit Kumar</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box"> <img src="images/mem/alok.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Alok Yadav</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/vats.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shashwat Vats</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/shubh.jpeg" alt="coordinators" class="problems__coordinators__img">'
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shubh Singhal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problems__tasks">
+
+                            <div class="problems__tasks__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN011)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN012)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN013)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN014)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="problems__details" id="p4">
+                <div class="problems__close">
+                    <img src="svg/icons/error.svg" alt="">
+                </div>
+                <div class="problems__heading">
+                    Exorbitant Medication
+                </div>
+                <div class="problems__tag">Marketing and malpratice</div>
+
+                <div class="problems__main" id="pbMain4">
+                    <div class="problems__main__left"></div>
+                    <div class="problems__main__right" id="topic4">
+
+                        <div class="problems__abstract">
+                            <div class="problems__abstract__heading">Abstract</div>
+                            <div class="problems__abstract__paras">
+                                <div class="problems__abstract__paras-part">
+                                    “To make medicines available at affordable cost to all.”
+                                    <br>
+                                    There can be no dispute over the objective, the sincerity of the concerned is not beyond doubt and gives rise to so many natural questions.Affordability of medicines is a major issue determining access to medicines. <br>
+                                    Prescription drugs are an important part of the health care system and patients rely on medicines to keep them healthy. Unfortunately, prices for prescription drugs have soared in recent years. Not only are drug manufacturers launching products with high prices, they are routinely raising the prices of existing drugs — even decades-old drugs — by double-digit rates.
+                                </div>
+                                <div class="problems__abstract__paras-part">
+                                    To improve access to prescription drugs and to make new treatments more affordable, health care stakeholders should promote policies that preserve needed innovation and competition, while also promoting greater transparency to improve the value of prescription drugs for patients. <br>
+                                    India is said to have one of the most corrupt medical systems in the world. The situation has become so bad that patients today approach the doctor with mixed feelings – of faith and fear, of hope and hostility. Medical profession which was once a respected line of work but today is corrupted at every level, from medical education to medical practice, and in both the private and government sectors. It calls for doctors, the government and the public to act against dishonest doctors, restore the dignity of the profession and work for the benefit of society.
+
+                                </div>
+                            </div>
+
+                            <div class="problems__abstract__buttons">
+                                <div class="problems__abstract__btn" id="coord">Coordinators</div>
+                                <div class="problems__abstract__btn">Sample Synopsis</div>
+                                <div class="problems__abstract__btn" id="task">Optional Task</div>
+                            </div>
+                        </div>
+                        <div class="problems__coordinators">
+
+                            <div class="problems__coordinators__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aadi.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aditya Baranwal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aanchal.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aanchal Gupta</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box"> <img src="images/mem/amit.jpg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Amit Kumar</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box"> <img src="images/mem/alok.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Alok Yadav</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/vats.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shashwat Vats</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/shubh.jpeg" alt="coordinators" class="problems__coordinators__img">'
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shubh Singhal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problems__tasks">
+
+                            <div class="problems__tasks__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN011)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN012)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN013)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN014)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="problems__details" id="p5">
+                <div class="problems__close">
+                    <img src="svg/icons/error.svg" alt="">
+                </div>
+                <div class="problems__heading">
+                    Futile Strategies
+                </div>
+                <div class="problems__tag">The pain behind the grain</div>
+
+                <div class="problems__main" id="pbMain5">
+                    <div class="problems__main__left"></div>
+                    <div class="problems__main__right" id="topic5">
+
+                        <div class="problems__abstract">
+                            <div class="problems__abstract__heading">Abstract</div>
+                            <div class="problems__abstract__paras">
+                                <div class="problems__abstract__paras-part">
+                                    With more than 54% of workforce still dependent on agriculture for their livlihood, agriculture in India has a far-reaching impact on poverty reduction as well as rural development. Thus, it would be more
+                                    meaningful to view agriculture not as farming alone but as a wholistic value change which includes
+                                    farming, wholesaling, warehousing, processing and retailing. Also the fact that an average indian spends
+                                    more than 50% of his monthly expenditure on food establishes the centrality of agriculture in the context
+                                    of food security concerns.
+
+                                </div>
+                                <div class="problems__abstract__paras-part">
+                                    There are numerous problems faced by the farmers in India and they are: <br>
+                                    1:-Due to lack of availability and affordability to farmers, there is low level of use of agricultural <br>
+                                    technologies. For e.g.-SMS machines,happy weed machines. <br>
+                                    2:-There is lack of research and development in this field leading farmers to use ancestral methods and
+                                    techniques and there is no major progress neither in production nor in development.
+
+                                </div>
+                            </div>
+
+                            <div class="problems__abstract__buttons">
+                                <div class="problems__abstract__btn" id="coord">Coordinators</div>
+                                <div class="problems__abstract__btn">Sample Synopsis</div>
+                                <div class="problems__abstract__btn" id="task">Optional Task</div>
+                            </div>
+                        </div>
+                        <div class="problems__coordinators">
+
+                            <div class="problems__coordinators__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aadi.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aditya Baranwal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aanchal.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aanchal Gupta</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box"> <img src="images/mem/amit.jpg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Amit Kumar</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box"> <img src="images/mem/alok.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Alok Yadav</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/vats.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shashwat Vats</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/shubh.jpeg" alt="coordinators" class="problems__coordinators__img">'
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shubh Singhal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problems__tasks">
+
+                            <div class="problems__tasks__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN011)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN012)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN013)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN014)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="problems__details" id="p6">
+                <div class="problems__close">
+                    <img src="svg/icons/error.svg" alt="">
+                </div>
+                <div class="problems__heading">
+                    Marine microplastics
+                </div>
+                <div class="problems__tag">The abyssal desolation</div>
+
+                <div class="problems__main" id="pbMain6">
+                    <div class="problems__main__left"></div>
+                    <div class="problems__main__right" id="topic6">
+
+                        <div class="problems__abstract">
+                            <div class="problems__abstract__heading">Abstract</div>
+                            <div class="problems__abstract__paras">
+                                <div class="problems__abstract__paras-part">
+                                    Plastic products have become an integral part of our daily life, encouraging its production to cross 150 million tonnes per year globally. Government try to stop problem, so it creating many rules, but it’s not effected in human mentality. Every day, a gigantic amount of plastic leaks into the environment, the seas and oceans. It stays there for a very long time, damaging nature and the ecosystems that support life on Earth. Meanwhile plastic litter continues to accumulate in world oceans. It has been estimated that 8 million tons of plastic waste reaches the ocean each year, and with no action that volume is projected to double by 2030, and double again by 2050.
+                                </div>
+                                <div class="problems__abstract__paras-part">
+                                    At least 44 sea bird species, 9 cetacean species, 11 pinniped species, 6 turtle species and 31 invertebrate species have been documented to suffer entanglement in larger pieces of plastic debris (NOAA, 2014).
+                                    Plastic pollution poses an increasing issue for marine life. Physical harm from plastic items, Chemical harm from toxic chemicals associated with plastic (additives, persistent organic pollutants),Biological harm from microorganisms that adhere to plastics. Plastic is just one type of floating substrate in the ocean, but it is unique in a number of ways that make it particularly worrisome.
+
+                                </div>
+                            </div>
+
+                            <div class="problems__abstract__buttons">
+                                <div class="problems__abstract__btn" id="coord">Coordinators</div>
+                                <div class="problems__abstract__btn">Sample Synopsis</div>
+                                <div class="problems__abstract__btn" id="task">Optional Task</div>
+                            </div>
+                        </div>
+                        <div class="problems__coordinators">
+
+                            <div class="problems__coordinators__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aadi.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aditya Baranwal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/aanchal.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Aanchal Gupta</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box"> <img src="images/mem/amit.jpg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Amit Kumar</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="problems__coordinators__grid">
+                                <div class="problems__coordinators__box"> <img src="images/mem/alok.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Alok Yadav</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/vats.jpeg" alt="coordinators" class="problems__coordinators__img">
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shashwat Vats</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                                <div class="problems__coordinators__box">
+                                    <img src="images/mem/shubh.jpeg" alt="coordinators" class="problems__coordinators__img">'
+                                    <div class="problems__coordinators__details">
+                                        <div class="coordinator__name">Shubh Singhal</div>
+                                        <div class="coordinator__num">888888888</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problems__tasks">
+
+                            <div class="problems__tasks__close">
+                                <img src="svg/icons/003-back.svg" alt="">
+                            </div>
+
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN011)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN012)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problems__tasks__grid">
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN013)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                                <div class="problems__task">
+                                    <div class="problems__task-code">
+                                        Task Code (IN014)
+                                    </div>
+                                    <div class="problems__task-desc">
+                                        Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.
+                                    </div>
+                                    <div class="problems__task-marks">
+                                        - 10 Marks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <main>
+
+
+                <!-- Pieces Slider -->
+                <div class="pieces-slider">
+                    <!-- Each slide with corresponding image and text -->
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/topics/statue.jpg" alt="">
+                        <h2 class="pieces-slider__text">Statue Of Politics</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/topics/mental.jpg" alt="">
+                        <h2 class="pieces-slider__text">The Blemish Dejection</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/topics/npa.jpg" alt="">
+                        <h2 class="pieces-slider__text">NPA</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/topics/medicine.jpg" alt="">
+                        <h2 class="pieces-slider__text">Exorbitant Medication</h2>
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/topics/farmers.jpg" alt="">
+                        <h2 class="pieces-slider__text">Futile Strategies</h2>
+
+
+                    </div>
+                    <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="images/topics/plastic.jpg" alt="">
+                        <h2 class="pieces-slider__text">Marine Microplastic</h2>
+
+                    </div>
+                    <!-- Canvas to draw the pieces -->
+                    <canvas class="pieces-slider__canvas"></canvas>
+
+                    <!--Canvas for know more-->
+                    <canvas class="my-canvas"></canvas>
+
+                    <!-- Slider buttons: prev and next -->
+                    <button class="pieces-slider__button pieces-slider__button--prev"><i class="material-icons">
+                            arrow_back
+                        </i></button>
+                    <button class="pieces-slider__button pieces-slider__button--next"><i class="material-icons">
+                            arrow_forward
+                        </i></button>
+                </div>
+
+            </main>
+        </div>
+
+        <div class="section__faq">
+
+            <div class="section__heading" id="headingFaq">
+                <h1 class="glitched-4">faqs</h1>
+            </div>
+
+            <div class="faq__grid">
+                <div class="faq__grid__section">
+                    <div class="faq__container">
+                        <div class="faq__heading">Why The Initiative?</div>
+                        <div class="faq__border">
+                            <div class="faq__border__line"></div>
+                            <img src="svg/circle.svg" alt="" class="faq__border__img">
+                            <div class="faq__border__num">1</div>
+                        </div>
+                        <div class="faq__content">
+                            Initiative is an effort in the form of an annual inter college event to make students aware about dynamic issues of society and nation ranging from different streams.
+                        </div>
+                    </div>
+                    <div class="faq__container">
+                        <div class="faq__heading">How to get yourself registered?</div>
+                        <div class="faq__border">
+                            <div class="faq__border__line"></div>
+                            <img src="svg/circle.svg" alt="" class="faq__border__img">
+                            <div class="faq__border__num">2</div>
+                        </div>
+                        <div class="faq__content">
+                            Form a team of 2-3, choose a topic of your choice and get yourself registered on the website.
+                        </div>
+                    </div>
+                    <div class="faq__container">
+                        <div class="faq__heading">What are the basis for selection in the event?</div>
+                        <div class="faq__border">
+                            <div class="faq__border__line"></div>
+                            <img src="svg/circle.svg" alt="" class="faq__border__img">
+                            <div class="faq__border__num">3</div>
+                        </div>
+                        <div class="faq__content">
+                            INITIAL ROUND: The first selection would be based on the Synopsis presented by the registered team on their chosen topic, added to these marks will be the evaluation of optional tasks related to each domain. <br>
+                            INITIATIVE ROUND: The teams selected after INITIAL ROUND will go for the finale in which they will be presenting their presentation to our esteemed judges.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="faq__grid__section">
+                    <div class="faq__container">
+                        <div class="faq__heading">Can we submit synopsis and optional tasks offline?</div>
+                        <div class="faq__border">
+                            <div class="faq__border__line"></div>
+                            <img src="svg/circle.svg" alt="" class="faq__border__img">
+                            <div class="faq__border__num">4</div>
+                        </div>
+                        <div class="faq__content">
+                            No, you can't. Upload your synopsis on drive and send the link on your login profile. For optional tasks, upload them as per the instructions given and send the link of each on your login profile. Don't forget to check the status of submission before you log out.
+                        </div>
+                    </div>
+                    <div class="faq__container">
+                        <div class="faq__heading">What will be the rewards?</div>
+                        <div class="faq__border">
+                            <div class="faq__border__line"></div>
+                            <img src="svg/circle.svg" alt="" class="faq__border__img">
+                            <div class="faq__border__num">5</div>
+                        </div>
+                        <div class="faq__content">
+                            A certificate of participation for every participant, a certificate from Computer Society of India, AKGEC in collaboration with the Deptt. Of IT, AKGEC for the winner team and runner ups, and a certain cash amount of prize money.
+                        </div>
+                    </div>
+                    <div class="faq__container">
+                        <div class="faq__heading">Can I participate in two or more domains?</div>
+                        <div class="faq__border">
+                            <div class="faq__border__line"></div>
+                            <img src="svg/circle.svg" alt="" class="faq__border__img">
+                            <div class="faq__border__num">6</div>
+                        </div>
+                        <div class="faq__content">
+                            No, you cannot. The event is designed as such to converge the entire focus of the participant on singular problem/issue.
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="section__footer">
+
+                <div class="footer__anim">
+
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #FF931E;
+                                stroke-width: 2;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <polyline class="st0" points="0,221 142,221 142,92 292,92 292,0 " />
+                        <polyline class="st0" points="0,267 85,267 85,419 211,545 " />
+                        <polyline class="st0" points="573,6 573,100 793,100 793,191 717,191 " />
+                        <polyline class="st0" points="173,118 269,118 269,345 " />
+                        <polyline class="st0" points="133,280 247,280 247,410 350,410 350,503 179,503 " />
+                        <polyline class="st0" points="22,300 50,300 50,430 177,557 " />
+                        <polyline class="st0" points="13,473 13,548 141,548 74,481 " />
+                        <polyline class="st0" points="584,111 757,111 757,168 620,168 620,244 916,244 " />
+                        <polyline class="st0" points="579,244 579,392 705,392 705,324 " />
+                        <polyline class="st0" points="341,377 642,377 642,473 488,473 488,534 " />
+                        <polyline class="st0" points="407,488 407,548 925,548 925,405 858,405 858,511 " />
+                        <polyline class="st0" points="551,511 837,511 837,280 653,280 602,280 602,149 " />
+                        <polyline class="st0" points="750,30 925,30 925,255 855,255 " />
+                        <polyline class="st0" points="859,99 905,99 905,318 759,318 " />
+                        <polyline class="st0" points="67,25 67,133 162,133 162,251 84,251 " />
+                        <polyline class="st0" points="146,330 146,456 327,456 327,289 " />
+                        <polyline class="st0" points="715,482 803,482 803,341 925,341 " />
+                        <polyline class="st0" points="27,19 27,149 304,149 " />
+                    </svg>
+
+                </div>
+                <div class="footer__top">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__csi">
+                        <img src="images/logocsiCenter.png" alt="" class="footer__csi__logo">
+                        <a href="https://csiakgec.in/" target="_blank" class="footer__csi__text">computer society of india</a>
+
+                    </div>
+
+                    <div class="footer__links">
+                        <a href="https://www.facebook.com/theinitiative.akg/" class="nav__social__links" target="_blank">
+                            <svg class="svgIcons">
+                                <use xlink:href="svg/svgIcons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/csi_akgec/" class="nav__social__links" target="_blank">
+                            <svg class="svgIcons">
+                                <use xlink:href="svg/svgIcons.svg#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="nav__social__links" target="_blank">
+                            <svg class="svgIcons">
+                                <use xlink:href="svg/svgIcons.svg#youtube"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="footer__bottomer">
+                        <div class="footer__contacts">
+                            <div class="footer__contacts-heading">
+                                Contacts:
+                            </div>
+                            <a href="" class="footer__contacts-name ">Amit Kumar | 8802980454</a>
+                            <a href="" class="footer__contacts-name ">Shubh Singhal | 7417387372</a>
+                            <div class="footer__contacts-name">@csichapters@gmail.com</div>
+                        </div>
+                        <div class="footer__part"></div>
+                        <div class="footer__details">
+                            In association with It department
+                            <br>
+                            <a href="#">&copy; csiakgec | 2019</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/anime.min.js'></script>
+    <script src='js/pieces.min.js'></script>
+    <script src='js/demo.js'></script>
+    <script src='js/particles.js'></script>
+
 </body>
 
 </html>
