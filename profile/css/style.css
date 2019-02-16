@@ -73,6 +73,8 @@ a {
       .container .header {
         background-image: url(../images/coversm.jpg);
         height: 25rem; } }
+  .container .navActive {
+    background-image: linear-gradient(to right, #eb121a, #faeb1b); }
   .container .main {
     display: flex;
     height: 100%; }

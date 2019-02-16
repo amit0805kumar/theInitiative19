@@ -19,7 +19,7 @@
         </div>
         <div class="main">
             <div class="nav">
-                <div class="nav__link" id="home">
+                <div class="nav__link navActive" id="home">
                     <div class="nav__link__icon">
                         <svg class="svgIcons">
                             <use xlink:href="images/sprite.svg#user"></use>

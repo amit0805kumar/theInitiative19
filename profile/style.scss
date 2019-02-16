@@ -153,12 +153,16 @@ a {
         background-image: url(../images/cover.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        
-        @include respond(phone){
-              background-image: url(../images/coversm.jpg);
+
+        @include respond(phone) {
+            background-image: url(../images/coversm.jpg);
             height: 25rem;
         }
 
+    }
+
+    .navActive {
+        background-image: linear-gradient(to right, #eb121a, #faeb1b);
     }
 
     .main {
@@ -168,7 +172,6 @@ a {
         @include respond(phone) {
             flex-direction: column;
         }
-
 
         .nav {
             width: 20%;
@@ -750,7 +753,7 @@ a {
                             padding: 0 1rem;
                         }
 
-                    
+
                         &__num {
                             font-family: 'Muli', sans-serif;
                             font-weight: 900;
