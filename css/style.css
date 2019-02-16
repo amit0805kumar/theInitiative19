@@ -1,31 +1,25 @@
-/* line 1, ../sass/base/base.scss */
 * {
   margin: 0px;
   padding: 0px; }
 
-/* line 7, ../sass/base/base.scss */
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
-/* line 13, ../sass/base/base.scss */
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #F9F8F8; }
 
-/* line 19, ../sass/base/base.scss */
 html {
   font-size: 62.5%; }
 
-/* line 23, ../sass/base/base.scss */
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
   /* Safari */
+  -khtml-user-select: none;
   /* Konqueror HTML */
   -moz-user-select: none;
   /* Firefox */
@@ -35,7 +29,6 @@ html {
   /* Non-prefixed version, currently
                                 supported by Chrome and Opera */ }
 
-/* line 39, ../sass/base/base.scss */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -43,11 +36,9 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; }
 
-/* line 52, ../sass/base/base.scss */
 a {
   text-decoration: none; }
 
-/* line 59, ../sass/base/base.scss */
 article,
 aside,
 details,
@@ -62,70 +53,56 @@ section,
 summary {
   display: block; }
 
-/* line 74, ../sass/base/base.scss */
 audio,
 canvas,
 video {
   display: inline-block; }
 
-/* line 80, ../sass/base/base.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 85, ../sass/base/base.scss */
 [hidden] {
   display: none; }
 
-/* line 89, ../sass/base/base.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
-/* line 95, ../sass/base/base.scss */
 body {
   margin: 0; }
 
-/* line 99, ../sass/base/base.scss */
 a:focus {
   outline: thin dotted; }
 
-/* line 103, ../sass/base/base.scss */
 a:active,
 a:hover {
   outline: 0; }
 
-/* line 108, ../sass/base/base.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 113, ../sass/base/base.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 117, ../sass/base/base.scss */
 b,
 strong {
   font-weight: bold; }
 
-/* line 122, ../sass/base/base.scss */
 dfn {
   font-style: italic; }
 
-/* line 126, ../sass/base/base.scss */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
-/* line 132, ../sass/base/base.scss */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 137, ../sass/base/base.scss */
 code,
 kbd,
 pre,
@@ -133,19 +110,15 @@ samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
-/* line 145, ../sass/base/base.scss */
 pre {
   white-space: pre-wrap; }
 
-/* line 149, ../sass/base/base.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-/* line 153, ../sass/base/base.scss */
 small {
   font-size: 80%; }
 
-/* line 157, ../sass/base/base.scss */
 sub,
 sup {
   font-size: 75%;
@@ -153,38 +126,30 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 165, ../sass/base/base.scss */
 sup {
   top: -0.5em; }
 
-/* line 169, ../sass/base/base.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 173, ../sass/base/base.scss */
 img {
   border: 0; }
 
-/* line 177, ../sass/base/base.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 181, ../sass/base/base.scss */
 figure {
   margin: 0; }
 
-/* line 185, ../sass/base/base.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 191, ../sass/base/base.scss */
 legend {
   border: 0;
   padding: 0; }
 
-/* line 196, ../sass/base/base.scss */
 button,
 input,
 select,
@@ -193,17 +158,14 @@ textarea {
   font-size: 100%;
   margin: 0; }
 
-/* line 205, ../sass/base/base.scss */
 button,
 input {
   line-height: normal; }
 
-/* line 210, ../sass/base/base.scss */
 button,
 select {
   text-transform: none; }
 
-/* line 215, ../sass/base/base.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -211,45 +173,34 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-/* line 223, ../sass/base/base.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
 
-/* line 228, ../sass/base/base.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0; }
 
-/* line 235, ../sass/base/base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 241, ../sass/base/base.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 250, ../sass/base/base.scss */
 .icon--keyboard {
   display: none; }
 
-/* line 254, ../sass/base/base.scss */
 main {
   position: relative;
   width: 100%; }
 
 @media screen and (max-width: 55em) {
-  /* line 268, ../sass/base/base.scss */
   .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
     min-height: 0;
     padding-bottom: 10em; } }
@@ -261,51 +212,39 @@ font-family: 'Poiret One', cursive;
 font-family: 'Montserrat Alternates', sans-serif;
 font-family: 'Major Mono Display', monospace;
 font-family: 'Raleway', sans-serif;*/
-/* line 10, ../sass/base/typography.scss */
 .highlighter {
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(orange), to(#ff2700)) bottom repeat-x;
   background: linear-gradient(to right, orange, #ff2700) bottom repeat-x;
   background-size: 3px 3px;
-  -webkit-transition: .3s;
   transition: .3s; }
   @media only screen and (max-width: 37.5em) {
-    /* line 10, ../sass/base/typography.scss */
     .highlighter {
       background-size: 1.5px 1.5px; } }
-  /* line 18, ../sass/base/typography.scss */
   .highlighter:hover {
     color: #fff;
     background-size: 100% 100%; }
 
-/* line 1, ../sass/pages/home.scss */
 .canvas {
   position: relative;
   width: 100%;
   height: 100vh; }
 
-/* line 8, ../sass/pages/home.scss */
 .disn {
   display: none; }
 
-/* line 12, ../sass/pages/home.scss */
 .section__heading {
   position: absolute;
   top: 7rem;
   left: 0;
   width: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-family: 'Major Mono Display', monospace; }
   @media only screen and (max-width: 56.25em) {
-    /* line 12, ../sass/pages/home.scss */
     .section__heading {
       top: 5rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 12, ../sass/pages/home.scss */
     .section__heading {
       top: 4rem; } }
-  /* line 29, ../sass/pages/home.scss */
   .section__heading h1 {
     font-size: 5rem;
     color: #222222;
@@ -314,21 +253,17 @@ font-family: 'Raleway', sans-serif;*/
     text-transform: uppercase;
     font-weight: 900; }
     @media only screen and (max-width: 56.25em) {
-      /* line 29, ../sass/pages/home.scss */
       .section__heading h1 {
         font-size: 4rem;
         top: 5rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 29, ../sass/pages/home.scss */
       .section__heading h1 {
         font-size: 3rem;
         top: 3rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 29, ../sass/pages/home.scss */
       .section__heading h1 {
         font-size: 2rem;
         top: 1rem; } }
-/* line 52, ../sass/pages/home.scss */
 .section__about, .section__structure, .section__problems, .section__faq, .section__footer {
   width: 100%;
   height: 0vh;
@@ -336,44 +271,34 @@ font-family: 'Raleway', sans-serif;*/
   position: absolute;
   top: 100%;
   left: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.7, 0.18, 0.97, 0.54);
   transition: all 0.5s cubic-bezier(0.7, 0.18, 0.97, 0.54); }
-/* line 66, ../sass/pages/home.scss */
 .section__about {
   z-index: 11;
   background: #fff; }
-/* line 71, ../sass/pages/home.scss */
 .section__structure {
   z-index: 21;
   background: #fff;
   overflow: hidden; }
-/* line 76, ../sass/pages/home.scss */
 .section__problems {
   z-index: 31;
   background: #fff;
   overflow: hidden; }
-/* line 81, ../sass/pages/home.scss */
 .section__faq {
   z-index: 41;
   background: #fff;
   overflow: hidden; }
-/* line 86, ../sass/pages/home.scss */
 .section__footer {
   z-index: 51;
   background: #fff;
   overflow: hidden; }
 
-/* line 93, ../sass/pages/home.scss */
 .overFlowControl {
   overflow: hidden; }
 
-/* line 97, ../sass/pages/home.scss */
 .goUp {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   height: 100vh; }
 
-/* line 102, ../sass/pages/home.scss */
 .glitch-window-1, .glitch-window-2, .glitch-window-3, .glitch-window-4 {
   position: absolute;
   top: 0;
@@ -382,32 +307,7 @@ font-family: 'Raleway', sans-serif;*/
   color: #222222;
   text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
   overflow: hidden;
-  -webkit-animation: crt-me 2500ms infinite linear alternate-reverse;
-          animation: crt-me 2500ms infinite linear alternate-reverse; }
-
-@-webkit-keyframes crt-me {
-  0% {
-    clip: rect(31px, 9999px, 94px, 0); }
-  10% {
-    clip: rect(112px, 9999px, 76px, 0); }
-  20% {
-    clip: rect(85px, 9999px, 77px, 0); }
-  30% {
-    clip: rect(17px, 9999px, 97px, 0); }
-  40% {
-    clip: rect(64px, 9999px, 98px, 0); }
-  50% {
-    clip: rect(61px, 9999px, 85px, 0); }
-  60% {
-    clip: rect(99px, 9999px, 114px, 0); }
-  70% {
-    clip: rect(14px, 9999px, 115px, 0); }
-  80% {
-    clip: rect(98px, 9999px, 129px, 0); }
-  90% {
-    clip: rect(43px, 9999px, 96px, 0); }
-  100% {
-    clip: rect(12px, 9999px, 64px, 0); } }
+  animation: crt-me 2500ms infinite linear alternate-reverse; }
 
 @keyframes crt-me {
   0% {
@@ -432,7 +332,6 @@ font-family: 'Raleway', sans-serif;*/
     clip: rect(43px, 9999px, 96px, 0); }
   100% {
     clip: rect(12px, 9999px, 64px, 0); } }
-/* line 1, ../sass/layout/header.scss */
 .header {
   overflow: hidden;
   position: relative;
@@ -440,114 +339,75 @@ font-family: 'Raleway', sans-serif;*/
   height: 100vh;
   z-index: 1;
   background: #fff; }
-  /* line 10, ../sass/layout/header.scss */
   .header .bg {
     width: 100%;
     height: 100%;
     position: relative; }
-    /* line 15, ../sass/layout/header.scss */
     .header .bg__images {
       position: absolute; }
-    /* line 21, ../sass/layout/header.scss */
     .header .bg #bg1 {
       width: 50rem; }
       @media only screen and (max-width: 75em) {
-        /* line 21, ../sass/layout/header.scss */
         .header .bg #bg1 {
           width: 30rem; } }
       @media only screen and (max-width: 37.5em) {
-        /* line 21, ../sass/layout/header.scss */
         .header .bg #bg1 {
           width: 20rem; } }
       @media only screen and (max-width: 18.75em) {
-        /* line 21, ../sass/layout/header.scss */
         .header .bg #bg1 {
           width: 15rem; } }
-    /* line 37, ../sass/layout/header.scss */
     .header .bg #bg2 {
       right: 0;
       width: 60rem;
       bottom: 0; }
       @media only screen and (max-width: 75em) {
-        /* line 37, ../sass/layout/header.scss */
         .header .bg #bg2 {
           width: 40rem; } }
       @media only screen and (max-width: 37.5em) {
-        /* line 37, ../sass/layout/header.scss */
         .header .bg #bg2 {
           width: 25rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 37, ../sass/layout/header.scss */
         .header .bg #bg2 {
           width: 15rem; } }
-    /* line 56, ../sass/layout/header.scss */
     .header .bg #bg3 {
       right: 0;
       width: 15rem; }
       @media only screen and (max-width: 75em) {
-        /* line 56, ../sass/layout/header.scss */
         .header .bg #bg3 {
           width: 12rem; } }
       @media only screen and (max-width: 37.5em) {
-        /* line 56, ../sass/layout/header.scss */
         .header .bg #bg3 {
           width: 10rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 56, ../sass/layout/header.scss */
         .header .bg #bg3 {
           width: 6rem; } }
-    /* line 73, ../sass/layout/header.scss */
     .header .bg #bg4 {
       right: 0;
       height: 100%;
       z-index: -1; }
       @media only screen and (max-width: 37.5em) {
-        /* line 73, ../sass/layout/header.scss */
         .header .bg #bg4 {
           right: -40rem; } }
-  /* line 85, ../sass/layout/header.scss */
   .header__details {
     position: relative;
     top: 0;
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    /* line 95, ../sass/layout/header.scss */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
     .header__details__main {
       margin-top: 2rem;
       width: 80%;
       margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      display: -webkit-box;
-      display: -ms-flexbox;
+      transform: translateX(-50%);
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline; }
+      flex-direction: column;
+      align-items: baseline; }
       @media only screen and (max-width: 37.5em) {
-        /* line 95, ../sass/layout/header.scss */
         .header__details__main {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
-  /* line 110, ../sass/layout/header.scss */
+          align-items: center; } }
   .header__logo {
     width: 12rem;
     height: 12rem;
@@ -555,46 +415,30 @@ font-family: 'Raleway', sans-serif;*/
     background-size: contain;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 75em) {
-      /* line 110, ../sass/layout/header.scss */
       .header__logo {
         width: 12rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 110, ../sass/layout/header.scss */
       .header__logo {
         width: 10rem; } }
-  /* line 130, ../sass/layout/header.scss */
   .header__text {
     position: relative;
     font-size: 7rem;
     font-family: 'Muli', sans-serif;
     font-weight: 600;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    flex-direction: column;
+    align-items: baseline;
     z-index: 10; }
     @media only screen and (max-width: 75em) {
-      /* line 130, ../sass/layout/header.scss */
       .header__text {
         font-size: 5rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 130, ../sass/layout/header.scss */
       .header__text {
         font-size: 4rem;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
+        align-items: center; } }
     @media only screen and (max-width: 18.75em) {
-      /* line 130, ../sass/layout/header.scss */
       .header__text {
         font-size: 3rem; } }
-    /* line 156, ../sass/layout/header.scss */
     .header__text__main {
       position: relative;
       display: inline-block;
@@ -605,33 +449,22 @@ font-family: 'Raleway', sans-serif;*/
       background-repeat: no-repeat;
       background-size: cover;
       white-space: nowrap; }
-    /* line 170, ../sass/layout/header.scss */
     .header__text__tag {
       font-size: 2rem;
       display: inline-block;
       letter-spacing: 4px;
       white-space: nowrap; }
       @media only screen and (max-width: 37.5em) {
-        /* line 170, ../sass/layout/header.scss */
         .header__text__tag {
           letter-spacing: 3px;
           font-size: 1.5rem; } }
       @media only screen and (max-width: 18.75em) {
-        /* line 170, ../sass/layout/header.scss */
         .header__text__tag {
           font-size: 1rem; } }
-    /* line 186, ../sass/layout/header.scss */
     .header__text__team {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      flex-direction: column;
+      align-items: center;
       height: 3rem;
       z-index: 2;
       position: absolute;
@@ -642,123 +475,86 @@ font-family: 'Raleway', sans-serif;*/
       letter-spacing: 3px;
       width: 100%; }
       @media only screen and (max-width: 37.5em) {
-        /* line 186, ../sass/layout/header.scss */
         .header__text__team {
           font-size: .8rem; } }
-      /* line 204, ../sass/layout/header.scss */
       .header__text__team .teamLogo {
         width: 3.5rem; }
-      /* line 208, ../sass/layout/header.scss */
       .header__text__team__text::after {
         content: '';
         position: absolute;
         left: 50.2%;
-        -webkit-transform: translateX(100%);
-                transform: translateX(100%);
+        transform: translateX(100%);
         top: 138%;
         height: 1px;
         background: black;
         width: 8rem; }
         @media only screen and (max-width: 56.25em) {
-          /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             left: 50.5%; } }
         @media only screen and (max-width: 37.5em) {
-          /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             width: 4rem;
             left: 57.5%; } }
         @media only screen and (max-width: 25em) {
-          /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             left: 58.5%; } }
         @media only screen and (max-width: 21.875em) {
-          /* line 208, ../sass/layout/header.scss */
           .header__text__team__text::after {
             left: 59.5%; } }
-      /* line 237, ../sass/layout/header.scss */
       .header__text__team__text::before {
         content: '';
         position: absolute;
         top: 138%;
-        -webkit-transform: translateX(-101%);
-                transform: translateX(-101%);
+        transform: translateX(-101%);
         height: 1px;
         background: black;
         width: 8rem; }
         @media only screen and (max-width: 37.5em) {
-          /* line 237, ../sass/layout/header.scss */
           .header__text__team__text::before {
             width: 4rem; } }
-  /* line 254, ../sass/layout/header.scss */
   .header__social {
     position: absolute;
     width: 4rem;
     height: 15rem;
     left: 96%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    display: -webkit-box;
-    display: -ms-flexbox;
+    transform: translateY(-50%);
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    flex-direction: column;
+    justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
-      /* line 254, ../sass/layout/header.scss */
       .header__social {
         left: 92%;
         top: 45%; } }
     @media only screen and (max-width: 25em) {
-      /* line 254, ../sass/layout/header.scss */
       .header__social {
         left: 88%;
         top: 30%;
         height: 10rem; } }
-    /* line 278, ../sass/layout/header.scss */
     .header__social .svgIcons {
       width: 3rem;
       height: 3rem;
-      -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
       @media only screen and (max-width: 37.5em) {
-        /* line 278, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2.2rem;
           height: 2.2rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 278, ../sass/layout/header.scss */
         .header__social .svgIcons {
           width: 2rem;
           height: 2rem; } }
-      /* line 293, ../sass/layout/header.scss */
       .header__social .svgIcons:hover {
-        -webkit-transform: scale(1.2) rotate(10deg);
-                transform: scale(1.2) rotate(10deg);
+        transform: scale(1.2) rotate(10deg);
         fill: #ff5252; }
-  /* line 300, ../sass/layout/header.scss */
   .header__buttons-grid {
     margin-top: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     margin-left: -4rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 300, ../sass/layout/header.scss */
       .header__buttons-grid {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         margin-left: 0; } }
-  /* line 312, ../sass/layout/header.scss */
   .header__btn {
     color: black;
     height: 40px;
@@ -771,15 +567,10 @@ font-family: 'Raleway', sans-serif;*/
     margin: 1rem 2rem;
     font-size: 2rem;
     position: relative;
-    -webkit-transition: all .8s;
     transition: all .8s; }
-    /* line 326, ../sass/layout/header.scss */
     .header__btn:hover {
-      -webkit-transform: translateY(-2px);
-              transform: translateY(-2px);
-      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    /* line 331, ../sass/layout/header.scss */
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .header__btn__colo1, .header__btn__colo2 {
       background-color: #FF5722;
       height: 0px;
@@ -787,13 +578,11 @@ font-family: 'Raleway', sans-serif;*/
       position: absolute;
       top: 0px;
       left: 0px;
-      -webkit-transform: translate(-50px, -50px);
-              transform: translate(-50px, -50px);
+      transform: translate(-50px, -50px);
       opacity: 0;
       z-index: -1;
       border-radius: 50%; }
 
-/* line 351, ../sass/layout/header.scss */
 #particles-js {
   width: 30%;
   height: 100%;
@@ -805,61 +594,43 @@ font-family: 'Raleway', sans-serif;*/
   top: 0;
   left: 0; }
 
-/* line 2, ../sass/layout/footer.scss */
 .footer__bottom {
   width: 100%;
   height: 40%;
   background: #1a1a1a;
   position: absolute;
   bottom: 0; }
-/* line 10, ../sass/layout/footer.scss */
 .footer__top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 60%; }
-  /* line 17, ../sass/layout/footer.scss */
   .footer__top img {
     width: 30rem;
     margin-top: 4rem;
     margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    transform: translateX(-50%); }
     @media only screen and (max-width: 25em) {
-      /* line 17, ../sass/layout/footer.scss */
       .footer__top img {
         width: 20rem;
         margin-top: 7rem; } }
-/* line 31, ../sass/layout/footer.scss */
 .footer__anim, .footer__anim svg {
   position: relative; }
   @media only screen and (max-width: 37.5em) {
-    /* line 31, ../sass/layout/footer.scss */
     .footer__anim, .footer__anim svg {
       margin-top: 0rem;
       height: 80%; } }
-/* line 44, ../sass/layout/footer.scss */
 .footer__csi {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateX(-50%);
   display: flex;
   top: 2rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  /* line 53, ../sass/layout/footer.scss */
+  flex-direction: column;
+  align-items: center; }
   .footer__csi__logo {
     width: 5rem; }
-  /* line 58, ../sass/layout/footer.scss */
   .footer__csi__text {
     color: #fff;
     text-transform: uppercase;
@@ -868,14 +639,11 @@ font-family: 'Raleway', sans-serif;*/
     letter-spacing: 3px;
     text-align: center; }
     @media only screen and (max-width: 56.25em) {
-      /* line 58, ../sass/layout/footer.scss */
       .footer__csi__text {
         font-size: 1.7rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 58, ../sass/layout/footer.scss */
       .footer__csi__text {
         font-size: 1.2rem; } }
-  /* line 76, ../sass/layout/footer.scss */
   .footer__csi::before {
     content: '';
     width: 100%;
@@ -884,7 +652,6 @@ font-family: 'Raleway', sans-serif;*/
     position: absolute;
     left: -110%;
     top: 50%; }
-  /* line 86, ../sass/layout/footer.scss */
   .footer__csi::after {
     content: '';
     width: 100%;
@@ -893,32 +660,21 @@ font-family: 'Raleway', sans-serif;*/
     position: absolute;
     left: 110%;
     top: 50%; }
-/* line 97, ../sass/layout/footer.scss */
 .footer__links {
   position: absolute;
   left: 50%;
   top: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  transform: translateX(-50%); }
   @media only screen and (max-width: 56.25em) {
-    /* line 97, ../sass/layout/footer.scss */
     .footer__links {
       top: 42%; } }
-/* line 108, ../sass/layout/footer.scss */
 .footer__bottomer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   top: 55%;
   position: absolute;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-/* line 117, ../sass/layout/footer.scss */
+  align-items: center; }
 .footer__contacts, .footer__details {
   width: 50%;
   color: #fff;
@@ -928,57 +684,39 @@ font-family: 'Raleway', sans-serif;*/
   font-weight: 300;
   letter-spacing: 3px;
   margin: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  /* line 132, ../sass/layout/footer.scss */
+  flex-direction: column;
+  align-items: center; }
   .footer__contacts a, .footer__details a {
     color: #fff;
     white-space: nowrap; }
   @media only screen and (max-width: 56.25em) {
-    /* line 117, ../sass/layout/footer.scss */
     .footer__contacts, .footer__details {
       font-size: 1.3rem; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 117, ../sass/layout/footer.scss */
     .footer__contacts, .footer__details {
       font-size: 1rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 117, ../sass/layout/footer.scss */
     .footer__contacts, .footer__details {
       font-size: .7rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 146, ../sass/layout/footer.scss */
     .footer__contacts-name, .footer__details-name {
       margin: .2rem 0; } }
-/* line 156, ../sass/layout/footer.scss */
 .footer__contacts a {
   color: #fff; }
-/* line 160, ../sass/layout/footer.scss */
 .footer__contacts-heading {
   margin-bottom: 1rem; }
-/* line 165, ../sass/layout/footer.scss */
 .footer__contacts-name {
   display: inline-block; }
-/* line 171, ../sass/layout/footer.scss */
 .footer__part {
   height: 5rem;
   background: #fff;
   width: 2px; }
 
-/* line 1, ../sass/layout/navigation.scss */
 .nav {
   z-index: 100;
   width: 100%;
   position: fixed; }
-  /* line 8, ../sass/layout/navigation.scss */
   .nav__button {
     z-index: 10;
     position: fixed;
@@ -987,33 +725,26 @@ font-family: 'Raleway', sans-serif;*/
     top: 50px;
     right: 50px; }
     @media only screen and (max-width: 56.25em) {
-      /* line 8, ../sass/layout/navigation.scss */
       .nav__button {
         top: 45px;
         right: 45px; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 8, ../sass/layout/navigation.scss */
       .nav__button {
         top: 33px;
         right: 33px; } }
     @media only screen and (max-width: 25em) {
-      /* line 8, ../sass/layout/navigation.scss */
       .nav__button {
         top: 30px;
         right: 2px; } }
-    /* line 31, ../sass/layout/navigation.scss */
     .nav__button:hover {
       cursor: pointer; }
-    /* line 37, ../sass/layout/navigation.scss */
     .nav__button span {
       width: 35px;
       background: #000;
       height: 2px;
       position: absolute;
       border-radius: 100px;
-      -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-      /* line 45, ../sass/layout/navigation.scss */
       .nav__button span::after {
         content: '';
         position: absolute;
@@ -1022,9 +753,7 @@ font-family: 'Raleway', sans-serif;*/
         background: #000;
         top: 4px;
         left: 0;
-        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
-      /* line 56, ../sass/layout/navigation.scss */
       .nav__button span::before {
         content: '';
         position: absolute;
@@ -1033,15 +762,11 @@ font-family: 'Raleway', sans-serif;*/
         background: #000;
         top: -4px;
         left: 0;
-        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
-    /* line 69, ../sass/layout/navigation.scss */
     .nav__button-hover:hover > span {
       width: 32px; }
-    /* line 73, ../sass/layout/navigation.scss */
     .nav__button-hover:hover > span::after {
       width: 29px; }
-  /* line 78, ../sass/layout/navigation.scss */
   .nav__menu {
     width: 100%;
     height: 0;
@@ -1050,61 +775,41 @@ font-family: 'Raleway', sans-serif;*/
     background: #2c2a2a;
     position: relative;
     overflow: hidden;
-    -webkit-transition: all 0.8s cubic-bezier(0.7, 0, 0.3, 1);
     transition: all 0.8s cubic-bezier(0.7, 0, 0.3, 1); }
-    /* line 89, ../sass/layout/navigation.scss */
     .nav__menu img {
       position: absolute; }
-    /* line 93, ../sass/layout/navigation.scss */
     .nav__menu #navbg1 {
       left: 0;
       width: 30rem; }
-    /* line 98, ../sass/layout/navigation.scss */
     .nav__menu #navbg2 {
       bottom: -3rem;
       width: 100%; }
       @media only screen and (max-width: 37.5em) {
-        /* line 98, ../sass/layout/navigation.scss */
         .nav__menu #navbg2 {
           bottom: -1rem; } }
-    /* line 108, ../sass/layout/navigation.scss */
     .nav__menu #navbg3 {
       width: 100%; }
-    /* line 112, ../sass/layout/navigation.scss */
     .nav__menu__list {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline;
+      flex-direction: column;
+      align-items: baseline;
       color: #fff;
       text-transform: uppercase;
       font-family: sans-serif;
       position: absolute;
       left: 70%;
       top: 10rem;
-      -webkit-transform: translateY(-8rem);
-              transform: translateY(-8rem);
+      transform: translateY(-8rem);
       opacity: 0;
-      -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
       letter-spacing: 3px; }
       @media only screen and (max-width: 37.5em) {
-        /* line 112, ../sass/layout/navigation.scss */
         .nav__menu__list {
           left: 65%; } }
-      /* line 132, ../sass/layout/navigation.scss */
       .nav__menu__list a {
         margin: 20px 0;
         color: #fff; }
-      /* line 137, ../sass/layout/navigation.scss */
       .nav__menu__list .nav__link {
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0)));
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%);
         background-position: 0 100%;
         background-repeat: repeat-x;
@@ -1113,184 +818,118 @@ font-family: 'Raleway', sans-serif;*/
         font-family: 'Roboto Mono', monospace;
         font-size: 3rem; }
         @media only screen and (max-width: 37.5em) {
-          /* line 137, ../sass/layout/navigation.scss */
           .nav__menu__list .nav__link {
             font-size: 2rem; } }
-        /* line 150, ../sass/layout/navigation.scss */
         .nav__menu__list .nav__link:hover {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
           background-position: 0 100%;
           background-size: auto 6px;
           background-repeat: repeat-x;
           text-decoration: none; }
-  /* line 162, ../sass/layout/navigation.scss */
   .nav__icons {
     position: absolute;
     bottom: 1rem;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    -webkit-transition: all .3s;
+    transform: translateX(-50%);
     transition: all .3s; }
-    /* line 169, ../sass/layout/navigation.scss */
     .nav__icons .nav__social__links:hover > svg {
       fill: #f28c01; }
-  /* line 175, ../sass/layout/navigation.scss */
   .nav__social__links {
     margin: 0 2rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 175, ../sass/layout/navigation.scss */
       .nav__social__links {
         margin: 0 1.2rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 175, ../sass/layout/navigation.scss */
       .nav__social__links {
         margin: 0 1rem; } }
-    /* line 186, ../sass/layout/navigation.scss */
     .nav__social__links .svgIcons {
       width: 3rem;
       height: 3rem;
-      -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
       fill: #fff; }
       @media only screen and (max-width: 37.5em) {
-        /* line 186, ../sass/layout/navigation.scss */
         .nav__social__links .svgIcons {
           width: 2rem;
           height: 2rem; } }
-  /* line 199, ../sass/layout/navigation.scss */
   .nav__csi {
     font-size: 10rem;
     color: rgba(60, 59, 59, 0.53);
-    -webkit-transform: translateY(-8rem);
-            transform: translateY(-8rem);
+    transform: translateY(-8rem);
     opacity: 0;
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     font-family: 'Poiret One', cursive;
     margin-top: 6rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 199, ../sass/layout/navigation.scss */
       .nav__csi {
         font-size: 5rem;
         margin-top: 17rem; } }
 
-/* line 217, ../sass/layout/navigation.scss */
 .expandNav {
   height: 100vh; }
 
-/* line 222, ../sass/layout/navigation.scss */
 .showNavEl {
-  -webkit-transform: translateY(0rem);
-          transform: translateY(0rem);
+  transform: translateY(0rem);
   opacity: 1; }
 
-/* line 228, ../sass/layout/navigation.scss */
 .nav_button-animation span {
   background: #fff; }
-  /* line 231, ../sass/layout/navigation.scss */
   .nav_button-animation span::after {
-    -webkit-transform: rotate(-50deg);
-            transform: rotate(-50deg);
+    transform: rotate(-50deg);
     background: #fff;
     width: 13px;
     left: 25px; }
-  /* line 238, ../sass/layout/navigation.scss */
   .nav_button-animation span::before {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
+    transform: rotate(50deg);
     background: #fff;
     width: 13px;
     left: 25px; }
 
-/* line 250, ../sass/layout/navigation.scss */
 .navigation__buttons {
   position: fixed;
   z-index: 100;
   height: 5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  justify-content: space-between;
+  flex-direction: column; }
   @media only screen and (max-width: 25em) {
-    /* line 250, ../sass/layout/navigation.scss */
     .navigation__buttons {
       top: 90%; } }
-/* line 266, ../sass/layout/navigation.scss */
 .navigation__up, .navigation__down {
-  -webkit-transition: all .3s;
   transition: all .3s;
   width: 3rem; }
-  /* line 271, ../sass/layout/navigation.scss */
   .navigation__up svg, .navigation__down svg {
     width: 100%;
     fill: orange;
     height: 5rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 271, ../sass/layout/navigation.scss */
       .navigation__up svg, .navigation__down svg {
         height: 1.3rem; } }
-  /* line 280, ../sass/layout/navigation.scss */
   .navigation__up:hover, .navigation__down:hover {
     cursor: pointer;
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px); }
-  /* line 285, ../sass/layout/navigation.scss */
+    transform: translateY(-2px); }
   .navigation__up:active, .navigation__down:active {
-    -webkit-transform: translateY(-0.5px);
-            transform: translateY(-0.5px); }
-/* line 293, ../sass/layout/navigation.scss */
+    transform: translateY(-0.5px); }
 .navigation__up svg {
   fill: orange;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
-/* line 300, ../sass/layout/navigation.scss */
+  transform: rotate(180deg); }
 .navigation__down svg {
   fill: orange; }
 
-/* line 311, ../sass/layout/navigation.scss */
 .updownanime {
-  -webkit-animation: updown 2s ease-in-out inifnite !important;
-          animation: updown 2s ease-in-out inifnite !important; }
-
-@-webkit-keyframes updown {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  25% {
-    -webkit-transform: translateY(0.5rem);
-            transform: translateY(0.5rem); }
-  50% {
-    -webkit-transform: translateY(-0.5rem);
-            transform: translateY(-0.5rem); }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+  animation: updown 2s ease-in-out inifnite !important; }
 
 @keyframes updown {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
+    transform: translateY(0); }
   25% {
-    -webkit-transform: translateY(0.5rem);
-            transform: translateY(0.5rem); }
+    transform: translateY(0.5rem); }
   50% {
-    -webkit-transform: translateY(-0.5rem);
-            transform: translateY(-0.5rem); }
+    transform: translateY(-0.5rem); }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-/* line 5, ../sass/components/about.scss */
+    transform: translateY(0); } }
 .about__part {
   background: #f5f0c6;
   position: absolute;
@@ -1299,128 +938,91 @@ font-family: 'Raleway', sans-serif;*/
   width: 100%;
   height: 20vh; }
   @media only screen and (max-width: 56.25em) {
-    /* line 5, ../sass/components/about.scss */
     .about__part {
       height: 15vh; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 5, ../sass/components/about.scss */
     .about__part {
       height: 15vh; } }
   @media only screen and (max-width: 25em) {
-    /* line 5, ../sass/components/about.scss */
     .about__part {
       height: 13vh; } }
-/* line 24, ../sass/components/about.scss */
 .about__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 13rem; }
   @media only screen and (max-width: 37.5em) {
-    /* line 24, ../sass/components/about.scss */
     .about__container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-/* line 31, ../sass/components/about.scss */
+      flex-direction: column; } }
 .about__text {
   width: 50%;
   z-index: 13;
   padding: 2rem;
   display: inline-block;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
+  order: 1; }
   @media only screen and (max-width: 56.25em) {
-    /* line 31, ../sass/components/about.scss */
     .about__text {
       width: 60%; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 31, ../sass/components/about.scss */
     .about__text {
       margin-top: 7rem;
       width: 100%;
-      -webkit-box-ordinal-group: 4;
-          -ms-flex-order: 3;
-              order: 3; } }
+      order: 3; } }
   @media only screen and (max-width: 25em) {
-    /* line 31, ../sass/components/about.scss */
     .about__text {
       margin-top: 5rem;
       width: 100%;
-      -webkit-box-ordinal-group: 4;
-          -ms-flex-order: 3;
-              order: 3; } }
-  /* line 50, ../sass/components/about.scss */
+      order: 3; } }
   .about__text-heading {
     font-size: 5rem;
     font-family: 'Muli', sans-serif;
     font-weight: 900;
     margin-bottom: 3rem; }
     @media only screen and (max-width: 56.25em) {
-      /* line 50, ../sass/components/about.scss */
       .about__text-heading {
         font-size: 4rem;
         margin-bottom: .5rem;
         white-space: nowrap; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 50, ../sass/components/about.scss */
       .about__text-heading {
         font-size: 3rem;
         margin-bottom: .5rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 50, ../sass/components/about.scss */
       .about__text-heading {
         font-size: 2.5rem;
         margin-bottom: .5rem; } }
-  /* line 71, ../sass/components/about.scss */
   .about__text-para {
     font-size: 1.5rem;
     font-family: "Poppins",sans-serif;
     width: 100%;
     padding: 1rem;
     color: black; }
-    /* line 77, ../sass/components/about.scss */
     .about__text-para a {
       color: black; }
     @media only screen and (max-width: 56.25em) {
-      /* line 71, ../sass/components/about.scss */
       .about__text-para {
         font-size: 1.2rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 71, ../sass/components/about.scss */
       .about__text-para {
         font-size: 1.2rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 71, ../sass/components/about.scss */
       .about__text-para {
         font-size: 1.1rem; } }
-/* line 96, ../sass/components/about.scss */
 .about__logo {
   position: relative;
   width: 50%;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
-  /* line 100, ../sass/components/about.scss */
+  order: 2; }
   .about__logo img {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); }
     @media only screen and (max-width: 56.25em) {
-      /* line 100, ../sass/components/about.scss */
       .about__logo img {
         width: 90%; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 100, ../sass/components/about.scss */
       .about__logo img {
         width: 60%;
         margin-top: 2rem; } }
 
-/* line 1, ../sass/components/slider.scss */
 .my-canvas {
   width: 200px;
   height: 70px;
@@ -1429,75 +1031,60 @@ font-family: 'Raleway', sans-serif;*/
   left: 75%;
   top: 60%; }
   @media only screen and (max-width: 56.25em) {
-    /* line 1, ../sass/components/slider.scss */
     .my-canvas {
       left: 60%;
       top: 65%; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 1, ../sass/components/slider.scss */
     .my-canvas {
       left: 50%;
       top: 75%; } }
   @media only screen and (max-width: 25em) {
-    /* line 1, ../sass/components/slider.scss */
     .my-canvas {
       left: 30%;
       top: 75%; } }
 
-/* line 25, ../sass/components/slider.scss */
 .pieces-slider {
   position: relative;
   text-align: center;
   padding: 8rem 0;
   width: 100%; }
 
-/* line 32, ../sass/components/slider.scss */
 .js .pieces-slider {
   padding: 0; }
 
 /* Make all slides absolutes and hide them */
-/* line 38, ../sass/components/slider.scss */
 .js .pieces-slider__slide {
   position: absolute;
   right: 100%; }
 
 /* Define image dimensions and also hide them */
-/* line 45, ../sass/components/slider.scss */
 .pieces-slider__image {
   max-width: 600px;
   max-height: 400px; }
 
-/* line 50, ../sass/components/slider.scss */
 .js .pieces-slider__image {
   visibility: hidden; }
 
 /* Hide the titles */
-/* line 56, ../sass/components/slider.scss */
 .js .pieces-slider__text {
   text-indent: -9999px; }
 
-/* line 60, ../sass/components/slider.scss */
 .js .pieces-slider__text-2 {
   text-indent: -9999px; }
 
 /* Canvas with viewport width and height */
-/* line 66, ../sass/components/slider.scss */
 .js .pieces-slider__canvas {
   position: relative;
   width: 100%;
   height: 100vh;
-  -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity; }
 
 /* Class for when we resize */
-/* line 76, ../sass/components/slider.scss */
 .pieces-slider__canvas--hidden {
   opacity: 0;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s; }
+  transition-duration: 0.3s; }
 
 /* Navigation buttons */
-/* line 83, ../sass/components/slider.scss */
 .pieces-slider__button {
   position: absolute;
   left: 0;
@@ -1511,39 +1098,31 @@ font-family: 'Raleway', sans-serif;*/
   font-weight: bold;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.1s background-color;
   transition: 0.1s background-color; }
 
-/* line 99, ../sass/components/slider.scss */
 .pieces-slider__button:hover {
   background: #5f3abf; }
 
-/* line 103, ../sass/components/slider.scss */
 .pieces-slider__button--next {
   left: auto;
   right: 0; }
 
 /* Hide the buttons when no JS */
-/* line 110, ../sass/components/slider.scss */
 .no-js .pieces-slider__button {
   display: none; }
 
 /* Media queries with styles for smaller screens */
 @media screen and (max-width: 720px) {
-  /* line 117, ../sass/components/slider.scss */
   .pieces-slider__image {
     max-width: 300px; } }
 @media screen and (max-width: 55em) {
-  /* line 123, ../sass/components/slider.scss */
   .pieces-slider__canvas {
     width: 100vw;
     height: 100vw; }
 
-  /* line 128, ../sass/components/slider.scss */
   .pieces-slider__button {
     width: 60px;
     height: 60px; } }
-/* line 136, ../sass/components/slider.scss */
 .problems__close {
   position: absolute;
   top: 1rem;
@@ -1553,30 +1132,24 @@ font-family: 'Raleway', sans-serif;*/
   border-radius: 50%;
   z-index: 40; }
   @media only screen and (max-width: 56.25em) {
-    /* line 136, ../sass/components/slider.scss */
     .problems__close {
       top: 7.5rem;
       left: 95%; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 136, ../sass/components/slider.scss */
     .problems__close {
       top: 6rem;
       left: 93%; } }
   @media only screen and (max-width: 25em) {
-    /* line 136, ../sass/components/slider.scss */
     .problems__close {
       top: 6rem;
       left: 90%; } }
-  /* line 160, ../sass/components/slider.scss */
   .problems__close img {
     width: 4rem;
     height: 4rem; }
     @media only screen and (max-width: 56.25em) {
-      /* line 160, ../sass/components/slider.scss */
       .problems__close img {
         width: 3rem;
         height: 3rem; } }
-/* line 173, ../sass/components/slider.scss */
 .problems__details {
   position: absolute;
   left: 0;
@@ -1585,91 +1158,71 @@ font-family: 'Raleway', sans-serif;*/
   height: 100vh;
   background: #fff;
   z-index: 40;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all .3s ease-in-out;
+  transform: scale(0);
   transition: all .3s ease-in-out;
   opacity: 0; }
-  /* line 186, ../sass/components/slider.scss */
   .problems__details #pbMain1 {
-    background-image: url("../images/topics/medicb.jpg"); }
-  /* line 190, ../sass/components/slider.scss */
+    background-image: url("../images/topics/statueb.jpg"); }
   .problems__details #pbMain2 {
-    background-image: url("../images/topics/mentalb.png"); }
-  /* line 194, ../sass/components/slider.scss */
+    background-image: url("../images/topics/mentalbg.jpg"); }
   .problems__details #pbMain3 {
     background-image: url("../images/topics/npab.jpg"); }
-  /* line 198, ../sass/components/slider.scss */
   .problems__details #pbMain4 {
-    background-image: url("../images/topics/plasticb.jpeg"); }
-  /* line 202, ../sass/components/slider.scss */
+    background-image: url("../images/topics/medicb.jpg"); }
   .problems__details #pbMain5 {
-    background-image: url("../images/topics/statueb.jpg"); }
-  /* line 206, ../sass/components/slider.scss */
+    background-image: url("../images/topics/farmersb.jpg"); }
   .problems__details #pbMain6 {
-    background-image: url("../images/topics/farmer.jpg"); }
-/* line 213, ../sass/components/slider.scss */
+    background-image: url("../images/topics/plasticb.jpg"); }
 .problems__heading {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 4rem;
   color: #000;
   text-transform: uppercase;
   margin: 1rem auto;
   text-align: center; }
   @media only screen and (max-width: 56.25em) {
-    /* line 213, ../sass/components/slider.scss */
     .problems__heading {
       font-size: 3rem;
       margin: .5rem auto; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 213, ../sass/components/slider.scss */
     .problems__heading {
       font-size: 2rem;
       margin: .3rem auto; } }
-/* line 232, ../sass/components/slider.scss */
 .problems__tag {
   font-size: 2rem;
   font-family: 'Poiret One', cursive;
   clear: #222121;
   text-align: center; }
-/* line 240, ../sass/components/slider.scss */
 .problems__main {
   width: 80%;
-  height: 70vh;
+  height: 75vh;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 2rem 0;
   margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateX(-50%);
   display: flex; }
   @media only screen and (max-width: 56.25em) {
-    /* line 240, ../sass/components/slider.scss */
     .problems__main {
       height: 80vh; } }
   @media only screen and (max-width: 56.25em) {
-    /* line 240, ../sass/components/slider.scss */
     .problems__main {
       width: 95%; } }
-  /* line 260, ../sass/components/slider.scss */
+  @media only screen and (max-width: 37.5em) {
+    .problems__main {
+      height: 85vh; } }
   .problems__main__left {
-    width: 30%; }
+    width: 20%; }
     @media only screen and (max-width: 56.25em) {
-      /* line 260, ../sass/components/slider.scss */
       .problems__main__left {
         width: 0%; } }
-  /* line 268, ../sass/components/slider.scss */
   .problems__main__right {
-    width: 70%;
+    width: 80%;
     background: rgba(0, 0, 0, 0.58);
     position: relative; }
     @media only screen and (max-width: 56.25em) {
-      /* line 268, ../sass/components/slider.scss */
       .problems__main__right {
         width: 100%; } }
-/* line 279, ../sass/components/slider.scss */
 .problems__abstract {
   overflow: hidden;
   position: absolute;
@@ -1678,9 +1231,7 @@ font-family: 'Raleway', sans-serif;*/
   width: 100%;
   height: 100%;
   z-index: 36;
-  -webkit-transition: all .3s;
   transition: all .3s; }
-  /* line 289, ../sass/components/slider.scss */
   .problems__abstract__heading {
     text-align: center;
     text-transform: uppercase;
@@ -1688,57 +1239,45 @@ font-family: 'Raleway', sans-serif;*/
     font-size: 3rem;
     margin: 1rem 0; }
     @media only screen and (max-width: 56.25em) {
-      /* line 289, ../sass/components/slider.scss */
       .problems__abstract__heading {
         font-size: 2rem;
         margin: .5rem 0; } }
-  /* line 302, ../sass/components/slider.scss */
   .problems__abstract__paras {
     padding: 0 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     color: #fff;
     font-size: 1.5rem;
-    line-height: 2.5rem; }
-    /* line 309, ../sass/components/slider.scss */
+    line-height: 2.2rem;
+    width: 100%; }
     .problems__abstract__paras-part {
-      padding: 0 1rem; }
+      padding: 0 1rem;
+      width: 100%; }
     @media only screen and (max-width: 56.25em) {
-      /* line 302, ../sass/components/slider.scss */
       .problems__abstract__paras {
         font-size: 1.4rem;
         line-height: 2.3rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 302, ../sass/components/slider.scss */
       .problems__abstract__paras {
         font-size: 1.2rem;
-        line-height: 2rem;
+        line-height: 1.7rem;
         padding: 0 .8rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 302, ../sass/components/slider.scss */
       .problems__abstract__paras {
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
         padding: 0 .5rem; } }
-  /* line 331, ../sass/components/slider.scss */
   .problems__abstract__buttons {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 4rem; }
+    justify-content: space-around;
+    position: absolute;
+    bottom: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
-      /* line 331, ../sass/components/slider.scss */
       .problems__abstract__buttons {
-        margin-top: 2rem; } }
+        bottom: 1rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 331, ../sass/components/slider.scss */
       .problems__abstract__buttons {
-        margin-top: 1.2rem; } }
-  /* line 347, ../sass/components/slider.scss */
+        bottom: 1rem; } }
   .problems__abstract__btn {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -1749,43 +1288,30 @@ font-family: 'Raleway', sans-serif;*/
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
     padding: 1rem 1.5rem;
-    -webkit-transition: all .2s;
     transition: all .2s;
     font-weight: 200;
     border: 1px solid #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    flex-direction: column;
+    justify-content: center; }
     @media only screen and (max-width: 56.25em) {
-      /* line 347, ../sass/components/slider.scss */
       .problems__abstract__btn {
         padding: .6rem 1rem;
         font-size: 1.2rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 347, ../sass/components/slider.scss */
       .problems__abstract__btn {
         padding: .2rem .5rem;
         font-size: 1rem;
         letter-spacing: 2px; } }
     @media only screen and (max-width: 25em) {
-      /* line 347, ../sass/components/slider.scss */
       .problems__abstract__btn {
         padding: .1rem .3rem;
         font-size: .7rem;
         letter-spacing: 1px; } }
-    /* line 381, ../sass/components/slider.scss */
     .problems__abstract__btn:hover {
       background: #fff;
       color: #000;
       font-weight: 400; }
-/* line 392, ../sass/components/slider.scss */
 .problems__tasks {
   position: absolute;
   background: #fff;
@@ -1794,48 +1320,32 @@ font-family: 'Raleway', sans-serif;*/
   top: 0;
   left: 10rem;
   opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all .2s;
+  flex-direction: column;
+  transform: scale(0.9);
   transition: all .2s;
   overflow: hidden;
   z-index: 35; }
-  /* line 407, ../sass/components/slider.scss */
   .problems__tasks__grid {
     width: 90%;
     height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
-  /* line 413, ../sass/components/slider.scss */
   .problems__tasks__close {
     position: absolute;
     left: 93%;
     top: 50%;
     cursor: pointer;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    transform: translateY(-50%); }
     @media only screen and (max-width: 37.5em) {
-      /* line 413, ../sass/components/slider.scss */
       .problems__tasks__close {
         left: 87%; } }
-    /* line 424, ../sass/components/slider.scss */
     .problems__tasks__close img {
       width: 4rem;
       height: 4rem; }
       @media only screen and (max-width: 37.5em) {
-        /* line 424, ../sass/components/slider.scss */
         .problems__tasks__close img {
           width: 3rem;
           height: 3rem; } }
-/* line 437, ../sass/components/slider.scss */
 .problems__task {
   width: 50%;
   height: 100%;
@@ -1843,28 +1353,21 @@ font-family: 'Raleway', sans-serif;*/
   padding-top: 5rem;
   overflow: hidden; }
   @media only screen and (max-width: 25em) {
-    /* line 437, ../sass/components/slider.scss */
     .problems__task {
       height: 80%; } }
-  /* line 448, ../sass/components/slider.scss */
   .problems__task-code {
     font-size: 2rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 448, ../sass/components/slider.scss */
       .problems__task-code {
         font-size: 1.5rem; } }
-  /* line 456, ../sass/components/slider.scss */
   .problems__task-desc {
     font-size: 1.4rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 456, ../sass/components/slider.scss */
       .problems__task-desc {
         font-size: 1.1rem; } }
-  /* line 464, ../sass/components/slider.scss */
   .problems__task-marks {
     color: #de173a;
     font-size: 1.3rem; }
-/* line 471, ../sass/components/slider.scss */
 .problems__coordinators {
   position: absolute;
   background: white;
@@ -1873,32 +1376,18 @@ font-family: 'Raleway', sans-serif;*/
   top: 0;
   left: 10rem;
   opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all .2s;
+  flex-direction: column;
+  transform: scale(0.9);
   transition: all .2s;
   overflow: hidden;
   z-index: 35; }
-  /* line 486, ../sass/components/slider.scss */
   .problems__coordinators__grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     width: 95%;
     height: 50%; }
-  /* line 494, ../sass/components/slider.scss */
   .problems__coordinators__box {
     width: 20rem;
     height: 20rem;
@@ -1906,56 +1395,44 @@ font-family: 'Raleway', sans-serif;*/
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    -webkit-transition: all .2s;
     transition: all .2s; }
     @media only screen and (max-width: 56.25em) {
-      /* line 494, ../sass/components/slider.scss */
       .problems__coordinators__box {
         width: 18rem;
         height: 18rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 494, ../sass/components/slider.scss */
       .problems__coordinators__box {
         width: 12rem;
         height: 12rem;
         margin: .2rem; } }
     @media only screen and (max-width: 25em) {
-      /* line 494, ../sass/components/slider.scss */
       .problems__coordinators__box {
         width: 10rem;
         height: 10rem;
         margin: .1rem; } }
-    /* line 520, ../sass/components/slider.scss */
     .problems__coordinators__box:hover > div {
       top: 80%; }
     @media only screen and (max-width: 37.5em) {
-      /* line 524, ../sass/components/slider.scss */
       .problems__coordinators__box div {
         font-size: 1rem; } }
-  /* line 531, ../sass/components/slider.scss */
   .problems__coordinators__close {
     position: absolute;
     left: 93%;
     top: 50%;
     cursor: pointer;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    transform: translateY(-50%); }
     @media only screen and (max-width: 37.5em) {
-      /* line 531, ../sass/components/slider.scss */
       .problems__coordinators__close {
         left: 87%; } }
-    /* line 542, ../sass/components/slider.scss */
     .problems__coordinators__close img {
       width: 4rem;
       height: 4rem; }
-  /* line 550, ../sass/components/slider.scss */
   .problems__coordinators__img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0; }
-  /* line 558, ../sass/components/slider.scss */
   .problems__coordinators__details {
     overflow: hidden;
     background: rgba(0, 0, 0, 0.62);
@@ -1967,106 +1444,71 @@ font-family: 'Raleway', sans-serif;*/
     color: #fff;
     font-size: 1.2rem;
     text-align-last: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
     padding-left: 1rem;
-    -webkit-transition: all .2s;
     transition: all .2s; }
 
-/* line 580, ../sass/components/slider.scss */
 .scaleProblems {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   opacity: 1; }
 
-/* line 585, ../sass/components/slider.scss */
 .moveAbs {
   left: -10rem;
   opacity: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   z-index: 35; }
 
-/* line 592, ../sass/components/slider.scss */
 .moveCoordinators,
 .moveTasks {
   left: 0;
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   z-index: 37; }
 
-/* line 2, ../sass/components/structure.scss */
 .structure__content {
   position: relative;
   width: 100%;
   margin-top: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   @media only screen and (max-width: 75em) {
-    /* line 2, ../sass/components/structure.scss */
     .structure__content {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      flex-direction: column;
+      align-items: center;
       margin-top: 10%;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+      justify-content: space-around; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 2, ../sass/components/structure.scss */
     .structure__content {
       margin-top: 15%; } }
-/* line 22, ../sass/components/structure.scss */
 .structure__grid {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: relative; }
   @media only screen and (max-width: 75em) {
-    /* line 22, ../sass/components/structure.scss */
     .structure__grid {
       width: 100%;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
-  /* line 36, ../sass/components/structure.scss */
+      justify-content: space-around; } }
   .structure__grid__item {
     position: relative;
     width: 25rem;
     height: 25rem;
     margin: 2rem; }
     @media only screen and (max-width: 75em) {
-      /* line 36, ../sass/components/structure.scss */
       .structure__grid__item {
         width: 20rem;
         height: 20rem; } }
   @media only screen and (max-width: 75em) and (max-width: 25em) {
-    /* line 36, ../sass/components/structure.scss */
     .structure__grid__item {
       width: 18rem;
       height: 18rem; } }
 
-  /* line 55, ../sass/components/structure.scss */
   .structure__grid__box {
     position: relative;
     width: 100%;
     height: 100%; }
-    /* line 60, ../sass/components/structure.scss */
     .structure__grid__box__shadow {
       position: absolute;
       width: 100%;
@@ -2074,44 +1516,35 @@ font-family: 'Raleway', sans-serif;*/
       top: -1rem;
       left: -1rem;
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==); }
-    /* line 70, ../sass/components/structure.scss */
     .structure__grid__box__img {
       position: absolute;
       width: 23rem;
       height: 23rem; }
       @media only screen and (max-width: 75em) {
-        /* line 70, ../sass/components/structure.scss */
         .structure__grid__box__img {
           width: 18rem;
           height: 18rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 70, ../sass/components/structure.scss */
         .structure__grid__box__img {
           width: 14rem;
           height: 14rem; } }
-    /* line 88, ../sass/components/structure.scss */
     .structure__grid__box__title {
       color: black;
       text-transform: uppercase;
       font-size: 3rem;
       position: absolute;
-      -webkit-writing-mode: vertical-rl;
-          -ms-writing-mode: tb-rl;
-              writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
       left: 90%;
       top: 10%;
       white-space: nowrap;
       letter-spacing: 0.15rem;
       font-family: 'Anton', sans-serif; }
       @media only screen and (max-width: 75em) {
-        /* line 88, ../sass/components/structure.scss */
         .structure__grid__box__title {
           font-size: 2rem; } }
       @media only screen and (max-width: 25em) {
-        /* line 88, ../sass/components/structure.scss */
         .structure__grid__box__title {
           font-size: 1.8rem; } }
-    /* line 111, ../sass/components/structure.scss */
     .structure__grid__box__num {
       color: black;
       position: absolute;
@@ -2121,16 +1554,13 @@ font-family: 'Raleway', sans-serif;*/
       border: .5rem solid black;
       font-size: 3rem;
       border-radius: 300px;
-      -webkit-transition: all .2s;
       transition: all .2s; }
       @media only screen and (max-width: 37.5em) {
-        /* line 111, ../sass/components/structure.scss */
         .structure__grid__box__num {
           font-size: 1.5rem;
           border: .2rem solid black;
           padding: 1rem .6rem;
           left: 40%; } }
-    /* line 130, ../sass/components/structure.scss */
     .structure__grid__box__content {
       color: black;
       position: absolute;
@@ -2138,7 +1568,6 @@ font-family: 'Raleway', sans-serif;*/
       top: 100%;
       left: 0; }
       @media only screen and (max-width: 25em) {
-        /* line 130, ../sass/components/structure.scss */
         .structure__grid__box__content {
           font-size: 1rem; } }
 
@@ -2223,103 +1652,69 @@ font-family: 'Raleway', sans-serif;*/
 .box__content strong {
 	white-space: nowrap;
 }*/
-/* line 1, ../sass/components/faq.scss */
 .faq__grid {
   position: absolute;
   width: 100%;
   height: 80vh;
   top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  justify-content: space-around; }
   @media only screen and (max-width: 37.5em) {
-    /* line 1, ../sass/components/faq.scss */
     .faq__grid {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
-  /* line 15, ../sass/components/faq.scss */
+      flex-direction: column;
+      align-items: center; } }
   .faq__grid__section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 40%;
     height: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    justify-content: space-around; }
     @media only screen and (max-width: 37.5em) {
-      /* line 15, ../sass/components/faq.scss */
       .faq__grid__section {
         width: 80%; } }
 
-/* line 30, ../sass/components/faq.scss */
 .faq__container {
   width: 100%;
   position: relative;
   margin-left: 10rem;
   margin-right: 2rem; }
   @media only screen and (max-width: 56.25em) {
-    /* line 30, ../sass/components/faq.scss */
     .faq__container {
       margin-right: 4rem; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 30, ../sass/components/faq.scss */
     .faq__container {
       margin-left: 7rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 30, ../sass/components/faq.scss */
     .faq__container {
       margin-left: 9rem; } }
-/* line 51, ../sass/components/faq.scss */
 .faq__heading {
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600; }
   @media only screen and (max-width: 75em) {
-    /* line 51, ../sass/components/faq.scss */
     .faq__heading {
       font-size: 1.8rem; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 51, ../sass/components/faq.scss */
     .faq__heading {
       font-size: 1.2rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 51, ../sass/components/faq.scss */
     .faq__heading {
       font-size: 1rem; } }
-/* line 72, ../sass/components/faq.scss */
 .faq__content {
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif; }
   @media only screen and (max-width: 75em) {
-    /* line 72, ../sass/components/faq.scss */
     .faq__content {
       font-size: 1.2rem; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 72, ../sass/components/faq.scss */
     .faq__content {
       font-size: 1rem; } }
   @media only screen and (max-width: 25em) {
-    /* line 72, ../sass/components/faq.scss */
     .faq__content {
       font-size: .7rem; } }
-/* line 91, ../sass/components/faq.scss */
 .faq__border {
   position: relative; }
-  /* line 94, ../sass/components/faq.scss */
   .faq__border__line {
     background-color: #000;
     width: 103%;
@@ -2327,10 +1722,8 @@ font-family: 'Raleway', sans-serif;*/
     position: absolute;
     left: -2rem; }
     @media only screen and (max-width: 75em) {
-      /* line 94, ../sass/components/faq.scss */
       .faq__border__line {
         height: .1rem; } }
-  /* line 107, ../sass/components/faq.scss */
   .faq__border img {
     width: 5rem;
     height: 5rem;
@@ -2338,16 +1731,13 @@ font-family: 'Raleway', sans-serif;*/
     left: -5.5rem;
     top: -2.5rem; }
     @media only screen and (max-width: 56.25em) {
-      /* line 107, ../sass/components/faq.scss */
       .faq__border img {
         width: 4rem;
         height: 4rem;
         top: -2.2rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 107, ../sass/components/faq.scss */
       .faq__border img {
         left: -4.5rem; } }
-  /* line 125, ../sass/components/faq.scss */
   .faq__border__num {
     position: absolute;
     color: #fff;
@@ -2355,13 +1745,11 @@ font-family: 'Raleway', sans-serif;*/
     left: -3.9rem;
     top: -1.8rem; }
     @media only screen and (max-width: 56.25em) {
-      /* line 125, ../sass/components/faq.scss */
       .faq__border__num {
         font-size: 2rem;
         left: -4rem;
         top: -1.2rem; } }
     @media only screen and (max-width: 37.5em) {
-      /* line 125, ../sass/components/faq.scss */
       .faq__border__num {
         left: -2.9rem; } }
 

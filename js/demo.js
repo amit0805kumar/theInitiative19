@@ -347,18 +347,18 @@
     
     $(".my-canvas").click(function () {
 
-        var index = Math.abs(pindex % 6);
+        var index = pindex % 6;
         if (index === 0) {
             $('#p1').addClass('scaleProblems');
-        } else if (index === 1) {
+        } else if (index === 1 || index === -5) {
             $('#p2').addClass('scaleProblems');
-        } else if (index === 2) {
+        } else if (index === 2 || index === -4) {
             $('#p3').addClass('scaleProblems');
-        } else if (index === 3) {
+        } else if (index === 3 || index === -3) {
             $('#p4').addClass('scaleProblems');
-        } else if (index === 4) {
+        } else if (index === 4 || index === -2) {
             $('#p5').addClass('scaleProblems');
-        } else if (index === 5) {
+        } else if (index === 5 || index === -1) {
             $('#p6').addClass('scaleProblems');
         }
 
