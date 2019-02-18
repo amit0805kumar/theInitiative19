@@ -26,6 +26,17 @@ $recieve=apicall("/api/customer/details",$sent);
         <div class="header">
         </div>
         <div class="main">
+          <div class="main__popup">
+              <div class="main__popup__icon">
+                           <svg>
+                            <use xlink:href="images/sprite.svg#checklist"></use>
+                            </svg>
+                        
+              </div>
+              <div class="main__popup__heading">Please your register first.</div>
+          </div>
+           
+           
             <div class="nav">
                 <div class="nav__link navActive" id="home">
                     <div class="nav__link__icon">
@@ -277,6 +288,8 @@ $recieve=apicall("/api/customer/details",$sent);
                     </div>
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
+                       
+                       <a href="#" class="uploadOut">https://www.youtube.com/watch?v=UqyT8IEBkvY</a>
                         <form class="uploader__input" id="task_form">
                           <select name="task_code" id="task_code">
                               <option value="0">Select task code</option>

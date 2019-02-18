@@ -186,9 +186,8 @@ a {
                 margin-top: 5rem;
 
                 svg {
-                    width: 5rem;
-                    height: 5rem;
-
+                    width: 10rem;
+                    
                     @include respond(tab-port) {
                         width: 4rem;
                         height: 4rem;

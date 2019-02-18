@@ -92,8 +92,7 @@ a {
       .container .main__popup__icon {
         margin-top: 5rem; }
         .container .main__popup__icon svg {
-          width: 5rem;
-          height: 5rem; }
+          width: 10rem; }
           @media only screen and (max-width: 56.25em) {
             .container .main__popup__icon svg {
               width: 4rem;
