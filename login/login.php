@@ -23,7 +23,7 @@ if ($recieve["message"]=="success") {
 }
 elseif ($recieve["message"]=="invalid_mobile_password") {
 	//header("Location:../registration/error_bak.html");
-	echo "Invalid Mobile Number OR Password";
+	echo "Mobile Number OR Password Doesn't Exist";
 }
 else{
 	//header("Location:../registration/error_bak.html");

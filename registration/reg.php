@@ -1,10 +1,11 @@
 <?php
+session_start();
 include "constant.php";
 $team_name=$_POST["team_name"];
 $team_topic=$_POST["team_topic"];
 $mem1_name=$_POST["mem1_name"];
 $mem1_email=$_POST["mem1_email"];
-$mem1_mobile=$_POST["mem1_mobile"];
+$mem1_mobile=$_SESSION['user_details']['mobile_no'];
 $mem1_branch=$_POST["mem1_branch"];
 $mem1_year=$_POST["mem1_year"];
 $mem1_rollno=$_POST["mem1_rollno"];
@@ -117,11 +118,11 @@ if ($msg_success["message"]=="success") {
   header("Location:success.html");
 }
 else{
-  header("Location:error_bak.html");
+  echo $msg_success["message"];
 }
 }
 else{
-  header("Location:error_bak.html");
+ echo "flagsubmit";
 }
 
 //mem3_details
