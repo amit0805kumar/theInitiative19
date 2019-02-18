@@ -18,6 +18,21 @@
         <div class="header">
         </div>
         <div class="main">
+
+           
+           <!--If not registered then this-->
+            <div class="main__popup">
+                <div class="main__popup__icon">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#checklist">
+                        </use>
+                    </svg>
+                </div>
+                <a href="#" class="main__popup__heading">Please Register your tean first.</a>
+            </div>
+            
+            
+            <!--Else this-->
             <div class="nav">
                 <div class="nav__link navActive" id="home">
                     <div class="nav__link__icon">
@@ -55,6 +70,12 @@
                             <use xlink:href="images/sprite.svg#organize"></use>
                         </svg></div>
                     <div class="nav__link__text">Instructions</div>
+                </div> 
+                 <div class="nav__link" id="noti">
+                    <div class="nav__link__icon"> <svg class="svgIcons">
+                            <use xlink:href="images/sprite.svg#more-circular-button-interface-symbol-of-three-horizontal-dots"></use>
+                        </svg></div>
+                    <div class="nav__link__text">Notifications</div>
                 </div>
                 <div class="nav__link">
                     <div class="nav__link__icon">
@@ -64,6 +85,8 @@
                     </div>
                     <div class="nav__link__text">Logout</div>
                 </div>
+                
+                <div class="nav__footer">&copy; CSIAKGEC | 2019</div>
             </div>
             <div class="content">
 
@@ -101,21 +124,21 @@
                                 <div class="members__name">Year: <span>1</span></div>
                             </div>
                             <div class="members__details">
-                              <div class="members__head">Member 2</div>
+                                <div class="members__head">Member 2</div>
                                 <div class="members__name">Name: <span>Amit Kumar</span></div>
                                 <div class="members__mobile">Mobile: <span>8802980454</span></div>
                                 <div class="members__name">Roll No: <span>1602710016</span></div>
                                 <div class="members__name">Year: <span>1</span></div>
-                                </div>
-                                <div class="members__details">
-                              <div class="members__head">Member 3</div>
+                            </div>
+                            <div class="members__details">
+                                <div class="members__head">Member 3</div>
                                 <div class="members__name">Name: <span>Amit Kumar</span></div>
                                 <div class="members__mobile">Mobile: <span>8802980454</span></div>
                                 <div class="members__name">Roll No: <span>1602710016</span></div>
                                 <div class="members__name">Year: <span>1</span></div>
-                                </div>
-                        </div>   
-                          
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -127,13 +150,13 @@
                     <form action="#" method="post" class="synopsis">
                         <input type="text" class="synposis__input">
                         <div class="synopsis__btn">
-                           <input type="submit" value="">
+                            <input type="submit" value="">
                             <svg class="uploadIcon">
                                 <use xlink:href="images/sprite.svg#upload"></use>
                             </svg>
                         </div>
                     </form>
-                      <div class="uploadInst">* You must upload the google docs link.</div>
+                    <div class="uploadInst">* You must upload the google docs link.</div>
 
 
                 </div>
@@ -168,7 +191,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                                   <input type="submit" value="">
+                                <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -177,7 +200,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                               <input type="submit" value="">
+                                <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -186,7 +209,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                               <input type="submit" value="">
+                                <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -195,7 +218,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                               <input type="submit" value="">
+                                <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -264,6 +287,30 @@
 
                 <div class="content__box hide" id="b5">
                     <div class="task__heading">Instructions</div>
+                    <div class="instructions">
+                        <div class="instruction">
+                            <div class="instruction__num">1</div>
+                            <div class="instruction__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <div class="instruction__num">2</div>
+                            <div class="instruction__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <div class="instruction__num">3</div>
+                            <div class="instruction__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                   
+                 <div class="content__box hide" id="b6">
+                    <div class="task__heading">Notifications</div>
                     <div class="instructions">
                         <div class="instruction">
                             <div class="instruction__num">1</div>

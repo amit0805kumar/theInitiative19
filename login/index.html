@@ -13,10 +13,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <title>Login | SignUp</title>
+    
+
 </head>
 
 <body>
 
+   <div class="loader">
+   
+   <div class="loader__main">
+       <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+   </div>
+   
+   </div>
+   
+   
     <div class="header">
         <a href="../index.html"><img src="../images/logo.png" alt="" class="header__logo"></a>
         <div class="header__heading">The Initiative</div>
@@ -43,6 +54,7 @@
             <input type="password" name="password" id="password" placeholder="Password" class="input">
             <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input">
             <input type="submit" id="signup_submit" value="Register">
+            
 
         </form>
 

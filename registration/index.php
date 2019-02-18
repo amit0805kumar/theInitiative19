@@ -20,6 +20,8 @@ session_start();
 
 <body>
 
+   
+
     <div class="header">
         <img src="../images/logo.png" alt="" class="header__logo">
         <div class="header__heading">The Initiative</div>
