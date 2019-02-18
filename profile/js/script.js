@@ -5,6 +5,7 @@ $(function () {
     var task = $('#task');
     var coordinators = $('#coordinators');
     var instructions = $('#instructions');
+    var noti = $('#noti');
 
 
 
@@ -37,6 +38,12 @@ $(function () {
         $('#b5').removeClass('hide');
         $('.nav__link').removeClass('navActive');
         instructions.addClass('navActive');
+    });
+   noti.click(function () {
+        $('.content__box').addClass('hide');
+        $('#b6').removeClass('hide');
+        $('.nav__link').removeClass('navActive');
+        noti.addClass('navActive');
     });
 
 });

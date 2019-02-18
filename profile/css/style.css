@@ -78,6 +78,49 @@ a {
   .container .main {
     display: flex;
     height: 100%; }
+    .container .main__popup {
+      position: absolute;
+      top: 30rem;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container .main__popup__icon {
+        margin-top: 5rem; }
+        .container .main__popup__icon svg {
+          width: 5rem;
+          height: 5rem; }
+          @media only screen and (max-width: 56.25em) {
+            .container .main__popup__icon svg {
+              width: 4rem;
+              height: 4rem; } }
+      .container .main__popup__heading {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+        margin-top: 4rem;
+        cursor: pointer;
+        padding: 1.5rem 2.5rem;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, #eb121a, #faeb1b);
+        font-family: 'Muli', sans-serif; }
+        @media only screen and (max-width: 56.25em) {
+          .container .main__popup__heading {
+            font-size: 2rem;
+            margin-top: 3rem;
+            padding: 1rem 1.5rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .container .main__popup__heading {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            padding: .5rem .8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .container .main__popup {
+          top: 25rem; } }
     @media only screen and (max-width: 37.5em) {
       .container .main {
         flex-direction: column; } }
@@ -494,7 +537,8 @@ a {
               color: #ed211d; }
             .container .main .content__box .instructions .instruction__text {
               font-family: 'Poppins', sans-serif;
-              color: #ef5350; }
+              color: #ef5350;
+              padding: 1 1.5rem; }
 
 .coordinators {
   width: 100%;
