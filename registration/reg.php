@@ -102,6 +102,7 @@ if($flagsubmit){
 $sent=array("team_name"=>$team_name,"topic"=>$team_topic,"email"=>$mem1_email,"college"=>$college,"mobile_no"=>$mem1_mobile);
 $recieve=apicall("/api/customer/teamregister",$sent);
 $teamid=$recieve["team_id"];
+$_SESSION["user_details"]["team_id"]=$recieve["team_id"];
 //mem1_details
 $sent=array("team_id"=>$teamid,"name"=>$mem1_name,"mobile"=>$mem1_mobile,"branch"=>$mem1_branch,"year"=>$mem1_year,"roll_no"=>$mem1_rollno);
 apicall("/api/customer/addmember",$sent);

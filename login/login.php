@@ -19,6 +19,7 @@ $recieve=apicall("/api/customer/login",$sent);
 if ($recieve["message"]=="success") {
 	$_SESSION["user_details"]["user_id"] = $recieve["user_id"];
 	$_SESSION["user_details"]["mobile_no"] = $mobile_no_login;
+	
 	echo "success";
 }
 elseif ($recieve["message"]=="invalid_mobile_password") {

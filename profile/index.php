@@ -26,15 +26,23 @@ $recieve=apicall("/api/customer/details",$sent);
         <div class="header">
         </div>
         <div class="main">
-          <div class="main__popup">
+            <?php
+            if(!isset($_SESSION["user_details"]["team_id"]))
+            {
+                ?>
+
+                <div class="main__popup">
               <div class="main__popup__icon">
                            <svg>
                             <use xlink:href="images/sprite.svg#checklist"></use>
                             </svg>
                         
               </div>
-              <div class="main__popup__heading">Please your register first.</div>
+              <div class="main__popup__heading">Please register first</div>
           </div>
+                <?php
+            }
+                ?>
            
            
             <div class="nav">
