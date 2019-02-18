@@ -469,7 +469,7 @@ a {
                 border: 1px solid #d50000;
                 margin: 1rem 0;
                 height: 2.5rem; } }
-            .container .main .content__box .uploader__input__link {
+            .container .main .content__box .uploader__input input {
               width: 60%;
               color: blue; }
             .container .main .content__box .uploader__input .uploadIcon {
