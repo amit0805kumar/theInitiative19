@@ -64,14 +64,14 @@ $recieve=apicall("/api/customer/details",$sent);
                         </svg></div>
                     <div class="nav__link__text">Instructions</div>
                 </div>
-                <div class="nav__link">
+                <a href="logout.php" class="nav__link">
                     <div class="nav__link__icon">
                         <svg class="svgIcons">
                             <use xlink:href="images/sprite.svg#logout"></use>
                         </svg>
                     </div>
                     <div class="nav__link__text">Logout</div>
-                </div>
+                </a>
             </div>
             <div class="content">
 
@@ -277,15 +277,16 @@ $recieve=apicall("/api/customer/details",$sent);
                     </div>
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
-                        <form class="uploader__input" id="task1_form">
-                          <select name="" id="">
+                        <form class="uploader__input" id="task_form">
+                          <select name="task_code" id="task_code">
                               <option value="0">Select task code</option>
-                              <option value="1">INT011</option>
-                              <option value="1">INT012</option>
-                              <option value="1">INT013</option>
-                              <option value="1">INT014</option>
+                              <option value="INI011">INI011</option>
+                              <option value="INI012">INI012</option>
+                              <option value="INI013">INI013</option>
+                              <option value="INI014">INI014</option>
                           </select>
-                          <input type="text" name="task_code" placeholder="Upload task code">
+                          <input type="text" name="task_link" id="task_link" placeholder="Upload task Link">
+                          <input type="hidden" name="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
                             <div class="uploader__btn">
                                <input type="submit" value="">
                                 <svg class="uploadIcon">
