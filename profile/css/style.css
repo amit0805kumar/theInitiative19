@@ -117,6 +117,7 @@ a {
           .container .main__popup__heading {
             font-size: 1.2rem;
             margin-top: 2rem;
+            /**/
             padding: .5rem .8rem; } }
       @media only screen and (max-width: 37.5em) {
         .container .main__popup {
@@ -203,6 +204,15 @@ a {
               font-size: .4rem; } }
         .container .main .nav__link:hover {
           background-image: linear-gradient(to right, #eb121a, #faeb1b); }
+      .container .main .nav__footer {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        font-family: 'Poppins', sans-serif;
+        padding: .4rem 0;
+        width: 20%;
+        background-image: linear-gradient(to right, #eb121a, #faeb1b); }
     .container .main .content {
       background: #fff;
       flex: 1;

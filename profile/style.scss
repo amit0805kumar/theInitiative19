@@ -212,9 +212,12 @@ a {
                     font-size: 2rem;
                     margin-top: 3rem;
                     padding: 1rem 1.5rem;
-                } @include respond(phone) {
+                }
+
+                @include respond(phone) {
                     font-size: 1.2rem;
                     margin-top: 2rem;
+                    /**/
                     padding: .5rem .8rem;
                 }
             }
@@ -330,6 +333,17 @@ a {
                 &:hover {
                     background-image: linear-gradient(to right, #eb121a, #faeb1b);
                 }
+            }
+
+            &__footer {
+                text-align: center;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                font-family: 'Poppins', sans-serif;
+                padding: .4rem 0;
+                width: 20%;
+                background-image: linear-gradient(to right, #eb121a, #faeb1b);
             }
         }
 

@@ -85,6 +85,8 @@
                     </div>
                     <div class="nav__link__text">Logout</div>
                 </div>
+                
+                <div class="nav__footer">&copy; CSIAKGEC | 2019</div>
             </div>
             <div class="content">
 
