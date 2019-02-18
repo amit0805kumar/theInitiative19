@@ -12,22 +12,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="validate.js"></script>
     <title>Login | SignUp</title>
-    
-
 </head>
 
 <body>
 
-   <div class="loader">
-   
-   <div class="loader__main">
-       <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-   </div>
-   
-   </div>
-   
-   
     <div class="header">
         <a href="../index.html"><img src="../images/logo.png" alt="" class="header__logo"></a>
         <div class="header__heading">The Initiative</div>
@@ -42,19 +32,34 @@
         <form  id="login_form"  class="form loginForm">
             <div class="form__heading">Login</div>
             <p style="font-size: 18px;color: red;" id="error_msg_login"></p>
+            
             <input type="number" name="mobile_no_login" id="mobile_no_login" placeholder="Mobile" class="input">
-            <input type="password" name="password_login" id="password_login" placeholder="Password" class="input">
-            <input type="submit" value="Login">
+            <span id="mobile_error"> </span>
+            
+            <input type="password" name="password_login" 
+            id="password_login" placeholder="Password" class="input">
+            <span id="password_login_error"> </span>
+            
+            <input type="submit" id="submit" value="Login">
+        
         </form>
         <form  id="signup_form" class="form registerFrom hide">
             <div class="form__heading">Signup</div>
             <p style="font-size: 18px;" id="error_msg"></p>
-            <input type="number" name="mobile_no" id="mobile_no" placeholder="Mobile Number" class="input">
-            <input type="text" name="email" id="email" placeholder="Email" class="input">
-            <input type="password" name="password" id="password" placeholder="Password" class="input">
-            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input">
-            <input type="submit" id="signup_submit" value="Register">
             
+            <input type="number" name="mobile_no" id="mobile_no" placeholder="Mobile Number" class="input">
+            <span id="mobile_no_error"> </span>
+             
+            <input type="text" name="email" id="email" placeholder="Email" class="input">
+            <span id="email_error"> </span>
+            
+            <input type="password" name="password" id="password" placeholder="Password" class="input">
+            <span id="password_error"> </span>
+            
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input">
+            <span id="confirm_password_error"> </span>
+            
+            <input type="submit" id="signup_submit" value="Register">
 
         </form>
 
