@@ -26,6 +26,7 @@ $recieve=apicall("/api/customer/details",$sent);
         </div>
         <div class="main">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
            
            <!--If not registered then this-->
@@ -41,6 +42,8 @@ $recieve=apicall("/api/customer/details",$sent);
             
             
             <!--Else this-->
+=======
+>>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
 =======
 >>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
             <div class="nav">
@@ -131,6 +134,7 @@ $recieve=apicall("/api/customer/details",$sent);
                            <?php 
                            if($recieve[0]['topic']=="1"){
                             ?>
+<<<<<<< HEAD
                             <div class="topic__abstract__text">
                                 With more than 3600 monuments and having the world's tallest statue ,an unofficial race of building tallest statues or more number of statues is now reaching to its extremity. Right after the inauguration of World's Tallest Statue: ‘The Statue of Unity’ the Maharashtra Govt. got the environment clearance for building the another tallest statue of the world: Shiva Ji statue . But the game isn't over yet now UP Govt. has released the proposal of building another and taller than Shiva ji statue, ‘Ram Ji Statue’. <br> Previously, there were other Governments too who used the focus of statues for symbolising their work and diverting the political issues. <br>‘Mayawati's Elephant Statues in Ambedkar Memorial Park’ which was made by BSP Govt. In Lucknow and the total cost of whole project was ₹7 Billions approximately.<br>‘Buddha statue on Hussain Sagar Lake’ in Hyderabad was also built by Ibrahim Qutub for depicting his pride. <br>
                                     ‘Raja Bhoj Statue on Bhopal Lake’ built by Raja Bhoj.
@@ -195,6 +199,72 @@ $recieve=apicall("/api/customer/details",$sent);
                                     Plastic pollution poses an increasing issue for marine life. Physical harm from plastic items, Chemical harm from toxic chemicals associated with plastic (additives, persistent organic pollutants),Biological harm from microorganisms that adhere to plastics. Plastic is just one type of floating substrate in the ocean, but it is unique in a number of ways that make it particularly worrisome.
 
                             </div>
+=======
+                            <div class="topic__abstract__text">
+                                With more than 3600 monuments and having the world's tallest statue ,an unofficial race of building tallest statues or more number of statues is now reaching to its extremity. Right after the inauguration of World's Tallest Statue: ‘The Statue of Unity’ the Maharashtra Govt. got the environment clearance for building the another tallest statue of the world: Shiva Ji statue . But the game isn't over yet now UP Govt. has released the proposal of building another and taller than Shiva ji statue, ‘Ram Ji Statue’. <br> Previously, there were other Governments too who used the focus of statues for symbolising their work and diverting the political issues. <br>‘Mayawati's Elephant Statues in Ambedkar Memorial Park’ which was made by BSP Govt. In Lucknow and the total cost of whole project was ₹7 Billions approximately.<br>‘Buddha statue on Hussain Sagar Lake’ in Hyderabad was also built by Ibrahim Qutub for depicting his pride. <br>
+                                    ‘Raja Bhoj Statue on Bhopal Lake’ built by Raja Bhoj.
+                                    All these examples has one thing in common, all of these statues were made by the politicians as they must have associated the statues with their pride. So, here is the question arises, do we really need these symbols of dignity. Would there be any other way to relate the development of the people and the country. <br>
+                                    Why statues have become a magnet in politics.
+                            </div>
+                            <?php
+
+                           }
+                           elseif ($recieve[0]['topic']=="2") {
+                            ?>
+                                
+                               <div class="topic__abstract__text">
+                                Mental health does not only means that a person is idiot or is mad. If a person is suffering from any type of pressure or in depression and is not able to cope with their fellow mates, it also comes under the category of mental illness.
+                                    Depression is a major problem in today’s generation. Every person is going through a lot of emotions in their life and is unable to share them with someone. All the tension is piled up in their head and leads to mental illness.People suffering from this disease often gains a feeling of suicide and even try to attempt it. Crying while alone is a basic problem.<br>India has been declared the most depressed country by WHO (World Health Organization) . Around 6.5 percent Indians are suffering from depression. It has been a very common problem since everyone is not able to fulfil their dreams and has to compete in this fast world. <br>
+                                    Try not to stress so much and be happy.
+                            </div> 
+
+                            <?php   # code...
+                           }
+                           elseif ($recieve[0]['topic']=="3") {
+                               ?>
+
+                               <div class="topic__abstract__text">
+                                The lack in education system is making it impossible to grab good and practical knowledge. Today’s generation is not able to give its best because the type of studies conducted is of memorizing. They are neither implementing the practical nor they are trying to understand. Day by day competition is increasing which makes the race to be the best more difficult.The issue with danger that competition can harm the learning process by turning a project into a race to the finish line, where understanding and internalizing concepts and knowledge becomes unimportant compared to winning.<br>The purpose of the activity moves from the learning goals (i.e., engagement in making sense of the elements of the process and the attempt to interpret and make a quality effort) to efficiency, speed, and the outcome relative to others…we can see this change in focus occurring no matter what the teacher may say either to encourage or discourage it. Our education system would be better when everyone would be content by grabbing that power of gaining knowledge rather than matter what marks and rank they get.
+                            </div> 
+                            <?php
+                           }
+                           elseif ($recieve[0]['topic']=="4") {
+                               ?>
+                                
+                                <div class="topic__abstract__text">
+                                There can be no dispute over the objective, the sincerity of the concerned is not beyond doubt and gives rise to so many natural questions. Affordability of medicines is a major issue determining access to medicines.
+                                    <br>
+                                    Prescription drugs are an important part of the health care system and patients rely on medicines to keep them healthy. Unfortunately, prices for prescription drugs have soared in recent years. Not only are drug manufacturers launching products with high prices, they are routinely raising the prices of existing drugs — even decades-old drugs — by double-digit rates.<br>India is said to have one of the most corrupt medical systems in the world. The situation has become so bad that patients today approach the doctor with mixed feelings – of faith and fear, of hope and hostility. Medical profession which was once a respected line of work but today is corrupted at every level, from medical education to medical practice, and in both the private and government sectors. It calls for doctors, the government and the public to act against dishonest doctors, restore the dignity of the profession and work for the benefit of society.
+                            </div> 
+
+                            <?php
+                           }
+                           elseif ($recieve[0]['topic']=="5") {
+                               ?>
+                            <div class="topic__abstract__text">
+                                With more than 54% of workforce still dependent on agriculture for their livlihood, agriculture in India has a far-reaching impact on poverty reduction as well as rural development. Thus, it would be more
+                                    meaningful to view agriculture not as farming alone but as a wholistic value change which includes
+                                    farming, wholesaling, warehousing, processing and retailing. Also the fact that an average indian spends
+                                    more than 50% of his monthly expenditure on food establishes the centrality of agriculture in the context
+                                    of food security concerns.<br>There are numerous problems faced by the farmers in India and they are: <br>
+                                    1:-Due to lack of availability and affordability to farmers, there is low level of use of agricultural <br>
+                                    technologies. For e.g.-SMS machines,happy weed machines. <br>
+                                    2:-There is lack of research and development in this field leading farmers to use ancestral methods and
+                                    techniques and there is no major progress neither in production nor in development.
+                            </div> 
+
+
+                            <?php
+                           }
+                           elseif ($recieve[0]['topic']=="6") {
+                               ?>
+                            
+                             <div class="topic__abstract__text">
+                                Plastic products have become an integral part of our daily life, encouraging its production to cross 150 million tonnes per year globally. Government try to stop problem, so it creating many rules, but it’s not effected in human mentality. Every day, a gigantic amount of plastic leaks into the environment, the seas and oceans. It stays there for a very long time, damaging nature and the ecosystems that support life on Earth. Meanwhile plastic litter continues to accumulate in world oceans. It has been estimated that 8 million tons of plastic waste reaches the ocean each year, and with no action that volume is projected to double by 2030, and double again by 2050.<br>At least 44 sea bird species, 9 cetacean species, 11 pinniped species, 6 turtle species and 31 invertebrate species have been documented to suffer entanglement in larger pieces of plastic debris (NOAA, 2014).
+                                    Plastic pollution poses an increasing issue for marine life. Physical harm from plastic items, Chemical harm from toxic chemicals associated with plastic (additives, persistent organic pollutants),Biological harm from microorganisms that adhere to plastics. Plastic is just one type of floating substrate in the ocean, but it is unique in a number of ways that make it particularly worrisome.
+
+                            </div>
+>>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
 
                             <?php
                            }
@@ -246,9 +316,15 @@ $recieve=apicall("/api/customer/details",$sent);
                     <div class="task__heading">Upload Synopsis</div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="#" class="synOut">https://www.youtube.com/watch?v=YuPzpoC3QNc</a>
                     <form action="#" method="post" class="synopsis">
                         <input type="text" class="synposis__input">
+=======
+                    <form id="upload_synopsis_form" class="synopsis">
+                        <input type="text" name="synopsis_link" class="synposis__input">
+                        <input type="hidden" name="team_id" id="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
+>>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
 =======
                     <form id="upload_synopsis_form" class="synopsis">
                         <input type="text" name="synopsis_link" class="synposis__input">
@@ -294,6 +370,7 @@ $recieve=apicall("/api/customer/details",$sent);
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="#" class="uploadOut">https://www.youtube.com/watch?v=YuPzpoC3QNc</a>
                         <form class="uploader__input" method="post" action="#">
                             <select name="" id="">
@@ -305,6 +382,8 @@ $recieve=apicall("/api/customer/details",$sent);
                             </select>
                             <input type="text" class="uploader__input__link" placeholder="Link of the task">
 =======
+=======
+>>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
                         <form class="uploader__input"  id="task1_form">
                             <input type="text" name="optinal_task_link" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <input type="hidden" name="task_code" value="INI011">
@@ -342,6 +421,9 @@ $recieve=apicall("/api/customer/details",$sent);
                             <input type="text" name="optinal_task_link" class="uploader__input__link" placeholder="Task Code (IN014)">
                             <input type="hidden" name="task_code" value="INI014">
                              <input type="hidden" name="team_id" id="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
+<<<<<<< HEAD
+>>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
+=======
 >>>>>>> 94d799299a2a306c4f1cc4576c86f14076589007
                             <div class="uploader__btn">
                                <input type="submit" value="">
