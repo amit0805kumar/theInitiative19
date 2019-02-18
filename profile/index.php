@@ -11,28 +11,20 @@
     <link rel="shotcut icon" type="img/png" href="../images/logo.png">
     <script src="js/script.js"></script>
     <title>Team Profile</title>
-
+<?php
+session_start();
+include "../registration/constant.php";
+$sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
+//echo $_SESSION['user_details']['mobile_no'];
+$recieve=apicall("/api/customer/details",$sent);
+//echo json_encode($recieve);
+?>
 <body>
 
     <div class="container">
         <div class="header">
         </div>
         <div class="main">
-
-           
-           <!--If not registered then this-->
-            <div class="main__popup">
-                <div class="main__popup__icon">
-                    <svg>
-                        <use xlink:href="images/sprite.svg#checklist">
-                        </use>
-                    </svg>
-                </div>
-                <a href="#" class="main__popup__heading">Please Register your tean first.</a>
-            </div>
-            
-            
-            <!--Else this-->
             <div class="nav">
                 <div class="nav__link navActive" id="home">
                     <div class="nav__link__icon">
@@ -70,12 +62,6 @@
                             <use xlink:href="images/sprite.svg#organize"></use>
                         </svg></div>
                     <div class="nav__link__text">Instructions</div>
-                </div> 
-                 <div class="nav__link" id="noti">
-                    <div class="nav__link__icon"> <svg class="svgIcons">
-                            <use xlink:href="images/sprite.svg#more-circular-button-interface-symbol-of-three-horizontal-dots"></use>
-                        </svg></div>
-                    <div class="nav__link__text">Notifications</div>
                 </div>
                 <div class="nav__link">
                     <div class="nav__link__icon">
@@ -85,60 +71,114 @@
                     </div>
                     <div class="nav__link__text">Logout</div>
                 </div>
-                
-                <div class="nav__footer">&copy; CSIAKGEC | 2019</div>
             </div>
             <div class="content">
 
+            <?php
+         
+
+        switch ($recieve[0]['topic']) {
+        case "1":
+        $topic_name="Statue of Politics";
+        break;
+        case "2":
+        $topic_name="Blemish Dejection";
+        break;
+        case "3":
+        $topic_name="NPA";
+        break;
+        case "4":
+        $topic_name="Exorbitant Medication";
+        break;
+        case "5":
+        $topic_name="Futile Strategies";
+        break;
+        case "6":
+        $topic_name="Marine Microplastic";
+        break;
+}
+?>
 
 
 
                 <div class="content__box" id="b1">
-                    <div class="team__name">TEAM CSI</div>
+                    <div class="team__name"><?php echo $recieve[0]['team_name'] ; ?></div>
                     <div class="topic">
                         <div class="topic__header">
-                            <div class="topic__head">Topic Name: <span class="topic__name">Blemish Dejection</span></div>
+                            <div class="topic__head">Topic Name: <span class="topic__name"><?php echo $topic_name; ?></span></div>
                         </div>
 
                         <div class="topic__details">
                             <div class="topic__abstract">Abstract</div>
+                           <?php 
+                           if($recieve[0]['topic']=="1"){
+                            ?>
                             <div class="topic__abstract__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam non quia, rerum voluptatem quidem delectus, voluptas similique, aspernatur maxime deserunt accusamus. Nulla modi, amet, nisi vel eum in non quaerat!.
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In amet at harum, mollitia eos. Eligendi, odit labore modi aperiam perferendis, ipsam quia hic cupiditate possimus voluptatem reprehenderit ea omnis, debitis.
                             </div>
+                            <?php
+
+                           }
+                           elseif ($recieve[0]['topic']=="2") {
+                            ?>
+                            <?php   # code...
+                           }
+                           elseif ($recieve[0]['topic']=="3") {
+                               ?>
+                            <?php
+                           }
+                           elseif ($recieve[0]['topic']=="4") {
+                               ?>
+                            <?php
+                           }
+                           elseif ($recieve[0]['topic']=="5") {
+                               ?>
+                            <?php
+                           }
+                           elseif ($recieve[0]['topic']=="6") {
+                               ?>
+                            <?php
+                           }
+
+                           ?>
+                            
                         </div>
 
                         <a href="#" target="_blank" class="topic__synopsis noselect">Download Sample Synopsis</a>
 
                     </div>
-
+                
+                        <?php
+                        $sent=array("team_id"=>$recieve[0]['team_id']);
+                        //echo $recieve[0]['team_id'];
+                        $recieve=apicall("/api/customer/memberdetails",$sent);
+                        ?>
 
                     <div class="members">
                         <div class="members__heading">Members</div>
+                                              
                         <div class="members__grid">
+                              <?php
+                       // echo json_encode($recieve);
+                        foreach ($recieve as $key => $value)
+                        {
+
+                      ?>
+
                             <div class="members__details">
                                 <div class="members__head">Member 1</div>
-                                <div class="members__name">Name: <span>Amit Kumar</span></div>
-                                <div class="members__mobile">Mobile: <span>8802980454</span></div>
-                                <div class="members__name">Roll No: <span>1602710016</span></div>
-                                <div class="members__name">Year: <span>1</span></div>
+                                <div class="members__name">Name: <span><?php echo $value['name']; ?></span></div>
+                                <div class="members__mobile">Mobile: <span><?php echo $value['mobile']; ?></span></div>
+                                <div class="members__name">Roll No: <span><?php echo $value['rollno']; ?></span></div>
+                                <div class="members__name">Year: <span><?php echo $value['year']; ?></span></div>
                             </div>
-                            <div class="members__details">
-                                <div class="members__head">Member 2</div>
-                                <div class="members__name">Name: <span>Amit Kumar</span></div>
-                                <div class="members__mobile">Mobile: <span>8802980454</span></div>
-                                <div class="members__name">Roll No: <span>1602710016</span></div>
-                                <div class="members__name">Year: <span>1</span></div>
-                            </div>
-                            <div class="members__details">
-                                <div class="members__head">Member 3</div>
-                                <div class="members__name">Name: <span>Amit Kumar</span></div>
-                                <div class="members__mobile">Mobile: <span>8802980454</span></div>
-                                <div class="members__name">Roll No: <span>1602710016</span></div>
-                                <div class="members__name">Year: <span>1</span></div>
-                            </div>
-                        </div>
-
+                            <?php  
+                            }
+                             ?>
+                           
+                        </div>   
+                          
                     </div>
 
                 </div>
@@ -150,13 +190,13 @@
                     <form action="#" method="post" class="synopsis">
                         <input type="text" class="synposis__input">
                         <div class="synopsis__btn">
-                            <input type="submit" value="">
+                           <input type="submit" value="">
                             <svg class="uploadIcon">
                                 <use xlink:href="images/sprite.svg#upload"></use>
                             </svg>
                         </div>
                     </form>
-                    <div class="uploadInst">* You must upload the google docs link.</div>
+                      <div class="uploadInst">* You must upload the google docs link.</div>
 
 
                 </div>
@@ -191,7 +231,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                                <input type="submit" value="">
+                                   <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -200,7 +240,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                                <input type="submit" value="">
+                               <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -209,7 +249,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                                <input type="submit" value="">
+                               <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -218,7 +258,7 @@
                         <form class="uploader__input" method="post" action="#">
                             <input type="text" class="uploader__input__link" placeholder="Task Code (IN011)">
                             <div class="uploader__btn">
-                                <input type="submit" value="">
+                               <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -287,30 +327,6 @@
 
                 <div class="content__box hide" id="b5">
                     <div class="task__heading">Instructions</div>
-                    <div class="instructions">
-                        <div class="instruction">
-                            <div class="instruction__num">1</div>
-                            <div class="instruction__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
-                            </div>
-                        </div>
-                        <div class="instruction">
-                            <div class="instruction__num">2</div>
-                            <div class="instruction__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
-                            </div>
-                        </div>
-                        <div class="instruction">
-                            <div class="instruction__num">3</div>
-                            <div class="instruction__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-                   
-                 <div class="content__box hide" id="b6">
-                    <div class="task__heading">Notifications</div>
                     <div class="instructions">
                         <div class="instruction">
                             <div class="instruction__num">1</div>
