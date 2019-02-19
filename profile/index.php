@@ -17,7 +17,7 @@ include "../registration/constant.php";
 $sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
 //echo $_SESSION['user_details']['mobile_no'];
 $recieve=apicall("/api/customer/details",$sent);
-//echo json_encode($recieve);
+echo json_encode($recieve);
 ?>
 
 <body>
@@ -27,7 +27,7 @@ $recieve=apicall("/api/customer/details",$sent);
         </div>
         <div class="main">
             <?php
-            if(!isset($_SESSION["user_details"]["team_id"]))
+            if($recieve["message"]=="failed")
             {
                 ?>
 
@@ -97,7 +97,7 @@ $recieve=apicall("/api/customer/details",$sent);
                 <?php
          
 
-        switch ($recieve[0]['topic']) {
+        switch ($recieve['topic']) {
         case "1":
         $topic_name="Statue of Politics";
         break;
@@ -123,7 +123,7 @@ $recieve=apicall("/api/customer/details",$sent);
 
                 <div class="content__box" id="b1">
                     <div class="team__name">
-                        <?php echo $recieve[0]['team_name'] ; ?>
+                        <?php echo $recieve['team_name'] ; ?>
                     </div>
                     <div class="topic">
                         <div class="topic__header">
@@ -134,7 +134,7 @@ $recieve=apicall("/api/customer/details",$sent);
                         <div class="topic__details">
                             <div class="topic__abstract">Abstract</div>
                             <?php 
-                           if($recieve[0]['topic']=="1"){
+                           if($recieve['topic']=="1"){
                             ?>
                             <div class="topic__abstract__text">
                                 With more than 3600 monuments and having the world's tallest statue ,an unofficial race of building tallest statues or more number of statues is now reaching to its extremity. Right after the inauguration of World's Tallest Statue: ‘The Statue of Unity’ the Maharashtra Govt. got the environment clearance for building the another tallest statue of the world: Shiva Ji statue . But the game isn't over yet now UP Govt. has released the proposal of building another and taller than Shiva ji statue, ‘Ram Ji Statue’. <br> Previously, there were other Governments too who used the focus of statues for symbolising their work and diverting the political issues. <br>‘Mayawati's Elephant Statues in Ambedkar Memorial Park’ which was made by BSP Govt. In Lucknow and the total cost of whole project was ₹7 Billions approximately.<br>‘Buddha statue on Hussain Sagar Lake’ in Hyderabad was also built by Ibrahim Qutub for depicting his pride. <br>
@@ -145,7 +145,7 @@ $recieve=apicall("/api/customer/details",$sent);
                             <?php
 
                            }
-                           elseif ($recieve[0]['topic']=="2") {
+                           elseif ($recieve['topic']=="2") {
                             ?>
 
                             <div class="topic__abstract__text">
@@ -156,7 +156,7 @@ $recieve=apicall("/api/customer/details",$sent);
 
                             <?php   # code...
                            }
-                           elseif ($recieve[0]['topic']=="3") {
+                           elseif ($recieve['topic']=="3") {
                                ?>
 
                             <div class="topic__abstract__text">
@@ -164,7 +164,7 @@ $recieve=apicall("/api/customer/details",$sent);
                             </div>
                             <?php
                            }
-                           elseif ($recieve[0]['topic']=="4") {
+                           elseif ($recieve['topic']=="4") {
                                ?>
 
                             <div class="topic__abstract__text">
@@ -175,7 +175,7 @@ $recieve=apicall("/api/customer/details",$sent);
 
                             <?php
                            }
-                           elseif ($recieve[0]['topic']=="5") {
+                           elseif ($recieve['topic']=="5") {
                                ?>
                             <div class="topic__abstract__text">
                                 With more than 54% of workforce still dependent on agriculture for their livlihood, agriculture in India has a far-reaching impact on poverty reduction as well as rural development. Thus, it would be more
@@ -192,7 +192,7 @@ $recieve=apicall("/api/customer/details",$sent);
 
                             <?php
                            }
-                           elseif ($recieve[0]['topic']=="6") {
+                           elseif ($recieve['topic']=="6") {
                                ?>
 
                             <div class="topic__abstract__text">
@@ -213,7 +213,7 @@ $recieve=apicall("/api/customer/details",$sent);
                     </div>
 
                     <?php
-                        $sent=array("team_id"=>$recieve[0]['team_id']);
+                        $sent=array("team_id"=>$recieve['team_id']);
                         //echo $recieve[0]['team_id'];
                         $recieve=apicall("/api/customer/memberdetails",$sent);
                         ?>
