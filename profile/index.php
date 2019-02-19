@@ -251,7 +251,7 @@ echo json_encode($recieve);
                 </div>
                 <div class="content__box hide" id="b2">
                 
-                <a href="#" class="synout">https://csiakgec.in/theinitiative/index.html</a>
+                <a href="#" class="synOut">https://csiakgec.in/theinitiative/index.html</a>
 
 
                     <div class="task__heading">Upload Synopsis</div>
