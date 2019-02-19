@@ -16,7 +16,7 @@ $(document).ready(function () {
                 $('#signup_form')[0].reset();
                 if (data == "Successfully Registered") {
                     $("#error_msg").css("color", "#18b435");
-
+                    $("#error_msg").css("font-weight","600");
 
                     $('#error_msg').html(data);
                 } else {
@@ -38,7 +38,9 @@ $(document).ready(function () {
 
 
     $(document).on('submit', '#login_form', function (event) {
+        $('.loader').css('display','block');
         event.preventDefault();
+         
         //$("#signup_submit").attr('disabled','disabled');
         $.ajax({
             url: "login.php",
@@ -48,6 +50,7 @@ $(document).ready(function () {
             processData: false,
             success: function (data) {
                 //$("#signup_submit").removeAttr('disabled'); 
+                $('.loader').css('display','none');
                 if (data == "success") {
                     window.location.href = "../profile/index.php";
                 } else {

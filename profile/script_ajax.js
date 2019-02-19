@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $(document).on('submit', '#upload_synopsis_form', function (event) {
-        console.log("vhgvgh");
+      //  console.log("vhgvgh");
        // $('.loader').css('display','block');
         event.preventDefault();
         //$("#signup_submit").attr('disabled','disabled');
@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     $(document).on('submit', '#task_form', function (event) {
-        console.log("vhgvgh");
+        //console.log("vhgvgh");
        // $('.loader').css('display','block');
         event.preventDefault();
         //$("#signup_submit").attr('disabled','disabled');

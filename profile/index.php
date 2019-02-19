@@ -17,7 +17,7 @@ include "../registration/constant.php";
 $sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
 //echo $_SESSION['user_details']['mobile_no'];
 $recieve=apicall("/api/customer/details",$sent);
-echo json_encode($recieve);
+//echo json_encode($recieve);
 ?>
 
 <body>
@@ -100,21 +100,27 @@ echo json_encode($recieve);
         switch ($recieve['topic']) {
         case "1":
         $topic_name="Statue of Politics";
+        $sample_Synopsis_link = "https://drive.google.com/open?id=1B5KY8PkxCHxUlYZT_tJvvGoGOhyp74iyKAZGRutGjY4";
         break;
         case "2":
         $topic_name="Blemish Dejection";
+        $sample_Synopsis_link = "https://drive.google.com/open?id=1EP1KBbLGyX_Qa6BK1hWvUXIrqZfLqZEYoL9lVLabork";
         break;
         case "3":
         $topic_name="NPA";
+        $sample_Synopsis_link = "https://drive.google.com/open?id=151l-tBzPtmbBV7Jx3YzPAd_I8GDqXcRDdawHma68gmc";
         break;
         case "4":
         $topic_name="Exorbitant Medication";
+        $sample_Synopsis_link = "https://drive.google.com/open?id=1yvZgpcYYDHonwj-uY-fsmk1XbS5_RP3MYKWNZo5Bmvo";
         break;
         case "5":
         $topic_name="Futile Strategies";
+        $sample_Synopsis_link = "https://drive.google.com/open?id=1q_erj2yeQedZzQI6XPUnMXJwDI6OaRGauUNW3a7_CnE";
         break;
         case "6":
         $topic_name="Marine Microplastic";
+        $sample_Synopsis_link = "https://drive.google.com/open?id=1_pE_x8LVkN4hm06jTkOXH4e6cxKzPLPsuvxLh15C60k";
         break;
 }
 ?>
@@ -205,10 +211,13 @@ echo json_encode($recieve);
                            }
 
                            ?>
+                            <?php
 
+
+                            ?>
                         </div>
 
-                        <a href="#" target="_blank" class="topic__synopsis noselect">Download Sample Synopsis</a>
+                        <a href="<?php echo($sample_Synopsis_link); ?>" target="_blank" class="topic__synopsis noselect">Download Sample Synopsis</a>
 
                     </div>
 
