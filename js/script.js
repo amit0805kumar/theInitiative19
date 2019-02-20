@@ -28,6 +28,7 @@ $(function () {
     //lloader
     $(document).ready(function () {
         $('.main__loader').fadeOut(1000);
+        $('.main__loader__main').fadeOut(1000);
     });
     //header buttons
     var offset1 = $("#header__btn1").offset();
