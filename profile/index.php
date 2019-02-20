@@ -21,6 +21,12 @@ $recieve=apicall("/api/customer/details",$sent);
 ?>
 
 <body>
+    
+     <div class="loader">
+        <div class="loader__main">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="header">
