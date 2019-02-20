@@ -45,11 +45,12 @@ session_start();
                 
                 <select name="team_topic" id="team_topic">
                     <option value="default">-Select Topic-</option>
-                    <option value="1">Aadhar</option>
-                    <option value="2">farmer</option>
-                    <option value="3">Mediation</option>
-                    <option value="4">Plastic</option>
-                    <option value="5">Statue Of Politics</option>
+                    <option value="1">Statue of Politics</option>
+                    <option value="2">Blemish Dejection</option>
+                    <option value="3">NPA</option>
+                    <option value="4">Exorbitant Medication</option>
+                    <option value="5">Futile Strategies</option>
+                    <option value="6">Marine Microplastic</option>
                 </select>
                 
                 <input type="text" name="mem1_name" id=mem1_name placeholder="Leader Name">

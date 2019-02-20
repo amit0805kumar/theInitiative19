@@ -116,80 +116,57 @@ if ($mem_count==3) {
 $msg_success=apicall("/api/customer/addmember",$sent);
 }
 if ($msg_success["message"]=="success") {
-  header("Location:success.html");
-}
-else{
-  echo $msg_success["message"];
-}
-}
-else{
- echo "flagsubmit";
-}
+ // header("Location:success.html");
 
-//mem3_details
-
-
-/*if($mem_count=2){ 
-            
-if($flagsubmit){ 
-
- $master=true;
-$sq = "INSERT INTO team (team_id, team_password, team_name, team_topic, team_mem1_name, team_mem1_mobile, team_mem1_email, team_mem1_clg, team_mem1_stdno, team_mem1_branch, team_mem1_year, team_mem2_name, team_mem2_mobile, team_mem2_email, team_mem2_clg, team_mem2_stdno, team_mem2_branch, team_mem2_year) VALUES ('$team_id','$team_password','$team_name','$team_topic','$mem1_name','$mem1_mobile','$mem1_email','$mem1_college','$mem1_stdno','$mem1_branch','$mem1_year','$mem2_name','$mem2_mobile','$mem2_email','$mem2_college','$mem2_stdno','$mem2_branch','$mem2_year')";
-
-  
-if (mysqli_query($Connection, $sq)) {
-    echo "New record created successfully";
-    
-} 
-  else{
-      echo mysqli_error($Connection);
-      $master=false;
-  }
-}
-else {
-    
-    header("Location:index.php");
-    
-}
-}*/
-
-  
-
-  
-
-            //mailing info
+         //mailing info
                    
 
-                 //  require 'phpmailer/PHPMailerAutoload.php';
+                  require 'phpmailer/PHPMailerAutoload.php';
 
-                 //  $mail = new PHPMailer;
+                  $mail = new PHPMailer;
 
-                 // // $mail->SMTPDebug = 4;                               // Enable verbose debug output
+                  //$mail->SMTPDebug = 4;                               // Enable verbose debug output
 
-                 //  $mail->isSMTP();                                      // Set mailer to use SMTP
-                 //  $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-                 //  $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                 //  $mail->Username = 'csichapters@gmail.com';                 // SMTP username
-                 //  $mail->Password = 'Computer@society';                           // SMTP password
-                 //  $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-                 //  $mail->Port = 587;                                    // TCP port to connect to
+                  $mail->isSMTP();                                      // Set mailer to use SMTP
+                  $mail->Host = 'email-smtp.us-west-2.amazonaws.com';  // Specify main and backup SMTP servers
+                  $mail->SMTPAuth = true;                               // Enable SMTP authentication
+                  $mail->Username = 'AKIAJQXNJN7LC4PMFNEA';                 // SMTP username
+                  $mail->Password = 'BH2xDqi59QZenTjO141tO0un3bqYCKr6k+W1iDUYP+ap';                           // SMTP password
+                  $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+                  $mail->Port = 587;                                    // TCP port to connect to
 
-                 //  $mail->setFrom('csichapters@gmail.com', 'CSI AKGEC');
-                 //  $mail->addAddress($mem1_email);     // Add a recipient
-                 // // $mail->addAddress('ellen@example.com');               // Name is optional
-                 // // $mail->addReplyTo('info@example.com', 'Information');
-                 // // $mail->addCC('cc@example.com');
-                 // // $mail->addBCC('bcc@example.com');
+                  $mail->setFrom('csichapters@gmail.com', 'CSI AKGEC');
+                  $mail->addAddress($mem1_email);     // Add a recipient
+                 // $mail->addAddress('ellen@example.com');               // Name is optional
+                 // $mail->addReplyTo('info@example.com', 'Information');
+                 // $mail->addCC('cc@example.com');
+                 // $mail->addBCC('bcc@example.com');
 
-                 //  //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-                 //  //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-                 //  $mail->isHTML(true);                                  // Set email format to HTML
+                  //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+                  //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+                  $mail->isHTML(true);                                  // Set email format to HTML
 
-                 //  $mail->Subject = 'The INITIATIVE 2019 Registration Confirmation';
-                 //  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is <b>'.$team_id.'</b> and Your Password is <b>'.$team_password.'</b>.Login to your profile to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.';
-                 //  $mail->AltBody = 'Congratulations! You\'ve successfully registered for The INITIATIVE 2019! Your TeamID is '.$team_id.' And Your Password is '.$team_password.'. Login to your profile to submit the synopsis and optional tasks.For any queries, please write to us at csichapters@gmail.com.All The Best.Regards,Team CSI.';
+                  $mail->Subject = 'The INITIATIVE 2019 Registration Confirmation';
+                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is <b>'.$teamid.'</b>.Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.';
+                  $mail->AltBody = 'Congratulations! You\'ve successfully registered for The INITIATIVE 2019! Your TeamID is '.$teamid.' And . Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.For any queries, please write to us at csichapters@gmail.com.All The Best.Regards,Team CSI.';
 
-                 //  $mail->send();
+                  $mail->send();
+
+}
+else{
+  header("Location:error_bak.html");
+}
+}
+else{
+ header("Location:error_bak.html");
+}
+
+
+  
+
+  
+
+           
                      
 
 
