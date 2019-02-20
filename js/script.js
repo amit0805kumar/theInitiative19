@@ -25,6 +25,11 @@ $(function () {
 
     }
 
+    //lloader
+    $(document).ready(function () {
+        $('.main__loader').fadeOut(5000);
+        $('.main__loader__img').fadeOut(5000);
+    });
     //header buttons
     var offset1 = $("#header__btn1").offset();
 
@@ -307,8 +312,7 @@ $(function () {
         }
     });
 
-    $(window).scroll(function (e) {
-    });
+    $(window).scroll(function (e) {});
 
 
     $("#headingAbout").append("<div class='glitch-window-1'></div>");

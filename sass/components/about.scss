@@ -101,13 +101,14 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 60%;
             transform: translate(-50%,-50%);
              @include respond(tab-port) {
                width: 90%;
             }
               @include respond(phone) {
                width: 60%;
-                  margin-top: 2rem;
+                  m1argin-top: 2rem;
                
             }
         }
