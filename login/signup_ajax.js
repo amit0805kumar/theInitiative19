@@ -18,10 +18,16 @@ $(document).ready(function () {
                     $("#error_msg").css("color", "#18b435");
                     $("#error_msg").css("font-weight","600");
 
-                    $('#error_msg').html(data);
-                } else {
+                    $('#error_msg').html("Successfully Registered");
+                } else if (data=="Sorry! Mobile Number Already Exist") {
                     $("#error_msg").css("color", "red");
-                    $('#error_msg').html(data);
+                    $('#error_msg').html("Sorry! Mobile Number Already Exist");
+                } else if (data=="Please Enter all the fields"){
+                    $("#error_msg").css("color", "red");
+                    $('#error_msg').html("Please Enter all the fields");
+                } else{
+                    $("#error_msg").css("color", "red");
+                    $('#error_msg').html("Some Unexpected Error Occured");
                 }
 
                 $('.loader').css('display','none');

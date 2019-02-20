@@ -21,7 +21,7 @@ if (isset($_SESSION['user_details']['mobile_no'])) {
     //echo json_encode($recieve);
 }
 else{
-    header("Location:");
+    header("Location:../login/index.html");
 }
 ?>
 

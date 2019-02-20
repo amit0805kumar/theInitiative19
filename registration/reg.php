@@ -137,7 +137,11 @@ if ($msg_success["message"]=="success") {
 
                   $mail->setFrom('csichapters@gmail.com', 'CSI AKGEC');
                   $mail->addAddress($mem1_email);     // Add a recipient
-                 // $mail->addAddress('ellen@example.com');               // Name is optional
+                  $mail->addAddress($mem2_email);
+                  if ($mem_count==3) {
+                    $mail->addAddress($mem3_email);
+                  }
+                                 // Name is optional
                  // $mail->addReplyTo('info@example.com', 'Information');
                  // $mail->addCC('cc@example.com');
                  // $mail->addBCC('bcc@example.com');

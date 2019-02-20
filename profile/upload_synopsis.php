@@ -18,6 +18,6 @@ if ($recieve["message"]=="success") {
 	echo $recieve["url"];
 }
 else{
-	echo "Your Synopsis was not Uploaded Successfully";
+	echo "You haven't uploaded Any Synopsis";
 }
 ?>
