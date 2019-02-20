@@ -7,7 +7,14 @@ $team_id=$_POST["team_id"];
 $task_code=$_POST["task_code"];
 $sent=array("link"=>$task_link,"team_id"=>$team_id,"task_code"=>$task_code);
 $recieve=apicall("/api/customer/optionaltask",$sent);
-if ($recieve["message"]=="success") {
-	echo "success";
+$sent=array("team_id"=>$team_id);
+$recieve=apicall("/api/customer/optionaltaskstatus",$sent);
+print_r($recieve);
+if ($recieve[0]["task_code"]!="") {
+	echo json_encode($recieve["task_code"]);
+	echo json_encode($recieve["link"]);
+}
+else{
+	echo "Your Task was not Uploaded Successfully";
 }
 ?>

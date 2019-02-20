@@ -14,10 +14,15 @@
     <?php
 session_start();
 include "../registration/constant.php";
-$sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
-//echo $_SESSION['user_details']['mobile_no'];
-$recieve=apicall("/api/customer/details",$sent);
-//echo json_encode($recieve);
+if (isset($_SESSION['user_details']['mobile_no'])) {
+    $sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
+    //echo $_SESSION['user_details']['mobile_no'];
+    $recieve=apicall("/api/customer/details",$sent);
+    //echo json_encode($recieve);
+}
+else{
+    header("Location:");
+}
 ?>
 
 <body>
@@ -267,7 +272,7 @@ $recieve=apicall("/api/customer/details",$sent);
                 </div>
                 <div class="content__box hide" id="b2">
                 
-                <a href="#" class="synOut">https://csiakgec.in/theinitiative/index.html</a>
+                <a  id="uploaded_synopsis_link" class="synOut">You haven't uploaded Any Synopsis</a>
 
 
                     <div class="task__heading">Upload Synopsis</div>
@@ -315,7 +320,11 @@ $recieve=apicall("/api/customer/details",$sent);
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
                        
-                       <a href="#" class="uploadOut">https://www.youtube.com/watch?v=UqyT8IEBkvY</a>
+                       <div id="1" class="uploadOut"><span id="task1">INI011</span>You haven't uploaded This Optional Task</div>
+                       <div id="2" class="uploadOut"><span id="task2">INI012</span>You haven't uploaded This Optional Task</div>
+                       <div id="3" class="uploadOut"><span id="task3">INI013</span>You haven't uploaded This Optional Task</div>
+                       <div id="4" class="uploadOut"><span id="task4">INI014</span>You haven't uploaded This Optional Task</div>
+
                         <form class="uploader__input" id="task_form">
                           <select name="task_code" id="task_code">
                               <option value="0">Select task code</option>
