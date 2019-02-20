@@ -116,7 +116,7 @@ if ($mem_count==3) {
 $msg_success=apicall("/api/customer/addmember",$sent);
 }
 if ($msg_success["message"]=="success") {
- // header("Location:success.html");
+   header("Location:success.html");
 
          //mailing info
                    
@@ -147,7 +147,7 @@ if ($msg_success["message"]=="success") {
                   $mail->isHTML(true);                                  // Set email format to HTML
 
                   $mail->Subject = 'The INITIATIVE 2019 Registration Confirmation';
-                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is <b>'.$teamid.'</b>.Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.';
+                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is <b>'.$teamid.'</b>.Login to your profile OR Download <b>THE INITIATIVE\'19</b> app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.';
                   $mail->AltBody = 'Congratulations! You\'ve successfully registered for The INITIATIVE 2019! Your TeamID is '.$teamid.' And . Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.For any queries, please write to us at csichapters@gmail.com.All The Best.Regards,Team CSI.';
 
                   $mail->send();

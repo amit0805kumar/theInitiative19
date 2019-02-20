@@ -38,7 +38,7 @@ $recieve=apicall("/api/customer/details",$sent);
                             </svg>
                         
               </div>
-              <div class="main__popup__heading">Please register first</div>
+              <a href="../registration/index.php" class="main__popup__heading">Please register first</a>
           </div>
                 <?php
             }
@@ -232,14 +232,14 @@ $recieve=apicall("/api/customer/details",$sent);
 
                         <div class="members__grid">
                             <?php
+                            $i=1;
                        // echo json_encode($recieve);
                         foreach ($recieve as $key => $value)
                         {
 
                       ?>
-
                             <div class="members__details">
-                                <div class="members__head">Member 1</div>
+                                <div class="members__head">Member <?php echo $i; ?></div>
                                 <div class="members__name">Name: <span>
                                         <?php echo $value['name']; ?></span></div>
                                 <div class="members__mobile">Mobile: <span>
@@ -249,7 +249,8 @@ $recieve=apicall("/api/customer/details",$sent);
                                 <div class="members__name">Year: <span>
                                         <?php echo $value['year']; ?></span></div>
                             </div>
-                            <?php  
+                            <?php 
+                            $i++; 
                             }
                              ?>
 

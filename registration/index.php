@@ -66,9 +66,9 @@ session_start();
                 <select name="mem1_year" id="mem1_year">
                     <option value="default">-Select Year-</option>
                     <option value="1">1st</option>
-                    <option value="2">2st</option>
-                    <option value="3">3st</option>
-                    <option value="4">4st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
                 </select>
                 
                 <select name="mem1_branch" id="mem1_branch">
@@ -103,9 +103,9 @@ session_start();
                    <select name="mem2_year" id="mem2_year">
                     <option value="default">-Select Year-</option>
                     <option value="1">1st</option>
-                    <option value="2">2st</option>
-                    <option value="3">3st</option>
-                    <option value="4">4st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
                 </select>
                 
                 <select name="mem2_branch" id="mem2_branch">
@@ -143,9 +143,9 @@ session_start();
                 <select name="mem3_year" id="mem3_year">
                     <option value="default">-Select Year-</option>
                     <option value="1">1st</option>
-                    <option value="2">2st</option>
+                    <option value="2">2nd</option>
                     <option value="3">3st</option>
-                    <option value="4">4st</option>
+                    <option value="4">4th</option>
                 </select>
                 
                 <select name="mem3_branch" id="mem3_branch">
