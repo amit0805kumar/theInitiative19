@@ -23,7 +23,7 @@ if ($flagsubmit) {
 $sent=array("mobile_no"=>$mobile_no,"password"=>$password,"email"=>$email);
 $recieve=apicall("/api/customer/userregister",$sent);
 if ($recieve["message"]=="success") {
-	echo "Successfully Registered";
+	echo "Account created successfully";
 	$_SESSION["user_details"]["user_id"] = $recieve["user_id"];
 	$_SESSION["user_details"]["mobile_no"]=$mobile_no;
 

@@ -16,8 +16,13 @@
 body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: #F9F8F8;
+    background-image: linear-gradient(to right bottom, #ea5a6f, #de781e);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
 }
+
 
 /* line 19, ../sass/base/base.scss */
 html {
@@ -100,7 +105,13 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    background: #fff;
+    padding: 1rem 0;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
 
     &__logo {
 
@@ -117,14 +128,15 @@ html {
 
 .section__form {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 6rem;
 
     .form {
-
         width: 50%;
-        margin: 50px auto;
+        margin: 0px auto;
         text-align: center;
         position: relative;
+        margin-top: 16rem;
+        margin-bottom: 6rem;
 
         @include respond(tab-land) {
             width: 90%;
@@ -157,7 +169,8 @@ html {
     padding: 20px 30px;
     box-sizing: border-box;
     width: 80%;
-    margin: 0 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 
     /*stacking fieldsets above each other*/
     position: relative;
@@ -182,20 +195,21 @@ html {
     ;
     color: #2C3E50;
     font-size: 13px;
-       @include respond(phone) {
-              font-size: 10px;
-           padding: 13px;
-        }
 
-        @include respond(400) {
-              font-size: 8px;
-            padding: 12px;
-        }
+    @include respond(phone) {
+        font-size: 10px;
+        padding: 13px;
+    }
 
-        @include respond(phonesm) {
-              font-size: 7px;
-            padding: 10px;
-        }
+    @include respond(400) {
+        font-size: 8px;
+        padding: 12px;
+    }
+
+    @include respond(phonesm) {
+        font-size: 7px;
+        padding: 10px;
+    }
 }
 
 /*buttons*/
@@ -260,6 +274,7 @@ html {
     background: white;
     border-radius: 3px;
     margin: 0 auto 5px auto;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
 }
 
 /*progressbar connectors*/
@@ -272,6 +287,7 @@ html {
     left: -50%;
     top: 9px;
     z-index: -1;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
     /*put it behind the numbers*/
 }
 

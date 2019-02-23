@@ -26,10 +26,15 @@ else{
 ?>
 
 <body>
-    
-     <div class="loader">
+
+    <div class="loader">
         <div class="loader__main">
-            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
 
@@ -42,20 +47,20 @@ else{
             {
                 ?>
 
-                <div class="main__popup">
-              <div class="main__popup__icon">
-                           <svg>
-                            <use xlink:href="images/sprite.svg#checklist"></use>
-                            </svg>
-                        
-              </div>
-              <a href="../registration/index.php" class="main__popup__heading">Please register first</a>
-          </div>
-                <?php
+            <div class="main__popup">
+                <div class="main__popup__icon">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#checklist"></use>
+                    </svg>
+
+                </div>
+                <a href="../registration/index.php" class="main__popup__heading">Please register first</a>
+            </div>
+            <?php
             }
                 ?>
-           
-           
+
+
             <div class="nav">
                 <div class="nav__link navActive" id="home">
                     <div class="nav__link__icon">
@@ -102,6 +107,8 @@ else{
                     </div>
                     <div class="nav__link__text">Logout</div>
                 </a>
+                
+                <div class="nav__footer">&copy; CSIAKGEC | 2019</div>
             </div>
             <div class="content">
 
@@ -250,7 +257,9 @@ else{
 
                       ?>
                             <div class="members__details">
-                                <div class="members__head">Member <?php echo $i; ?></div>
+                                <div class="members__head">Member
+                                    <?php echo $i; ?>
+                                </div>
                                 <div class="members__name">Name: <span>
                                         <?php echo $value['name']; ?></span></div>
                                 <div class="members__mobile">Mobile: <span>
@@ -271,17 +280,17 @@ else{
 
                 </div>
                 <div class="content__box hide" id="b2">
-                
-                <a  id="uploaded_synopsis_link" class="synOut">You haven't uploaded Any Synopsis</a>
+
+                    <a id="uploaded_synopsis_link" class="synOut">You haven't uploaded Any Synopsis</a>
 
 
                     <div class="task__heading">Upload Synopsis</div>
 
                     <form id="upload_synopsis_form" class="synopsis">
-                        <input type="text" name="synopsis_link" class="synposis__input">
+                        <input type="text" name="synopsis_link" class="synposis__input" placeholder="Submit the link here to update">
                         <input type="hidden" name="team_id" id="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
                         <div class="synopsis__btn">
-                            <input type="submit" value="">
+                            <input type="submit" value="" >
                             <svg class="uploadIcon">
                                 <use xlink:href="images/sprite.svg#upload"></use>
                             </svg>
@@ -298,45 +307,45 @@ else{
                     <div class="task__box">
                         <div class="task">
                             <div class="task__code">Task Code (IN011)</div>
-                            <div class="tast__details">Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.</div>
+                            <div class="tast__details">Make a video mimicing a filmy character and in the video express your topic in form of a popular dialogue of the character you are mimicing. Post the recorded video on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
-                            <div class="task__code">Task Code (IN011)</div>
-                            <div class="tast__details">Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.</div>
+                            <div class="task__code">Task Code (IN012)</div>
+                            <div class="tast__details">Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
-                            <div class="task__code">Task Code (IN011)</div>
-                            <div class="tast__details">Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.</div>
+                            <div class="task__code">Task Code (IN013)</div>
+                            <div class="tast__details">Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
-                            <div class="task__code">Task Code (IN011)</div>
-                            <div class="tast__details">Record opinions of the people about the topic and what they feel about it. Post the recorded video on social media and mention/tag The Initiative page.</div>
+                            <div class="task__code">Task Code (IN014)</div>
+                            <div class="tast__details">Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                     </div>
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
-                       
-                       <div id="1" class="uploadOut"><span id="task1">INI011</span>You haven't uploaded This Optional Task</div>
-                       <div id="2" class="uploadOut"><span id="task2">INI012</span>You haven't uploaded This Optional Task</div>
-                       <div id="3" class="uploadOut"><span id="task3">INI013</span>You haven't uploaded This Optional Task</div>
-                       <div id="4" class="uploadOut"><span id="task4">INI014</span>You haven't uploaded This Optional Task</div>
+
+                        <div id="1" class="uploadOut"><span id="task1">INI011</span>You haven't uploaded This Optional Task</div>
+                        <div id="2" class="uploadOut"><span id="task2">INI012</span>You haven't uploaded This Optional Task</div>
+                        <div id="3" class="uploadOut"><span id="task3">INI013</span>You haven't uploaded This Optional Task</div>
+                        <div id="4" class="uploadOut"><span id="task4">INI014</span>You haven't uploaded This Optional Task</div>
 
                         <form class="uploader__input" id="task_form">
-                          <select name="task_code" id="task_code">
-                              <option value="0">Select task code</option>
-                              <option value="INI011">INI011</option>
-                              <option value="INI012">INI012</option>
-                              <option value="INI013">INI013</option>
-                              <option value="INI014">INI014</option>
-                          </select>
-                          <input type="text" name="task_link" id="task_link" placeholder="Upload task Link">
-                          <input type="hidden" name="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
+                            <select name="task_code" id="task_code">
+                                <option value="0">Select task code</option>
+                                <option value="INI011">INI011</option>
+                                <option value="INI012">INI012</option>
+                                <option value="INI013">INI013</option>
+                                <option value="INI014">INI014</option>
+                            </select>
+                            <input type="text" name="task_link" id="task_link" placeholder="Submit the link here to update">
+                            <input type="hidden" name="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
                             <div class="uploader__btn">
-                               <input type="submit" value="">
+                                <input type="submit" value="">
                                 <svg class="uploadIcon">
                                     <use xlink:href="images/sprite.svg#upload"></use>
                                 </svg>
@@ -356,46 +365,46 @@ else{
 
                         <div class="coordinators__grid">
                             <div class="coordinators__box">
-                                <img src="../images/mem/aadi.jpeg" alt="coordinators" class="coordinators__img">
+                                <img src="../images/mem/aadi.jpg" alt="coordinators" class="coordinators__img">
                                 <div class="coordinators__details">
                                     <div class="coordinator__name">Aditya Baranwal</div>
-                                    <div class="coordinator__num">888888888</div>
+                                    <div class="coordinator__num">9450842073</div>
                                 </div>
                             </div>
                             <div class="coordinators__box">
-                                <img src="../images/mem/aanchal.jpeg" alt="coordinators" class="coordinators__img">
+                                <img src="../images/mem/aanchal.jpg" alt="coordinators" class="coordinators__img">
                                 <div class="coordinators__details">
                                     <div class="coordinator__name">Aanchal Gupta</div>
-                                    <div class="coordinator__num">888888888</div>
+                                    <div class="coordinator__num">8860165741</div>
                                 </div>
                             </div>
-                            <div class="coordinators__box"> <img src="../images/mem/amit.jpg" alt="coordinators" class="coordinators__img">
+                            <div class="coordinators__box"> <img src="../images/mem/vanshika.jpg" alt="coordinators" class="coordinators__img">
                                 <div class="coordinators__details">
-                                    <div class="coordinator__name">Amit Kumar</div>
-                                    <div class="coordinator__num">888888888</div>
+                                    <div class="coordinator__name">Vanshika Gupta</div>
+                                    <div class="coordinator__num">9450842073</div>
                                 </div>
                             </div>
 
                         </div>
                         <div class="coordinators__grid">
-                            <div class="coordinators__box"> <img src="../images/mem/alok.jpeg" alt="coordinators" class="coordinators__img">
+                            <div class="coordinators__box"> <img src="../images/mem/vaibhav.jpg" alt="coordinators" class="coordinators__img">
                                 <div class="coordinators__details">
-                                    <div class="coordinator__name">Alok Yadav</div>
-                                    <div class="coordinator__num">888888888</div>
+                                    <div class="coordinator__name">Vaibha Lakhmani</div>
+                                    <div class="coordinator__num">8960228633</div>
                                 </div>
                             </div>
                             <div class="coordinators__box">
-                                <img src="../images/mem/vats.jpeg" alt="coordinators" class="coordinators__img">
+                                <img src="../images/mem/ujjawal.jpg" alt="coordinators" class="coordinators__img">
                                 <div class="coordinators__details">
-                                    <div class="coordinator__name">Shashwat Vats</div>
-                                    <div class="coordinator__num">888888888</div>
+                                    <div class="coordinator__name">Ujjwal Sharma</div>
+                                    <div class="coordinator__num">8791658359</div>
                                 </div>
                             </div>
                             <div class="coordinators__box">
-                                <img src="../images/mem/shubh.jpeg" alt="coordinators" class="coordinators__img">'
+                                <img src="../images/mem/subhanshu.jpg" alt="coordinators" class="coordinators__img">'
                                 <div class="coordinators__details">
-                                    <div class="coordinator__name">Shubh Singhal</div>
-                                    <div class="coordinator__num">888888888</div>
+                                    <div class="coordinator__name">Subhanshu Chaddha</div>
+                                    <div class="coordinator__num">9711635385</div>
                                 </div>
                             </div>
                         </div>
@@ -410,25 +419,70 @@ else{
                         <div class="instruction">
                             <div class="instruction__num">1</div>
                             <div class="instruction__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
+                                Since you have already registered for THE INITIATIVE, now its the time for a step further i.e. Synopsis submission, which is your First Round and a mandatory one. Without it, you won't be able to participate in further rounds.
                             </div>
                         </div>
                         <div class="instruction">
                             <div class="instruction__num">2</div>
                             <div class="instruction__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
+                                There is an option of “Upload Synopsis” on the dashboard of your profile where you have to upload the synopsis of your chosen topic in .doc or .docx file extension.
                             </div>
                         </div>
                         <div class="instruction">
                             <div class="instruction__num">3</div>
                             <div class="instruction__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sequi, fuga dolore, explicabo amet quia debitis minima accusantium laborum sint earum consectetur iste aliquid sit adipisci accusamus maxime, eaque voluptate?
+                                The synopsis you will upload will carry marks and selection of next round will mainly depend on this synopsis.
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <div class="instruction__num">4</div>
+                            <div class="instruction__text">
+                               Also, this round has some bonus points for you. There is also an option of “Optional Tasks” on the dashboard of your profile where you will get to know about some tasks which are not mandatory but will make you earn bonus points.
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <div class="instruction__num">5</div>
+                            <div class="instruction__text">
+                                Round Two will be presentation round that will be conduced in the main seminar hall of AKGEC.
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <div class="instruction__num">6</div>
+                            <div class="instruction__text">
+                            You are requested to note that selection for the second round does not make you eligible for the certificates. Once you register yourself in the main seminar hall of AKGEC for the final round i.e. ppt presentation, then only your certificate for participation is ensured.
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <div class="instruction__num">7</div>
+                            <div class="instruction__text">
+                               There will be a separate ceremony for the winners of final rounds. Team CSI wishes you good luck. 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+        
+      <div class="contacts">
+
+        <a href="https://www.facebook.com/theinitiative.akg/" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#facebook"></use>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/csi_akgec/" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#instagram"></use>
+            </svg>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#youtube"></use>
+            </svg>
+        </a>
     </div>
 
 </body>

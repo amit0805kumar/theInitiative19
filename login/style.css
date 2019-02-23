@@ -204,7 +204,7 @@ body {
 .svgIcons {
   width: 2rem;
   height: 2rem;
-  margin: 0 1rem; }
+  margin: 1rem 1rem; }
   @media only screen and (max-width: 37.5em) {
     .svgIcons {
       width: 1rem;
@@ -214,9 +214,10 @@ body {
 .contacts {
   position: fixed;
   bottom: 2rem;
-  right: 5rem;
+  left: 5rem;
   width: 5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-around; }
   @media only screen and (max-width: 37.5em) {
     .contacts {

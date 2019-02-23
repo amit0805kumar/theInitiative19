@@ -126,7 +126,9 @@
             letter-spacing: 3px;
 
             @include respond(phone) {
-                left: 65%;
+                left: 60%;
+            } @include respond(400) {
+                left: 55%;
             }
 
             a {

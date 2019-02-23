@@ -1,7 +1,7 @@
 <html>
    <head>
-   			
-		<meta charset="utf-8">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -13,118 +13,151 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
 
-	<style>
-		
-			 svg {
-			  width: 100px;
-			  display: block;
-			  margin: 30px auto 0;
-			}
+    <style>
+        body {
+            box-sizing: border-box;
+            background-image: linear-gradient(to right bottom, #ea5a6f, #de781e);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
 
-			.path {
-			  stroke-dasharray: 1000;
-			  stroke-dashoffset: 0;
-			  &.circle {
-			    -webkit-animation: dash .9s ease-in-out;
-			    animation: dash .9s ease-in-out;
-			    animation-iteration-count: infinite;
-			  }
-			  &.line {
-			    stroke-dashoffset: 1000;
-			    -webkit-animation: dash .9s .35s ease-in-out forwards;
-			    animation: dash .9s .35s ease-in-out forwards;
-			  }
-			  &.check {
-			    stroke-dashoffset: -100;
-			    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
-			    animation: dash-check .9s .35s ease-in-out forwards;
-			  }
-			}
+        svg {
+            width: 100px;
+            display: block;
+            margin: 30px auto 0;
+        }
 
-			p {
-			  text-align: center;
-			  margin: 20px 0 60px;
-			  font-size: 1.25em;
-			  &.success {
-			    color: #73AF55;
-			  }
-			  &.error {
-			    color: #D06079;
-			  }
-			}
+        .path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+
+            &.circle {
+                -webkit-animation: dash .9s ease-in-out;
+                animation: dash .9s ease-in-out;
+                animation-iteration-count: infinite;
+            }
+
+            &.line {
+                stroke-dashoffset: 1000;
+                -webkit-animation: dash .9s .35s ease-in-out forwards;
+                animation: dash .9s .35s ease-in-out forwards;
+            }
+
+            &.check {
+                stroke-dashoffset: -100;
+                -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+                animation: dash-check .9s .35s ease-in-out forwards;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0 60px;
+            font-size: 1.25em;
+
+            &.success {
+                color: #fff;
+            }
+
+            &.error {
+                color: ##fff;
+            }
+        }
 
 
-			@-webkit-keyframes dash {
-			  0% {
-			    stroke-dashoffset: 1000;
-			  }
-			  100% {
-			    stroke-dashoffset: 0;
-			  }
-			}
+        @-webkit-keyframes dash {
+            0% {
+                stroke-dashoffset: 1000;
+            }
 
-			@keyframes dash {
-			  0% {
-			    stroke-dashoffset: 1000;
-			  }
-			  100% {
-			    stroke-dashoffset: 0;
-			  }
-			}
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
 
-			@-webkit-keyframes dash-check {
-			  0% {
-			    stroke-dashoffset: -100;
-			  }
-			  100% {
-			    stroke-dashoffset: 900;
-			  }
-			}
+        @keyframes dash {
+            0% {
+                stroke-dashoffset: 1000;
+            }
 
-			@keyframes dash-check {
-			  0% {
-			    stroke-dashoffset: -100;
-			  }
-			  100% {
-			    stroke-dashoffset: 900;
-			  }
-			}	
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
 
-	   
+        @-webkit-keyframes dash-check {
+            0% {
+                stroke-dashoffset: -100;
+            }
+
+            100% {
+                stroke-dashoffset: 900;
+            }
+        }
+
+        @keyframes dash-check {
+            0% {
+                stroke-dashoffset: -100;
+            }
+
+            100% {
+                stroke-dashoffset: 900;
+            }
+        }
+        h1,h3,h6,h5,h4,p{
+            color: #fff;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: #8ce5d0;
+        }
+        .btn-primary{
+            background: orange;
+            border: none;
+            color: #000;
+        }
+        .btn-primary:hover{
+            background: rgba(255, 165, 0, 0.65);
+            color: #000;
+        }
     </style>
-   </head>
-   <body>
-  			
-  		<div class="jumbotron text-xs-center">
-		   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-			  <circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-			  <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
-			  <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
-			</svg><br>
-			<h3 style="color:#D06079">Oops ! Registration Unsuccessfull</h3><br>
-			<h1 class="display-3">Sorry!</h1><br>
-			   <h4>Possible Reasons of Failure :</h4><br>
-							
-							<h6>1. Student number already registered</h6>
-							<h6>2. Email ID already registered</h6>
-							<h6>3. Contact Number already registered</h6>
-							<h6>4. Server or Network Error</h6><br>
+</head>
 
-  			<h5>For Any Information : </h5>
-  			<h6>Amit Kumar (+91-8802980454)</h6>
-  			<h6>Shubh Singhal (+91-7417387372)</h6>
-			<p>
-    		 Follow us on <a href="https://www.faceboom.com/csi.akg/" style="text-decoration: none; ">Facebook </a><span>|</span> <a href="https://www.instagram.com/csi_akgec" style="text-decoration: none;">Instagram</a>
- 		    </p>
- 		    <p class="lead">
-    			<a class="btn btn-primary" href="index.html" role="button">Register Again</a>
-  			</p>
-		</div>
+<body>
 
-   </body>
+    <div class="text-xs-center">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+            <circle class="path circle" fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+            <line class="path line" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3" />
+            <line class="path line" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2" />
+        </svg><br>
+        <h3 style="color:#fff">Oops ! Registration Unsuccessfull</h3><br>
+        <h1 class="display-3">Sorry!</h1><br>
+        <h4>Possible Reasons of Failure :</h4><br>
+
+        <h6>1. Student number already registered</h6>
+        <h6>2. Email ID already registered</h6>
+        <h6>3. Contact Number already registered</h6>
+        <h6>4. Server or Network Error</h6><br>
+
+        <h5>For Any Information : </h5>
+        <h6>Amit Kumar (+91-8802980454)</h6>
+        <h6>Shubh Singhal (+91-7417387372)</h6>
+        <p>
+            Follow us on <a href="https://www.faceboom.com/csi.akg/" style="text-decoration: none; ">Facebook </a><span>|</span> <a href="https://www.instagram.com/csi_akgec" style="text-decoration: none;">Instagram</a>
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary" href="index.html" role="button">Register Again</a>
+        </p>
+    </div>
+
+</body>
 </html>

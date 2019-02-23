@@ -475,6 +475,7 @@ font-family: 'Raleway', sans-serif;*/
   .header__logo {
     width: 12rem;
     height: 12rem;
+    margin-top: 1rem;
     background-image: url(../images/logo.png);
     background-size: contain;
     background-repeat: no-repeat; }
@@ -869,7 +870,10 @@ font-family: 'Raleway', sans-serif;*/
       letter-spacing: 3px; }
       @media only screen and (max-width: 37.5em) {
         .nav__menu__list {
-          left: 65%; } }
+          left: 60%; } }
+      @media only screen and (max-width: 25em) {
+        .nav__menu__list {
+          left: 55%; } }
       .nav__menu__list a {
         margin: 20px 0;
         color: #fff; }

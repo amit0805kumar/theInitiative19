@@ -199,11 +199,11 @@ a {
     @include respond(tab-port) {
         width: 90%;
         margin-top: 6rem;
-        height: 120rem;
+        height: 140rem;
     }
 
-    @include respond(400) {
-        height: 125rem;
+    @include respond(phone) {
+        height: 170rem;
     }
 
     .header {
@@ -343,7 +343,7 @@ a {
                         width: 1rem;
                         height: 1rem;
                     }
-
+/*
                     @include respond(phone) {
                         width: .8rem;
                         height: .8rem;
@@ -352,7 +352,7 @@ a {
                     @include respond(400) {
                         width: .5rem;
                         height: .5rem;
-                    }
+                    }*/
                 }
 
                 &__text {
@@ -559,17 +559,18 @@ a {
                         font-family: 'Muli', sans-serif;
 
                         &__text {
-                            font-size: 2rem;
+                            font-size: 1.6rem;
                             margin: 2rem 1rem;
+                            font-family: 'Poppins',sans-serif;
 
                             @include respond(tab-port) {
-                                font-size: 1.5rem;
+                                font-size: 1.2rem;
                                 margin: 1.5rem .8rem;
                             }
 
                             @include respond(phone) {
                                 text-align: center;
-                                font-size: 1.2rem;
+                                font-size: 1rem;
                                 margin: 1.2rem .4rem;
                             }
 
@@ -941,7 +942,8 @@ a {
                 .instructions {
 
                     width: 100%;
-                    padding: 1rem;
+                    padding:2rem 1rem;
+                    
                     font-size: 1.5rem;
 
                     @include respond(phone) {
@@ -951,7 +953,7 @@ a {
                     .instruction {
                         margin: 3rem 0;
                         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
+                         padding:2rem 1rem;
                         @include respond(tab-port) {
                             padding: 0 1rem;
                         }
@@ -1074,4 +1076,43 @@ a {
 .hide {
     transform: translateX(-100%);
     opacity: 0;
+}
+
+.lowerH{
+    height: 85rem;
+}
+
+.contacts {
+    position: fixed;
+    bottom: 2rem;
+    left: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @include respond(phone) {
+        bottom: 1rem;
+        right: 5rem;
+        width: 3rem;
+    }
+
+    @include respond(phone) {
+        border: .8rem;
+        right: 2rem;
+        width: 2rem;
+    }
+}
+
+.svgIcons {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem;
+fill:#fff;
+    @include respond(phone) {
+        width: 1rem;
+        height: 1rem;
+        margin: 0 .5rem;
+    }
+
 }

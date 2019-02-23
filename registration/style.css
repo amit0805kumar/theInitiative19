@@ -14,7 +14,11 @@
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: #F9F8F8; }
+  background-image: linear-gradient(to right bottom, #ea5a6f, #de781e);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
 
 /* line 19, ../sass/base/base.scss */
 html {
@@ -39,7 +43,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem; }
+  background: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0; }
   .header__logo {
     width: 8rem; }
   .header__heading {
@@ -49,12 +59,14 @@ html {
 
 .section__form {
   width: 100%;
-  margin-top: 3rem; }
+  margin-top: 6rem; }
   .section__form .form {
     width: 50%;
-    margin: 50px auto;
+    margin: 0px auto;
     text-align: center;
-    position: relative; }
+    position: relative;
+    margin-top: 16rem;
+    margin-bottom: 6rem; }
     @media only screen and (max-width: 75em) {
       .section__form .form {
         width: 90%; } }
@@ -79,7 +91,8 @@ html {
   padding: 20px 30px;
   box-sizing: border-box;
   width: 80%;
-  margin: 0 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   /*stacking fieldsets above each other*/
   position: relative; }
 
@@ -174,7 +187,8 @@ html {
   color: #333;
   background: white;
   border-radius: 3px;
-  margin: 0 auto 5px auto; }
+  margin: 0 auto 5px auto;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3); }
 
 /*progressbar connectors*/
 #progressbar li:after {
@@ -186,6 +200,7 @@ html {
   left: -50%;
   top: 9px;
   z-index: -1;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
   /*put it behind the numbers*/ }
 
 #progressbar li:first-child:after {

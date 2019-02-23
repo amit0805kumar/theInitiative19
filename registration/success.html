@@ -15,11 +15,19 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
+        
+            body {
+            box-sizing: border-box;
+            background-image: linear-gradient(to right bottom, #ea5a6f, #de781e);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
       svg {
   width: 100px;
   display: block;
@@ -51,10 +59,10 @@ p {
   margin: 20px 0 60px;
   font-size: 1.25em;
   &.success {
-    color: #73AF55;
+    color: #fff;
   }
   &.error {
-    color: #D06079;
+    color: #fff;
   }
 }
 
@@ -94,6 +102,25 @@ p {
     stroke-dashoffset: 900;
   }
 }
+        
+           h1,h3,h6,h5,h4,p{
+            color: #fff;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: #8ce5d0;
+        }
+        .btn-primary{
+            background: orange;
+            border: none;
+            color: #000;
+        }
+        .btn-primary:hover{
+            background: rgba(255, 165, 0, 0.65);
+            color: #000;
+        }
 
     </style>
 
@@ -104,12 +131,12 @@ p {
 
   <body >
 
-  <div class="jumbotron text-xs-center">
+  <div class="text-xs-center">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-  <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-  <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+  <circle class="path circle" fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+  <polyline class="path check" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
   </svg><br>
-  <h3 style="color:#73AF55">Registration Successfull</h3><br>
+  <h3 style="color:#fff">Registration Successfull</h3><br>
   <h1 class="display-3">Thank You!</h1><br>
   <p class="lead">You have been successfully registered for <span style="font-size: 25px;font-weight: 500"><i><b>THE INITIATIVE'19</b></i></span>.<strong> Please check your email</strong> for further instructions..</p>
   <hr>

@@ -106,10 +106,10 @@ a {
     .container {
       width: 90%;
       margin-top: 6rem;
-      height: 120rem; } }
-  @media only screen and (max-width: 25em) {
+      height: 140rem; } }
+  @media only screen and (max-width: 37.5em) {
     .container {
-      height: 125rem; } }
+      height: 170rem; } }
   .container .header {
     position: relative;
     width: 100%;
@@ -203,7 +203,17 @@ a {
         .container .main .nav__link .svgIcons {
           width: 2rem;
           height: 2rem;
-          fill: #fff; }
+          fill: #fff;
+          /*
+                              @include respond(phone) {
+                                  width: .8rem;
+                                  height: .8rem;
+                              }
+          
+                              @include respond(400) {
+                                  width: .5rem;
+                                  height: .5rem;
+                              }*/ }
           @media only screen and (max-width: 75em) {
             .container .main .nav__link .svgIcons {
               width: 1.8rem;
@@ -216,14 +226,6 @@ a {
             .container .main .nav__link .svgIcons {
               width: 1rem;
               height: 1rem; } }
-          @media only screen and (max-width: 37.5em) {
-            .container .main .nav__link .svgIcons {
-              width: .8rem;
-              height: .8rem; } }
-          @media only screen and (max-width: 25em) {
-            .container .main .nav__link .svgIcons {
-              width: .5rem;
-              height: .5rem; } }
         .container .main .nav__link__text {
           color: #fff;
           letter-spacing: 2px;
@@ -375,16 +377,17 @@ a {
             font-size: 2rem;
             font-family: 'Muli', sans-serif; }
             .container .main .content__box .topic__abstract__text {
-              font-size: 2rem;
-              margin: 2rem 1rem; }
+              font-size: 1.6rem;
+              margin: 2rem 1rem;
+              font-family: 'Poppins',sans-serif; }
               @media only screen and (max-width: 56.25em) {
                 .container .main .content__box .topic__abstract__text {
-                  font-size: 1.5rem;
+                  font-size: 1.2rem;
                   margin: 1.5rem .8rem; } }
               @media only screen and (max-width: 37.5em) {
                 .container .main .content__box .topic__abstract__text {
                   text-align: center;
-                  font-size: 1.2rem;
+                  font-size: 1rem;
                   margin: 1.2rem .4rem; } }
         .container .main .content__box .members {
           display: flex;
@@ -624,14 +627,15 @@ a {
             fill: #fff; }
         .container .main .content__box .instructions {
           width: 100%;
-          padding: 1rem;
+          padding: 2rem 1rem;
           font-size: 1.5rem; }
           @media only screen and (max-width: 37.5em) {
             .container .main .content__box .instructions {
               font-size: 1rem; } }
           .container .main .content__box .instructions .instruction {
             margin: 3rem 0;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            padding: 2rem 1rem; }
             @media only screen and (max-width: 56.25em) {
               .container .main .content__box .instructions .instruction {
                 padding: 0 1rem; } }
@@ -717,5 +721,38 @@ a {
 .hide {
   transform: translateX(-100%);
   opacity: 0; }
+
+.lowerH {
+  height: 85rem; }
+
+.contacts {
+  position: fixed;
+  bottom: 2rem;
+  left: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+  @media only screen and (max-width: 37.5em) {
+    .contacts {
+      bottom: 1rem;
+      right: 5rem;
+      width: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contacts {
+      border: .8rem;
+      right: 2rem;
+      width: 2rem; } }
+
+.svgIcons {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem 1rem;
+  fill: #fff; }
+  @media only screen and (max-width: 37.5em) {
+    .svgIcons {
+      width: 1rem;
+      height: 1rem;
+      margin: 0 .5rem; } }
 
 /*# sourceMappingURL=style.css.map */
