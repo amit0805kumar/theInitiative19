@@ -9,7 +9,7 @@ $sent=array("link"=>$task_link,"team_id"=>$team_id,"task_code"=>$task_code);
 $recieve=apicall("/api/customer/optionaltask",$sent);
 $sent=array("team_id"=>$team_id);
 $recieve=apicall("/api/customer/optionaltaskstatus",$sent);
-print_r($recieve);
+//print_r($recieve);
 if ($recieve[0]["task_code"]!="") {
 	echo json_encode($recieve["task_code"]);
 	echo json_encode($recieve["link"]);
