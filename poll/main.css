@@ -65,7 +65,6 @@ body {
     background: orangered;
     text-align: center;
     color: #fff;
-    width: 20px;
     height: 20px;
     font-family: sans-serif;
     cursor: pointer;
@@ -154,7 +153,6 @@ body {
     background: orangered;
     text-align: center;
     color: #fff;
-    width: 20px;
     height: 20px;
     border-radius: 300px;
     border: 2px solid orange;
