@@ -12,13 +12,14 @@ $(document).ready(function () {
             contentType: false,
             processData: false,
             success: function (data) {
-                //$("#signup_submit").removeAttr('disabled'); 
+                //$("#signup_submit").removeAttr('disabled');
+                console.log(data); 
                 $('#signup_form')[0].reset();
-                if (data == "Successfully Registered") {
+                if (data == "Account created successfully") {
                     $("#error_msg").css("color", "#18b435");
                     $("#error_msg").css("font-weight","600");
 
-                    $('#error_msg').html("Successfully Registered");
+                    $('#error_msg').html("Account Created Successfully");
                 } else if (data=="Sorry! Mobile Number Already Exist") {
                     $("#error_msg").css("color", "red");
                     $('#error_msg').html("Sorry! Mobile Number Already Exist");
