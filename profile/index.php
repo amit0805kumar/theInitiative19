@@ -336,10 +336,10 @@ else{
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
 
-                        <div id="1" class="uploadOut"><span id="task1">INI011</span>You haven't uploaded This Optional Task</div>
-                        <div id="2" class="uploadOut"><span id="task2">INI012</span>You haven't uploaded This Optional Task</div>
-                        <div id="3" class="uploadOut"><span id="task3">INI013</span>You haven't uploaded This Optional Task</div>
-                        <div id="4" class="uploadOut"><span id="task4">INI014</span>You haven't uploaded This Optional Task</div>
+                        <div id="1" class="uploadOut"><span id="task1">INI011 &nbsp; |</span>You haven't uploaded This Optional Task</div>
+                        <div id="2" class="uploadOut"><span id="task2">INI012 &nbsp; |</span>You haven't uploaded This Optional Task</div>
+                        <div id="3" class="uploadOut"><span id="task3">INI013 &nbsp; |</span>You haven't uploaded This Optional Task</div>
+                        <div id="4" class="uploadOut"><span id="task4">INI014 &nbsp; |</span>You haven't uploaded This Optional Task</div>
 
                         <form class="uploader__input" id="task_form">
                             <select name="task_code" id="task_code">

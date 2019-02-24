@@ -95,7 +95,6 @@ session_destroy();
             </svg>
         </a>
     </div>
-<!--
     
      <div id="fb-root"></div>
 <script>
@@ -119,7 +118,6 @@ session_destroy();
   attribution=setup_tool
   page_id="2274447382801951">
 </div>
--->
 
 </body>
 <script type="text/javascript" src="signup_ajax.js"></script>
