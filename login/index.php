@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+session_start();
+session_unset();
+session_destroy();
+//echo $_SESSION["user_details"]["user_id"];
+    ?>
 <head>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">

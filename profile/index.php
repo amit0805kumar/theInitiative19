@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    session_start();
+if(!isset($_SESSION["user_details"]))    
+{
+//echo    $_SESSION["user_details"]["user_id"];
+   header("Location:../login/index.php");
 
+}
+?>
 <head>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
@@ -12,7 +20,6 @@
     <script src="js/script.js"></script>
     <title>Team Profile</title>
     <?php
-session_start();
 include "../registration/constant.php";
 if (isset($_SESSION['user_details']['mobile_no'])) {
     $sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
@@ -21,7 +28,7 @@ if (isset($_SESSION['user_details']['mobile_no'])) {
     //echo json_encode($recieve);
 }
 else{
-    header("Location:../login/index.html");
+    header("Location:../login/index.php");
 }
 ?>
 
