@@ -45,11 +45,11 @@ session_destroy();
             <p style="font-size: 18px;color: red;" id="error_msg_login"></p>
             
             <input type="number" name="mobile_no_login" id="mobile_no_login" placeholder="Mobile" class="input">
-            <span id="mobile_error"> </span>
+            <span id="mobile_error"  class="l"> </span>
             
             <input type="password" name="password_login" 
             id="password_login" placeholder="Password" class="input">
-            <span id="password_login_error"> </span>
+            <span id="password_login_error" class="l"> </span>
             
             <input type="submit" id="submit" value="Login">
         
@@ -59,16 +59,16 @@ session_destroy();
             <p style="font-size: 18px;" id="error_msg"></p>
             
             <input type="number" name="mobile_no" id="mobile_no" placeholder="Mobile Number" class="input">
-            <span id="mobile_no_error"> </span>
+            <span id="mobile_no_error" class="s"> </span>
              
             <input type="text" name="email" id="email" placeholder="Email" class="input">
-            <span id="email_error"> </span>
+            <span id="email_error" class="s"> </span>
             
             <input type="password" name="password" id="password" placeholder="Password" class="input">
-            <span id="password_error"> </span>
+            <span id="password_error" class="s"> </span>
             
             <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input">
-            <span id="confirm_password_error"> </span>
+            <span id="confirm_password_error" class="s"> </span>
             
             <input type="submit" id="signup_submit" value="Register">
 
@@ -95,6 +95,7 @@ session_destroy();
             </svg>
         </a>
     </div>
+<!--
     
      <div id="fb-root"></div>
 <script>
@@ -113,11 +114,12 @@ session_destroy();
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your customer chat code -->
+ Your customer chat code 
 <div class="fb-customerchat"
   attribution=setup_tool
   page_id="2274447382801951">
 </div>
+-->
 
 </body>
 <script type="text/javascript" src="signup_ajax.js"></script>

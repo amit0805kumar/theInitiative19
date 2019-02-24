@@ -11,6 +11,16 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
+span.l {
+  color: red;
+  font-family: sans-serif;
+  margin-top: -4rem; }
+
+span.s {
+  color: red;
+  font-family: sans-serif;
+  margin-top: -2rem; }
+
 .loader {
   position: absolute;
   top: 0;
