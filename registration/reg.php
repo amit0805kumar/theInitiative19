@@ -130,8 +130,8 @@ if ($msg_success["message"]=="success") {
                   $mail->isSMTP();                                      // Set mailer to use SMTP
                   $mail->Host = 'email-smtp.us-west-2.amazonaws.com';  // Specify main and backup SMTP servers
                   $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                  $mail->Username = 'AKIAJQXNJN7LC4PMFNEA';                 // SMTP username
-                  $mail->Password = 'BH2xDqi59QZenTjO141tO0un3bqYCKr6k+W1iDUYP+ap';                           // SMTP password
+                  $mail->Username = 'AKIAIT4OK6ETIUISY2YQ';                 // SMTP username
+                  $mail->Password = 'BGbNtjzGN/vMhLcgJjMS54IZ0QLsi5H7y+y09EAsHu1J';                           // SMTP password
                   $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                   $mail->Port = 587;                                    // TCP port to connect to
 
@@ -151,8 +151,9 @@ if ($msg_success["message"]=="success") {
                   $mail->isHTML(true);                                  // Set email format to HTML
 
                   $mail->Subject = 'The INITIATIVE 2019 Registration Confirmation';
-                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is <b>'.$teamid.'</b>.Login to your profile OR Download <b>THE INITIATIVE\'19</b> app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.';
-                  $mail->AltBody = 'Congratulations! You\'ve successfully registered for The INITIATIVE 2019! Your TeamID is '.$teamid.' And . Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.For any queries, please write to us at csichapters@gmail.com.All The Best.Regards,Team CSI.';
+                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is INIT-<b>'.$teamid.'</b>.Login to your profile OR Download <b>THE INITIATIVE\'19</b> app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.<br><br>
+                    <a href="#" style="font-family:sans-serif; color:#fff; font-size:15px; padding: 10px 15px; text-decoration:none; background: black; border-radius: 3px;">Download App</a>';
+                  $mail->AltBody = 'Congratulations! You\'ve successfully registered for The INITIATIVE 2019! Your TeamID is INIT-'.$teamid.' And . Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.For any queries, please write to us at csichapters@gmail.com.All The Best.Regards,Team CSI.';
 
                   $mail->send();
 
