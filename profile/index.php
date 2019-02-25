@@ -313,22 +313,22 @@ else{
                     <div class="task__heading">Task Details</div>
                     <div class="task__box">
                         <div class="task">
-                            <div class="task__code">Task Code (IN011)</div>
+                            <div class="task__code">Task Code (INI011)</div>
                             <div class="tast__details">Make a video mimicing a filmy character and in the video express your topic in form of a popular dialogue of the character you are mimicing. Post the recorded video on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
-                            <div class="task__code">Task Code (IN012)</div>
+                            <div class="task__code">Task Code (INI012)</div>
                             <div class="tast__details">Make a poster/cartoon depicting your topic and post it on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
-                            <div class="task__code">Task Code (IN013)</div>
+                            <div class="task__code">Task Code (INI013)</div>
                             <div class="tast__details">Make a meme related to your topic. Post the meme on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
-                            <div class="task__code">Task Code (IN014)</div>
+                            <div class="task__code">Task Code (INI014)</div>
                             <div class="tast__details">Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
@@ -336,10 +336,10 @@ else{
                     <div class="task__heading">Upload Tasks</div>
                     <div class="uploader">
 
-                        <div id="1" class="uploadOut"><span id="task1">INI011 &nbsp; |</span>You haven't uploaded This Optional Task</div>
-                        <div id="2" class="uploadOut"><span id="task2">INI012 &nbsp; |</span>You haven't uploaded This Optional Task</div>
-                        <div id="3" class="uploadOut"><span id="task3">INI013 &nbsp; |</span>You haven't uploaded This Optional Task</div>
-                        <div id="4" class="uploadOut"><span id="task4">INI014 &nbsp; |</span>You haven't uploaded This Optional Task</div>
+                        <div id="task1_box" class="uploadOut"><span id="task1">INI011 &nbsp; |</span><span id="1">You haven't uploaded This Optional Task</span></div>
+                        <div id="task2_box" class="uploadOut"><span id="task2">INI012 &nbsp; |</span><span id="2">You haven't uploaded This Optional Task</span></div>
+                        <div id="task3_box" class="uploadOut"><span id="task3">INI013 &nbsp; |</span><span id="3">You haven't uploaded This Optional Task</span></div>
+                        <div id="task4_box" class="uploadOut"><span id="task4">INI014 &nbsp; |</span><span id="4">You haven't uploaded This Optional Task</span></div>
 
                         <form class="uploader__input" id="task_form">
                             <select name="task_code" id="task_code">
@@ -496,6 +496,7 @@ else{
 
  <div id="fb-root"></div>
 <script>
+
   window.fbAsyncInit = function() {
     FB.init({
       xfbml            : true,

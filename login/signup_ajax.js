@@ -12,8 +12,7 @@ $(document).ready(function () {
             contentType: false,
             processData: false,
             success: function (data) {
-                //$("#signup_submit").removeAttr('disabled');
-                console.log(data); 
+                //$("#signup_submit").removeAttr('disabled'); 
                 $('#signup_form')[0].reset();
                 if (data == "Account created successfully") {
                     $("#error_msg").css("color", "#18b435");
