@@ -44,12 +44,14 @@ $(function () {
         instructions.addClass('navActive');
         $('.container').removeClass('lowerH');
     });
-   noti.click(function () {
+    noti.click(function () {
         $('.content__box').addClass('hide');
         $('#b6').removeClass('hide');
         $('.nav__link').removeClass('navActive');
         noti.addClass('navActive');
-       $('.container').removeClass('lowerH');
+        $('.container').removeClass('lowerH');
     });
+    
+
 
 });

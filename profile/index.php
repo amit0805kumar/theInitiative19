@@ -343,7 +343,7 @@ else{
 
                         <form class="uploader__input" id="task_form">
                             <select name="task_code" id="task_code">
-                                <option value="0">Select task code</option>
+                                <option value="null">Select task code</option>
                                 <option value="INI011">INI011</option>
                                 <option value="INI012">INI012</option>
                                 <option value="INI013">INI013</option>
