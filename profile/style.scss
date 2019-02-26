@@ -429,7 +429,7 @@ a {
                 top: 2rem;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
                 z-index: 500;
-
+                white-space: nowrap;
                 @include respond(tab-port) {
                     top: 1.5rem;
                     padding: .8rem 2.5rem;
@@ -437,12 +437,13 @@ a {
                     font-weight: 500;
                 }
 
-                @include respond(400) {
+                @include respond(phone) {
                     top: 1.2rem;
                     padding: .5rem 2rem;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: 500;
                 }
+           
 
 
 
@@ -727,11 +728,17 @@ a {
                         padding: 1.2rem 2rem;
                         width: 50rem;
                         cursor: pointer;
+                        display: flex;
+                        overflow: hidden;
+                        align-items: center;
+                        padding: 0 .8rem;
+
 
                         span {
                             font-family: 'Poppins', sans-serif;
                             font-weight: 600;
                             margin-right: 1.5rem;
+                            white-space: nowrap;
                         }
 
                         @include respond(tab-port) {
@@ -745,7 +752,7 @@ a {
                             width: 90%;
                             border: 1px solid #2db20e;
                             height: 3rem;
-
+                            font-size: .8rem;
 
                         }
 
@@ -763,6 +770,7 @@ a {
                         @include respond(phone) {
 
                             border: 1px solid #000;
+                            font-display: .8rem;
 
 
                         }
@@ -785,9 +793,10 @@ a {
                         @include respond(phone) {
 
                             width: 90%;
-                            border: 1px solid #d50000;
+                            border: 1px solid #000;
                             margin: 1rem 0;
                             height: 2.5rem;
+                            font-size: .8rem;
 
                         }
 
@@ -795,12 +804,26 @@ a {
                             width: 60%;
                             color: blue;
                             border: none;
+
+                            @include respond(phone) {
+
+                                font-size: .8rem;
+
+                            }
                         }
 
                         .uploadIcon {
                             width: 2.2rem;
                             height: 2.2rem;
                             fill: #fff;
+
+                            @include respond(phone) {
+
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin: 1rem;
+
+                            }
                         }
                     }
 
@@ -1139,7 +1162,7 @@ a {
     @include respond(phone) {
         bottom: 1rem;
         width: 3rem;
-         left: .5rem;
+        left: .5rem;
     }
 
 

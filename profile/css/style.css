@@ -281,18 +281,19 @@ a {
         transform: translateX(-50%);
         top: 2rem;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        z-index: 500; }
+        z-index: 500;
+        white-space: nowrap; }
         @media only screen and (max-width: 56.25em) {
           .container .main .content .team__name {
             top: 1.5rem;
             padding: .8rem 2.5rem;
             font-size: 2.5rem;
             font-weight: 500; } }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 37.5em) {
           .container .main .content .team__name {
             top: 1.2rem;
             padding: .5rem 2rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500; } }
       .container .main .content__box {
         position: absolute;
@@ -486,11 +487,16 @@ a {
             border: 2px solid #2db20e;
             padding: 1.2rem 2rem;
             width: 50rem;
-            cursor: pointer; }
+            cursor: pointer;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            padding: 0 .8rem; }
             .container .main .content__box .uploader .uploadOut span {
               font-family: 'Poppins', sans-serif;
               font-weight: 600;
-              margin-right: 1.5rem; }
+              margin-right: 1.5rem;
+              white-space: nowrap; }
             @media only screen and (max-width: 56.25em) {
               .container .main .content__box .uploader .uploadOut {
                 width: 80%;
@@ -499,7 +505,8 @@ a {
               .container .main .content__box .uploader .uploadOut {
                 width: 90%;
                 border: 1px solid #2db20e;
-                height: 3rem; } }
+                height: 3rem;
+                font-size: .8rem; } }
           .container .main .content__box .uploader select {
             border: none;
             border-right: 2px solid #000;
@@ -507,7 +514,8 @@ a {
             font-size: 1rem; }
             @media only screen and (max-width: 37.5em) {
               .container .main .content__box .uploader select {
-                border: 1px solid #000; } }
+                border: 1px solid #000;
+                font-display: .8rem; } }
           .container .main .content__box .uploader__input {
             width: 50rem;
             height: 4rem;
@@ -522,17 +530,26 @@ a {
             @media only screen and (max-width: 37.5em) {
               .container .main .content__box .uploader__input {
                 width: 90%;
-                border: 1px solid #d50000;
+                border: 1px solid #000;
                 margin: 1rem 0;
-                height: 2.5rem; } }
+                height: 2.5rem;
+                font-size: .8rem; } }
             .container .main .content__box .uploader__input input {
               width: 60%;
               color: blue;
               border: none; }
+              @media only screen and (max-width: 37.5em) {
+                .container .main .content__box .uploader__input input {
+                  font-size: .8rem; } }
             .container .main .content__box .uploader__input .uploadIcon {
               width: 2.2rem;
               height: 2.2rem;
               fill: #fff; }
+              @media only screen and (max-width: 37.5em) {
+                .container .main .content__box .uploader__input .uploadIcon {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  margin: 1rem; } }
           .container .main .content__box .uploader__btn {
             border: none;
             background: #000;
