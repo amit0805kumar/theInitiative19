@@ -75,7 +75,7 @@ session_destroy();
         </form>
 
     </div>
-
+<!--
     <div class="contacts">
 
         <a href="https://www.facebook.com/theinitiative.akg/" class="icons" target="_blank">
@@ -95,7 +95,7 @@ session_destroy();
             </svg>
         </a>
     </div>
-    
+    -->
      <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
