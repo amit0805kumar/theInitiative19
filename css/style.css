@@ -1481,9 +1481,14 @@ font-family: 'Raleway', sans-serif;*/
         margin: .1rem; } }
     .problems__coordinators__box:hover > div {
       top: 80%; }
-    @media only screen and (max-width: 37.5em) {
-      .problems__coordinators__box div {
-        font-size: 1rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .problems__coordinators__box:hover > div {
+          top: 60%; } }
+    .problems__coordinators__box div {
+      white-space: nowrap; }
+      @media only screen and (max-width: 37.5em) {
+        .problems__coordinators__box div {
+          font-size: .8rem; } }
   .problems__coordinators__close {
     position: absolute;
     left: 93%;
@@ -1518,6 +1523,10 @@ font-family: 'Raleway', sans-serif;*/
     justify-content: space-around;
     padding-left: 1rem;
     transition: all .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .problems__coordinators__details {
+        height: 40%;
+        justify-content: center; } }
 
 .scaleProblems {
   transform: scale(1);

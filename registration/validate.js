@@ -25,7 +25,7 @@ $(function(){
     var mem3_branch = false;
     
     
-    $("#team_name").focusout(function(){
+    $("#team_name").keyup(function(){
 		check_team_name();
         confirm_mem1();
         
@@ -38,13 +38,13 @@ $(function(){
         
 	});
    
-    $("#mem1_name").focusout(function(){
+    $("#mem1_name").keyup(function(){
 		check_mem1_name();
         confirm_mem1();
         
 	});
     
-	$("#mem1_email").focusout(function(){
+	$("#mem1_email").keyup(function(){
 		check_mem1_email();
         confirm_mem1();
         
@@ -52,12 +52,12 @@ $(function(){
     
       
     
-	$("#mem1_rollno").focusout(function(){
+	$("#mem1_rollno").keyup(function(){
 		check_mem1_rollno();
          confirm_mem1();
 	});
     
-    $("#college").focusout(function(){
+    $("#college").keyup(function(){
 		check_college();
          confirm_mem1();
 	});
@@ -76,18 +76,18 @@ $(function(){
     
     
     
-    $("#mem2_name").focusout(function(){
+    $("#mem2_name").keyup(function(){
 		check_mem2_name();
         confirm_mem2();
         
 	});
     
-	$("#mem2_email").focusout(function(){
+	$("#mem2_email").keyup(function(){
 		check_mem2_email();
         confirm_mem2();
 	});
     
-   	$("#mem2_mobile").focusout(function(){
+   	$("#mem2_mobile").keyup(function(){
 		check_mem2_mobile();
         confirm_mem2();
 	});
@@ -105,7 +105,7 @@ $(function(){
 	});
     
  
-	$("#mem2_rollno").focusout(function(){
+	$("#mem2_rollno").keyup(function(){
 		check_mem2_rollno();
          confirm_mem2();
 	});
@@ -113,18 +113,18 @@ $(function(){
     
     
     
-     $("#mem3_name").focusout(function(){
+     $("#mem3_name").keyup(function(){
 		check_mem3_name();
         confirm_mem3();
         
 	});
     
-	$("#mem3_email").focusout(function(){
+	$("#mem3_email").keyup(function(){
 		check_mem3_email();
         confirm_mem3();
 	});
     
-   	$("#mem3_mobile").focusout(function(){
+   	$("#mem3_mobile").keyup(function(){
 		check_mem3_mobile();
         confirm_mem3();
 	});
@@ -142,7 +142,7 @@ $(function(){
 	});
     
  
-	$("#mem3_rollno").focusout(function(){
+	$("#mem3_rollno").keyup(function(){
 		check_mem3_rollno();
          confirm_mem3();
 	});
@@ -162,6 +162,7 @@ $(function(){
 		{
 			$("#team_name").css("border","2px solid #d9534f");
 			team_name = false;
+            $("#next").attr("disabled", "disabled");
            
 		}
 	};
@@ -171,6 +172,7 @@ $(function(){
 		{
 			$("#team_topic").css("border","2px solid #d9534f");
 			team_topic = false;
+            $("#next").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -192,6 +194,7 @@ $(function(){
 		{
 			$("#mem1_name").css("border","2px solid #d9534f");
 			mem1_name = false;
+            $("#next").attr("disabled", "disabled");
            
 		}
 	};
@@ -208,6 +211,7 @@ $(function(){
 		{
 			$("#mem1_email").css("border","2px solid #d9534f");
 			mem1_email = false;
+            $("#next").attr("disabled", "disabled");
             
 		}
 	};
@@ -221,11 +225,13 @@ $(function(){
 		{
 			$("#mem1_rollno").css("border","2px solid #d9534f");
 			mem1_rollno = false;
+            $("#next").attr("disabled", "disabled");
 		}
 		else if (!regex_mem1_rollno.test($("#mem1_rollno").val())) 
 		{
 			$("#mem1_rollno").css("border","2px solid #d9534f");
 			mem1_rollno = false;
+            $("#next").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -248,6 +254,7 @@ $(function(){
 		{
 			$("#college").css("border","2px solid #d9534f");
 			college = false;
+            $("#next").attr("disabled", "disabled");
            
 		}
 	};
@@ -259,6 +266,7 @@ $(function(){
 		{
 			$("#mem1_year").css("border","2px solid #d9534f");
 			mem1_year = false;
+            $("#next").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -272,6 +280,7 @@ $(function(){
 		{
 			$("#mem1_branch").css("border","2px solid #d9534f");
 			mem1_branch = false;
+            $("#next").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -284,7 +293,7 @@ $(function(){
   function confirm_mem1() {
           console.log("name");
           console.log(mem1_name);
-          if(team_name===true  && team_topic ===true && mem1_name === true && mem1_email===true  && mem1_branch===true && mem1_rollno===true && mem1_year===true && college=== true){
+          if(team_name === true  && team_topic ===true && mem1_name === true && mem1_email===true  && mem1_branch===true && mem1_rollno===true && mem1_year===true && college=== true){
             $("#next").removeAttr("disabled");         
           }
 
@@ -308,6 +317,7 @@ $(function(){
 		{
 			$("#mem2_name").css("border","2px solid #d9534f");
 			mem2_name = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
            
 		}
 	};
@@ -323,6 +333,7 @@ $(function(){
 		{
 			$("#mem2_email").css("border","2px solid #d9534f");
 			mem2_email = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
             
 		}
 	};
@@ -334,11 +345,13 @@ $(function(){
 		{
 			$("#mem2_mobile").css("border","2px solid #d9534f");
 			mem2_mobile = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
 		}
 		else if (!regex_mem2_mobile.test($("#mem2_mobile").val())) 
 		{
 			$("#mem2_mobile").css("border","2px solid #d9534f");
 			mem2_mobile = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -354,6 +367,7 @@ $(function(){
 		{
 			$("#mem2_branch").css("border","2px solid #d9534f");
 			mem2_branch = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -367,6 +381,7 @@ $(function(){
 		{
 			$("#mem2_year").css("border","2px solid #d9534f");
 			mem2_year = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -385,11 +400,13 @@ $(function(){
 		{
 			$("#mem2_rollno").css("border","2px solid #d9534f");
 			mem2_rollno = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
 		}
 		else if (!regex_mem2_rollno.test($("#mem2_rollno").val())) 
 		{
 			$("#mem2_rollno").css("border","2px solid #d9534f");
 			mem2_rollno = false;
+             $("#next2,#submit2").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -425,6 +442,7 @@ $(function(){
 		{
 			$("#mem3_name").css("border","2px solid #d9534f");
 			mem3_name = false;
+            $("#submit").attr("disabled", "disabled");
            
 		}
 	};
@@ -440,6 +458,7 @@ $(function(){
 		{
 			$("#mem3_email").css("border","2px solid #d9534f");
 			mem3_email = false;
+            $("#submit").attr("disabled", "disabled");
             
 		}
 	};
@@ -451,11 +470,13 @@ $(function(){
 		{
 			$("#mem3_mobile").css("border","2px solid #d9534f");
 			mem3_mobile = false;
+            $("#submit").attr("disabled", "disabled");
 		}
 		else if (!regex_mem3_mobile.test($("#mem2_mobile").val())) 
 		{
 			$("#mem3_mobile").css("border","2px solid #d9534f");
 			mem3_mobile = false;
+            $("#submit").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -471,6 +492,7 @@ $(function(){
 		{
 			$("#mem3_branch").css("border","2px solid #d9534f");
 			mem3_branch = false;
+            $("#submit").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -484,6 +506,7 @@ $(function(){
 		{
 			$("#mem3_year").css("border","2px solid #d9534f");
 			mem3_year = false;
+            $("#submit").attr("disabled", "disabled");
 		}
 		else
 		{
@@ -502,11 +525,13 @@ $(function(){
 		{
 			$("#mem3_rollno").css("border","2px solid #d9534f");
 			mem3_rollno = false;
+            $("#submit").attr("disabled", "disabled");
 		}
 		else if (!regex_mem3_rollno.test($("#mem2_rollno").val())) 
 		{
 			$("#mem3_rollno").css("border","2px solid #d9534f");
 			mem3_rollno = false;
+            $("#submit").attr("disabled", "disabled");
 		}
 		else
 		{

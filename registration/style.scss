@@ -303,3 +303,34 @@ html {
     background: #27AE60;
     color: white;
 }
+
+
+.svgIcons {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem;
+
+    @include respond(phone) {
+        width: 1rem;
+        height: 1rem;
+        margin: 0 .5rem;
+    }
+
+}
+
+.contacts {
+    position: fixed;
+    bottom: 2rem;
+    left: 5rem;
+    width: 5rem;
+    display: flex;
+     flex-direction: column;
+    justify-content: space-around;
+
+    @include respond(phone) {
+        bottom: 1rem;
+        width: 3rem;
+         left: .5rem;
+    }
+   
+}

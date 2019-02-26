@@ -329,8 +329,15 @@ else{
                         </div>
                         <div class="task">
                             <div class="task__code">Task Code (INI014)</div>
-                            <div class="tast__details">Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page.</div>
+                            <div class="tast__details">Make a slogan related to your topic and click a picture with csi board holding that slogan along with #initiateTheIdeas and post it on social media and mention/tag The Initiative page. (Only for AKGEC students)</div>
                             <div class="task__marks"> - 10marks</div>
+                        </div>
+                    </div>
+                    
+                    <div class="task__ins">
+                        <h1>Instructions:</h1>
+                        <div class="task__ins__text">
+                           You have to post you optional task on <b>FACEBOOK</b> and submit the link of your post here.
                         </div>
                     </div>
                     <div class="task__heading">Upload Tasks</div>
@@ -403,7 +410,7 @@ else{
                             <div class="coordinators__box">
                                 <img src="../images/mem/ujjawal.jpg" alt="coordinators" class="coordinators__img">
                                 <div class="coordinators__details">
-                                    <div class="coordinator__name">Ujjwal Sharma</div>
+                                    <div class="coordinator__name">Ujjawal Sharma</div>
                                     <div class="coordinator__num">8791658359</div>
                                 </div>
                             </div>

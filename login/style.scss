@@ -349,14 +349,9 @@ body {
 
     @include respond(phone) {
         bottom: 1rem;
-        right: 5rem;
         width: 3rem;
+         left: .5rem;
     }
-
-    @include respond(phone) {
-        border: .8rem;
-        right: 2rem;
-        width: 2rem;
-    }
+   
 }
 

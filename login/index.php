@@ -113,7 +113,6 @@ session_destroy();
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
- Your customer chat code 
 <div class="fb-customerchat"
   attribution=setup_tool
   page_id="2274447382801951">

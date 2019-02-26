@@ -66,8 +66,7 @@ session_start();
                 <input type="number" name="mem1_mobile" id="mem1_mobile" placeholder="Mobile Number" value="<?php echo($_SESSION['user_details']['mobile_no']); ?>" disabled>
 
                 <input type="text" name="mem1_rollno" id="mem1_rollno" placeholder="Roll Number">
-                
-                <input type="text" name="college" id="college" placeholder="College">
+         
                  
                 <select name="mem1_year" id="mem1_year">
                     <option value="default">-Select Year-</option>
@@ -88,6 +87,9 @@ session_start();
                     <option value="mca/mba">MCA/MBA</option>
                 </select>
                 
+                       
+                <input type="text" name="college" id="college" placeholder="College">
+                
                 <input type="button" name="next" id="next" value="Next" class="next action-button" />
             
             </fieldset>
@@ -104,7 +106,7 @@ session_start();
                 <input type="text" name="mem2_mobile" id="mem2_mobile" placeholder="Mobile">
                 
                 
-                <input type="text" name="mem2_rollno" id="mem2_rollno" placeholder="Roll Number">
+               
                 
                    <select name="mem2_year" id="mem2_year">
                     <option value="default">-Select Year-</option>
@@ -125,6 +127,8 @@ session_start();
                     <option value="mca/mba">MCA/MBA</option>
                 </select>
                 
+                 <input type="text" name="mem2_rollno" id="mem2_rollno" placeholder="Roll Number">
+                
                   <p style="color:red;font-size: 17px;">*Click on next only if you are registering for 3 members.</p>
                 
                 <input type="button" name="previous" class="previous action-button" value="Previous" /> 
@@ -143,9 +147,7 @@ session_start();
                 <input type="text" name="mem3_email" id="mem3_email" placeholder="Email" />
                 
                 <input type="text" name="mem3_mobile" id="mem3_mobile" placeholder="Mobile">
-                
-                <input type="text" name="mem3_rollno" id="mem3_rollno" placeholder="Roll Number">
-                
+               
                 <select name="mem3_year" id="mem3_year">
                     <option value="default">-Select Year-</option>
                     <option value="1">1st</option>
@@ -165,12 +167,36 @@ session_start();
                     <option value="mca/mba">MCA/MBA</option>
                 </select>
                 
+                 
+                <input type="text" name="mem3_rollno" id="mem3_rollno" placeholder="Roll Number">
+                
+                
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 
                 <input type="submit" name="submit" id="submit" class="action-button" value="Submit" />
             
             </fieldset>
         </form>
+    </div>
+    
+        <div class="contacts">
+
+        <a href="https://www.facebook.com/theinitiative.akg/" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#facebook"></use>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/csi_akgec/" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#instagram"></use>
+            </svg>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#youtube"></use>
+            </svg>
+        </a>
     </div>
  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js'></script>
     <script src="script.js"></script>

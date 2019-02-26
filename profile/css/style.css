@@ -109,7 +109,7 @@ a {
       height: 140rem; } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      height: 170rem; } }
+      height: 140rem; } }
   .container .header {
     position: relative;
     width: 100%;
@@ -204,16 +204,16 @@ a {
           width: 2rem;
           height: 2rem;
           fill: #fff;
-          /*
-                              @include respond(phone) {
-                                  width: .8rem;
-                                  height: .8rem;
-                              }
-          
-                              @include respond(400) {
-                                  width: .5rem;
-                                  height: .5rem;
-                              }*/ }
+                    /*
+                    @include respond(phone) {
+                        width: .8rem;
+                        height: .8rem;
+                    }
+
+                    @include respond(400) {
+                        width: .5rem;
+                        height: .5rem;
+                    }*/ }
           @media only screen and (max-width: 75em) {
             .container .main .nav__link .svgIcons {
               width: 1.8rem;
@@ -380,7 +380,7 @@ a {
             .container .main .content__box .topic__abstract__text {
               font-size: 1.6rem;
               margin: 2rem 1rem;
-              font-family: 'Poppins',sans-serif; }
+              font-family: 'Poppins', sans-serif; }
               @media only screen and (max-width: 56.25em) {
                 .container .main .content__box .topic__abstract__text {
                   font-size: 1.2rem;
@@ -488,7 +488,7 @@ a {
             width: 50rem;
             cursor: pointer; }
             .container .main .content__box .uploader .uploadOut span {
-              font-family: 'Poppins',sans-serif;
+              font-family: 'Poppins', sans-serif;
               font-weight: 600;
               margin-right: 1.5rem; }
             @media only screen and (max-width: 56.25em) {
@@ -503,7 +503,7 @@ a {
           .container .main .content__box .uploader select {
             border: none;
             border-right: 2px solid #000;
-            font-family: 'Poppins',sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 1rem; }
             @media only screen and (max-width: 37.5em) {
               .container .main .content__box .uploader select {
@@ -589,6 +589,17 @@ a {
                 font-size: 1.2rem; } }
           .container .main .content__box .task__marks {
             color: #d32f2f; }
+          .container .main .content__box .task__ins {
+            margin-top: 2rem;
+            padding: 1rem; }
+            .container .main .content__box .task__ins h1 {
+              font-family: 2rem;
+              color: #000;
+              margin-bottom: 1rem; }
+            .container .main .content__box .task__ins__text {
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.2rem;
+              color: red; }
         .container .main .content__box .synopsis {
           display: flex;
           width: 50rem;
@@ -698,11 +709,15 @@ a {
         margin: .1rem .5rem; } }
     .coordinators__box:hover > div {
       top: 80%; }
+      @media only screen and (max-width: 37.5em) {
+        .coordinators__box:hover > div {
+          top: 60%; } }
     .coordinators__box div {
-      font-family: 'Muli', sans-serif; }
+      font-family: 'Muli', sans-serif;
+      white-space: nowrap; }
       @media only screen and (max-width: 37.5em) {
         .coordinators__box div {
-          font-size: 1rem; } }
+          font-size: .8rem; } }
   .coordinators__img {
     width: 100%;
     height: 100%;
@@ -719,12 +734,16 @@ a {
     height: 20%;
     color: #fff;
     font-size: 1.2rem;
-    text-align-last: left;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 1rem;
     transition: all .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .coordinators__details {
+        height: 40%;
+        justify-content: center; } }
 
 .hide {
   transform: translateX(-100%);
@@ -732,6 +751,9 @@ a {
 
 .lowerH {
   height: 85rem; }
+  @media only screen and (max-width: 37.5em) {
+    .lowerH {
+      height: 65rem; } }
 
 .contacts {
   position: fixed;
@@ -744,13 +766,8 @@ a {
   @media only screen and (max-width: 37.5em) {
     .contacts {
       bottom: 1rem;
-      right: 5rem;
-      width: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .contacts {
-      border: .8rem;
-      right: 2rem;
-      width: 2rem; } }
+      width: 3rem;
+      left: .5rem; } }
 
 .svgIcons {
   width: 2rem;
