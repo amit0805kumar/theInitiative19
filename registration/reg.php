@@ -116,7 +116,7 @@ if ($mem_count==3) {
 $msg_success=apicall("/api/customer/addmember",$sent);
 }
 if ($msg_success["message"]=="success") {
-   header("Location:success.html");
+   header("Location:success");
 
          //mailing info
                    
@@ -151,19 +151,19 @@ if ($msg_success["message"]=="success") {
                   $mail->isHTML(true);                                  // Set email format to HTML
 
                   $mail->Subject = 'The INITIATIVE 2019 Registration Confirmation';
-                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is INIT-<b>'.$teamid.'</b>.Login to your profile OR Download <b>THE INITIATIVE\'19</b> app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.<br><br>
-                    <a href="#" style="font-family:sans-serif; color:#fff; font-size:15px; padding: 10px 15px; text-decoration:none; background: black; border-radius: 3px;">Download App</a>';
+                  $mail->Body    = 'Congratulations! You\'ve successfully registered for <b>THE INITIATIVE 2019</b>! Your TeamID is <b>INIT-'.$teamid.'</b>.Login to your profile OR Download <b>THE INITIATIVE\'19</b> app to submit the synopsis and optional tasks.<br>For any queries, please write to us at csichapters@gmail.com .<br>All The Best.<br>Regards,Team CSI.<br><br>
+                    <a href="#" style="font-family:sans-serif; color:#fff; font-size:15px; padding: 10px 15px; text-decoration:none; background: #7FFAFF; border-radius: 3px;">Download App</a>';
                   $mail->AltBody = 'Congratulations! You\'ve successfully registered for The INITIATIVE 2019! Your TeamID is INIT-'.$teamid.' And . Login to your profile OR Download THE INITIATIVE app to submit the synopsis and optional tasks.For any queries, please write to us at csichapters@gmail.com.All The Best.Regards,Team CSI.';
 
                   $mail->send();
 
 }
 else{
-  header("Location:error_bak.html");
+  header("Location:error_bak");
 }
 }
 else{
- header("Location:error_bak.html");
+ header("Location:error_bak");
 }
 
 

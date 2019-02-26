@@ -5,7 +5,7 @@ session_start();
     if(!isset($_SESSION["user_details"]))    
 {
 //echo $_SESSION["user_details"]["user_id"];
-   header("Location:../login/index.php");
+   header("Location:../login/");
 
 }
 ?>

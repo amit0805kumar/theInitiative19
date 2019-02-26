@@ -58,7 +58,7 @@ $(document).ready(function () {
                 //$("#signup_submit").removeAttr('disabled'); 
                 $('.loader').css('display','none');
                 if (data == "success") {
-                    window.location.href = "../profile/index.php";
+                    window.location.href = "../profile";
                 } else {
                     $("#error_msg_login").html(data);
                 }
