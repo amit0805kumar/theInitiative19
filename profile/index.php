@@ -5,7 +5,7 @@
 if(!isset($_SESSION["user_details"]))    
 {
 //echo    $_SESSION["user_details"]["user_id"];
-   header("Location:../login/index.php");
+   header("Location:../login/");
 
 }
 ?>
@@ -25,10 +25,11 @@ if (isset($_SESSION['user_details']['mobile_no'])) {
     $sent=array("mobile"=>$_SESSION['user_details']['mobile_no']);
     //echo $_SESSION['user_details']['mobile_no'];
     $recieve=apicall("/api/customer/details",$sent);
+    $team_id_main=$recieve['team_id'];
     //echo json_encode($recieve);
 }
 else{
-    header("Location:../login/index.php");
+    header("Location:../login/");
 }
 ?>
 
@@ -61,7 +62,7 @@ else{
                     </svg>
 
                 </div>
-                <a href="../registration/index.php" class="main__popup__heading">Please register first</a>
+                <a href="../registration/" class="main__popup__heading">Please register first</a>
             </div>
             <?php
             }
@@ -295,7 +296,7 @@ else{
 
                     <form id="upload_synopsis_form" class="synopsis">
                         <input type="text" name="synopsis_link" class="synposis__input" placeholder="Submit the link here to update">
-                        <input type="hidden" name="team_id" id="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
+                        <input type="hidden" name="team_id" id="team_id" value="<?php echo($team_id_main); ?>">
                         <div class="synopsis__btn">
                             <input type="submit" value="" >
                             <svg class="uploadIcon">
@@ -357,7 +358,7 @@ else{
                                 <option value="INI014">INI014</option>
                             </select>
                             <input type="text" name="task_link" id="task_link" placeholder="Submit the link here to update">
-                            <input type="hidden" name="team_id" value="<?php echo($recieve[0]['team_id']); ?>">
+                            <input type="hidden" name="team_id" value="<?php echo($team_id_main); ?>">
                             <div class="uploader__btn">
                                 <input type="submit" value="">
                                 <svg class="uploadIcon">

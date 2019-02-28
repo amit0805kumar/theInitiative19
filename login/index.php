@@ -45,12 +45,12 @@ session_destroy();
 
         <div class="popup__heading">Password Recovery</div>
 
-        <form action="#" method="post" class="pform">
+        <form id="forget_password_form" class="pform">
             <div class="input__heading">Enter your mobile number</div>
-            <input type="number" class="input">
+            <input type="number" id="phone_no" name="phone_no" class="input">
             <input type="submit" class="btn">
         </form>
-        <div class="notify">Your password is sent to your email. Please check!</div>
+        <div id="forget_notify" class="notify"></div>
     </div>
 
     <div class="header">

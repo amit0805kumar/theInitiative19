@@ -7,6 +7,7 @@ $(function () {
             team_id: team_id
         },
         success: function (data) {
+
             //$("#signup_submit").removeAttr('disabled');
             $("#uploaded_synopsis_link").html(data);
             $("#uploaded_synopsis_link").attr('href', data);

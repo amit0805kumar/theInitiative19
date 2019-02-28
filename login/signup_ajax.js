@@ -58,7 +58,7 @@ $(document).ready(function () {
                 //$("#signup_submit").removeAttr('disabled'); 
                 $('.loader').css('display','none');
                 if (data == "success") {
-                    window.location.href = "../profile";
+                    window.location.href = "../profile/";
                 } else {
                     $("#error_msg_login").html(data);
                 }
@@ -69,6 +69,37 @@ $(document).ready(function () {
         setInterval(function () {
             $('#error_msg_login').html('');
         }, 10000);
+
+    });
+
+
+
+    $(document).on('submit', '#forget_password_form', function (event) {
+        $('.loader').css('display','block');
+        event.preventDefault();
+         
+        //$("#signup_submit").attr('disabled','disabled');
+        $.ajax({
+            url: "forgot_password.php",
+            method: 'POST',
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                //$("#signup_submit").removeAttr('disabled'); 
+                $('.loader').css('display','none');
+                if (data=="success") {
+                $('#forget_notify').html("Your password is sent to your email. Please check!");    
+                }
+                else if (data=="Mobile Number Doesn't exist!") {
+                    $('#forget_notify').html("Mobile Number Doesn't exist!");
+                }
+                else{
+                    $('#forget_notify').html("Some Unknown Error Occured!"); 
+                }
+
+            }
+        });
 
     });
 
