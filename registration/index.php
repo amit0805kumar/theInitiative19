@@ -13,6 +13,8 @@ session_start();
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
     <title>Registration</title>
+    
+    <link rel="shotcut icon" type="img/png" href="../images/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -84,6 +86,7 @@ session_start();
                     <option value="ce">CE</option>
                     <option value="me">ME</option>
                     <option value="en">EN</option>
+                    <option value="ei">EI</option>
                     <option value="mca/mba">MCA/MBA</option>
                 </select>
                 
@@ -124,6 +127,7 @@ session_start();
                     <option value="ce">CE</option>
                     <option value="me">ME</option>
                     <option value="en">EN</option>
+                    <option value="ei">EI</option>
                     <option value="mca/mba">MCA/MBA</option>
                 </select>
                 
@@ -164,6 +168,7 @@ session_start();
                     <option value="ce">CE</option>
                     <option value="me">ME</option>
                     <option value="en">EN</option>
+                    <option value="ei">EI</option>
                     <option value="mca/mba">MCA/MBA</option>
                 </select>
                 

@@ -497,6 +497,11 @@ else{
                 <use xlink:href="../svg/svgIcons.svg#youtube"></use>
             </svg>
         </a>
+        <a href="https://play.google.com/store/apps/details?id=com.csiakgec.initiative" class="icons" target="_blank">
+            <svg class="svgIcons">
+                <use xlink:href="../svg/svgIcons.svg#google-play"></use>
+            </svg>
+        </a>
     </div>
 
 

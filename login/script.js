@@ -17,6 +17,14 @@ $(function () {
         registerFrom.removeClass('hide');
     });
     
+    $('.popup__close').click(function(){
+       $('.popup').removeClass('popupOpen'); 
+    });
+    
+    $('.fpwd').click(function(){
+         $('.popup').addClass('popupOpen');
+    });
+    
     
 
 });

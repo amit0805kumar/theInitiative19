@@ -66,19 +66,21 @@ font-family: 'Montserrat', sans-serif;
     }
 
 }
-span.l
-{
+
+span.l {
     color: red;
     font-family: sans-serif;
     margin-top: -4rem;
 }
-span.s{
-    
+
+span.s {
+
     color: red;
     font-family: sans-serif;
     margin-top: -2rem;
 
 }
+
 .loader {
     position: absolute;
     top: 0;
@@ -89,6 +91,7 @@ span.s{
     height: 100%;
     position: fixed;
     display: none;
+
     &__main {
         position: absolute;
         left: 50%;
@@ -179,6 +182,138 @@ body {
     }
 }
 
+.popup {
+    width: 50rem;
+    height: 35rem;
+    position: fixed;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    transition: all .3s;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1.5px solid black;
+
+    @include respond(phone) {
+        width: 80%;
+        height: 30rem;
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 102;
+        cursor: pointer;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all .3s;
+        height: 70%;
+
+        &__heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            letter-spacing: 3px;
+            font-size: 2.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include respond(phone) {
+                font-size: 2rem;
+                margin-top: 1.2rem;
+            }
+        }
+
+
+
+        .input {
+            display: block;
+            border: none;
+            border-bottom: 1.5px solid orangered;
+            width: 90%;
+            padding: 1rem 1.5rem;
+            margin: .5rem 0;
+            font-size: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: all .5s ease-in-out;
+        }
+
+        .input:focus {
+            outline: none;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+
+        input[type=submit] {
+            background: #220322;
+            border: none;
+            color: #fff;
+            padding: 1rem 3rem;
+            font-size: 2rem;
+            width: 90%;
+            letter-spacing: 3px;
+            margin-top: 1rem;
+            transition: all .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+        }
+    }
+
+    .input__heading {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+
+        @include respond(phone) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .notify {
+        color: orangered;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 2rem;
+        font-family: 'Muli', sans-serif;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.popupOpen {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
 
 .formContainer {
 
@@ -216,6 +351,20 @@ body {
     width: 100%;
     transition: all .3s;
     height: 100%;
+    .fpwd{
+        font-size: 2rem;
+        font-family: 'Muli',sans-serif;
+        cursor: pointer;
+        color: red;
+           @include respond(phone) {
+            font-size: 1.2rem;
+           
+        }  
+        @include respond(400) {
+            font-size: 1rem;
+           
+        }
+    }
 
     &__heading {
         font-family: 'Poppins', sans-serif;
@@ -344,14 +493,13 @@ body {
     left: 5rem;
     width: 5rem;
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     justify-content: space-around;
 
     @include respond(phone) {
         bottom: 1rem;
         width: 3rem;
-         left: .5rem;
+        left: .5rem;
     }
-   
-}
 
+}
