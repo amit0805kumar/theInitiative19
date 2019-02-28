@@ -5,7 +5,7 @@
 if(!isset($_SESSION["user_details"]))    
 {
 //echo    $_SESSION["user_details"]["user_id"];
-   header("Location:../login/");
+   header("Location:../login/index.php");
 
 }
 ?>
@@ -28,7 +28,7 @@ if (isset($_SESSION['user_details']['mobile_no'])) {
     //echo json_encode($recieve);
 }
 else{
-    header("Location:../login/");
+    header("Location:../login/index.php");
 }
 ?>
 
@@ -61,7 +61,7 @@ else{
                     </svg>
 
                 </div>
-                <a href="../registration/" class="main__popup__heading">Please register first</a>
+                <a href="../registration/index.php" class="main__popup__heading">Please register first</a>
             </div>
             <?php
             }
