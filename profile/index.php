@@ -192,7 +192,7 @@ else{
                                ?>
 
                             <div class="topic__abstract__text">
-                                The lack in education system is making it impossible to grab good and practical knowledge. Today’s generation is not able to give its best because the type of studies conducted is of memorizing. They are neither implementing the practical nor they are trying to understand. Day by day competition is increasing which makes the race to be the best more difficult.The issue with danger that competition can harm the learning process by turning a project into a race to the finish line, where understanding and internalizing concepts and knowledge becomes unimportant compared to winning.<br>The purpose of the activity moves from the learning goals (i.e., engagement in making sense of the elements of the process and the attempt to interpret and make a quality effort) to efficiency, speed, and the outcome relative to others…we can see this change in focus occurring no matter what the teacher may say either to encourage or discourage it. Our education system would be better when everyone would be content by grabbing that power of gaining knowledge rather than matter what marks and rank they get.
+                               The accumulation of huge non-performing assets in banks has assumed great importance. The depth of the problem of bad debts was first realized only in early 1990s. The magnitude of NPAs in banks and financial institutions is over Rs.1, 50,000 crore.While gross NPA reflects the quality of the loans made by banks, net NPA shows the actual burden of banks .During the last quarter ie Q2 2017-18, the bad loans of PSBs have remained almost flat at Rs.7.33 crores vis-a-vis  Q1 June 17 whereas those of 17  private sector banks increased by nearly 10.5 percent to Rs. 1.06 lakh crores.. This raises a concern in the industry and academia because it is generally felt that NPAs reduce the profitability of a bank, weaken its financial health and erode its solvency.
                             </div>
                             <?php
                            }
@@ -315,7 +315,7 @@ else{
                     <div class="task__box">
                         <div class="task">
                             <div class="task__code">Task Code (INI011)</div>
-                            <div class="tast__details">Make a video mimicing a filmy character and in the video express your topic in form of a popular dialogue of the character you are mimicing. Post the recorded video on social media and mention/tag The Initiative page.</div>
+                            <div class="tast__details">Make a video mimicking a filmy character and in the video express your topic in form of a popular dialogue of the character you are mimicking. Post the recorded video on social media and mention/tag The Initiative page.</div>
                             <div class="task__marks"> - 10marks</div>
                         </div>
                         <div class="task">
