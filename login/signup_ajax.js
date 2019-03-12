@@ -14,6 +14,7 @@ $(document).ready(function () {
             success: function (data) {
                 //$("#signup_submit").removeAttr('disabled'); 
                 $('#signup_form')[0].reset();
+                
                 if (data == "Account created successfully") {
                     $("#error_msg").css("color", "#18b435");
                     $("#error_msg").css("font-weight","600");
@@ -25,9 +26,13 @@ $(document).ready(function () {
                 } else if (data=="Please Enter all the fields"){
                     $("#error_msg").css("color", "red");
                     $('#error_msg').html("Please Enter all the fields");
-                } else{
+                }  else if(data=="Some Unexpected Error Occured"){
                     $("#error_msg").css("color", "red");
-                    $('#error_msg').html("Some Unexpected Error Occured");
+                    $('#error_msg').html("Please check internet connection and retry");
+                } 
+                else{
+                    $("#error_msg").css("color", "red");
+                    $('#error_msg').html("Please check internet connection and retry");
                 }
 
                 $('.loader').css('display','none');
